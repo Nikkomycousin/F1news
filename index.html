@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="F1 News">
+<meta name="theme-color" content="#0b0b0f">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="icon" href="icon-192.png">
+<title>F1 News</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0b0b0f; --card:#15151c; --card2:#1c1c25; --line:#262631;
+    --text:#f2f2f5; --muted:#9a9aab; --red:#e10600; --red2:#ff2a1f;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  body{padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}
+  .wrap{max-width:720px;margin:0 auto;padding:16px 16px 48px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:8px 0 14px}
+  .logo{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:34px;letter-spacing:.5px;font-style:italic;line-height:1}
+  .logo span{color:var(--red)}
+  .stamp{font-size:12px;color:var(--muted);text-align:right}
+  .hero{position:relative;overflow:hidden;border-radius:18px;padding:18px;background:linear-gradient(135deg,#2a0503 0%,#15151c 60%);border:1px solid #3a0d0a;margin-bottom:16px}
+  .hero:after{content:"";position:absolute;right:-40px;top:-40px;width:180px;height:180px;background:repeating-linear-gradient(45deg,rgba(225,6,0,.18) 0 10px,transparent 10px 20px);border-radius:50%}
+  .hero .lbl{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#ff8a80;font-weight:600}
+  .hero .gp{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:28px;margin:4px 0 2px;position:relative;z-index:1}
+  .hero .when{color:var(--muted);font-size:14px;position:relative;z-index:1}
+  .cd{display:flex;gap:10px;margin-top:14px;position:relative;z-index:1}
+  .cd div{background:rgba(0,0,0,.35);border:1px solid var(--line);border-radius:10px;padding:8px 10px;min-width:58px;text-align:center}
+  .cd b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:24px;line-height:1}
+  .cd small{font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+  .chips{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto;border:1px solid var(--line);background:var(--card);color:var(--text);padding:8px 14px;border-radius:999px;font:500 14px Inter,sans-serif;cursor:pointer}
+  .chip.on{background:var(--red);border-color:var(--red)}
+  .day{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin:18px 2px 8px;font-weight:600}
+  .card{display:block;text-decoration:none;color:inherit;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--red);border-radius:14px;padding:14px 14px 12px;margin-bottom:10px;transition:background .15s}
+  .card:active{background:var(--card2)}
+  .card.top{border-left-width:5px;background:linear-gradient(180deg,#1d1012,#15151c)}
+  .meta{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--muted);margin-bottom:6px;flex-wrap:wrap}
+  .tag{background:#2a1214;color:#ff8a80;border-radius:6px;padding:2px 7px;font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.6px}
+  .card h3{margin:0 0 6px;font-size:17px;line-height:1.3;font-weight:600}
+  .card p{margin:0;color:#c9c9d4;font-size:14.5px;line-height:1.5}
+  .src{margin-top:8px;font-size:12px;color:var(--red2);font-weight:500}
+  .empty{color:var(--muted);text-align:center;padding:40px 10px;line-height:1.6}
+  .btn{display:inline-block;margin-top:10px;background:var(--card2);border:1px solid var(--line);color:var(--text);border-radius:10px;padding:8px 14px;font:500 14px Inter;cursor:pointer}
+  .skel{height:96px;border-radius:14px;background:linear-gradient(90deg,#15151c,#1d1d27,#15151c);background-size:200% 100%;animation:sh 1.2s infinite;margin-bottom:10px}
+  @keyframes sh{to{background-position:-200% 0}}
+  .tabs{display:flex;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px;margin-bottom:14px;position:sticky;top:env(safe-area-inset-top);z-index:5}
+  .tabs button{flex:1;border:0;background:transparent;color:var(--muted);font:600 14px Inter,sans-serif;padding:10px 0;border-radius:9px;cursor:pointer}
+  .tv8{background:linear-gradient(135deg,#1b1530,#15151c);border:1px solid #2f2650;border-radius:14px;padding:14px;margin-bottom:12px}
+  .tv8 h4{margin:0 0 8px;font-size:13px;letter-spacing:1px;text-transform:uppercase;color:#b9a8ff}
+  .tv8 .l{display:flex;justify-content:space-between;gap:10px;padding:6px 0;font-size:15px}
+  .tv8 .l b{font-family:"Barlow Condensed",sans-serif;font-size:20px}
+  .tv8 .note{font-size:12px;color:var(--muted);margin-top:6px}
+  .sess{display:flex;gap:12px;padding:12px 14px;border-bottom:1px solid var(--line);align-items:flex-start}
+  .sess:last-child{border-bottom:0}
+  .sess .t{min-width:58px;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:22px;line-height:1.1}
+  .sess .t small{display:block;font:500 11px Inter;color:var(--muted)}
+  .sess .n{flex:1}
+  .sess .n b{display:block;font-size:15.5px;font-weight:600}
+  .sess.key .n b{color:#fff}.sess.key .t{color:var(--red2)}
+  .sess .ch{font-size:12.5px;color:var(--muted);margin-top:3px;line-height:1.5}
+  .sess .ch .p8{color:#b9a8ff;font-weight:500}
+  .sess.done{opacity:.45}
+  .badge{font-size:10px;font-weight:700;border-radius:4px;padding:1px 6px;margin-left:6px;vertical-align:2px;text-transform:uppercase}
+  .badge.live{background:var(--red);color:#fff}.badge.next{background:#2a1214;color:#ff8a80}
+  .dayh{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);padding:10px 14px;background:var(--card2);border-bottom:1px solid var(--line);font-weight:600}
+  .tabs button.on{background:var(--red);color:#fff}
+  .table{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .sub{font-size:12px;color:var(--muted);padding:12px 14px;border-bottom:1px solid var(--line)}
+  .row{display:flex;align-items:center;gap:12px;padding:11px 14px;border-bottom:1px solid var(--line)}
+  .row:last-child{border-bottom:0}
+  .pos{width:26px;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:20px;text-align:center;color:var(--muted)}
+  .row.p1 .pos{color:#ffd54a}.row.p2 .pos{color:#d6d6e0}.row.p3 .pos{color:#e0a46b}
+  .bar{width:4px;height:30px;border-radius:2px;flex:0 0 auto}
+  .who{flex:1;min-width:0}
+  .who b{display:block;font-size:15.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .who small{color:var(--muted);font-size:12.5px}
+  .pts{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:22px;text-align:right;min-width:52px}
+  .pts small{display:block;font:500 11px Inter;color:var(--muted)}
+  .champ{font-size:10px;background:#ffd54a;color:#000;border-radius:4px;padding:1px 5px;margin-left:6px;font-weight:700;vertical-align:2px}
+  .card.spoil{position:relative;pointer-events:none}
+  .card.spoil h3,.card.spoil p,.card.spoil .src{filter:blur(7px);user-select:none}
+  .table.spoil .row{filter:blur(6px)}
+  .sbanner{display:flex;align-items:center;gap:10px;background:#2a1214;border:1px solid #4a1a1a;border-radius:12px;padding:10px 12px;margin-bottom:12px;font-size:13.5px;line-height:1.4}
+  .sbanner span{flex:1}
+  .sbanner button{background:var(--red);color:#fff;border:0;border-radius:8px;padding:8px 10px;font:600 13px Inter;cursor:pointer;white-space:nowrap}
+  .modal{position:fixed;inset:0;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;z-index:50;padding:24px}
+  .modal[hidden]{display:none}
+  .mbox{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px 20px 18px;max-width:360px;width:100%;text-align:center}
+  .mbox .ico{font-size:40px;margin-bottom:6px}
+  .mbox h2{font-family:"Barlow Condensed",sans-serif;font-size:28px;margin:0 0 6px}
+  .mbox p{color:var(--muted);font-size:14.5px;line-height:1.5;margin:0 0 18px}
+  .mbox .yes,.mbox .no{display:block;width:100%;border:0;border-radius:12px;padding:14px;font:600 16px Inter;cursor:pointer;margin-top:8px}
+  .mbox .yes{background:var(--red);color:#fff}
+  .mbox .no{background:var(--card2);color:var(--text);border:1px solid var(--line)}
+  .pages{margin-bottom:12px}
+  .pages h4{margin:0 2px 8px;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .pages .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .pg{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px}
+  .pg:active{background:var(--card2)}
+  .pg .av{width:38px;height:38px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:17px;color:#fff}
+  .pg b{display:block;font-size:14.5px;font-weight:600}
+  .pg small{font-size:11.5px;color:#6f8cff}
+  .tabs{overflow-x:auto;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tabs button{flex:1 0 auto;padding:10px 10px;font-size:13.5px}
+  .seg{display:flex;gap:6px;margin-bottom:10px}
+  .seg button{flex:1;border:1px solid var(--line);background:var(--card);color:var(--muted);font:600 14px Inter;padding:9px;border-radius:10px;cursor:pointer}
+  .seg button.on{color:#fff;border-color:var(--red);background:#2a1214}
+  .rhead{background:linear-gradient(135deg,#1d1012,#15151c);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:12px}
+  .rhead .lbl{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:#ff8a80;font-weight:600}
+  .rhead h3{font-family:"Barlow Condensed",sans-serif;font-size:26px;margin:2px 0 8px}
+  .rhead p{margin:0;color:#c9c9d4;font-size:14.5px;line-height:1.55}
+  .podium{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:12px 0 2px}
+  .podium div{background:rgba(0,0,0,.3);border:1px solid var(--line);border-radius:10px;padding:8px;text-align:center}
+  .podium b{display:block;font-family:"Barlow Condensed",sans-serif;font-size:22px}
+  .podium span{font-size:12.5px;font-weight:600;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .row .note{font-size:11px;color:#ff8a80;margin-left:6px}
+  .spoilwrap.spoil .rhead p,.spoilwrap.spoil .podium,.spoilwrap.spoil .table .row{filter:blur(7px);pointer-events:none;user-select:none}
+  .cal .row.next{background:#1d1012}
+  .cal .rnd{width:30px;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:15px;color:var(--muted);text-align:center}
+  .cal .dt{text-align:right;font-size:12.5px;color:var(--muted);min-width:64px}
+  .cal .dt b{display:block;color:var(--text);font-size:14px}
+  .cal .win{font-size:12.5px;color:var(--muted)}
+  .cal .win i{font-style:normal;color:#ffd54a}
+  .cal .done .who b{color:#d6d6e0}
+  .serie{position:relative;display:inline-block;cursor:pointer}
+  .serie .logo i{font-style:normal;font-size:16px;color:var(--muted);vertical-align:6px;margin-left:2px}
+  .serie select{position:absolute;inset:0;opacity:0;width:100%;font-size:16px;cursor:pointer}
+  body.wec{--red:#00b37a;--red2:#2fd39a}
+  body.wec .hero{background:linear-gradient(135deg,#032b20 0%,#15151c 60%);border-color:#0b4a37}
+  body.wec .hero:after{background:repeating-linear-gradient(45deg,rgba(0,179,122,.18) 0 10px,transparent 10px 20px)}
+  body.wec .hero .lbl,body.wec .rhead .lbl{color:#7fe3bd}
+  body.wec .tag,body.wec .badge.next{background:#0a2a20;color:#7fe3bd}
+  body.wec .card.top,body.wec .rhead,body.wec .cal .row.next{background:linear-gradient(180deg,#0b2019,#15151c)}
+  body.wec .seg button.on{background:#0a2a20}
+  body.wec .sbanner{background:#0a2a20;border-color:#14533f}
+  body.f2{--red:#0a7cff;--red2:#3d9bff}
+  body.f2 .hero{background:linear-gradient(135deg,#04213f 0%,#15151c 60%);border-color:#0d3460}
+  body.f2 .hero:after{background:repeating-linear-gradient(45deg,rgba(10,124,255,.18) 0 10px,transparent 10px 20px)}
+  body.f2 .hero .lbl,body.f2 .rhead .lbl{color:#8cc4ff}
+  body.f2 .tag,body.f2 .badge.next{background:#0b2440;color:#8cc4ff}
+  body.f2 .card.top,body.f2 .rhead,body.f2 .cal .row.next{background:linear-gradient(180deg,#0c1a2c,#15151c)}
+  body.f2 .seg button.on{background:#0b2440}
+  body.f2 .sbanner{background:#0b2440;border-color:#16406e}
+  footer{color:#5d5d6c;font-size:11.5px;text-align:center;margin-top:24px;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <label class="serie"><span class="logo"><b id="serLogo">F1</b><span>/</span>NEWS <i>▾</i></span><select id="serSel" aria-label="Campionato"><option value="f1">Formula 1</option><option value="f2">Formula 2</option><option value="wec">WEC Hypercar</option></select></label>
+    <div class="stamp" id="stamp"></div>
+  </header>
+
+  <section class="hero" id="hero" hidden>
+    <div class="lbl">Prossimo Gran Premio</div>
+    <div class="gp" id="gpName"></div>
+    <div class="when" id="gpWhen"></div>
+    <div class="cd" id="cd"></div>
+  </section>
+
+  <div class="tabs" id="tabs">
+    <button data-v="news" class="on">Notizie</button>
+    <button data-v="sched">Orari</button>
+    <button data-v="results">Risultati</button>
+    <button data-v="drivers">Classifica</button>
+    <button data-v="cal">Calendario</button>
+  </div>
+
+  <section id="v-news">
+    <div class="pages" id="pages"></div>
+    <nav class="chips" id="chips"></nav>
+    <main id="list">
+      <div class="skel"></div><div class="skel"></div><div class="skel"></div>
+    </main>
+  </section>
+  <section id="v-sched" hidden><div id="sched"></div></section>
+  <section id="v-results" hidden><div id="results"></div></section>
+  <section id="v-drivers" hidden>
+    <div class="seg" id="segStand"><button data-s="drivers" class="on">Piloti</button><button data-s="teams">Scuderie</button></div>
+    <div class="table" id="drivers"></div>
+    <div class="table" id="teams" hidden></div>
+  </section>
+  <section id="v-cal" hidden><div id="cal"></div></section>
+  <div class="modal" id="spModal" hidden>
+    <div class="mbox">
+      <div class="ico">🙈</div>
+      <h2 id="spQ"></h2>
+      <p id="spP"></p>
+      <button class="yes" id="spYes">Sì, l'ho già vista</button>
+      <button class="no" id="spNo">No, niente spoiler</button>
+    </div>
+  </div>
+  <footer>Notizie raccolte e riassunte da Claude dalle principali testate di motorsport.<br>Tocca una notizia per aprire l'articolo originale.</footer>
+</div>
+
+<script>
+const $ = s => document.querySelector(s);
+let news = [], info = null, filter = "Tutte", cdTimer = null;
+
+function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function rel(iso){
+  const d=new Date(iso), m=(Date.now()-d)/60000;
+  if(isNaN(d)) return "";
+  if(m<60) return Math.max(1,Math.round(m))+" min fa";
+  if(m<1440) return Math.round(m/60)+" h fa";
+  return d.toLocaleDateString("it-IT",{day:"numeric",month:"short"});
+}
+function dayLabel(iso){
+  const d=new Date(iso), t=new Date(); t.setHours(0,0,0,0);
+  const x=new Date(d); x.setHours(0,0,0,0);
+  const diff=(t-x)/86400000;
+  if(diff===0) return "Oggi";
+  if(diff===1) return "Ieri";
+  return d.toLocaleDateString("it-IT",{weekday:"long",day:"numeric",month:"long"});
+}
+
+function renderChips(){
+  const tags=["Tutte",...new Set(news.map(n=>n.tag).filter(Boolean))];
+  $("#chips").innerHTML=tags.map(t=>`<button class="chip${t===filter?" on":""}" data-t="${esc(t)}">${esc(t)}</button>`).join("");
+  $("#chips").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{filter=b.dataset.t;try{localStorage.setItem("f1f",filter)}catch(e){};render()});
+}
+
+/* ---------- Le mie pagine ---------- */
+const DEFAULT_PAGES=[
+  {name:"MemasGP",url:"https://www.facebook.com/search/top?q=MemasGP",color:"#e10600"},
+  {name:"Hammer Time",url:"https://www.facebook.com/search/top?q=Hammer%20Time%20F1",color:"#7a5cff"}
+];
+function renderPages(list){
+  if(series!=="f1"){$("#pages").innerHTML="";return}
+  const pages=(list&&list.length?list:DEFAULT_PAGES).filter(p=>/^https?:\/\//.test(p.url||""));
+  $("#pages").innerHTML=`<h4>Le mie pagine</h4><div class="row2">`+pages.map(p=>{
+    const ini=p.name.split(/\s+/).map(w=>w[0]).join("").slice(0,2).toUpperCase();
+    return `<a class="pg" href="${esc(p.url)}" target="_blank" rel="noopener"><div class="av" style="background:${esc(p.color||"#333")}">${esc(ini)}</div><div><b>${esc(p.name)}</b><small>Facebook ›</small></div></a>`;
+  }).join("")+`</div>`;
+}
+
+/* ---------- Anti-spoiler ---------- */
+let spoilerHidden=false, askedFor=null;
+function lsGet(k){try{return localStorage.getItem(k)}catch(e){return null}}
+function lsSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function spoilerSession(){
+  // sessione chiave (qualifiche/sprint/gara) iniziata da meno di 36 ore e non ancora superata da quella dopo
+  const ses=(weekend?.sessions||[]).filter(s=>s.key).sort((a,b)=>new Date(a.start)-new Date(b.start));
+  const now=Date.now(); let cur=null;
+  for(const s of ses){ const st=new Date(s.start).getTime(); if(st<=now && now<st+36*3600e3) cur=s; }
+  return cur;
+}
+const sKey=s=>"f1seen:"+series+":"+s.start;
+const sLabel=s=>{const n=s.name.toLowerCase();return n.startsWith("gara")?"la gara":n.includes("feature")?"la Feature Race":n.includes("sprint")&&!n.includes("qualif")?"la Sprint":n.includes("qualif")&&n.includes("sprint")?"le qualifiche Sprint":"le qualifiche"};
+function checkSpoiler(){
+  const s=spoilerSession();
+  if(!s||lsGet(sKey(s))==="1"){spoilerHidden=false;$("#spModal").hidden=true;return}
+  if(askedFor===sKey(s)) return;               // già chiesto in questa apertura
+  askedFor=sKey(s);
+  const lbl=sLabel(s);
+  $("#spQ").textContent=`Hai già visto ${lbl}?`;
+  const tv=s.tv8?` Su TV8 va in ${s.tv8.live?"diretta":"differita"} alle ${hm(s.tv8.time)}.`:"";
+  const sing=lbl.startsWith("la ");
+  $("#spP").textContent=`${weekend.gp}: ${lbl} ${sing?"è iniziata":"sono iniziate"} alle ${hm(s.start)}.${tv} Se non ${sing?"l'hai vista":"le hai viste"}, nascondo le notizie che potrebbero rovinarti la sorpresa.`;
+  $("#spModal").hidden=false;
+  $("#spYes").onclick=()=>{lsSet(sKey(s),"1");spoilerHidden=false;$("#spModal").hidden=true;render();renderStandings();renderResults()};
+  $("#spNo").onclick=()=>{spoilerHidden=true;$("#spModal").hidden=true;render();renderStandings();renderResults()};
+}
+function isSpoiler(n){
+  if(!spoilerHidden) return false;
+  const s=spoilerSession(); if(!s) return false;
+  return new Date(n.published).getTime()>=new Date(s.start).getTime()-30*60e3;
+}
+function spoilerBanner(){
+  const s=spoilerSession(); if(!spoilerHidden||!s) return "";
+  return `<div class="sbanner"><span>🙈 Notizie ${esc(sLabel(s).replace(/^la /,"sulla ").replace(/^le /,"sulle "))} nascoste per evitare spoiler</span><button onclick="revealSpoiler()">Ora l'ho visto</button></div>`;
+}
+function revealSpoiler(){const s=spoilerSession();if(s)lsSet(sKey(s),"1");spoilerHidden=false;render();renderStandings();renderResults()}
+
+function render(){
+  renderChips();
+  const items=news.filter(n=>filter==="Tutte"||n.tag===filter);
+  if(!items.length){$("#list").innerHTML=`<div class="empty">Nessuna notizia ancora.<br>Il prossimo aggiornamento arriverà a breve.</div>`;return}
+  let html=spoilerBanner(), last="";
+  items.forEach((n,i)=>{
+    const dl=dayLabel(n.published);
+    if(dl!==last){html+=`<div class="day">${esc(dl)}</div>`;last=dl}
+    const href=/^https?:\/\//.test(n.url||"")?n.url:"#";
+    html+=`<a class="card${n.top?" top":""}${isSpoiler(n)?" spoil":""}" href="${esc(href)}" target="_blank" rel="noopener">
+      <div class="meta">${n.tag?`<span class="tag">${esc(n.tag)}</span>`:""}<span>${esc(rel(n.published))}</span></div>
+      <h3>${esc(n.title)}</h3>
+      ${n.summary?`<p>${esc(n.summary)}</p>`:""}
+      ${n.source?`<div class="src">${esc(n.source)} ›</div>`:""}
+    </a>`;
+  });
+  $("#list").innerHTML=html;
+}
+
+function renderInfo(){
+  $("#stamp").textContent=info?.updated?"Aggiornato "+rel(info.updated):"";
+  $("#hero .lbl").textContent=S().next;
+  clearInterval(cdTimer);
+  if(!info?.nextGp?.date){$("#hero").hidden=true;return}
+  $("#hero").hidden=false;
+  const n=info.nextGp;
+  $("#gpName").textContent=n.name;
+  const d=new Date(n.date);
+  const when=n.dateOnly?d.toLocaleDateString("it-IT",{weekday:"long",day:"numeric",month:"long",timeZone:"Europe/Rome"})
+    :d.toLocaleString("it-IT",{weekday:"long",day:"numeric",month:"long",hour:"2-digit",minute:"2-digit",timeZone:"Europe/Rome"});
+  $("#gpWhen").textContent=(n.circuit?n.circuit+" · ":"")+(n.label||"Gara")+" "+when+(n.note?" · "+n.note:"");
+  const tick=()=>{
+    let s=Math.max(0,(d-Date.now())/1000);
+    const g=Math.floor(s/86400),h=Math.floor(s%86400/3600),m=Math.floor(s%3600/60);
+    $("#cd").innerHTML=s<=0?`<div><b>🏁</b><small>In corso</small></div>`:
+      n.dateOnly?`<div><b>${Math.ceil(s/86400)}</b><small>giorni</small></div>`:
+      `<div><b>${g}</b><small>giorni</small></div><div><b>${h}</b><small>ore</small></div><div><b>${m}</b><small>min</small></div>`;
+  };
+  tick(); cdTimer=setInterval(tick,30000);
+}
+
+const TEAM_COLORS={mercedes:"#27f4d2",ferrari:"#e8002d","red bull":"#3671c6",mclaren:"#ff8000","racing bulls":"#6692ff",alpine:"#ff87bc",haas:"#b6babd",audi:"#bb0a30",williams:"#64c4ff","aston martin":"#229971",cadillac:"#c9a227",campos:"#ffb300",invicta:"#8e5cf0",rodin:"#9aa0a6","mp motorsport":"#ff6d00",dams:"#1e88e5","art grand prix":"#e8e8e8",trident:"#5c6bc0",hitech:"#26a69a","van amersfoort":"#f06292",prema:"#e53935",aix:"#a1887f",toyota:"#eb0a1e",bmw:"#1c69d4",porsche:"#c9c9c9",peugeot:"#9be15d",genesis:"#a78bfa"};
+function teamColor(t){t=String(t||"").toLowerCase();for(const k in TEAM_COLORS)if(t.includes(k))return TEAM_COLORS[k];return "#666"}
+let standings=null;
+function renderStandings(){
+  const s=standings;
+  if(!s){["#drivers","#teams"].forEach(id=>$(id).innerHTML=`<div class="empty">Classifica non ancora disponibile.</div>`);return}
+  const sub=`<div class="sub">Classifica ${esc(s.after||"")}${s.updated?" · aggiornata "+esc(rel(s.updated)):""}</div>`;
+  const lead=(s.drivers||[])[0]?.points||0;
+  $("#drivers").innerHTML=sub+(s.drivers||[]).map(d=>`<div class="row p${d.pos}">
+    <div class="pos">${esc(d.pos)}</div><div class="bar" style="background:${teamColor(d.team)}"></div>
+    <div class="who"><b>${esc(d.name)}${d.champion?'<span class="champ">CAMPIONE</span>':""}</b><small>${esc(d.team)}</small></div>
+    <div class="pts">${esc(d.points)}${d.pos>1?`<small>-${lead-d.points}</small>`:"<small>pt</small>"}</div></div>`).join("");
+  const tl=(s.constructors||[])[0]?.points||0;
+  $("#teams").innerHTML=sub+(s.constructors||[]).map(c=>`<div class="row p${c.pos}">
+    <div class="pos">${esc(c.pos)}</div><div class="bar" style="background:${teamColor(c.team)}"></div>
+    <div class="who"><b>${esc(c.team)}${c.champion?'<span class="champ">CAMPIONE</span>':""}</b>${c.drivers?`<small>${esc(c.drivers)}</small>`:""}</div>
+    <div class="pts">${esc(c.points)}${c.pos>1?`<small>-${tl-c.points}</small>`:"<small>pt</small>"}</div></div>`).join("");
+  // classifiche nascoste se aggiornate dopo l'inizio della sessione non ancora vista
+  const sp=spoilerSession(), hide=spoilerHidden&&sp&&s.updated&&new Date(s.updated)>=new Date(sp.start);
+  ["#drivers","#teams"].forEach(id=>{$(id).classList.toggle("spoil",!!hide);
+    if(hide)$(id).insertAdjacentHTML("afterbegin",spoilerBanner())});
+}
+let weekend=null;
+const hm=iso=>new Date(iso).toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Rome"});
+const dayName=iso=>new Date(iso).toLocaleDateString("it-IT",{weekday:"long",day:"numeric",month:"long",timeZone:"Europe/Rome"});
+function renderSched(){
+  const w=weekend, el=$("#sched");
+  if(!w||!w.sessions?.length){el.innerHTML=`<div class="empty">Orari del prossimo weekend non ancora disponibili.</div>`;return}
+  const now=Date.now();
+  const ses=[...w.sessions].sort((a,b)=>new Date(a.start)-new Date(b.start));
+  const nextIdx=ses.findIndex(s=>new Date(s.end||s.start).getTime()>now);
+  const tv=ses.filter(s=>s.tv8);
+  let h="";
+  if(tv.length){
+    h+=`<div class="tv8"><h4>📺 In chiaro su TV8</h4>`+tv.map(s=>`<div class="l"><span>${esc(s.name)} · ${esc(dayName(s.tv8.time).split(" ")[0])}</span><b>${esc(hm(s.tv8.time))}</b></div>`).join("")+
+      `<div class="note">${tv.every(s=>s.tv8.live)?"In diretta":tv.some(s=>s.tv8.live)?"Alcune sessioni in diretta, altre in differita":"In differita"} · anche in streaming gratis su tv8.it</div></div>`;
+  } else if(w.tv8note){
+    h+=`<div class="tv8"><h4>📺 TV8</h4><div class="note" style="margin:0">${esc(w.tv8note)}</div></div>`;
+  }
+  h+=`<div class="table"><div class="sub">${esc(w.gp||"")}${w.circuit?" · "+esc(w.circuit):""} · orari italiani</div>`;
+  let last="";
+  ses.forEach((s,i)=>{
+    const d=dayName(s.start); if(d!==last){h+=`<div class="dayh">${esc(d)}</div>`;last=d}
+    const st=new Date(s.start).getTime(), en=new Date(s.end||s.start).getTime()+(s.end?0:2*3600e3);
+    const live=now>=st&&now<en, done=now>=en;
+    const badge=live?`<span class="badge live">In corso</span>`:i===nextIdx?`<span class="badge next">Prossima</span>`:"";
+    const tv8=s.tv8?`<br><span class="p8">TV8 ${s.tv8.live?"diretta":"differita"} ore ${esc(hm(s.tv8.time))}</span>`:"";
+    h+=`<div class="sess${s.key?" key":""}${done?" done":""}"><div class="t">${esc(hm(s.start))}${s.end?`<small>– ${esc(hm(s.end))}</small>`:""}</div>
+      <div class="n"><b>${esc(s.name)}${badge}</b><div class="ch">${esc(s.live||"")}${tv8}</div></div></div>`;
+  });
+  el.innerHTML=h+`</div>`;
+}
+/* ---------- Risultati ---------- */
+let results=null, resMode=0, calendar=null;
+function resTabs(r){
+  if(Array.isArray(r.tabs)&&r.tabs.length) return r.tabs;
+  const t=[];
+  if((r.race||[]).length) t.push({label:"Gara",kind:"race",rows:r.race});
+  if((r.sprint||[]).length) t.push({label:"Sprint",kind:"race",rows:r.sprint});
+  if((r.quali||[]).length) t.push({label:"Qualifiche",kind:"quali",rows:r.quali});
+  return t;
+}
+function renderResults(){
+  const r=results, el=$("#results");
+  if(!r){el.innerHTML=`<div class="empty">Risultati non ancora disponibili.</div>`;return}
+  const sp=spoilerSession();
+  const hide=spoilerHidden&&sp&&r.updated&&new Date(r.updated)>=new Date(sp.start)-30*60e3;
+  const tabs=resTabs(r); if(resMode>=tabs.length) resMode=0;
+  const first=tabs.find(t=>t.kind!=="quali");
+  const pod=(r.podium||first?.rows||[]).slice(0,3);
+  let h=`<div class="spoilwrap${hide?" spoil":""}">${hide?spoilerBanner():""}
+    <div class="rhead"><div class="lbl">${S().last}${r.round?" · Round "+esc(r.round):""}</div><h3>${esc(r.gp)}</h3>
+    ${pod.length===3?`<div class="podium">${[1,0,2].map(i=>`<div><b>${["🥇","🥈","🥉"][i]}</b><span>${esc(String(pod[i].name).split(" ").slice(-1)[0])}</span></div>`).join("")}</div>${first&&!r.podium?`<div style="font-size:11.5px;color:var(--muted);margin-top:6px">Podio: ${esc(first.label)}</div>`:""}`:""}
+    ${r.summary?`<p style="margin-top:10px">${esc(r.summary)}</p>`:""}</div>
+    <div class="seg" id="segRes" style="overflow-x:auto">${tabs.map((t,i)=>`<button data-i="${i}" class="${i===resMode?"on":""}" style="white-space:nowrap">${esc(t.label)}</button>`).join("")}</div>
+    <div class="table">`;
+  const t=tabs[resMode]||{rows:[]}, isQ=t.kind==="quali";
+  h+=(t.rows||[]).map(d=>`<div class="row p${esc(d.pos)}">
+    <div class="pos">${esc(d.pos)}</div><div class="bar" style="background:${teamColor(d.team)}"></div>
+    <div class="who"><b>${esc(d.name)}${d.note?`<span class="note">${esc(d.note)}</span>`:""}</b><small>${esc(d.team)}</small></div>
+    <div class="pts" style="font-size:15px;font-family:Inter;font-weight:500">${esc(isQ?d.time:d.gap||"")}${!isQ&&d.points?`<small>+${esc(d.points)} pt</small>`:""}</div></div>`).join("");
+  el.innerHTML=h+`</div></div>`;
+  el.querySelectorAll("#segRes button").forEach(b=>b.onclick=()=>{resMode=+b.dataset.i;renderResults()});
+}
+
+/* ---------- Calendario ---------- */
+function renderCal(){
+  const c=calendar, el=$("#cal");
+  if(!c?.rounds?.length){el.innerHTML=`<div class="empty">Calendario non disponibile.</div>`;return}
+  const today=new Date().toISOString().slice(0,10);
+  const canc=x=>/^annullat/i.test(x.status||"");
+  const nextR=c.rounds.find(x=>!x.winner&&!canc(x)&&x.date>=today);
+  const done=c.rounds.filter(x=>x.winner).length;
+  const wins={}; c.rounds.forEach(x=>{(x.wins||(x.winner?[x.winner]:[])).forEach(w=>wins[w]=(wins[w]||0)+1)});
+  const top=Object.entries(wins).sort((a,b)=>b[1]-a[1]);
+  let h=`<div class="rhead"><div class="lbl">Stagione ${esc(c.season)}</div><h3>${done} ${S().unit} ${series==="wec"?"corse":"corsi"} su ${c.rounds.filter(x=>!canc(x)).length}</h3>
+    <p>${S().wins}: ${top.map(([n,w])=>`${esc(n.split(" ").slice(-1)[0])} <b>${w}</b>`).join(" · ")}</p></div><div class="table cal">`;
+  h+=c.rounds.map(x=>{
+    const d=new Date(x.date+"T12:00:00Z");
+    const ds=d.toLocaleDateString("it-IT",{day:"numeric",month:"short"});
+    const isNext=nextR&&x.round===nextR.round;
+    return `<div class="row${x.winner?" done":""}${isNext?" next":""}">
+      <div class="rnd">${esc(x.round)}</div><div class="bar" style="background:${x.winner?teamColor(x.team):"#333"}"></div>
+      <div class="who"><b>${esc(x.name)}${isNext?'<span class="badge next">Prossimo</span>':""}</b>
+      <div class="win">${x.winner?`<i>🏆</i> ${esc(x.winner)}${x.team?" · "+esc(x.team):""}`:esc(x.circuit||"")}${x.sprintWinner?`<br>Sprint: ${esc(x.sprintWinner)}`:""}${x.status?`<br><span style="color:#ffb74d">${esc(x.status)}</span>`:""}</div></div>
+      <div class="dt"><b>${esc(ds)}</b>${x.sprint?"Sprint":""}</div></div>`;
+  }).join("");
+  el.innerHTML=h+`</div>`;
+}
+
+function showView(v){
+  if(v==="teams") v="drivers";
+  document.querySelectorAll("#tabs button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));
+  ["news","sched","results","drivers","cal"].forEach(k=>$("#v-"+k).hidden=k!==v);
+  try{localStorage.setItem("f1v",v)}catch(e){}
+}
+document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{showView(b.dataset.v);scrollTo({top:0,behavior:"smooth"})});
+
+let series="f1";
+try{const v=localStorage.getItem("f1series");series=(v==="f2"||v==="wec")?v:"f1"}catch(e){}
+const SER={f1:{logo:"F1",title:"F1 News",next:"Prossimo Gran Premio",last:"Ultimo GP",unit:"GP",teams:"Scuderie",wins:"Vittorie"},f2:{logo:"F2",title:"F2 News",next:"Prossimo round",last:"Ultimo round",unit:"round",teams:"Scuderie",wins:"Vittorie Feature"},wec:{logo:"WEC",title:"WEC News",next:"Prossima gara",last:"Ultima gara",unit:"gare",teams:"Costruttori",wins:"Vittorie"}};
+const S=()=>SER[series]||SER.f1;
+function applySeriesUI(){
+  document.body.classList.toggle("f2",series==="f2");
+  document.body.classList.toggle("wec",series==="wec");
+  $("#serLogo").textContent=S().logo;
+  $("#serSel").value=series;
+  document.title=S().title;
+  const tb=document.querySelector('#segStand [data-s="teams"]'); if(tb) tb.textContent=S().teams;
+}
+let loadSeq=0, lastJson={};
+async function load(fresh){
+  const my=++loadSeq, ser=series;
+  try{
+    const r=await fetch("data/"+ser+".json?t="+Date.now(),{cache:"no-store"});
+    if(!r.ok) throw new Error(r.status);
+    const txt=await r.text();
+    if(my!==loadSeq) return;
+    if(!fresh && lastJson[ser]===txt) return;
+    lastJson[ser]=txt;
+    const d=JSON.parse(txt);
+    news=(d.news||[]).slice().sort((a,b)=>String(b.published).localeCompare(String(a.published)));
+    info=d.info||null; results=d.results||null; calendar=d.calendar||null; weekend=d.weekend||null; standings=d.standings||null;
+    renderInfo(); renderResults(); renderCal(); renderStandings(); renderSched(); renderPages(series==="f1"?d.pages?.list:null);
+    checkSpoiler(); render(); renderStandings(); renderResults();
+  }catch(e){
+    if(my!==loadSeq) return;
+    if(!news.length) $("#list").innerHTML=`<div class="empty">Non riesco a caricare le notizie.<br>Controlla la connessione.<br><button class="btn" onclick="load(true)">Riprova</button></div>`;
+  }
+}
+function switchSeries(v){
+  series=["f2","wec"].includes(v)?v:"f1"; try{localStorage.setItem("f1series",series)}catch(e){}
+  news=[];info=null;results=null;calendar=null;weekend=null;standings=null;filter="Tutte";resMode=0;spoilerHidden=false;askedFor=null;
+  applySeriesUI();
+  $("#list").innerHTML='<div class="skel"></div><div class="skel"></div><div class="skel"></div>';
+  renderInfo();renderStandings();renderSched();renderPages();renderResults();renderCal();renderChips();
+  load(true); scrollTo({top:0});
+}
+$("#serSel").onchange=e=>switchSeries(e.target.value);
+
+(function(){
+  try{showView(localStorage.getItem("f1v")||"news")}catch(e){}
+  applySeriesUI();
+  renderStandings(); renderSched(); renderPages(); renderResults(); renderCal();
+  document.querySelectorAll("#segStand button").forEach(b=>b.onclick=()=>{
+    document.querySelectorAll("#segStand button").forEach(x=>x.classList.toggle("on",x===b));
+    $("#drivers").hidden=b.dataset.s!=="drivers"; $("#teams").hidden=b.dataset.s!=="teams";
+  });
+  load(true);
+  setInterval(()=>{if(!document.hidden) load(false)},10*60e3);
+  setInterval(()=>{if(weekend){renderSched();checkSpoiler()}},60000);
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden){askedFor=null;load(false);if(weekend){checkSpoiler();render();renderStandings();renderResults()}}});
+  if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
+})();
+</script>
+</body>
+</html>
