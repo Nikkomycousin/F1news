@@ -32,7 +32,7 @@
   .wrap{max-width:680px;margin:0 auto;padding:0 16px 24px}
 
   /* testata: cordolo bianco-colore in cima */
-  header{position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:12px;
+  header{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;
     margin:0 -16px;padding:calc(env(safe-area-inset-top) + 10px) 16px 10px;background:rgba(29,31,35,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px)}
   header:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:repeating-linear-gradient(90deg,var(--red) 0 18px,#f1eee8 18px 36px);opacity:.9}
   .serie{position:relative;display:inline-flex;align-items:center;cursor:pointer}
@@ -40,7 +40,16 @@
   .logo b{color:var(--red);font-weight:900}
   .logo > span{display:none}
   .serie .logo i{font-style:normal;font-weight:600;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;align-self:center;margin-left:2px}
-  .serie select{position:absolute;inset:0;opacity:0;width:100%;font-size:16px;cursor:pointer}
+  .serie select{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
+  .serie{cursor:default}
+  .serbar{flex-basis:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:var(--card);border-radius:16px;padding:4px;margin-top:2px}
+  .serbar button{--c:#e8002d;border:0;background:none;color:var(--muted);border-radius:12px;padding:7px 4px 6px;font:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;line-height:1.05;transition:background .2s,color .2s}
+  .serbar button b{font-weight:900;font-style:italic;font-size:19px;letter-spacing:-.3px;color:var(--text);opacity:.55}
+  .serbar button small{font-size:11px;font-weight:600;margin-top:2px}
+  .serbar button[data-ser=f2]{--c:#2f74ff}.serbar button[data-ser=wec]{--c:#13b07b}
+  .serbar button.on{background:var(--c);color:rgba(255,255,255,.85);box-shadow:0 4px 14px -6px var(--c)}
+  .serbar button.on b{opacity:1;color:#fff}
+  .serbar button:not(.on) b:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--c);margin-right:5px;vertical-align:middle;position:relative;top:-2px}
   .hright{display:flex;align-items:center;gap:10px}
   .stamp{font-size:12.5px;color:var(--muted);text-align:right;line-height:1.2;white-space:nowrap}
   .refresh{width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--text);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
@@ -262,10 +271,15 @@
 <body>
 <div class="wrap">
   <header>
-    <label class="serie"><span class="logo"><b id="serLogo">F1</b>News<span>/</span> <i aria-hidden="true">▾</i></span><select id="serSel" aria-label="Campionato"><option value="f1">Formula 1</option><option value="f2">Formula 2</option><option value="wec">WEC Hypercar</option></select></label>
+    <label class="serie"><span class="logo"><b id="serLogo">F1</b>News<span>/</span></span><select id="serSel" aria-label="Campionato"><option value="f1">Formula 1</option><option value="f2">Formula 2</option><option value="wec">WEC Hypercar</option></select></label>
     <div class="hright">
       <div class="stamp" id="stamp"></div>
       <button class="refresh" id="refreshBtn" aria-label="Aggiorna ora"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg></button>
+    </div>
+    <div class="serbar" id="serBar" role="tablist" aria-label="Campionato">
+      <button data-ser="f1" role="tab"><b>F1</b><small>Formula 1</small></button>
+      <button data-ser="f2" role="tab"><b>F2</b><small>Formula 2</small></button>
+      <button data-ser="wec" role="tab"><b>WEC</b><small>Hypercar</small></button>
     </div>
   </header>
 
@@ -717,6 +731,7 @@ function applySeriesUI(){
   document.body.classList.toggle("wec",series==="wec");
   $("#serLogo").textContent=S().logo;
   $("#serSel").value=series;
+  document.querySelectorAll("#serBar button").forEach(b=>{const on=b.dataset.ser===series;b.classList.toggle("on",on);b.setAttribute("aria-selected",on)});
   document.title=S().title;
   const tb=document.querySelector('#segStand [data-s="teams"]'); if(tb) tb.textContent=S().teams;
 }
@@ -759,6 +774,7 @@ function switchSeries(v){
   load(true); scrollTo({top:0});
 }
 $("#serSel").onchange=e=>switchSeries(e.target.value);
+document.querySelectorAll("#serBar button").forEach(b=>b.onclick=()=>{if(b.dataset.ser!==series){switchSeries(b.dataset.ser);scrollTo({top:0})}});
 let toastT=null;
 function toast(msg){const t=$("#toast");t.textContent=msg;t.classList.add("show");clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove("show"),2800)}
 $("#refreshBtn").onclick=async()=>{
