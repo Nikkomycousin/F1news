@@ -1,7 +1,7 @@
 # F1 News
 
 App web personale (PWA) con notizie, orari, risultati, classifiche e calendario di **Formula 1**, **Formula 2** e **WEC Hypercar**.
-Si apre senza account: https://nikkomycousin.github.io/f1news/
+Si apre senza account: https://nikkomycousin.github.io/F1news/
 
 ## Struttura
 
