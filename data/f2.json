@@ -1,163 +1,1076 @@
 {
-"news": [
-{"id":"2026-10-30-cargo-europa","title":"Il materiale F2 torna in Europa: stagione già finita?","summary":"Secondo Frits van Amersfoort il cargo delle squadre non è partito per il Qatar e non ci sarebbero gare sostitutive. Lusail sarebbe saltata, Abu Dhabi ancora da decidere: se così fosse, Câmara sarebbe campione.","tag":"Calendario","source":"GrandPrix.com","url":"https://www.grandprix.com/news/formula-2-season-may-already-be-over-as-freight-returns-to-europe.html","published":"2026-10-30T12:00:00Z","top":true},
-{"id":"2026-10-28-ln4-fusion","title":"Il team di Lando Norris entra in F2 al posto di AIX Racing","summary":"La F2 ha approvato LN4 Fusion, la squadra del pilota McLaren, per il ciclo 2027-2029 al posto di AIX Racing. Il campionato resta a 11 team e 22 vetture, i piloti non sono ancora stati annunciati.","tag":"Team","source":"Grande Prêmio","url":"https://grandepremio.com/en/f2/lando-norris-wins-f2-grid-place-as-ln4-fusion-replaces-aix-racing-for-2027/","published":"2026-10-28T12:00:00Z"},
-{"id":"2026-10-22-michel-qatar-abu-dhabi","title":"Michel: \"Qatar e Abu Dhabi non verranno cancellati\"","summary":"Il CEO della F2 Bruno Michel assicura che il campionato si chiuderà regolarmente in Medio Oriente e che non ci sarà un campione deciso a tavolino.","tag":"Calendario","source":"Motorsport.com","url":"https://www.motorsport.com/fia-f2/news/f2-rebuffs-suggestion-it-might-already-have-a-2026-champion-because-of-the-iran-war/10865537/","published":"2026-10-22T10:00:00Z"},
-{"id":"2026-10-20-camara-haas","title":"Câmara, leader della F2, correrà in F1 con la Haas","summary":"Il brasiliano dell'Invicta è stato confermato come pilota Haas per il futuro, mentre in Formula 2 difende 7 punti di vantaggio su Tsolov.","tag":"Mercato","source":"GrandePremio","url":"https://grandepremio.com/en/f2/f2-boss-rejects-early-end-to-2026-season-as-haas-bound-camara-risks-title-without-final-races/","published":"2026-10-20T10:00:00Z"},
-{"id":"2026-10-11-dunne-titolo","title":"Dunne ci crede: \"Darò tutto per il titolo\"","summary":"In due weekend il pilota Rodin ha ridotto il distacco da Câmara da 59 a 18 punti e punta al colpo finale nelle ultime gare.","tag":"Mondiale","source":"Motorsport Week","url":"https://www.motorsportweek.com/2026/10/11/alex-dunne-f1-title/","published":"2026-10-11T10:00:00Z"},
-{"id":"2026-10-04-calendario-confermato","title":"Domenicali conferma Qatar e Abu Dhabi per il finale 2026","summary":"La F1 ha deciso di mantenere le ultime due tappe in Medio Oriente, con Imola come piano B in caso di forza maggiore. La F2 dipende da questa decisione.","tag":"Calendario","source":"GrandPrix.com","url":"https://www.grandprix.com/news/qatar-and-abu-dhabi-confirmed-as-2026-finale.html","published":"2026-10-04T12:00:00Z"},
-{"id":"2026-09-26-camara-feature2","title":"Câmara vince la Feature 2 di Baku dopo la penalità a Dunne","summary":"Dunne arriva primo ma 5 secondi di penalità lo fanno scendere al terzo posto. Tsolov rimonta dall'undicesima casella fino al secondo posto.","tag":"Gare","source":"GrandePremio","url":"https://grandepremio.com/en/f2/f2s-baku-title-fight-delivers-a-thriller-but-calendar-uncertainty-leaves-its-ending-unresolved/","published":"2026-09-26T13:00:00Z","top":true},
-{"id":"2026-09-25-dunne-feature1","title":"Dunne domina la Feature 1, maxi incidente elimina Tsolov","summary":"Il pilota Rodin vince con pole e giro veloce. Un incidente con sette auto ferma la gara e Câmara prende la testa del mondiale superando León all'ultimo metro.","tag":"Gare","source":"GrandePremio","url":"https://grandepremio.com/en/f2/camara-takes-f2-championship-lead-by-one-point-after-chaotic-baku-race/","published":"2026-09-25T13:00:00Z"},
-{"id":"2026-09-25-beganovic-sprint","title":"Beganovic vince la Sprint di Baku, Câmara a secco","summary":"Il pilota DAMS precede van Hoepen e Dunne. Câmara, penalizzato, chiude fuori dalla zona punti e Tsolov allunga a +11.","tag":"Gare","source":"RacingNews365","url":"https://racingnews365.com/2026-f2-championship-standings-after-baku-sprint-race","published":"2026-09-25T08:00:00Z"}],
-"info": {"updated":"2026-11-03T16:40:00Z","nextGp":{"name":"Round 13 · Qatar","circuit":"Lusail","date":"2026-11-28T23:00:00Z","dateOnly":true,"label":"Feature Race","note":"round in dubbio"}},
-"weekend": {"gp":"Round 13 · Lusail (Qatar)","circuit":"Lusail","updated":"2026-11-02T16:30:00Z","sessions":[]},
-"results": {"gp":"Baku (Azerbaigian)","round":12,"updated":"2026-09-26T14:00:00Z","summary":"Weekend extra-large con tre gare. Beganovic vince la Sprint, dove Câmara resta fuori dai punti. Nella prima Feature Dunne domina mentre un maxi incidente al giro 11 elimina sette piloti, tra cui Tsolov; Câmara passa León sul traguardo e si prende la testa del campionato. Nella seconda Feature Dunne taglia il traguardo per primo ma una penalità di 5 secondi consegna la vittoria a Câmara, ora a +7 su Tsolov.","podium":[
-{"name":"Rafael Câmara"},
-{"name":"Nikola Tsolov"},
-{"name":"Alex Dunne"}],"tabs":[
-{"label":"Feature 2","kind":"race","rows":[
-{"pos":"1","name":"Rafael Câmara","team":"Invicta Racing","gap":"59:57.958","points":25},
-{"pos":"2","name":"Nikola Tsolov","team":"Campos Racing","gap":"+0.747","points":19,"note":"giro veloce"},
-{"pos":"3","name":"Alex Dunne","team":"Rodin Motorsport","gap":"+4.310","points":15,"note":"5s di penalità"},
-{"pos":"4","name":"Martinius Stenshorne","team":"Rodin Motorsport","gap":"+5.856","points":14,"note":"pole"},
-{"pos":"5","name":"Laurens van Hoepen","team":"Trident","gap":"+13.521","points":10},
-{"pos":"6","name":"Mari Boya","team":"Prema Racing","gap":"+13.890","points":8},
-{"pos":"7","name":"Dino Beganovic","team":"DAMS Lucas Oil","gap":"+15.552","points":6},
-{"pos":"8","name":"Noel León","team":"Campos Racing","gap":"+17.285","points":4},
-{"pos":"9","name":"Gabriele Minì","team":"MP Motorsport","gap":"+24.073","points":2},
-{"pos":"10","name":"Roman Bilinski","team":"DAMS Lucas Oil","gap":"+24.415","points":1},
-{"pos":"11","name":"Oliver Goethe","team":"MP Motorsport","gap":"+24.637"},
-{"pos":"12","name":"Kush Maini","team":"ART Grand Prix","gap":"+37.489"},
-{"pos":"13","name":"Joshua Dürksen","team":"Invicta Racing","gap":"+39.080"},
-{"pos":"14","name":"Hiyu Yamakoshi","team":"Van Amersfoort Racing","gap":"+42.145"},
-{"pos":"15","name":"Colton Herta","team":"Hitech","gap":"+44.048"},
-{"pos":"16","name":"Emerson Fittipaldi Jr.","team":"AIX Racing","gap":"+44.973"},
-{"pos":"17","name":"Sebastián Montoya","team":"Prema Racing","gap":"+1:17.168"},
-{"pos":"18","name":"Cian Shields","team":"AIX Racing","gap":"+1:45.633"},
-{"pos":"RIT","name":"Rafael Villagómez","team":"Van Amersfoort Racing","gap":"giro 16"},
-{"pos":"RIT","name":"Tasanapol Inthraphuvasak","team":"ART Grand Prix","gap":"giro 8"},
-{"pos":"RIT","name":"Ritomo Miyata","team":"Hitech","gap":"giro 5"},
-{"pos":"RIT","name":"John Bennett","team":"Trident","gap":"giro 0"}]},
-{"label":"Feature 1","kind":"race","rows":[
-{"pos":"1","name":"Alex Dunne","team":"Rodin Motorsport","gap":"1:11:45.095","points":27,"note":"pole + giro veloce"},
-{"pos":"2","name":"Martinius Stenshorne","team":"Rodin Motorsport","gap":"+4.395","points":18},
-{"pos":"3","name":"Dino Beganovic","team":"DAMS Lucas Oil","gap":"+6.614","points":15},
-{"pos":"4","name":"Rafael Câmara","team":"Invicta Racing","gap":"+7.669","points":12},
-{"pos":"5","name":"Noel León","team":"Campos Racing","gap":"+7.719","points":10},
-{"pos":"6","name":"Gabriele Minì","team":"MP Motorsport","gap":"+10.874","points":8},
-{"pos":"7","name":"Roman Bilinski","team":"DAMS Lucas Oil","gap":"+11.151","points":6},
-{"pos":"8","name":"Rafael Villagómez","team":"Van Amersfoort Racing","gap":"+15.376","points":4},
-{"pos":"9","name":"Hiyu Yamakoshi","team":"Van Amersfoort Racing","gap":"+16.509","points":2},
-{"pos":"10","name":"Kush Maini","team":"ART Grand Prix","gap":"+19.176","points":1},
-{"pos":"11","name":"Tasanapol Inthraphuvasak","team":"ART Grand Prix","gap":"+20.759"},
-{"pos":"12","name":"Emerson Fittipaldi Jr.","team":"AIX Racing","gap":"+24.121"},
-{"pos":"13","name":"Colton Herta","team":"Hitech","gap":"+59.572"},
-{"pos":"14","name":"Oliver Goethe","team":"MP Motorsport","gap":"+1:01.765"},
-{"pos":"RIT","name":"Nikola Tsolov","team":"Campos Racing","gap":"incidente giro 11"},
-{"pos":"RIT","name":"Joshua Dürksen","team":"Invicta Racing","gap":"incidente giro 11"},
-{"pos":"RIT","name":"Ritomo Miyata","team":"Hitech","gap":"incidente giro 11"},
-{"pos":"RIT","name":"Laurens van Hoepen","team":"Trident","gap":"incidente giro 11"},
-{"pos":"RIT","name":"John Bennett","team":"Trident","gap":"incidente giro 11"},
-{"pos":"RIT","name":"Cian Shields","team":"AIX Racing","gap":"incidente giro 11"},
-{"pos":"RIT","name":"Mari Boya","team":"Prema Racing","gap":"giro 7"},
-{"pos":"NP","name":"Sebastián Montoya","team":"Prema Racing","gap":"non partito"}]},
-{"label":"Sprint","kind":"race","rows":[
-{"pos":"1","name":"Dino Beganovic","team":"DAMS Lucas Oil","gap":"45:48.207","points":10},
-{"pos":"2","name":"Laurens van Hoepen","team":"Trident","gap":"+1.058","points":8},
-{"pos":"3","name":"Alex Dunne","team":"Rodin Motorsport","gap":"+1.476","points":7,"note":"giro veloce"},
-{"pos":"4","name":"Martinius Stenshorne","team":"Rodin Motorsport","gap":"+1.920","points":5},
-{"pos":"5","name":"Nikola Tsolov","team":"Campos Racing","gap":"+3.341","points":4},
-{"pos":"6","name":"Roman Bilinski","team":"DAMS Lucas Oil","gap":"+4.006","points":3},
-{"pos":"7","name":"Sebastián Montoya","team":"Prema Racing","gap":"+4.160","points":2},
-{"pos":"8","name":"Kush Maini","team":"ART Grand Prix","gap":"+5.698","points":1},
-{"pos":"9","name":"Colton Herta","team":"Hitech","gap":"+6.555"},
-{"pos":"10","name":"John Bennett","team":"Trident","gap":"+8.327"},
-{"pos":"11","name":"Tasanapol Inthraphuvasak","team":"ART Grand Prix","gap":"+8.359"},
-{"pos":"12","name":"Cian Shields","team":"AIX Racing","gap":"+9.297"},
-{"pos":"13","name":"Rafael Villagómez","team":"Van Amersfoort Racing","gap":"+13.151"},
-{"pos":"14","name":"Gabriele Minì","team":"MP Motorsport","gap":"+18.600"},
-{"pos":"15","name":"Rafael Câmara","team":"Invicta Racing","gap":"+26.204"},
-{"pos":"16","name":"Oliver Goethe","team":"MP Motorsport","gap":"+34.774","note":"10s di penalità"},
-{"pos":"17","name":"Hiyu Yamakoshi","team":"Van Amersfoort Racing","gap":"+47.348"},
-{"pos":"18","name":"Emerson Fittipaldi Jr.","team":"AIX Racing","gap":"+52.610"},
-{"pos":"19","name":"Ritomo Miyata","team":"Hitech","gap":"giro 20"},
-{"pos":"20","name":"Noel León","team":"Campos Racing","gap":"giro 20"},
-{"pos":"RIT","name":"Joshua Dürksen","team":"Invicta Racing","gap":"giro 17"},
-{"pos":"RIT","name":"Mari Boya","team":"Prema Racing","gap":"giro 0"}]},
-{"label":"Qualifiche 1","kind":"quali","rows":[
-{"pos":"1","name":"Alex Dunne","team":"Rodin Motorsport","time":"1:55.383"},
-{"pos":"2","name":"Martinius Stenshorne","team":"Rodin Motorsport","time":"+0.033"},
-{"pos":"3","name":"Noel León","team":"Campos Racing","time":"+0.134"},
-{"pos":"4","name":"Kush Maini","team":"ART Grand Prix","time":"+0.230"},
-{"pos":"5","name":"Rafael Câmara","team":"Invicta Racing","time":"+0.238"},
-{"pos":"6","name":"Mari Boya","team":"Prema Racing","time":"+0.360"},
-{"pos":"7","name":"Sebastián Montoya","team":"Prema Racing","time":"+0.455"},
-{"pos":"8","name":"Dino Beganovic","team":"DAMS Lucas Oil","time":"+0.455"},
-{"pos":"9","name":"Laurens van Hoepen","team":"Trident","time":"+0.551"},
-{"pos":"10","name":"Nikola Tsolov","team":"Campos Racing","time":"+0.574"}]},
-{"label":"Qualifiche 2","kind":"quali","rows":[
-{"pos":"1","name":"Martinius Stenshorne","team":"Rodin Motorsport","time":"1:53.728"},
-{"pos":"2","name":"Alex Dunne","team":"Rodin Motorsport","time":"+0.445"},
-{"pos":"3","name":"Rafael Câmara","team":"Invicta Racing","time":"+0.499"},
-{"pos":"4","name":"Mari Boya","team":"Prema Racing","time":"+0.637"},
-{"pos":"5","name":"Kush Maini","team":"ART Grand Prix","time":"+0.690"},
-{"pos":"6","name":"Noel León","team":"Campos Racing","time":"+0.749"},
-{"pos":"7","name":"Laurens van Hoepen","team":"Trident","time":"+0.767"},
-{"pos":"8","name":"Nikola Tsolov","team":"Campos Racing","time":"+0.957"},
-{"pos":"9","name":"Tasanapol Inthraphuvasak","team":"ART Grand Prix","time":"+1.243"},
-{"pos":"10","name":"Sebastián Montoya","team":"Prema Racing","time":"+1.313"}]}]},
-"videos": [
-{"id":"2026-09-26-baku-feature2","gp":"Baku (Azerbaigian)","session":"Feature 2","title":"Highlights della Feature Race 2 – Baku 2026","youtube":"NwUJCi3vCJs","channel":"FORMULA 1","published":"2026-09-26T13:00:00Z"},
-{"id":"2026-09-25-baku-feature1","gp":"Baku (Azerbaigian)","session":"Feature 1","title":"Highlights della Feature Race 1 – Baku 2026","youtube":"D5LuiCS2OSw","channel":"FORMULA 1","published":"2026-09-25T15:00:00Z"},
-{"id":"2026-09-25-baku-sprint","gp":"Baku (Azerbaigian)","session":"Sprint","title":"Highlights della Sprint Race – Baku 2026","youtube":"oLmQhzVM4js","channel":"FORMULA 1","published":"2026-09-25T10:00:00Z"}],
-"standings": {"updated":"2026-09-26T14:00:00Z","after":"dopo il round di Baku","drivers":[
-{"pos":1,"name":"Rafael Câmara","team":"Invicta Racing","points":207},
-{"pos":2,"name":"Nikola Tsolov","team":"Campos Racing","points":200},
-{"pos":3,"name":"Alex Dunne","team":"Rodin Motorsport","points":189},
-{"pos":4,"name":"Gabriele Minì","team":"MP Motorsport","points":163},
-{"pos":5,"name":"Dino Beganovic","team":"DAMS Lucas Oil","points":137},
-{"pos":6,"name":"Noel León","team":"Campos Racing","points":133},
-{"pos":7,"name":"Martinius Stenshorne","team":"Rodin Motorsport","points":107},
-{"pos":8,"name":"Joshua Dürksen","team":"Invicta Racing","points":90},
-{"pos":9,"name":"Kush Maini","team":"ART Grand Prix","points":90},
-{"pos":10,"name":"Laurens van Hoepen","team":"Trident","points":90},
-{"pos":11,"name":"Tasanapol Inthraphuvasak","team":"ART Grand Prix","points":71},
-{"pos":12,"name":"Ritomo Miyata","team":"Hitech","points":70},
-{"pos":13,"name":"Rafael Villagómez","team":"Van Amersfoort Racing","points":42},
-{"pos":14,"name":"John Bennett","team":"Trident","points":38},
-{"pos":15,"name":"Oliver Goethe","team":"MP Motorsport","points":37},
-{"pos":16,"name":"Roman Bilinski","team":"DAMS Lucas Oil","points":36},
-{"pos":17,"name":"Sebastián Montoya","team":"Prema Racing","points":30},
-{"pos":18,"name":"Emerson Fittipaldi Jr.","team":"AIX Racing","points":28},
-{"pos":19,"name":"Colton Herta","team":"Hitech","points":26},
-{"pos":20,"name":"Mari Boya","team":"Prema Racing","points":21},
-{"pos":21,"name":"Nicolás Varrone","team":"Van Amersfoort Racing","points":15},
-{"pos":22,"name":"Cian Shields","team":"AIX Racing","points":10},
-{"pos":23,"name":"Hiyu Yamakoshi","team":"Van Amersfoort Racing","points":2}],"constructors":[
-{"pos":1,"team":"Campos Racing","points":333,"drivers":"Tsolov · León"},
-{"pos":2,"team":"Invicta Racing","points":297,"drivers":"Câmara · Dürksen"},
-{"pos":3,"team":"Rodin Motorsport","points":296,"drivers":"Dunne · Stenshorne"},
-{"pos":4,"team":"MP Motorsport","points":200,"drivers":"Minì · Goethe"},
-{"pos":5,"team":"DAMS Lucas Oil","points":173,"drivers":"Beganovic · Bilinski"},
-{"pos":6,"team":"ART Grand Prix","points":161,"drivers":"Maini · Inthraphuvasak"},
-{"pos":7,"team":"Trident","points":128,"drivers":"van Hoepen · Bennett"},
-{"pos":8,"team":"Hitech","points":96,"drivers":"Miyata · Herta"},
-{"pos":9,"team":"Van Amersfoort Racing","points":59,"drivers":"Villagómez · Yamakoshi"},
-{"pos":10,"team":"Prema Racing","points":51,"drivers":"Montoya · Boya"},
-{"pos":11,"team":"AIX Racing","points":38,"drivers":"Fittipaldi · Shields"}]},
-"calendar": {"season":2026,"updated":"2026-11-02T16:30:00Z","rounds":[
-{"round":1,"name":"Melbourne","circuit":"Albert Park","date":"2026-03-08","winner":"Nikola Tsolov","team":"Campos Racing","sprintWinner":"Joshua Dürksen"},
-{"round":2,"name":"Miami","circuit":"Miami","date":"2026-05-03","winner":"Gabriele Minì","team":"MP Motorsport","sprintWinner":"Nikola Tsolov"},
-{"round":3,"name":"Montréal","circuit":"Gilles Villeneuve","date":"2026-05-24","winner":"Martinius Stenshorne","team":"Rodin Motorsport","sprintWinner":"Noel León"},
-{"round":4,"name":"Monaco","circuit":"Monte-Carlo","date":"2026-06-07","winner":"Nikola Tsolov","team":"Campos Racing","sprintWinner":"Noel León"},
-{"round":5,"name":"Barcellona","circuit":"Montmeló","date":"2026-06-14","winner":"Rafael Câmara","team":"Invicta Racing","sprintWinner":"Kush Maini"},
-{"round":6,"name":"Spielberg","circuit":"Red Bull Ring","date":"2026-06-28","winner":"Nikola Tsolov","team":"Campos Racing","sprintWinner":"John Bennett"},
-{"round":7,"name":"Silverstone","circuit":"Silverstone","date":"2026-07-05","winner":"Nikola Tsolov","team":"Campos Racing","sprintWinner":"Nikola Tsolov"},
-{"round":8,"name":"Spa-Francorchamps","circuit":"Spa","date":"2026-07-19","winner":"Rafael Câmara","team":"Invicta Racing","sprintWinner":"Joshua Dürksen"},
-{"round":9,"name":"Budapest","circuit":"Hungaroring","date":"2026-07-26","winner":"Noel León","team":"Campos Racing","sprintWinner":"Gabriele Minì"},
-{"round":10,"name":"Monza","circuit":"Monza","date":"2026-09-06","winner":"Joshua Dürksen","team":"Invicta Racing","sprintWinner":"Joshua Dürksen"},
-{"round":11,"name":"Madrid","circuit":"Madring","date":"2026-09-13","winner":"Dino Beganovic","team":"DAMS Lucas Oil","sprintWinner":"Ritomo Miyata"},
-{"round":12,"name":"Baku","circuit":"Baku","date":"2026-09-26","winner":"Dunne (Feature 1) · Câmara (Feature 2)","team":"","wins":["Alex Dunne","Rafael Câmara"],"sprintWinner":"Dino Beganovic"},
-{"round":13,"name":"Lusail (Qatar)","circuit":"Lusail","date":"2026-11-29","status":"In dubbio: possibile annullamento"},
-{"round":14,"name":"Yas Marina (Abu Dhabi)","circuit":"Yas Marina","date":"2026-12-06","status":"Da confermare"}]}
+  "news": [
+    {
+      "id": "2026-10-30-cargo-europa",
+      "title": "Il materiale F2 torna in Europa: stagione già finita?",
+      "summary": "Secondo Frits van Amersfoort il cargo delle squadre non è partito per il Qatar e non ci sarebbero gare sostitutive. Lusail sarebbe saltata, Abu Dhabi ancora da decidere: se così fosse, Câmara sarebbe campione.",
+      "tag": "Calendario",
+      "source": "GrandPrix.com",
+      "url": "https://www.grandprix.com/news/formula-2-season-may-already-be-over-as-freight-returns-to-europe.html",
+      "published": "2026-10-30T12:00:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-10-28-ln4-fusion",
+      "title": "Il team di Lando Norris entra in F2 al posto di AIX Racing",
+      "summary": "La F2 ha approvato LN4 Fusion, la squadra del pilota McLaren, per il ciclo 2027-2029 al posto di AIX Racing. Il campionato resta a 11 team e 22 vetture, i piloti non sono ancora stati annunciati.",
+      "tag": "Team",
+      "source": "Grande Prêmio",
+      "url": "https://grandepremio.com/en/f2/lando-norris-wins-f2-grid-place-as-ln4-fusion-replaces-aix-racing-for-2027/",
+      "published": "2026-10-28T12:00:00Z"
+    },
+    {
+      "id": "2026-10-22-michel-qatar-abu-dhabi",
+      "title": "Michel: \"Qatar e Abu Dhabi non verranno cancellati\"",
+      "summary": "Il CEO della F2 Bruno Michel assicura che il campionato si chiuderà regolarmente in Medio Oriente e che non ci sarà un campione deciso a tavolino.",
+      "tag": "Calendario",
+      "source": "Motorsport.com",
+      "url": "https://www.motorsport.com/fia-f2/news/f2-rebuffs-suggestion-it-might-already-have-a-2026-champion-because-of-the-iran-war/10865537/",
+      "published": "2026-10-22T10:00:00Z"
+    },
+    {
+      "id": "2026-10-20-camara-haas",
+      "title": "Câmara, leader della F2, correrà in F1 con la Haas",
+      "summary": "Il brasiliano dell'Invicta è stato confermato come pilota Haas per il futuro, mentre in Formula 2 difende 7 punti di vantaggio su Tsolov.",
+      "tag": "Mercato",
+      "source": "GrandePremio",
+      "url": "https://grandepremio.com/en/f2/f2-boss-rejects-early-end-to-2026-season-as-haas-bound-camara-risks-title-without-final-races/",
+      "published": "2026-10-20T10:00:00Z"
+    },
+    {
+      "id": "2026-10-11-dunne-titolo",
+      "title": "Dunne ci crede: \"Darò tutto per il titolo\"",
+      "summary": "In due weekend il pilota Rodin ha ridotto il distacco da Câmara da 59 a 18 punti e punta al colpo finale nelle ultime gare.",
+      "tag": "Mondiale",
+      "source": "Motorsport Week",
+      "url": "https://www.motorsportweek.com/2026/10/11/alex-dunne-f1-title/",
+      "published": "2026-10-11T10:00:00Z"
+    },
+    {
+      "id": "2026-10-04-calendario-confermato",
+      "title": "Domenicali conferma Qatar e Abu Dhabi per il finale 2026",
+      "summary": "La F1 ha deciso di mantenere le ultime due tappe in Medio Oriente, con Imola come piano B in caso di forza maggiore. La F2 dipende da questa decisione.",
+      "tag": "Calendario",
+      "source": "GrandPrix.com",
+      "url": "https://www.grandprix.com/news/qatar-and-abu-dhabi-confirmed-as-2026-finale.html",
+      "published": "2026-10-04T12:00:00Z"
+    },
+    {
+      "id": "2026-09-26-camara-feature2",
+      "title": "Câmara vince la Feature 2 di Baku dopo la penalità a Dunne",
+      "summary": "Dunne arriva primo ma 5 secondi di penalità lo fanno scendere al terzo posto. Tsolov rimonta dall'undicesima casella fino al secondo posto.",
+      "tag": "Gare",
+      "source": "GrandePremio",
+      "url": "https://grandepremio.com/en/f2/f2s-baku-title-fight-delivers-a-thriller-but-calendar-uncertainty-leaves-its-ending-unresolved/",
+      "published": "2026-09-26T13:00:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-09-25-dunne-feature1",
+      "title": "Dunne domina la Feature 1, maxi incidente elimina Tsolov",
+      "summary": "Il pilota Rodin vince con pole e giro veloce. Un incidente con sette auto ferma la gara e Câmara prende la testa del mondiale superando León all'ultimo metro.",
+      "tag": "Gare",
+      "source": "GrandePremio",
+      "url": "https://grandepremio.com/en/f2/camara-takes-f2-championship-lead-by-one-point-after-chaotic-baku-race/",
+      "published": "2026-09-25T13:00:00Z"
+    },
+    {
+      "id": "2026-09-25-beganovic-sprint",
+      "title": "Beganovic vince la Sprint di Baku, Câmara a secco",
+      "summary": "Il pilota DAMS precede van Hoepen e Dunne. Câmara, penalizzato, chiude fuori dalla zona punti e Tsolov allunga a +11.",
+      "tag": "Gare",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/2026-f2-championship-standings-after-baku-sprint-race",
+      "published": "2026-09-25T08:00:00Z"
+    }
+  ],
+  "info": {
+    "updated": "2026-11-03T16:50:00Z",
+    "nextGp": {
+      "name": "Round 13 · Qatar",
+      "circuit": "Lusail",
+      "date": "2026-11-28T23:00:00Z",
+      "dateOnly": true,
+      "label": "Feature Race",
+      "note": "round in dubbio"
+    }
+  },
+  "weekend": {
+    "gp": "Round 13 · Lusail (Qatar)",
+    "circuit": "Lusail",
+    "updated": "2026-11-02T16:30:00Z",
+    "sessions": []
+  },
+  "results": {
+    "gp": "Baku (Azerbaigian)",
+    "round": 12,
+    "updated": "2026-09-26T14:00:00Z",
+    "summary": "Weekend extra-large con tre gare. Beganovic vince la Sprint, dove Câmara resta fuori dai punti. Nella prima Feature Dunne domina mentre un maxi incidente al giro 11 elimina sette piloti, tra cui Tsolov; Câmara passa León sul traguardo e si prende la testa del campionato. Nella seconda Feature Dunne taglia il traguardo per primo ma una penalità di 5 secondi consegna la vittoria a Câmara, ora a +7 su Tsolov.",
+    "podium": [
+      {
+        "name": "Rafael Câmara"
+      },
+      {
+        "name": "Nikola Tsolov"
+      },
+      {
+        "name": "Alex Dunne"
+      }
+    ],
+    "tabs": [
+      {
+        "label": "Feature 2",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Rafael Câmara",
+            "team": "Invicta Racing",
+            "gap": "59:57.958",
+            "points": 25
+          },
+          {
+            "pos": "2",
+            "name": "Nikola Tsolov",
+            "team": "Campos Racing",
+            "gap": "+0.747",
+            "points": 19,
+            "note": "giro veloce"
+          },
+          {
+            "pos": "3",
+            "name": "Alex Dunne",
+            "team": "Rodin Motorsport",
+            "gap": "+4.310",
+            "points": 15,
+            "note": "5s di penalità"
+          },
+          {
+            "pos": "4",
+            "name": "Martinius Stenshorne",
+            "team": "Rodin Motorsport",
+            "gap": "+5.856",
+            "points": 14,
+            "note": "pole"
+          },
+          {
+            "pos": "5",
+            "name": "Laurens van Hoepen",
+            "team": "Trident",
+            "gap": "+13.521",
+            "points": 10
+          },
+          {
+            "pos": "6",
+            "name": "Mari Boya",
+            "team": "Prema Racing",
+            "gap": "+13.890",
+            "points": 8
+          },
+          {
+            "pos": "7",
+            "name": "Dino Beganovic",
+            "team": "DAMS Lucas Oil",
+            "gap": "+15.552",
+            "points": 6
+          },
+          {
+            "pos": "8",
+            "name": "Noel León",
+            "team": "Campos Racing",
+            "gap": "+17.285",
+            "points": 4
+          },
+          {
+            "pos": "9",
+            "name": "Gabriele Minì",
+            "team": "MP Motorsport",
+            "gap": "+24.073",
+            "points": 2
+          },
+          {
+            "pos": "10",
+            "name": "Roman Bilinski",
+            "team": "DAMS Lucas Oil",
+            "gap": "+24.415",
+            "points": 1
+          },
+          {
+            "pos": "11",
+            "name": "Oliver Goethe",
+            "team": "MP Motorsport",
+            "gap": "+24.637"
+          },
+          {
+            "pos": "12",
+            "name": "Kush Maini",
+            "team": "ART Grand Prix",
+            "gap": "+37.489"
+          },
+          {
+            "pos": "13",
+            "name": "Joshua Dürksen",
+            "team": "Invicta Racing",
+            "gap": "+39.080"
+          },
+          {
+            "pos": "14",
+            "name": "Hiyu Yamakoshi",
+            "team": "Van Amersfoort Racing",
+            "gap": "+42.145"
+          },
+          {
+            "pos": "15",
+            "name": "Colton Herta",
+            "team": "Hitech",
+            "gap": "+44.048"
+          },
+          {
+            "pos": "16",
+            "name": "Emerson Fittipaldi Jr.",
+            "team": "AIX Racing",
+            "gap": "+44.973"
+          },
+          {
+            "pos": "17",
+            "name": "Sebastián Montoya",
+            "team": "Prema Racing",
+            "gap": "+1:17.168"
+          },
+          {
+            "pos": "18",
+            "name": "Cian Shields",
+            "team": "AIX Racing",
+            "gap": "+1:45.633"
+          },
+          {
+            "pos": "RIT",
+            "name": "Rafael Villagómez",
+            "team": "Van Amersfoort Racing",
+            "gap": "giro 16"
+          },
+          {
+            "pos": "RIT",
+            "name": "Tasanapol Inthraphuvasak",
+            "team": "ART Grand Prix",
+            "gap": "giro 8"
+          },
+          {
+            "pos": "RIT",
+            "name": "Ritomo Miyata",
+            "team": "Hitech",
+            "gap": "giro 5"
+          },
+          {
+            "pos": "RIT",
+            "name": "John Bennett",
+            "team": "Trident",
+            "gap": "giro 0"
+          }
+        ]
+      },
+      {
+        "label": "Feature 1",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Alex Dunne",
+            "team": "Rodin Motorsport",
+            "gap": "1:11:45.095",
+            "points": 27,
+            "note": "pole + giro veloce"
+          },
+          {
+            "pos": "2",
+            "name": "Martinius Stenshorne",
+            "team": "Rodin Motorsport",
+            "gap": "+4.395",
+            "points": 18
+          },
+          {
+            "pos": "3",
+            "name": "Dino Beganovic",
+            "team": "DAMS Lucas Oil",
+            "gap": "+6.614",
+            "points": 15
+          },
+          {
+            "pos": "4",
+            "name": "Rafael Câmara",
+            "team": "Invicta Racing",
+            "gap": "+7.669",
+            "points": 12
+          },
+          {
+            "pos": "5",
+            "name": "Noel León",
+            "team": "Campos Racing",
+            "gap": "+7.719",
+            "points": 10
+          },
+          {
+            "pos": "6",
+            "name": "Gabriele Minì",
+            "team": "MP Motorsport",
+            "gap": "+10.874",
+            "points": 8
+          },
+          {
+            "pos": "7",
+            "name": "Roman Bilinski",
+            "team": "DAMS Lucas Oil",
+            "gap": "+11.151",
+            "points": 6
+          },
+          {
+            "pos": "8",
+            "name": "Rafael Villagómez",
+            "team": "Van Amersfoort Racing",
+            "gap": "+15.376",
+            "points": 4
+          },
+          {
+            "pos": "9",
+            "name": "Hiyu Yamakoshi",
+            "team": "Van Amersfoort Racing",
+            "gap": "+16.509",
+            "points": 2
+          },
+          {
+            "pos": "10",
+            "name": "Kush Maini",
+            "team": "ART Grand Prix",
+            "gap": "+19.176",
+            "points": 1
+          },
+          {
+            "pos": "11",
+            "name": "Tasanapol Inthraphuvasak",
+            "team": "ART Grand Prix",
+            "gap": "+20.759"
+          },
+          {
+            "pos": "12",
+            "name": "Emerson Fittipaldi Jr.",
+            "team": "AIX Racing",
+            "gap": "+24.121"
+          },
+          {
+            "pos": "13",
+            "name": "Colton Herta",
+            "team": "Hitech",
+            "gap": "+59.572"
+          },
+          {
+            "pos": "14",
+            "name": "Oliver Goethe",
+            "team": "MP Motorsport",
+            "gap": "+1:01.765"
+          },
+          {
+            "pos": "RIT",
+            "name": "Nikola Tsolov",
+            "team": "Campos Racing",
+            "gap": "incidente giro 11"
+          },
+          {
+            "pos": "RIT",
+            "name": "Joshua Dürksen",
+            "team": "Invicta Racing",
+            "gap": "incidente giro 11"
+          },
+          {
+            "pos": "RIT",
+            "name": "Ritomo Miyata",
+            "team": "Hitech",
+            "gap": "incidente giro 11"
+          },
+          {
+            "pos": "RIT",
+            "name": "Laurens van Hoepen",
+            "team": "Trident",
+            "gap": "incidente giro 11"
+          },
+          {
+            "pos": "RIT",
+            "name": "John Bennett",
+            "team": "Trident",
+            "gap": "incidente giro 11"
+          },
+          {
+            "pos": "RIT",
+            "name": "Cian Shields",
+            "team": "AIX Racing",
+            "gap": "incidente giro 11"
+          },
+          {
+            "pos": "RIT",
+            "name": "Mari Boya",
+            "team": "Prema Racing",
+            "gap": "giro 7"
+          },
+          {
+            "pos": "NP",
+            "name": "Sebastián Montoya",
+            "team": "Prema Racing",
+            "gap": "non partito"
+          }
+        ]
+      },
+      {
+        "label": "Sprint",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Dino Beganovic",
+            "team": "DAMS Lucas Oil",
+            "gap": "45:48.207",
+            "points": 10
+          },
+          {
+            "pos": "2",
+            "name": "Laurens van Hoepen",
+            "team": "Trident",
+            "gap": "+1.058",
+            "points": 8
+          },
+          {
+            "pos": "3",
+            "name": "Alex Dunne",
+            "team": "Rodin Motorsport",
+            "gap": "+1.476",
+            "points": 7,
+            "note": "giro veloce"
+          },
+          {
+            "pos": "4",
+            "name": "Martinius Stenshorne",
+            "team": "Rodin Motorsport",
+            "gap": "+1.920",
+            "points": 5
+          },
+          {
+            "pos": "5",
+            "name": "Nikola Tsolov",
+            "team": "Campos Racing",
+            "gap": "+3.341",
+            "points": 4
+          },
+          {
+            "pos": "6",
+            "name": "Roman Bilinski",
+            "team": "DAMS Lucas Oil",
+            "gap": "+4.006",
+            "points": 3
+          },
+          {
+            "pos": "7",
+            "name": "Sebastián Montoya",
+            "team": "Prema Racing",
+            "gap": "+4.160",
+            "points": 2
+          },
+          {
+            "pos": "8",
+            "name": "Kush Maini",
+            "team": "ART Grand Prix",
+            "gap": "+5.698",
+            "points": 1
+          },
+          {
+            "pos": "9",
+            "name": "Colton Herta",
+            "team": "Hitech",
+            "gap": "+6.555"
+          },
+          {
+            "pos": "10",
+            "name": "John Bennett",
+            "team": "Trident",
+            "gap": "+8.327"
+          },
+          {
+            "pos": "11",
+            "name": "Tasanapol Inthraphuvasak",
+            "team": "ART Grand Prix",
+            "gap": "+8.359"
+          },
+          {
+            "pos": "12",
+            "name": "Cian Shields",
+            "team": "AIX Racing",
+            "gap": "+9.297"
+          },
+          {
+            "pos": "13",
+            "name": "Rafael Villagómez",
+            "team": "Van Amersfoort Racing",
+            "gap": "+13.151"
+          },
+          {
+            "pos": "14",
+            "name": "Gabriele Minì",
+            "team": "MP Motorsport",
+            "gap": "+18.600"
+          },
+          {
+            "pos": "15",
+            "name": "Rafael Câmara",
+            "team": "Invicta Racing",
+            "gap": "+26.204"
+          },
+          {
+            "pos": "16",
+            "name": "Oliver Goethe",
+            "team": "MP Motorsport",
+            "gap": "+34.774",
+            "note": "10s di penalità"
+          },
+          {
+            "pos": "17",
+            "name": "Hiyu Yamakoshi",
+            "team": "Van Amersfoort Racing",
+            "gap": "+47.348"
+          },
+          {
+            "pos": "18",
+            "name": "Emerson Fittipaldi Jr.",
+            "team": "AIX Racing",
+            "gap": "+52.610"
+          },
+          {
+            "pos": "19",
+            "name": "Ritomo Miyata",
+            "team": "Hitech",
+            "gap": "giro 20"
+          },
+          {
+            "pos": "20",
+            "name": "Noel León",
+            "team": "Campos Racing",
+            "gap": "giro 20"
+          },
+          {
+            "pos": "RIT",
+            "name": "Joshua Dürksen",
+            "team": "Invicta Racing",
+            "gap": "giro 17"
+          },
+          {
+            "pos": "RIT",
+            "name": "Mari Boya",
+            "team": "Prema Racing",
+            "gap": "giro 0"
+          }
+        ]
+      },
+      {
+        "label": "Qualifiche 1",
+        "kind": "quali",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Alex Dunne",
+            "team": "Rodin Motorsport",
+            "time": "1:55.383"
+          },
+          {
+            "pos": "2",
+            "name": "Martinius Stenshorne",
+            "team": "Rodin Motorsport",
+            "time": "+0.033"
+          },
+          {
+            "pos": "3",
+            "name": "Noel León",
+            "team": "Campos Racing",
+            "time": "+0.134"
+          },
+          {
+            "pos": "4",
+            "name": "Kush Maini",
+            "team": "ART Grand Prix",
+            "time": "+0.230"
+          },
+          {
+            "pos": "5",
+            "name": "Rafael Câmara",
+            "team": "Invicta Racing",
+            "time": "+0.238"
+          },
+          {
+            "pos": "6",
+            "name": "Mari Boya",
+            "team": "Prema Racing",
+            "time": "+0.360"
+          },
+          {
+            "pos": "7",
+            "name": "Sebastián Montoya",
+            "team": "Prema Racing",
+            "time": "+0.455"
+          },
+          {
+            "pos": "8",
+            "name": "Dino Beganovic",
+            "team": "DAMS Lucas Oil",
+            "time": "+0.455"
+          },
+          {
+            "pos": "9",
+            "name": "Laurens van Hoepen",
+            "team": "Trident",
+            "time": "+0.551"
+          },
+          {
+            "pos": "10",
+            "name": "Nikola Tsolov",
+            "team": "Campos Racing",
+            "time": "+0.574"
+          }
+        ]
+      },
+      {
+        "label": "Qualifiche 2",
+        "kind": "quali",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Martinius Stenshorne",
+            "team": "Rodin Motorsport",
+            "time": "1:53.728"
+          },
+          {
+            "pos": "2",
+            "name": "Alex Dunne",
+            "team": "Rodin Motorsport",
+            "time": "+0.445"
+          },
+          {
+            "pos": "3",
+            "name": "Rafael Câmara",
+            "team": "Invicta Racing",
+            "time": "+0.499"
+          },
+          {
+            "pos": "4",
+            "name": "Mari Boya",
+            "team": "Prema Racing",
+            "time": "+0.637"
+          },
+          {
+            "pos": "5",
+            "name": "Kush Maini",
+            "team": "ART Grand Prix",
+            "time": "+0.690"
+          },
+          {
+            "pos": "6",
+            "name": "Noel León",
+            "team": "Campos Racing",
+            "time": "+0.749"
+          },
+          {
+            "pos": "7",
+            "name": "Laurens van Hoepen",
+            "team": "Trident",
+            "time": "+0.767"
+          },
+          {
+            "pos": "8",
+            "name": "Nikola Tsolov",
+            "team": "Campos Racing",
+            "time": "+0.957"
+          },
+          {
+            "pos": "9",
+            "name": "Tasanapol Inthraphuvasak",
+            "team": "ART Grand Prix",
+            "time": "+1.243"
+          },
+          {
+            "pos": "10",
+            "name": "Sebastián Montoya",
+            "team": "Prema Racing",
+            "time": "+1.313"
+          }
+        ]
+      }
+    ]
+  },
+  "videos": [
+    {
+      "id": "2026-09-26-baku-feature2",
+      "gp": "Baku (Azerbaigian)",
+      "session": "Feature 2",
+      "title": "Highlights della Feature Race 2 – Baku 2026",
+      "youtube": "NwUJCi3vCJs",
+      "channel": "FORMULA 1",
+      "published": "2026-09-26T13:00:00Z"
+    },
+    {
+      "id": "2026-09-25-baku-feature1",
+      "gp": "Baku (Azerbaigian)",
+      "session": "Feature 1",
+      "title": "Highlights della Feature Race 1 – Baku 2026",
+      "youtube": "D5LuiCS2OSw",
+      "channel": "FORMULA 1",
+      "published": "2026-09-25T15:00:00Z"
+    },
+    {
+      "id": "2026-09-25-baku-sprint",
+      "gp": "Baku (Azerbaigian)",
+      "session": "Sprint",
+      "title": "Highlights della Sprint Race – Baku 2026",
+      "youtube": "oLmQhzVM4js",
+      "channel": "FORMULA 1",
+      "published": "2026-09-25T10:00:00Z"
+    }
+  ],
+  "standings": {
+    "updated": "2026-09-26T14:00:00Z",
+    "after": "dopo il round di Baku",
+    "drivers": [
+      {
+        "pos": 1,
+        "name": "Rafael Câmara",
+        "team": "Invicta Racing",
+        "points": 207
+      },
+      {
+        "pos": 2,
+        "name": "Nikola Tsolov",
+        "team": "Campos Racing",
+        "points": 200
+      },
+      {
+        "pos": 3,
+        "name": "Alex Dunne",
+        "team": "Rodin Motorsport",
+        "points": 189
+      },
+      {
+        "pos": 4,
+        "name": "Gabriele Minì",
+        "team": "MP Motorsport",
+        "points": 163
+      },
+      {
+        "pos": 5,
+        "name": "Dino Beganovic",
+        "team": "DAMS Lucas Oil",
+        "points": 137
+      },
+      {
+        "pos": 6,
+        "name": "Noel León",
+        "team": "Campos Racing",
+        "points": 133
+      },
+      {
+        "pos": 7,
+        "name": "Martinius Stenshorne",
+        "team": "Rodin Motorsport",
+        "points": 107
+      },
+      {
+        "pos": 8,
+        "name": "Joshua Dürksen",
+        "team": "Invicta Racing",
+        "points": 90
+      },
+      {
+        "pos": 9,
+        "name": "Kush Maini",
+        "team": "ART Grand Prix",
+        "points": 90
+      },
+      {
+        "pos": 10,
+        "name": "Laurens van Hoepen",
+        "team": "Trident",
+        "points": 90
+      },
+      {
+        "pos": 11,
+        "name": "Tasanapol Inthraphuvasak",
+        "team": "ART Grand Prix",
+        "points": 71
+      },
+      {
+        "pos": 12,
+        "name": "Ritomo Miyata",
+        "team": "Hitech",
+        "points": 70
+      },
+      {
+        "pos": 13,
+        "name": "Rafael Villagómez",
+        "team": "Van Amersfoort Racing",
+        "points": 42
+      },
+      {
+        "pos": 14,
+        "name": "John Bennett",
+        "team": "Trident",
+        "points": 38
+      },
+      {
+        "pos": 15,
+        "name": "Oliver Goethe",
+        "team": "MP Motorsport",
+        "points": 37
+      },
+      {
+        "pos": 16,
+        "name": "Roman Bilinski",
+        "team": "DAMS Lucas Oil",
+        "points": 36
+      },
+      {
+        "pos": 17,
+        "name": "Sebastián Montoya",
+        "team": "Prema Racing",
+        "points": 30
+      },
+      {
+        "pos": 18,
+        "name": "Emerson Fittipaldi Jr.",
+        "team": "AIX Racing",
+        "points": 28
+      },
+      {
+        "pos": 19,
+        "name": "Colton Herta",
+        "team": "Hitech",
+        "points": 26
+      },
+      {
+        "pos": 20,
+        "name": "Mari Boya",
+        "team": "Prema Racing",
+        "points": 21
+      },
+      {
+        "pos": 21,
+        "name": "Nicolás Varrone",
+        "team": "Van Amersfoort Racing",
+        "points": 15
+      },
+      {
+        "pos": 22,
+        "name": "Cian Shields",
+        "team": "AIX Racing",
+        "points": 10
+      },
+      {
+        "pos": 23,
+        "name": "Hiyu Yamakoshi",
+        "team": "Van Amersfoort Racing",
+        "points": 2
+      }
+    ],
+    "constructors": [
+      {
+        "pos": 1,
+        "team": "Campos Racing",
+        "points": 333,
+        "drivers": "Tsolov · León"
+      },
+      {
+        "pos": 2,
+        "team": "Invicta Racing",
+        "points": 297,
+        "drivers": "Câmara · Dürksen"
+      },
+      {
+        "pos": 3,
+        "team": "Rodin Motorsport",
+        "points": 296,
+        "drivers": "Dunne · Stenshorne"
+      },
+      {
+        "pos": 4,
+        "team": "MP Motorsport",
+        "points": 200,
+        "drivers": "Minì · Goethe"
+      },
+      {
+        "pos": 5,
+        "team": "DAMS Lucas Oil",
+        "points": 173,
+        "drivers": "Beganovic · Bilinski"
+      },
+      {
+        "pos": 6,
+        "team": "ART Grand Prix",
+        "points": 161,
+        "drivers": "Maini · Inthraphuvasak"
+      },
+      {
+        "pos": 7,
+        "team": "Trident",
+        "points": 128,
+        "drivers": "van Hoepen · Bennett"
+      },
+      {
+        "pos": 8,
+        "team": "Hitech",
+        "points": 96,
+        "drivers": "Miyata · Herta"
+      },
+      {
+        "pos": 9,
+        "team": "Van Amersfoort Racing",
+        "points": 59,
+        "drivers": "Villagómez · Yamakoshi"
+      },
+      {
+        "pos": 10,
+        "team": "Prema Racing",
+        "points": 51,
+        "drivers": "Montoya · Boya"
+      },
+      {
+        "pos": 11,
+        "team": "AIX Racing",
+        "points": 38,
+        "drivers": "Fittipaldi · Shields"
+      }
+    ]
+  },
+  "calendar": {
+    "season": 2026,
+    "updated": "2026-11-02T16:30:00Z",
+    "rounds": [
+      {
+        "round": 1,
+        "name": "Melbourne",
+        "circuit": "Albert Park",
+        "date": "2026-03-08",
+        "winner": "Nikola Tsolov",
+        "team": "Campos Racing",
+        "sprintWinner": "Joshua Dürksen"
+      },
+      {
+        "round": 2,
+        "name": "Miami",
+        "circuit": "Miami",
+        "date": "2026-05-03",
+        "winner": "Gabriele Minì",
+        "team": "MP Motorsport",
+        "sprintWinner": "Nikola Tsolov"
+      },
+      {
+        "round": 3,
+        "name": "Montréal",
+        "circuit": "Gilles Villeneuve",
+        "date": "2026-05-24",
+        "winner": "Martinius Stenshorne",
+        "team": "Rodin Motorsport",
+        "sprintWinner": "Noel León"
+      },
+      {
+        "round": 4,
+        "name": "Monaco",
+        "circuit": "Monte-Carlo",
+        "date": "2026-06-07",
+        "winner": "Nikola Tsolov",
+        "team": "Campos Racing",
+        "sprintWinner": "Noel León"
+      },
+      {
+        "round": 5,
+        "name": "Barcellona",
+        "circuit": "Montmeló",
+        "date": "2026-06-14",
+        "winner": "Rafael Câmara",
+        "team": "Invicta Racing",
+        "sprintWinner": "Kush Maini"
+      },
+      {
+        "round": 6,
+        "name": "Spielberg",
+        "circuit": "Red Bull Ring",
+        "date": "2026-06-28",
+        "winner": "Nikola Tsolov",
+        "team": "Campos Racing",
+        "sprintWinner": "John Bennett"
+      },
+      {
+        "round": 7,
+        "name": "Silverstone",
+        "circuit": "Silverstone",
+        "date": "2026-07-05",
+        "winner": "Nikola Tsolov",
+        "team": "Campos Racing",
+        "sprintWinner": "Nikola Tsolov"
+      },
+      {
+        "round": 8,
+        "name": "Spa-Francorchamps",
+        "circuit": "Spa",
+        "date": "2026-07-19",
+        "winner": "Rafael Câmara",
+        "team": "Invicta Racing",
+        "sprintWinner": "Joshua Dürksen"
+      },
+      {
+        "round": 9,
+        "name": "Budapest",
+        "circuit": "Hungaroring",
+        "date": "2026-07-26",
+        "winner": "Noel León",
+        "team": "Campos Racing",
+        "sprintWinner": "Gabriele Minì"
+      },
+      {
+        "round": 10,
+        "name": "Monza",
+        "circuit": "Monza",
+        "date": "2026-09-06",
+        "winner": "Joshua Dürksen",
+        "team": "Invicta Racing",
+        "sprintWinner": "Joshua Dürksen"
+      },
+      {
+        "round": 11,
+        "name": "Madrid",
+        "circuit": "Madring",
+        "date": "2026-09-13",
+        "winner": "Dino Beganovic",
+        "team": "DAMS Lucas Oil",
+        "sprintWinner": "Ritomo Miyata"
+      },
+      {
+        "round": 12,
+        "name": "Baku",
+        "circuit": "Baku",
+        "date": "2026-09-26",
+        "winner": "Dunne (Feature 1) · Câmara (Feature 2)",
+        "team": "",
+        "wins": [
+          "Alex Dunne",
+          "Rafael Câmara"
+        ],
+        "sprintWinner": "Dino Beganovic"
+      },
+      {
+        "round": 13,
+        "name": "Lusail (Qatar)",
+        "circuit": "Lusail",
+        "date": "2026-11-29",
+        "status": "In dubbio: possibile annullamento"
+      },
+      {
+        "round": 14,
+        "name": "Yas Marina (Abu Dhabi)",
+        "circuit": "Yas Marina",
+        "date": "2026-12-06",
+        "status": "Da confermare"
+      }
+    ]
+  }
 }
