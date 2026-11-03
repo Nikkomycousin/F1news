@@ -151,6 +151,19 @@
   body.f2 .card.top,body.f2 .rhead,body.f2 .cal .row.next{background:linear-gradient(180deg,#0c1a2c,#15151c)}
   body.f2 .seg button.on{background:#0b2440}
   body.f2 .sbanner{background:#0b2440;border-color:#16406e}
+  .vgp{font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--muted);margin:18px 2px 8px;font-weight:600}
+  .vgp:first-child{margin-top:4px}
+  .vcard{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;margin-bottom:12px}
+  .vthumb{position:relative;display:block;width:100%;aspect-ratio:16/9;border:0;padding:0;background:#000 center/cover no-repeat;cursor:pointer}
+  .vthumb:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.55))}
+  .vplay{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:64px;height:64px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;z-index:1;box-shadow:0 4px 18px rgba(0,0,0,.5)}
+  .vplay:before{content:"";border-left:20px solid #fff;border-top:12px solid transparent;border-bottom:12px solid transparent;margin-left:5px}
+  .vframe{display:block;width:100%;aspect-ratio:16/9;border:0;background:#000}
+  .vbody{padding:12px 14px}
+  .vbody h3{margin:0 0 6px;font-size:16px;line-height:1.3;font-weight:600}
+  .vbody .meta{margin:0}
+  .vbody a{color:var(--red2);text-decoration:none;font-weight:500}
+  .vcard.spoil .vthumb,.vcard.spoil h3{filter:blur(9px);pointer-events:none;user-select:none}
   footer{color:#5d5d6c;font-size:11.5px;text-align:center;margin-top:24px;line-height:1.5}
 </style>
 </head>
@@ -172,6 +185,7 @@
     <button data-v="news" class="on">Notizie</button>
     <button data-v="sched">Orari</button>
     <button data-v="results">Risultati</button>
+    <button data-v="video">Video</button>
     <button data-v="drivers">Classifica</button>
     <button data-v="cal">Calendario</button>
   </div>
@@ -185,6 +199,7 @@
   </section>
   <section id="v-sched" hidden><div id="sched"></div></section>
   <section id="v-results" hidden><div id="results"></div></section>
+  <section id="v-video" hidden><div id="videos"></div></section>
   <section id="v-drivers" hidden>
     <div class="seg" id="segStand"><button data-s="drivers" class="on">Piloti</button><button data-s="teams">Scuderie</button></div>
     <div class="table" id="drivers"></div>
@@ -268,8 +283,8 @@ function checkSpoiler(){
   const sing=lbl.startsWith("la ");
   $("#spP").textContent=`${weekend.gp}: ${lbl} ${sing?"è iniziata":"sono iniziate"} alle ${hm(s.start)}.${tv} Se non ${sing?"l'hai vista":"le hai viste"}, nascondo le notizie che potrebbero rovinarti la sorpresa.`;
   $("#spModal").hidden=false;
-  $("#spYes").onclick=()=>{lsSet(sKey(s),"1");spoilerHidden=false;$("#spModal").hidden=true;render();renderStandings();renderResults()};
-  $("#spNo").onclick=()=>{spoilerHidden=true;$("#spModal").hidden=true;render();renderStandings();renderResults()};
+  $("#spYes").onclick=()=>{lsSet(sKey(s),"1");spoilerHidden=false;$("#spModal").hidden=true;render();renderStandings();renderResults();renderVideos()};
+  $("#spNo").onclick=()=>{spoilerHidden=true;$("#spModal").hidden=true;render();renderStandings();renderResults();renderVideos()};
 }
 function isSpoiler(n){
   if(!spoilerHidden) return false;
@@ -280,7 +295,7 @@ function spoilerBanner(){
   const s=spoilerSession(); if(!spoilerHidden||!s) return "";
   return `<div class="sbanner"><span>🙈 Notizie ${esc(sLabel(s).replace(/^la /,"sulla ").replace(/^le /,"sulle "))} nascoste per evitare spoiler</span><button onclick="revealSpoiler()">Ora l'ho visto</button></div>`;
 }
-function revealSpoiler(){const s=spoilerSession();if(s)lsSet(sKey(s),"1");spoilerHidden=false;render();renderStandings();renderResults()}
+function revealSpoiler(){const s=spoilerSession();if(s)lsSet(sKey(s),"1");spoilerHidden=false;render();renderStandings();renderResults();renderVideos()}
 
 function render(){
   renderChips();
@@ -408,6 +423,41 @@ function renderResults(){
   el.querySelectorAll("#segRes button").forEach(b=>b.onclick=()=>{resMode=+b.dataset.i;renderResults()});
 }
 
+/* ---------- Video ---------- */
+let videos=[];
+const ytId=v=>/^[\w-]{11}$/.test(v?.youtube||"")?v.youtube:null;
+function videoSpoiler(v){
+  if(!spoilerHidden) return false;
+  const s=spoilerSession(); if(!s) return false;
+  return new Date(v.published).getTime()>=new Date(s.start).getTime()-30*60e3;
+}
+function renderVideos(){
+  const el=$("#videos"); if(!el) return;
+  const list=videos.filter(ytId).sort((a,b)=>String(b.published).localeCompare(String(a.published)));
+  if(!list.length){el.innerHTML=`<div class="empty">Nessun video ancora.<br>Gli highlights di qualifiche e gara arrivano poche ore dopo la fine della sessione.</div>`;return}
+  let h=list.some(videoSpoiler)?spoilerBanner():"", last=null;
+  list.forEach(v=>{
+    const id=ytId(v), gp=v.gp||"";
+    if(gp!==last){h+=`<div class="vgp">${esc(gp)}</div>`;last=gp}
+    h+=`<div class="vcard${videoSpoiler(v)?" spoil":""}">
+      <button class="vthumb" data-yt="${esc(id)}" aria-label="Guarda: ${esc(v.title)}" style="background-image:url('https://i.ytimg.com/vi/${esc(id)}/hqdefault.jpg')"><span class="vplay"></span></button>
+      <div class="vbody"><h3>${esc(v.title)}</h3>
+      <div class="meta">${v.session?`<span class="tag">${esc(v.session)}</span>`:""}<span>${esc(rel(v.published))}</span>${v.channel?`<span>· ${esc(v.channel)}</span>`:""}<span>· <a href="https://www.youtube.com/watch?v=${esc(id)}" target="_blank" rel="noopener">Apri su YouTube ›</a></span></div></div>
+    </div>`;
+  });
+  el.innerHTML=h;
+  el.querySelectorAll(".vthumb").forEach(b=>b.onclick=()=>playVideo(b.dataset.yt));
+}
+function playVideo(id){
+  renderVideos();   // ferma un eventuale video già in riproduzione
+  const b=$("#videos").querySelector(`.vthumb[data-yt="${id}"]`); if(!b) return;
+  const f=document.createElement("iframe");
+  f.className="vframe"; f.title="Video";
+  f.src=`https://www.youtube-nocookie.com/embed/${id}?autoplay=1&playsinline=1&rel=0`;
+  f.allow="autoplay; encrypted-media; picture-in-picture; fullscreen"; f.allowFullscreen=true;
+  b.replaceWith(f);
+}
+
 /* ---------- Calendario ---------- */
 function renderCal(){
   const c=calendar, el=$("#cal");
@@ -436,7 +486,7 @@ function renderCal(){
 function showView(v){
   if(v==="teams") v="drivers";
   document.querySelectorAll("#tabs button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));
-  ["news","sched","results","drivers","cal"].forEach(k=>$("#v-"+k).hidden=k!==v);
+  ["news","sched","results","video","drivers","cal"].forEach(k=>$("#v-"+k).hidden=k!==v);
   try{localStorage.setItem("f1v",v)}catch(e){}
 }
 document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{showView(b.dataset.v);scrollTo({top:0,behavior:"smooth"})});
@@ -465,8 +515,8 @@ async function load(fresh){
     lastJson[ser]=txt;
     const d=JSON.parse(txt);
     news=(d.news||[]).slice().sort((a,b)=>String(b.published).localeCompare(String(a.published)));
-    info=d.info||null; results=d.results||null; calendar=d.calendar||null; weekend=d.weekend||null; standings=d.standings||null;
-    renderInfo(); renderResults(); renderCal(); renderStandings(); renderSched(); renderPages(series==="f1"?d.pages?.list:null);
+    info=d.info||null; results=d.results||null; calendar=d.calendar||null; weekend=d.weekend||null; standings=d.standings||null; videos=Array.isArray(d.videos)?d.videos:[];
+    renderInfo(); renderResults(); renderCal(); renderStandings(); renderSched(); renderVideos(); renderPages(series==="f1"?d.pages?.list:null);
     checkSpoiler(); render(); renderStandings(); renderResults();
   }catch(e){
     if(my!==loadSeq) return;
@@ -475,10 +525,10 @@ async function load(fresh){
 }
 function switchSeries(v){
   series=["f2","wec"].includes(v)?v:"f1"; try{localStorage.setItem("f1series",series)}catch(e){}
-  news=[];info=null;results=null;calendar=null;weekend=null;standings=null;filter="Tutte";resMode=0;spoilerHidden=false;askedFor=null;
+  news=[];info=null;results=null;calendar=null;weekend=null;standings=null;videos=[];filter="Tutte";resMode=0;spoilerHidden=false;askedFor=null;
   applySeriesUI();
   $("#list").innerHTML='<div class="skel"></div><div class="skel"></div><div class="skel"></div>';
-  renderInfo();renderStandings();renderSched();renderPages();renderResults();renderCal();renderChips();
+  renderInfo();renderStandings();renderSched();renderPages();renderResults();renderCal();renderChips();renderVideos();
   load(true); scrollTo({top:0});
 }
 $("#serSel").onchange=e=>switchSeries(e.target.value);
@@ -494,7 +544,7 @@ $("#serSel").onchange=e=>switchSeries(e.target.value);
   load(true);
   setInterval(()=>{if(!document.hidden) load(false)},10*60e3);
   setInterval(()=>{if(weekend){renderSched();checkSpoiler()}},60000);
-  document.addEventListener("visibilitychange",()=>{if(!document.hidden){askedFor=null;load(false);if(weekend){checkSpoiler();render();renderStandings();renderResults()}}});
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden){askedFor=null;load(false);if(weekend){checkSpoiler();render();renderStandings();renderResults();renderVideos()}}});
   if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
 </script>

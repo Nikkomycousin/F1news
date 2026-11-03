@@ -17,6 +17,7 @@ Ogni file ha queste chiavi:
 - `info`: `{updated, nextGp: {name, circuit, date (ISO UTC), dateOnly?, label, note?}}`
 - `weekend`: `{gp, circuit, updated, tv8note?, sessions: [{name, start, end?, live, key?, tv8?: {live, time}}]}`
 - `results`: `{gp, round, updated, summary, podium?, tabs: [{label, kind: "race"|"quali", rows: [...]}]}`
+- `videos`: lista di `{id, gp, session, title, youtube (ID di 11 caratteri), channel, published (ISO UTC)}` – highlights mostrati nella sezione Video
 - `standings`: `{updated, after, drivers: [{pos, name, team, points, champion?}], constructors: [{pos, team, points, drivers, champion?}]}`
 - `calendar`: `{season, updated, rounds: [{round, name, circuit, date, winner?, team?, wins?, sprintWinner?, status?}]}`
 - solo in `f1.json`: `pages: {list: [{name, url, color}]}` (link alle pagine Facebook, da non toccare)
