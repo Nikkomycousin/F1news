@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-03-pirelli-mescole-brasile",
+      "title": "Interlagos, Pirelli sceglie gomme più morbide: C3, C4 e C5",
+      "summary": "Per il GP del Brasile Pirelli porta una gamma un gradino più morbida rispetto al 2025. Due tratti di asfalto rifatto tra le curve 3-5 e 8-9 potrebbero cambiare il degrado sui long run, e senza Sprint i team avranno tre libere per studiarlo.",
+      "tag": "Gare",
+      "source": "Coffee Corner Motorsport",
+      "url": "https://coffeecornermotorsport.com/brazil-grand-prix-2026-tyre-preview/",
+      "published": "2026-11-03T18:40:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-03-mercedes-titolo-costruttori",
       "title": "Mercedes può chiudere il Mondiale Costruttori già in Brasile",
       "summary": "Con 126 punti di margine sulla Ferrari, alla Mercedes basta guadagnarne almeno tre a Interlagos per rendere il titolo matematico. In caso contrario la sfida si sposterà al Qatar.",
@@ -230,7 +240,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-03T19:50:00Z",
+    "updated": "2026-11-03T20:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
