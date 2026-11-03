@@ -722,11 +722,14 @@ function applySeriesUI(){
 }
 let loadSeq=0, lastJson={};
 let manual=false;
+let lastErr="";
 async function load(fresh){
   const my=++loadSeq, ser=series;
   try{
-    const r=await fetch("data/"+ser+".json?t="+Date.now(),{cache:"no-store"});
-    if(!r.ok) throw new Error(r.status);
+    let r;
+    try{ r=await fetch("data/"+ser+".json?t="+Date.now(),{cache:"no-store"}); }
+    catch(e1){ await new Promise(k=>setTimeout(k,1200)); r=await fetch("data/"+ser+".json?t="+Date.now()); }
+    if(!r.ok) throw new Error("HTTP "+r.status);
     const txt=await r.text();
     if(my!==loadSeq) return;
     if(!fresh && lastJson[ser]===txt) return "same";
@@ -735,13 +738,16 @@ async function load(fresh){
     const d=JSON.parse(txt);
     news=(d.news||[]).slice().sort((a,b)=>String(b.published).localeCompare(String(a.published)));
     info=d.info||null; results=d.results||null; calendar=d.calendar||null; weekend=d.weekend||null; standings=d.standings||null; videos=Array.isArray(d.videos)?d.videos:[]; h2h=d.h2h||null; duels=d.duels||null;
-    renderInfo(); renderResults(); renderCal(); renderStandings(); renderSched(); renderVideos(); renderPages(series==="f1"?d.pages?.list:null);
-    checkSpoiler(); render(); renderStandings(); renderResults(); renderH2H(); renderDuel();
+    const safe=(f,...a)=>{try{f(...a)}catch(e){console.error(f.name,e);lastErr=f.name+": "+e.message}};
+    safe(renderInfo); safe(renderResults); safe(renderCal); safe(renderStandings); safe(renderSched); safe(renderVideos); safe(renderPages,series==="f1"?d.pages?.list:null);
+    safe(checkSpoiler); safe(render); safe(renderStandings); safe(renderResults); safe(renderH2H); safe(renderDuel);
     return changed?"new":"same";
   }catch(e){
     if(my!==loadSeq) return;
     if(manual) return "err";
-    if(!news.length) $("#list").innerHTML=`<div class="empty">Non riesco a caricare le notizie.<br>Controlla la connessione.<br><button class="btn" onclick="load(true)">Riprova</button></div>`;
+    lastErr=String(e&&e.message||e);
+    const off=navigator.onLine===false;
+    if(!news.length) $("#list").innerHTML=`<div class="empty">${off?"Il telefono risulta senza internet.<br>Attiva Wi-Fi o dati e riprova.":"Non riesco a scaricare le notizie in questo momento."}<br><button class="btn" onclick="load(true)">Riprova</button><br><small style="color:var(--faint)">Dettaglio: ${esc(lastErr)}</small></div>`;
   }
 }
 function switchSeries(v){
@@ -760,7 +766,7 @@ $("#refreshBtn").onclick=async()=>{
   b.classList.add("spin"); manual=true;
   const before=info?.updated;
   let r; try{ r=await load(true); } finally { manual=false; setTimeout(()=>b.classList.remove("spin"),400); }
-  if(r==="err") toast("Connessione assente, riprova tra poco");
+  if(r==="err") toast(navigator.onLine===false?"Sei offline: riprova quando hai rete":"Aggiornamento non riuscito, riprova tra poco");
   else if(r==="new"||info?.updated!==before) toast("✓ Dati aggiornati");
   else toast("Sei già aggiornato · ultimo aggiornamento "+(info?.updated?rel(info.updated):""));
 };
