@@ -1,24 +1,25 @@
 {
 "news": [
+{"id":"2026-11-02-jakobsen-peugeot","title":"Peugeot, Monza sarà l'ultima gara di Jakobsen","summary":"Il danese lascia il team francese dopo due stagioni, con un sesto posto al Fuji come miglior risultato del 2026. Per lui si prospetta un posto nel nuovo programma Hypercar McLaren.","tag":"Mercato","source":"Sportscar365","url":"https://sportscar365.com/lemans/wec/peugeot-confirms-jakobsen-departure-after-monza/","published":"2026-11-02T15:00:00Z"},
+{"id":"2026-11-02-monza-rai","title":"La 6 Ore di Monza anche in chiaro sulla Rai","summary":"Per la prima volta la Rai trasmette in diretta una gara del WEC: Rai Sport nella prima parte e Rai 2 dalle 15:30. Restano disponibili Sky Sport Max, Eurosport, Discovery+ e FIAWEC+.","tag":"Calendario","source":"FIA WEC","url":"https://www.fiawec.com/en/news/how-to-watch-the-6-hours-of-monza-your-guide-to-the-2026-fia-wec-finale/13909","published":"2026-11-02T12:00:00Z","top":true},
 {"id":"2026-11-02-preview-monza","title":"Monza decide il titolo piloti: sfida tutta Toyota","summary":"La #8 di Buemi, Hartley e Hirakawa arriva al finale con 17 punti di vantaggio sulla #7 di Conway, Kobayashi e de Vries. Alla #8 basta un quinto posto per vincere il titolo.","tag":"Mondiale","source":"GT Report","url":"https://www.gt-report.com/2026/11/02/preview-wec-season-finale-at-monza/","published":"2026-11-02T10:00:00Z","top":true},
 {"id":"2026-11-02-hirakawa-doppio","title":"Hirakawa dalla F1 alla Monza decisiva","summary":"Dopo il debutto a punti con la Haas in Messico, il giapponese torna sulla Toyota #8 per giocarsi il titolo. Domenica F1 in Brasile e WEC a Monza si corrono lo stesso giorno.","tag":"Piloti","source":"GrandePremio","url":"https://grandepremio.com/en/endurance/wec/hartley-and-hirakawa-lead-toyota-title-battle-heading-into-2026-wec-finale-at-monza/","published":"2026-11-02T08:00:00Z"},
 {"id":"2026-11-01-ferrari-monza","title":"Ferrari, finale di casa a Monza dopo un anno difficile","summary":"Dopo il doppio titolo 2025, la Rossa ha vinto una sola gara quest'anno (la #50 ad Austin) e a Monza lotta con BMW per il secondo posto tra i Costruttori, staccata di 24 punti.","tag":"Ferrari","source":"GT Report","url":"https://www.gt-report.com/2026/11/02/preview-wec-season-finale-at-monza/","published":"2026-11-01T18:00:00Z"},
+{"id":"2026-10-30-milesi-stop","title":"Milesi senza sedile Hypercar: anno sabbatico e ritorno nel 2028","summary":"Con la fine del programma Alpine il francese non ha trovato un'alternativa per il 2027 e potrebbe correre in IMSA. Sfumata anche l'ipotesi di un passaggio della squadra Signatech a Geely.","tag":"Piloti","source":"Sportscar365","url":"https://sportscar365.com/lemans/wec/milesi-resigned-to-hypercar-sabbatical-eyes-2028-return/","published":"2026-10-30T12:00:00Z"},
 {"id":"2026-10-30-entry-list-monza","title":"Entry list di Monza: 35 auto, ultima gara per Conway","summary":"Pubblicata la lista iscritti del finale: in palio ancora tre titoli su quattro. Mike Conway disputerà la sua ultima gara da professionista a tempo pieno.","tag":"Gare","source":"Pit Debrief","url":"https://www.pitdebrief.com/post/2026-wec-6-hours-of-monza-entry-list-confirmed-as-three-titles-remain-undecided/","published":"2026-10-30T10:00:00Z"},
 {"id":"2026-10-18-toyota-campione","title":"Toyota campione del mondo Costruttori con la doppietta di Barcellona","summary":"La #8 vince per 0,583 secondi sulla #7 e regala alla Casa giapponese l'ottavo titolo Costruttori, il quinto dell'era Hypercar. Ferrari #50 terza.","tag":"Mondiale","source":"Autosport","url":"https://www.autosport.com/wec/news/wec-barcelona-toyota-scores-dominant-1-2-to-clinch-manufacturers-title/10866109/","published":"2026-10-18T17:00:00Z","top":true},
 {"id":"2026-10-17-genesis-pole","title":"Genesis fa la storia: prima pole con Jaubert a Barcellona","summary":"La Hypercar coreana conquista una pole da record nella sua prima stagione, mentre la Ferrari parte solo dalla terza fila.","tag":"Gare","source":"Motorbox","url":"https://www.motorbox.com/auto/sport/wec/news/6-ore-barcellona-2026-risultati-gara-titolo-toyota-ferrari-podio","published":"2026-10-17T16:00:00Z"},
-{"id":"2026-07-28-calendario","title":"Addio Qatar e Bahrain: il WEC chiude a Barcellona e Monza","summary":"Per la situazione in Medio Oriente le ultime due gare sono state sostituite con due 6 Ore europee, che assegnano punteggio pieno standard invece dei punti maggiorati.","tag":"Calendario","source":"FIA WEC","url":"https://www.fiawec.com/en/news/fia-wec-and-fia-confirm-venues-for-final-two-rounds-of-2026/13698","published":"2026-07-28T12:00:00Z"}
-],
-"info": {"updated":"2026-11-02T17:10:00Z","nextGp":{"name":"6 Ore di Monza","circuit":"Monza","date":"2026-11-08T10:00:00Z","label":"Gara","note":"finale di stagione"}},
-"weekend": {"gp":"6 Ore di Monza","circuit":"Autodromo Nazionale Monza","updated":"2026-11-02T16:45:00Z","tv8note":"TV8 non trasmette il WEC. La gara è in diretta su Sky Sport Max e NOW, oltre che su Eurosport/Discovery+ e FIAWEC+.","sessions":[
+{"id":"2026-07-28-calendario","title":"Addio Qatar e Bahrain: il WEC chiude a Barcellona e Monza","summary":"Per la situazione in Medio Oriente le ultime due gare sono state sostituite con due 6 Ore europee, che assegnano punteggio pieno standard invece dei punti maggiorati.","tag":"Calendario","source":"FIA WEC","url":"https://www.fiawec.com/en/news/fia-wec-and-fia-confirm-venues-for-final-two-rounds-of-2026/13698","published":"2026-07-28T12:00:00Z"}],
+"info": {"updated":"2026-11-03T13:00:00Z","nextGp":{"name":"6 Ore di Monza","circuit":"Monza","date":"2026-11-08T10:00:00Z","label":"Gara","note":"finale di stagione"}},
+"weekend": {"gp":"6 Ore di Monza","circuit":"Autodromo Nazionale Monza","updated":"2026-11-03T13:00:00Z","tv8note":"TV8 non trasmette il WEC. La gara è in chiaro su Rai Sport e Rai 2 (dalle 15:30) e in diretta integrale su Sky Sport Max, NOW, Eurosport/Discovery+ e FIAWEC+.","sessions":[
 {"name":"Prove libere 1","start":"2026-11-06T09:30:00Z","end":"2026-11-06T11:00:00Z","live":"Solo live timing (FIAWEC+)"},
 {"name":"Prove libere 2","start":"2026-11-06T13:30:00Z","end":"2026-11-06T15:00:00Z","live":"Solo live timing (FIAWEC+)"},
 {"name":"Prove libere 3","start":"2026-11-07T09:30:00Z","end":"2026-11-07T10:30:00Z","live":"Streaming gratis su YouTube · FIAWEC+"},
-{"name":"Qualifiche Hypercar","start":"2026-11-07T14:00:00Z","end":"2026-11-07T14:12:00Z","live":"Streaming Discovery+ · FIAWEC+","key":true},
-{"name":"Hyperpole Hypercar","start":"2026-11-07T14:20:00Z","end":"2026-11-07T14:30:00Z","live":"Streaming Discovery+ · FIAWEC+","key":true},
-{"name":"Gara (6 Ore)","start":"2026-11-08T10:00:00Z","live":"Diretta Sky Sport Max · NOW · Eurosport/Discovery+ · FIAWEC+","key":true}]},
-"results": {"gp":"6 Ore di Barcellona","round":7,"updated":"2026-10-18T17:00:00Z",
-"summary":"Doppietta Toyota nella prima 6 Ore di Barcellona, corsa in condizioni difficili tra pista bagnata e ripartenze. La #8 di Buemi, Hartley e Hirakawa batte la gemella #7 per poco più di mezzo secondo e la Toyota si assicura il titolo Costruttori con una gara d'anticipo. Terza la Ferrari #50 di Fuoco, Molina e Nielsen, staccata di circa 40 secondi. In qualifica pole storica per la Genesis #19 con Jaubert.",
-"tabs":[{"label":"Gara Hypercar","kind":"race","rows":[
+{"name":"Qualifiche Hypercar","start":"2026-11-07T14:00:00Z","end":"2026-11-07T14:12:00Z","live":"Streaming Discovery+ · HBO Max · FIAWEC+","key":true},
+{"name":"Hyperpole Hypercar","start":"2026-11-07T14:20:00Z","end":"2026-11-07T14:30:00Z","live":"Streaming Discovery+ · HBO Max · FIAWEC+","key":true},
+{"name":"Gara (6 Ore)","start":"2026-11-08T10:00:00Z","live":"Diretta Sky Sport Max · Eurosport 1 · Rai Sport (10:50-13:40) e Rai 2 (15:30-17:15) · NOW · Discovery+ · FIAWEC+","key":true}]},
+"results": {"gp":"6 Ore di Barcellona","round":7,"updated":"2026-10-18T17:00:00Z","summary":"Doppietta Toyota nella prima 6 Ore di Barcellona, corsa in condizioni difficili tra pista bagnata e ripartenze. La #8 di Buemi, Hartley e Hirakawa batte la gemella #7 per poco più di mezzo secondo e la Toyota si assicura il titolo Costruttori con una gara d'anticipo. Terza la Ferrari #50 di Fuoco, Molina e Nielsen, staccata di circa 40 secondi. In qualifica pole storica per la Genesis #19 con Jaubert.","tabs":[
+{"label":"Gara Hypercar","kind":"race","rows":[
 {"pos":"1","name":"Buemi · Hartley · Hirakawa","team":"Toyota #8","gap":"6:01:20.906","points":25},
 {"pos":"2","name":"Conway · Kobayashi · de Vries","team":"Toyota #7","gap":"+0.583","points":18},
 {"pos":"3","name":"Fuoco · Molina · Nielsen","team":"Ferrari #50","gap":"+39.725","points":15},
@@ -35,8 +36,10 @@
 {"pos":"14","name":"Frijns · Rast · van der Linde","team":"BMW #20","gap":""},
 {"pos":"15","name":"Calado · Giovinazzi · Pier Guidi","team":"Ferrari #51","gap":""},
 {"pos":"16","name":"Genesis #17","team":"Genesis","gap":""}]}]},
-"standings": {"updated":"2026-10-18T17:00:00Z","after":"dopo la 6 Ore di Barcellona",
-"drivers":[
+"videos": [
+{"id":"2026-10-18-barcellona-gara","gp":"6 Ore di Barcellona","session":"Gara","title":"Highlights della gara – 6 Ore di Barcellona 2026","youtube":"T3lCfL3qXoA","channel":"FIA WEC","published":"2026-10-19T08:00:00Z"},
+{"id":"2026-10-17-barcellona-hyperpole","gp":"6 Ore di Barcellona","session":"Hyperpole","title":"Highlights di qualifiche e Hyperpole – 6 Ore di Barcellona 2026","youtube":"cmGiSpB5C5U","channel":"FIA WEC","published":"2026-10-17T18:00:00Z"}],
+"standings": {"updated":"2026-10-18T17:00:00Z","after":"dopo la 6 Ore di Barcellona","drivers":[
 {"pos":1,"name":"Sébastien Buemi","team":"Toyota #8","points":114},
 {"pos":1,"name":"Brendon Hartley","team":"Toyota #8","points":114},
 {"pos":1,"name":"Ryō Hirakawa","team":"Toyota #8","points":114},
@@ -85,8 +88,7 @@
 {"pos":24,"name":"Stoffel Vandoorne","team":"Peugeot","points":6},
 {"pos":25,"name":"Alex Riberas","team":"Aston Martin #009","points":6},
 {"pos":25,"name":"Marco Sørensen","team":"Aston Martin #009","points":6},
-{"pos":26,"name":"Ricky Taylor","team":"","points":2}],
-"constructors":[
+{"pos":26,"name":"Ricky Taylor","team":"","points":2}],"constructors":[
 {"pos":1,"team":"Toyota","points":212,"drivers":"#7 · #8","champion":true},
 {"pos":2,"team":"BMW","points":154,"drivers":"#15 · #20"},
 {"pos":3,"team":"Ferrari","points":130,"drivers":"#50 · #51"},

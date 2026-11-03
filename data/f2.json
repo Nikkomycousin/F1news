@@ -1,20 +1,20 @@
 {
 "news": [
 {"id":"2026-10-30-cargo-europa","title":"Il materiale F2 torna in Europa: stagione già finita?","summary":"Secondo Frits van Amersfoort il cargo delle squadre non è partito per il Qatar e non ci sarebbero gare sostitutive. Lusail sarebbe saltata, Abu Dhabi ancora da decidere: se così fosse, Câmara sarebbe campione.","tag":"Calendario","source":"GrandPrix.com","url":"https://www.grandprix.com/news/formula-2-season-may-already-be-over-as-freight-returns-to-europe.html","published":"2026-10-30T12:00:00Z","top":true},
+{"id":"2026-10-28-ln4-fusion","title":"Il team di Lando Norris entra in F2 al posto di AIX Racing","summary":"La F2 ha approvato LN4 Fusion, la squadra del pilota McLaren, per il ciclo 2027-2029 al posto di AIX Racing. Il campionato resta a 11 team e 22 vetture, i piloti non sono ancora stati annunciati.","tag":"Team","source":"Grande Prêmio","url":"https://grandepremio.com/en/f2/lando-norris-wins-f2-grid-place-as-ln4-fusion-replaces-aix-racing-for-2027/","published":"2026-10-28T12:00:00Z"},
 {"id":"2026-10-22-michel-qatar-abu-dhabi","title":"Michel: \"Qatar e Abu Dhabi non verranno cancellati\"","summary":"Il CEO della F2 Bruno Michel assicura che il campionato si chiuderà regolarmente in Medio Oriente e che non ci sarà un campione deciso a tavolino.","tag":"Calendario","source":"Motorsport.com","url":"https://www.motorsport.com/fia-f2/news/f2-rebuffs-suggestion-it-might-already-have-a-2026-champion-because-of-the-iran-war/10865537/","published":"2026-10-22T10:00:00Z"},
 {"id":"2026-10-20-camara-haas","title":"Câmara, leader della F2, correrà in F1 con la Haas","summary":"Il brasiliano dell'Invicta è stato confermato come pilota Haas per il futuro, mentre in Formula 2 difende 7 punti di vantaggio su Tsolov.","tag":"Mercato","source":"GrandePremio","url":"https://grandepremio.com/en/f2/f2-boss-rejects-early-end-to-2026-season-as-haas-bound-camara-risks-title-without-final-races/","published":"2026-10-20T10:00:00Z"},
 {"id":"2026-10-11-dunne-titolo","title":"Dunne ci crede: \"Darò tutto per il titolo\"","summary":"In due weekend il pilota Rodin ha ridotto il distacco da Câmara da 59 a 18 punti e punta al colpo finale nelle ultime gare.","tag":"Mondiale","source":"Motorsport Week","url":"https://www.motorsportweek.com/2026/10/11/alex-dunne-f1-title/","published":"2026-10-11T10:00:00Z"},
 {"id":"2026-10-04-calendario-confermato","title":"Domenicali conferma Qatar e Abu Dhabi per il finale 2026","summary":"La F1 ha deciso di mantenere le ultime due tappe in Medio Oriente, con Imola come piano B in caso di forza maggiore. La F2 dipende da questa decisione.","tag":"Calendario","source":"GrandPrix.com","url":"https://www.grandprix.com/news/qatar-and-abu-dhabi-confirmed-as-2026-finale.html","published":"2026-10-04T12:00:00Z"},
 {"id":"2026-09-26-camara-feature2","title":"Câmara vince la Feature 2 di Baku dopo la penalità a Dunne","summary":"Dunne arriva primo ma 5 secondi di penalità lo fanno scendere al terzo posto. Tsolov rimonta dall'undicesima casella fino al secondo posto.","tag":"Gare","source":"GrandePremio","url":"https://grandepremio.com/en/f2/f2s-baku-title-fight-delivers-a-thriller-but-calendar-uncertainty-leaves-its-ending-unresolved/","published":"2026-09-26T13:00:00Z","top":true},
 {"id":"2026-09-25-dunne-feature1","title":"Dunne domina la Feature 1, maxi incidente elimina Tsolov","summary":"Il pilota Rodin vince con pole e giro veloce. Un incidente con sette auto ferma la gara e Câmara prende la testa del mondiale superando León all'ultimo metro.","tag":"Gare","source":"GrandePremio","url":"https://grandepremio.com/en/f2/camara-takes-f2-championship-lead-by-one-point-after-chaotic-baku-race/","published":"2026-09-25T13:00:00Z"},
-{"id":"2026-09-25-beganovic-sprint","title":"Beganovic vince la Sprint di Baku, Câmara a secco","summary":"Il pilota DAMS precede van Hoepen e Dunne. Câmara, penalizzato, chiude fuori dalla zona punti e Tsolov allunga a +11.","tag":"Gare","source":"RacingNews365","url":"https://racingnews365.com/2026-f2-championship-standings-after-baku-sprint-race","published":"2026-09-25T08:00:00Z"}
-],
-"info": {"updated":"2026-11-02T17:10:00Z","nextGp":{"name":"Round 13 · Qatar","circuit":"Lusail","date":"2026-11-28T23:00:00Z","dateOnly":true,"label":"Feature Race","note":"round in dubbio"}},
+{"id":"2026-09-25-beganovic-sprint","title":"Beganovic vince la Sprint di Baku, Câmara a secco","summary":"Il pilota DAMS precede van Hoepen e Dunne. Câmara, penalizzato, chiude fuori dalla zona punti e Tsolov allunga a +11.","tag":"Gare","source":"RacingNews365","url":"https://racingnews365.com/2026-f2-championship-standings-after-baku-sprint-race","published":"2026-09-25T08:00:00Z"}],
+"info": {"updated":"2026-11-03T13:00:00Z","nextGp":{"name":"Round 13 · Qatar","circuit":"Lusail","date":"2026-11-28T23:00:00Z","dateOnly":true,"label":"Feature Race","note":"round in dubbio"}},
 "weekend": {"gp":"Round 13 · Lusail (Qatar)","circuit":"Lusail","updated":"2026-11-02T16:30:00Z","sessions":[]},
-"results": {"gp":"Baku (Azerbaigian)","round":12,"updated":"2026-09-26T14:00:00Z",
-"summary":"Weekend extra-large con tre gare. Beganovic vince la Sprint, dove Câmara resta fuori dai punti. Nella prima Feature Dunne domina mentre un maxi incidente al giro 11 elimina sette piloti, tra cui Tsolov; Câmara passa León sul traguardo e si prende la testa del campionato. Nella seconda Feature Dunne taglia il traguardo per primo ma una penalità di 5 secondi consegna la vittoria a Câmara, ora a +7 su Tsolov.",
-"podium":[{"name":"Rafael Câmara"},{"name":"Nikola Tsolov"},{"name":"Alex Dunne"}],
-"tabs":[
+"results": {"gp":"Baku (Azerbaigian)","round":12,"updated":"2026-09-26T14:00:00Z","summary":"Weekend extra-large con tre gare. Beganovic vince la Sprint, dove Câmara resta fuori dai punti. Nella prima Feature Dunne domina mentre un maxi incidente al giro 11 elimina sette piloti, tra cui Tsolov; Câmara passa León sul traguardo e si prende la testa del campionato. Nella seconda Feature Dunne taglia il traguardo per primo ma una penalità di 5 secondi consegna la vittoria a Câmara, ora a +7 su Tsolov.","podium":[
+{"name":"Rafael Câmara"},
+{"name":"Nikola Tsolov"},
+{"name":"Alex Dunne"}],"tabs":[
 {"label":"Feature 2","kind":"race","rows":[
 {"pos":"1","name":"Rafael Câmara","team":"Invicta Racing","gap":"59:57.958","points":25},
 {"pos":"2","name":"Nikola Tsolov","team":"Campos Racing","gap":"+0.747","points":19,"note":"giro veloce"},
@@ -106,8 +106,11 @@
 {"pos":"8","name":"Nikola Tsolov","team":"Campos Racing","time":"+0.957"},
 {"pos":"9","name":"Tasanapol Inthraphuvasak","team":"ART Grand Prix","time":"+1.243"},
 {"pos":"10","name":"Sebastián Montoya","team":"Prema Racing","time":"+1.313"}]}]},
-"standings": {"updated":"2026-09-26T14:00:00Z","after":"dopo il round di Baku",
-"drivers":[
+"videos": [
+{"id":"2026-09-26-baku-feature2","gp":"Baku (Azerbaigian)","session":"Feature 2","title":"Highlights della Feature Race 2 – Baku 2026","youtube":"NwUJCi3vCJs","channel":"FORMULA 1","published":"2026-09-26T13:00:00Z"},
+{"id":"2026-09-25-baku-feature1","gp":"Baku (Azerbaigian)","session":"Feature 1","title":"Highlights della Feature Race 1 – Baku 2026","youtube":"D5LuiCS2OSw","channel":"FORMULA 1","published":"2026-09-25T15:00:00Z"},
+{"id":"2026-09-25-baku-sprint","gp":"Baku (Azerbaigian)","session":"Sprint","title":"Highlights della Sprint Race – Baku 2026","youtube":"oLmQhzVM4js","channel":"FORMULA 1","published":"2026-09-25T10:00:00Z"}],
+"standings": {"updated":"2026-09-26T14:00:00Z","after":"dopo il round di Baku","drivers":[
 {"pos":1,"name":"Rafael Câmara","team":"Invicta Racing","points":207},
 {"pos":2,"name":"Nikola Tsolov","team":"Campos Racing","points":200},
 {"pos":3,"name":"Alex Dunne","team":"Rodin Motorsport","points":189},
@@ -130,8 +133,7 @@
 {"pos":20,"name":"Mari Boya","team":"Prema Racing","points":21},
 {"pos":21,"name":"Nicolás Varrone","team":"Van Amersfoort Racing","points":15},
 {"pos":22,"name":"Cian Shields","team":"AIX Racing","points":10},
-{"pos":23,"name":"Hiyu Yamakoshi","team":"Van Amersfoort Racing","points":2}],
-"constructors":[
+{"pos":23,"name":"Hiyu Yamakoshi","team":"Van Amersfoort Racing","points":2}],"constructors":[
 {"pos":1,"team":"Campos Racing","points":333,"drivers":"Tsolov · León"},
 {"pos":2,"team":"Invicta Racing","points":297,"drivers":"Câmara · Dürksen"},
 {"pos":3,"team":"Rodin Motorsport","points":296,"drivers":"Dunne · Stenshorne"},
