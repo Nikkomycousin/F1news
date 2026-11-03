@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-03-camara-debutto-haas",
+      "title": "Câmara debutta in F1 a Interlagos con la Haas, Ocon fuori fino a fine anno",
+      "summary": "La Haas anticipa l'esordio del leader della F2 nel GP di casa, accanto a Bearman. Ocon non tornerà al volante in questa stagione; Hirakawa, che lo aveva sostituito in Messico, è impegnato nel WEC a Monza.",
+      "tag": "Mercato",
+      "source": "Formula1.com",
+      "url": "https://www.formula1.com/en/latest/article/f2-racer-camara-to-make-f1-debut-at-sao-paulo-grand-prix-as-haas-confirm-ocon-will-not-return.12Qa0tpaMZ9kgnEuGJBKFp",
+      "published": "2026-11-03T20:30:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-03-pirelli-mescole-brasile",
       "title": "Interlagos, Pirelli sceglie gomme più morbide: C3, C4 e C5",
       "summary": "Per il GP del Brasile Pirelli porta una gamma un gradino più morbida rispetto al 2025. Due tratti di asfalto rifatto tra le curve 3-5 e 8-9 potrebbero cambiare il degrado sui long run, e senza Sprint i team avranno tre libere per studiarlo.",
@@ -240,7 +250,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-03T21:50:00Z",
+    "updated": "2026-11-03T22:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
@@ -1236,6 +1246,12 @@
             "team": "Alpine",
             "a": "Pierre Gasly",
             "b": "Franco Colapinto"
+          },
+          {
+            "id": "has",
+            "team": "Haas",
+            "a": "Oliver Bearman",
+            "b": "Rafael Câmara"
           },
           {
             "id": "aud",

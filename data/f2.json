@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-03-camara-esordio-f1",
+      "title": "Il leader della F2 Câmara esordisce in F1 nel GP del Brasile",
+      "summary": "La Haas schiera Rafael Câmara a Interlagos al posto di Ocon, anticipando il debutto previsto per il 2027. Il brasiliano guida la classifica F2 in attesa di sapere se Qatar e Abu Dhabi si correranno.",
+      "tag": "Mercato",
+      "source": "Sky Sports",
+      "url": "https://www.skysports.com/f1/news/13607256/esteban-ocon-will-not-race-for-haas-again-this-season-as-rafael-camara-replaces-him-at-sao-paulo-grand-prix",
+      "published": "2026-11-03T20:31:00Z",
+      "top": true
+    },
+    {
       "id": "2026-10-30-cargo-europa",
       "title": "Il materiale F2 torna in Europa: stagione già finita?",
       "summary": "Secondo Frits van Amersfoort il cargo delle squadre non è partito per il Qatar e non ci sarebbero gare sostitutive. Lusail sarebbe saltata, Abu Dhabi ancora da decidere: se così fosse, Câmara sarebbe campione.",
@@ -85,7 +95,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-03T21:50:00Z",
+    "updated": "2026-11-03T22:55:00Z",
     "nextGp": {
       "name": "Round 13 · Qatar",
       "circuit": "Lusail",
