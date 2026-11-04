@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-04-vasseur-anteprima-brasile",
+      "title": "Vasseur verso Interlagos: Ferrari compatta per cogliere ogni occasione",
+      "summary": "Dopo i progressi visti in Messico e le polemiche sul duello interno, il team principal della Ferrari chiede alla squadra di restare concentrata nel weekend sprint brasiliano per massimizzare il risultato.",
+      "tag": "Ferrari",
+      "source": "Motorsport.com",
+      "url": "https://it.motorsport.com/f1/news/f1-vasseur-a-interlagos-dovremo-rimanere-concentrati-per-sfruttare-al-meglio-ogni-opportunita/10871514/",
+      "published": "2026-11-04T16:00:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-04-leclerc-papa-beganovic-fp1",
       "title": "Leclerc diventa papà: salta le FP1 di Interlagos, al suo posto Beganovic",
       "summary": "Martedì è nata Bianca, la prima figlia di Charles e Alexandra: il monegasco salterà gli impegni media del giovedì e la prima sessione di libere. Sulla SF-26 in FP1 salirà Dino Beganovic della Ferrari Driver Academy, mentre Leclerc è atteso in Brasile venerdì.",
@@ -310,7 +320,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-04T15:55:00Z",
+    "updated": "2026-11-04T16:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
