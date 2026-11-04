@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-04-leclerc-papa-beganovic-fp1",
+      "title": "Leclerc diventa papà: salta le FP1 di Interlagos, al suo posto Beganovic",
+      "summary": "Martedì è nata Bianca, la prima figlia di Charles e Alexandra: il monegasco salterà gli impegni media del giovedì e la prima sessione di libere. Sulla SF-26 in FP1 salirà Dino Beganovic della Ferrari Driver Academy, mentre Leclerc è atteso in Brasile venerdì.",
+      "tag": "Ferrari",
+      "source": "Automoto.it",
+      "url": "https://www.automoto.it/formula1/f1-leclerc-papa-nascita-bianca-ferrari-beganovic-gp-brasile-haas-camara.html",
+      "published": "2026-11-04T15:00:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-04-hamilton-400-gp",
       "title": "Hamilton taglia il traguardo dei 400 Gran Premi in Brasile",
       "summary": "A Interlagos il pilota Ferrari disputerà il suo 400° GP in carriera, diventando solo il secondo nella storia della F1 a raggiungere questa cifra.",
@@ -300,7 +310,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-04T14:55:00Z",
+    "updated": "2026-11-04T15:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
