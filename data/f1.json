@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-04-mercedes-tute-viola",
+      "title": "Mercedes in viola a Interlagos: tute speciali per Antonelli e Russell",
+      "summary": "Nel weekend brasiliano i due piloti Mercedes indosseranno tute viola nate dalla collaborazione con un marchio bancario locale, protagonista anche di una fan zone a San Paolo con una replica della W17.",
+      "tag": "Mercedes",
+      "source": "Formula1.it",
+      "url": "https://www.formula1.it/news/33735/1/la-mercedes-si-tinge-di-viola-in-brasile-svelate-le-tute-speciali-per-il-gp",
+      "published": "2026-11-04T16:25:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-04-vasseur-anteprima-brasile",
       "title": "Vasseur verso Interlagos: Ferrari compatta per cogliere ogni occasione",
       "summary": "Dopo i progressi visti in Messico e le polemiche sul duello interno, il team principal della Ferrari chiede alla squadra di restare concentrata nel weekend sprint brasiliano per massimizzare il risultato.",
@@ -320,7 +330,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-04T16:55:00Z",
+    "updated": "2026-11-04T17:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
