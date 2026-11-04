@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-03-monza-alpine-toyota",
+      "title": "Monza, ultimo WEC per Alpine e Toyota a caccia del nono finale di fila",
+      "summary": "Nel weekend brianzolo Alpine chiude il suo programma Hypercar all'80ª gara nel mondiale, mentre Toyota punta a vincere ancora l'ultima prova stagionale come fa dal 2017. La Ferrari spera di interrompere la serie davanti al pubblico di casa.",
+      "tag": "Gare",
+      "source": "FIA WEC",
+      "url": "https://www.fiawec.com/en/news/high-speeds-and-high-stakes-in-monza-season-finale/13912",
+      "published": "2026-11-03T10:00:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-02-jakobsen-peugeot",
       "title": "Peugeot, Monza sarà l'ultima gara di Jakobsen",
       "summary": "Il danese lascia il team francese dopo due stagioni, con un sesto posto al Fuji come miglior risultato del 2026. Per lui si prospetta un posto nel nuovo programma Hypercar McLaren.",
@@ -95,7 +105,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-04T18:48:00Z",
+    "updated": "2026-11-04T19:55:00Z",
     "nextGp": {
       "name": "6 Ore di Monza",
       "circuit": "Monza",

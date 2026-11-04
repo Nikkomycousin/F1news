@@ -101,6 +101,16 @@
       "top": false
     },
     {
+      "id": "2026-11-03-alonso-barcellona-indycar",
+      "title": "Alonso: senza Barcellona il motorsport spagnolo rischia di non sopravvivere",
+      "summary": "Il pilota Aston Martin difende il Montmeló, che dal 2027 si alternerà con Spa e salterà la stagione 2027 della F1. Sull'arrivo dell'IndyCar in Europa è scettico: prevede solo una o due tappe fuori dagli USA.",
+      "tag": "Calendario",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/fernando-alonso-issues-cannot-survive-claim-as-barcelona-secures-major-coup",
+      "published": "2026-11-03T18:15:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-03-mercedes-titolo-costruttori",
       "title": "Mercedes può chiudere il Mondiale Costruttori già in Brasile",
       "summary": "Con 126 punti di margine sulla Ferrari, alla Mercedes basta guadagnarne almeno tre a Interlagos per rendere il titolo matematico. In caso contrario la sfida si sposterà al Qatar.",
@@ -330,7 +340,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-04T18:48:00Z",
+    "updated": "2026-11-04T19:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
