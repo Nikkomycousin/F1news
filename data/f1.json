@@ -1,13 +1,23 @@
 {
   "news": [
     {
-      "id": "2026-11-03-wolff-sponsor-antonelli",
-      "title": "Wolff: due sponsor lasciarono la Mercedes per la promozione di Antonelli",
-      "summary": "Il team principal rivela che due partner si sfilarono, poco convinti che il giovane italiano fosse pronto a sostituire Hamilton. La squadra si fidò dei propri dati e la scommessa ha portato al titolo mondiale 2026.",
-      "tag": "Mercedes",
-      "source": "Grande Prêmio",
-      "url": "https://grandepremio.com/en/f1/f1-today-haas-confirms-camara-debut-verstappen-blasts-fia-and-mercedes-reveals-antonelli-gamble/",
-      "published": "2026-11-03T22:30:00Z",
+      "id": "2026-11-04-hamilton-400-gp",
+      "title": "Hamilton taglia il traguardo dei 400 Gran Premi in Brasile",
+      "summary": "A Interlagos il pilota Ferrari disputerà il suo 400° GP in carriera, diventando solo il secondo nella storia della F1 a raggiungere questa cifra.",
+      "tag": "Ferrari",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/lewis-hamilton-key-milestones-ahead-of-landmark-400th-f1-grand-prix",
+      "published": "2026-11-04T10:40:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-04-herta-fp1-interlagos",
+      "title": "Herta ci riprova: FP1 a Interlagos con Cadillac per la superlicenza",
+      "summary": "Colton Herta guiderà la Cadillac al posto di Pérez nelle prime libere in Brasile per completare i 100 km necessari a ottenere l'ultimo punto della superlicenza. In Messico un errore nel calcolo dei punti lo aveva lasciato a un passo dall'obiettivo.",
+      "tag": "Team",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/colton-herta-takes-second-stab-at-overcoming-crucial-fia-hurdle-in-pursuit-of-f1",
+      "published": "2026-11-04T09:50:00Z",
       "top": false
     },
     {
@@ -18,6 +28,16 @@
       "source": "Fanpage.it",
       "url": "https://fanpage.it/sport/motori/kimi-antonelli-non-ha-ancora-avuto-il-trofeo-di-campione-f1-per-tenerlo-dovra-pagare-35mila-euro",
       "published": "2026-11-04T06:24:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-03-wolff-sponsor-antonelli",
+      "title": "Wolff: due sponsor lasciarono la Mercedes per la promozione di Antonelli",
+      "summary": "Il team principal rivela che due partner si sfilarono, poco convinti che il giovane italiano fosse pronto a sostituire Hamilton. La squadra si fidò dei propri dati e la scommessa ha portato al titolo mondiale 2026.",
+      "tag": "Mercedes",
+      "source": "Grande Prêmio",
+      "url": "https://grandepremio.com/en/f1/f1-today-haas-confirms-camara-debut-verstappen-blasts-fia-and-mercedes-reveals-antonelli-gamble/",
+      "published": "2026-11-03T22:30:00Z",
       "top": false
     },
     {
@@ -270,7 +290,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-04T11:48:00Z",
+    "updated": "2026-11-04T12:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
