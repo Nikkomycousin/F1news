@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-03-wolff-sponsor-antonelli",
+      "title": "Wolff: due sponsor lasciarono la Mercedes per la promozione di Antonelli",
+      "summary": "Il team principal rivela che due partner si sfilarono, poco convinti che il giovane italiano fosse pronto a sostituire Hamilton. La squadra si fidò dei propri dati e la scommessa ha portato al titolo mondiale 2026.",
+      "tag": "Mercedes",
+      "source": "Grande Prêmio",
+      "url": "https://grandepremio.com/en/f1/f1-today-haas-confirms-camara-debut-verstappen-blasts-fia-and-mercedes-reveals-antonelli-gamble/",
+      "published": "2026-11-03T22:30:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-04-antonelli-trofeo",
       "title": "Antonelli riceverà il trofeo iridato al Gala FIA del 12 dicembre",
       "summary": "Il campione del mondo 2026 non alzerà la coppa in pista: la FIA gliela consegnerà alla cerimonia di premiazione di fine anno. L'originale resta alla Federazione, al pilota andrà una replica ufficiale dal valore stimato di circa 35mila euro.",
@@ -260,7 +270,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-04T09:55:00Z",
+    "updated": "2026-11-04T10:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
