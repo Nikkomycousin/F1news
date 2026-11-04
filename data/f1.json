@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-04-antonelli-trofeo",
+      "title": "Antonelli riceverà il trofeo iridato al Gala FIA del 12 dicembre",
+      "summary": "Il campione del mondo 2026 non alzerà la coppa in pista: la FIA gliela consegnerà alla cerimonia di premiazione di fine anno. L'originale resta alla Federazione, al pilota andrà una replica ufficiale dal valore stimato di circa 35mila euro.",
+      "tag": "Mondiale",
+      "source": "Fanpage.it",
+      "url": "https://fanpage.it/sport/motori/kimi-antonelli-non-ha-ancora-avuto-il-trofeo-di-campione-f1-per-tenerlo-dovra-pagare-35mila-euro",
+      "published": "2026-11-04T06:24:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-03-camara-debutto-haas",
       "title": "Câmara debutta in F1 a Interlagos con la Haas, Ocon fuori fino a fine anno",
       "summary": "La Haas anticipa l'esordio del leader della F2 nel GP di casa, accanto a Bearman. Ocon non tornerà al volante in questa stagione; Hirakawa, che lo aveva sostituito in Messico, è impegnato nel WEC a Monza.",
@@ -250,7 +260,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-04T08:50:00Z",
+    "updated": "2026-11-04T09:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
