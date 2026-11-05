@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-04-saucy-mclaren",
+      "title": "Saucy, campione ELMS, avrà un sedile sulla McLaren Hypercar",
+      "summary": "Lo svizzero correrà con la MCL-HY nella stagione d'esordio della McLaren nel WEC, diventando il quinto pilota annunciato. Per l'ultimo posto libero è atteso Malthe Jakobsen.",
+      "tag": "Mercato",
+      "source": "Sportscar365",
+      "url": "https://sportscar365.com/lemans/wec/elms-champion-saucy-secures-mclaren-hypercar-seat",
+      "published": "2026-11-04T15:00:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-03-monza-alpine-toyota",
       "title": "Monza, ultimo WEC per Alpine e Toyota a caccia del nono finale di fila",
       "summary": "Nel weekend brianzolo Alpine chiude il suo programma Hypercar all'80ª gara nel mondiale, mentre Toyota punta a vincere ancora l'ultima prova stagionale come fa dal 2017. La Ferrari spera di interrompere la serie davanti al pubblico di casa.",
@@ -105,7 +115,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-05T13:55:00Z",
+    "updated": "2026-11-05T14:55:00Z",
     "nextGp": {
       "name": "6 Ore di Monza",
       "circuit": "Monza",

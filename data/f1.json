@@ -1,6 +1,36 @@
 {
   "news": [
     {
+      "id": "2026-11-05-leclerc-hamilton-chiarimento",
+      "title": "Leclerc: parlerò con Hamilton del duello in Messico, regole da chiarire",
+      "summary": "Il monegasco annuncia un confronto con il compagno sul contatto di Città del Messico, giudicando anche la manovra di Hamilton al limite. Chiede inoltre regole più rigide per eliminare le zone grigie dei tracciati.",
+      "tag": "Ferrari",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/charles-leclerc-confirms-lewis-hamilton-talks-intention-after-grey-area-exposed",
+      "published": "2026-11-05T09:40:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-05-morto-alan-jones",
+      "title": "Addio ad Alan Jones, campione del mondo 1980 con la Williams",
+      "summary": "L'australiano è scomparso a 80 anni, pochi giorni dopo il compleanno, dopo una breve malattia. Portò alla Williams il primo titolo piloti e in carriera vinse 12 Gran Premi, prima di diventare commentatore e commissario FIA.",
+      "tag": "Paddock",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/williams-release-statement-after-legend-alan-jones-saddening-death",
+      "published": "2026-11-05T08:19:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-11-05-audi-livrea-interlagos",
+      "title": "Audi, livrea speciale per Interlagos dedicata a Bortoleto",
+      "summary": "Per la gara di casa del brasiliano la monoposto sfoggia il motivo della pavimentazione tipica di San Paolo. Lo stesso disegno compare su tute, abbigliamento dei meccanici e box.",
+      "tag": "Team",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/audi-take-covers-off-striking-sao-paulo-grand-prix-special-livery",
+      "published": "2026-11-05T07:33:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-05-norris-aggiornamenti-mclaren",
       "title": "Norris scettico sulle novità McLaren per Interlagos: «La macchina è difficile»",
       "summary": "La McLaren porta in Brasile ala anteriore, ala posteriore e fondo nuovi, ma Norris dubita che bastino a risolvere i problemi di guida della vettura. Il britannico rifiuta però di parlare di stagione fallimentare.",
@@ -370,7 +400,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-05T13:55:00Z",
+    "updated": "2026-11-05T14:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
