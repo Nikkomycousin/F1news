@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-05-verstappen-interlagos",
+      "title": "Verstappen: «Interlagos imprevedibile, il secondo posto nel Mondiale è una sorpresa»",
+      "summary": "Nella conferenza del giovedì l'olandese della Red Bull ha elogiato la pista brasiliana, dove pioggia e consumo delle gomme possono rimescolare le carte. Si è detto stupito di trovarsi secondo in classifica alle spalle del campione Antonelli.",
+      "tag": "Red Bull",
+      "source": "OA Sport",
+      "url": "https://www.oasport.it/2026/11/f1-max-verstappen-interlagos-e-fantastica-ci-sono-tante-variabili-essere-secondo-nel-mondiale-e-una-sorpresa/",
+      "published": "2026-11-05T17:51:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-05-camara-conferenza",
       "title": "Câmara in conferenza: «A Interlagos voglio capire la Haas e divertirmi»",
       "summary": "Il brasiliano, al debutto in F1 al posto di Ocon, non ha mai girato a Interlagos e si è preparato al simulatore. Sul possibile addio alla corsa al titolo F2 dice che con il team non se n'è ancora parlato.",
@@ -9,6 +19,16 @@
       "url": "https://www.napolimagazine.com/motori/articolo/f1-camara-al-debutto-nel-suo-brasile-prover-a-divertirmi-05-11-2026",
       "published": "2026-11-05T17:36:00Z",
       "top": false
+    },
+    {
+      "id": "2026-11-05-allerta-pioggia-interlagos",
+      "title": "Allerta maltempo a Interlagos: rischio allagamenti per le qualifiche",
+      "summary": "La F1 ha avvisato le squadre che forti piogge potrebbero creare pozze d'acqua in pista, con le qualifiche di sabato come sessione più esposta. Anche domenica sono previsti temporali, con temperature massime intorno ai 19 gradi.",
+      "tag": "Gare",
+      "source": "Read Motorsport",
+      "url": "https://readmotorsport.com/2026/11/05/f1-warns-of-possible-flooding-at-interlagos-ahead-of-sao-paulo-grand-prix/",
+      "published": "2026-11-05T15:56:00Z",
+      "top": true
     },
     {
       "id": "2026-11-05-stroll-salta-media-day",
@@ -420,7 +440,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-05T17:50:00Z",
+    "updated": "2026-11-05T18:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
