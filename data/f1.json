@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-05-norris-aggiornamenti-mclaren",
+      "title": "Norris scettico sulle novità McLaren per Interlagos: «La macchina è difficile»",
+      "summary": "La McLaren porta in Brasile ala anteriore, ala posteriore e fondo nuovi, ma Norris dubita che bastino a risolvere i problemi di guida della vettura. Il britannico rifiuta però di parlare di stagione fallimentare.",
+      "tag": "McLaren",
+      "source": "Sky Sports",
+      "url": "https://www.skysports.com/f1/news/13607894/lando-norris-mclaren-driver-unsure-if-sao-paulo-grand-prix-upgrades-will-improve-horrible-mclaren-car",
+      "published": "2026-11-05T06:07:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-04-fsg-cadillac",
       "title": "Il gruppo proprietario del Liverpool tratta una quota di maggioranza Cadillac",
       "summary": "Secondo il Guardian, Fenway Sports Group ha avviato colloqui per rilevare la maggioranza della squadra Cadillac con un'operazione che potrebbe superare i 2 miliardi di sterline. TWG precisa però che una cessione non è imminente e nessun accordo è stato annunciato.",
@@ -360,7 +370,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-05T09:48:00Z",
+    "updated": "2026-11-05T10:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
