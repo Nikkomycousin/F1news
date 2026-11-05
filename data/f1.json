@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-05-stroll-salta-media-day",
+      "title": "Stroll salta il media day di Interlagos per un'infezione virale",
+      "summary": "Il pilota Aston Martin si sta riprendendo da un virus contratto dopo il GP del Messico e non sarà in pista con i media giovedì. Il team è fiducioso di riaverlo nel paddock già venerdì; Alonso lo sostituisce in conferenza stampa.",
+      "tag": "Paddock",
+      "source": "F1 Live Pulse",
+      "url": "https://blog.f1livepulse.com/it/stroll-non-sara-al-media-day-di-san-paolo-colpito-da-uninfezione",
+      "published": "2026-11-05T12:19:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-05-leclerc-hamilton-chiarimento",
       "title": "Leclerc: parlerò con Hamilton del duello in Messico, regole da chiarire",
       "summary": "Il monegasco annuncia un confronto con il compagno sul contatto di Città del Messico, giudicando anche la manovra di Hamilton al limite. Chiede inoltre regole più rigide per eliminare le zone grigie dei tracciati.",
@@ -400,7 +410,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-05T15:49:00Z",
+    "updated": "2026-11-05T16:50:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
