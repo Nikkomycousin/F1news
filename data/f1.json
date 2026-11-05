@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-05-alonso-interlagos",
+      "title": "Alonso frena le attese a Interlagos: «Per noi competitivi vuol dire 12° o 13°»",
+      "summary": "Il pilota Aston Martin, che a Interlagos ha vinto entrambi i suoi titoli, vede la squadra in crescita da Sepang ma punta a una qualifica a centro gruppo per raccogliere punti. Non teme problemi in caso di pioggia, pur ricordando quanto la salita della pista renda insidioso il bagnato.",
+      "tag": "Team",
+      "source": "f1world.it",
+      "url": "https://f1world.it/gp-brasile-la-conferenza-stampa-alonso-camara-e-verstappen/",
+      "published": "2026-11-05T17:48:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-05-verstappen-interlagos",
       "title": "Verstappen: «Interlagos imprevedibile, il secondo posto nel Mondiale è una sorpresa»",
       "summary": "Nella conferenza del giovedì l'olandese della Red Bull ha elogiato la pista brasiliana, dove pioggia e consumo delle gomme possono rimescolare le carte. Si è detto stupito di trovarsi secondo in classifica alle spalle del campione Antonelli.",
@@ -440,7 +450,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-05T18:55:00Z",
+    "updated": "2026-11-05T19:50:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
