@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-05-camara-conferenza",
+      "title": "Câmara in conferenza: «A Interlagos voglio capire la Haas e divertirmi»",
+      "summary": "Il brasiliano, al debutto in F1 al posto di Ocon, non ha mai girato a Interlagos e si è preparato al simulatore. Sul possibile addio alla corsa al titolo F2 dice che con il team non se n'è ancora parlato.",
+      "tag": "Paddock",
+      "source": "Napoli Magazine",
+      "url": "https://www.napolimagazine.com/motori/articolo/f1-camara-al-debutto-nel-suo-brasile-prover-a-divertirmi-05-11-2026",
+      "published": "2026-11-05T17:36:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-05-stroll-salta-media-day",
       "title": "Stroll salta il media day di Interlagos per un'infezione virale",
       "summary": "Il pilota Aston Martin si sta riprendendo da un virus contratto dopo il GP del Messico e non sarà in pista con i media giovedì. Il team è fiducioso di riaverlo nel paddock già venerdì; Alonso lo sostituisce in conferenza stampa.",
@@ -410,7 +420,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-05T16:50:00Z",
+    "updated": "2026-11-05T17:50:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
