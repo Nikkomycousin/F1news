@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-05-sette-rookie-fp1-interlagos",
+      "title": "Sette debuttanti al volante nelle FP1 di Interlagos",
+      "summary": "Nella prima sessione di prove a San Paolo scenderanno in pista Fornaroli (McLaren), Beganovic (Ferrari), Browning (Williams), Slater (Audi), Mini (Alpine) e Herta (Cadillac), oltre a Câmara che con la Haas correrà l'intero weekend.",
+      "tag": "Paddock",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/the-seven-f1-rookies-who-will-drive-in-sao-paulo-grand-prix-fp1",
+      "published": "2026-11-05T14:50:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-05-alonso-interlagos",
       "title": "Alonso frena le attese a Interlagos: «Per noi competitivi vuol dire 12° o 13°»",
       "summary": "Il pilota Aston Martin, che a Interlagos ha vinto entrambi i suoi titoli, vede la squadra in crescita da Sepang ma punta a una qualifica a centro gruppo per raccogliere punti. Non teme problemi in caso di pioggia, pur ricordando quanto la salita della pista renda insidioso il bagnato.",
@@ -450,7 +460,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-05T19:50:00Z",
+    "updated": "2026-11-05T20:50:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
