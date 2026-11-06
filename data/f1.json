@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "2026-11-06-camara-reprimenda-leclerc",
+      "title": "Interlagos, solo una reprimenda a Câmara per l'ostacolo a Leclerc nelle libere 2",
+      "summary": "I commissari hanno chiuso l'indagine sull'episodio delle seconde libere con una reprimenda per l'esordiente della Haas, che aveva rallentato il giro veloce del ferrarista. Nessuna penalità in griglia per il brasiliano.",
+      "tag": "Paddock",
+      "source": "F1Mania",
+      "url": "https://www.f1mania.net/f1/f1-camara-recebe-reprimenda-por-bloquear-leclerc-no-tl2-do-brasil/",
+      "published": "2026-11-06T22:10:00Z"
+    },
+    {
       "id": "2026-11-06-libere2-antonelli-interlagos",
       "title": "Interlagos, Antonelli davanti a tutti nelle seconde libere; Leclerc-Câmara sotto indagine",
       "summary": "Nella seconda sessione di prove in Brasile il campione Antonelli ha preceduto Norris di circa due decimi e mezzo, con Verstappen terzo. I commissari esamineranno dopo la sessione un contatto tra Leclerc e l'esordiente della Haas Câmara.",
@@ -530,7 +539,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-06T21:48:00Z",
+    "updated": "2026-11-06T22:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
