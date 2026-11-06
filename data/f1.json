@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-06-libere2-antonelli-interlagos",
+      "title": "Interlagos, Antonelli davanti a tutti nelle seconde libere; Leclerc-Câmara sotto indagine",
+      "summary": "Nella seconda sessione di prove in Brasile il campione Antonelli ha preceduto Norris di circa due decimi e mezzo, con Verstappen terzo. I commissari esamineranno dopo la sessione un contatto tra Leclerc e l'esordiente della Haas Câmara.",
+      "tag": "Gare",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/2026-brazilian-grand-prix-fp2-report",
+      "published": "2026-11-06T20:02:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-06-libere1-norris-interlagos",
       "title": "Interlagos, Norris il più veloce nelle prime libere davanti ad Antonelli",
       "summary": "Con la McLaren aggiornata Norris chiude la FP1 in 1:11.717, 82 millesimi meglio del neocampione Antonelli; terzo Verstappen e quarto Hamilton con la Ferrari. Breve bandiera rossa per il guasto all'Audi del debuttante Slater, Albon fermo per un problema al servosterzo.",
@@ -520,7 +530,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-06T19:52:00Z",
+    "updated": "2026-11-06T20:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
