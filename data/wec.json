@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-06-monza-fp2-kubica",
+      "title": "Monza, Kubica porta la Ferrari #83 in vetta alle FP2 sulla pista che si asciuga",
+      "summary": "Con il passaggio alle gomme slick nel finale, il polacco ha preceduto di quasi otto decimi l'Aston Martin #007 di Tincknell, con la BMW #15 di Marciello terza. Sessione regolare, interrotta solo da una Full Course Yellow.",
+      "tag": "Ferrari",
+      "source": "Sportscar365",
+      "url": "https://sportscar365.com/lemans/wec/kubica-sets-the-pace-in-drying-monza-second-practice",
+      "published": "2026-11-06T15:10:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-06-pourchaire-lascia-peugeot",
       "title": "Anche Pourchaire saluta la Peugeot: Monza sarà la sua ultima gara",
       "summary": "Il francese ha confermato che lascerà il programma Hypercar dopo la finale per concentrarsi sulla Formula E con Opel. Peugeot dovrà così rinnovare buona parte dei piloti per il 2027, visto che escono anche Vandoorne e Jakobsen.",
@@ -18,7 +28,7 @@
       "source": "Sportscar365",
       "url": "https://sportscar365.com/lemans/wec/milesi-leads-wet-free-practice-1-in-monza",
       "published": "2026-11-06T11:05:00Z",
-      "top": true
+      "top": false
     },
     {
       "id": "2026-11-04-saucy-mclaren",
@@ -135,7 +145,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-06T14:58:00Z",
+    "updated": "2026-11-06T15:55:00Z",
     "nextGp": {
       "name": "6 Ore di Monza",
       "circuit": "Monza",
