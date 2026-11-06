@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-05-camara-decisione-titolo",
+      "title": "Câmara rinvia la scelta: «Del titolo F2 parleremo dopo Interlagos»",
+      "summary": "Il leader della F2, sette punti davanti a Tsolov a due round dalla fine, non ha ancora deciso se rinunciare al campionato per restare in Haas. Il brasiliano ha detto che la questione sarà affrontata dopo il weekend del debutto in F1.",
+      "tag": "Mondiale",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/rafael-camara-addresses-key-f2-question-ahead-of-surprise-f1-debut",
+      "published": "2026-11-05T17:27:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-03-camara-esordio-f1",
       "title": "Il leader della F2 Câmara esordisce in F1 nel GP del Brasile",
       "summary": "La Haas schiera Rafael Câmara a Interlagos al posto di Ocon, anticipando il debutto previsto per il 2027. Il brasiliano guida la classifica F2 in attesa di sapere se Qatar e Abu Dhabi si correranno.",
@@ -95,7 +105,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-06T10:55:00Z",
+    "updated": "2026-11-06T11:58:00Z",
     "nextGp": {
       "name": "Round 13 · Qatar",
       "circuit": "Lusail",

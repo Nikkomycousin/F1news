@@ -1,6 +1,26 @@
 {
   "news": [
     {
+      "id": "2026-11-06-pourchaire-lascia-peugeot",
+      "title": "Anche Pourchaire saluta la Peugeot: Monza sarà la sua ultima gara",
+      "summary": "Il francese ha confermato che lascerà il programma Hypercar dopo la finale per concentrarsi sulla Formula E con Opel. Peugeot dovrà così rinnovare buona parte dei piloti per il 2027, visto che escono anche Vandoorne e Jakobsen.",
+      "tag": "Mercato",
+      "source": "Sportscar365",
+      "url": "https://sportscar365.com/lemans/wec/pourchaire-confirms-peugeot-exit-after-monza/",
+      "published": "2026-11-06T11:30:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-06-monza-fp1-milesi",
+      "title": "Monza, Milesi e l'Alpine #35 in testa nelle FP1 bagnate",
+      "summary": "Sulla pista in via di asciugatura Milesi ha firmato il miglior tempo nel finale della prima sessione, davanti alla Ferrari #83 di Ye e all'Aston Martin #007 di Tincknell. Tre bandiere rosse hanno interrotto il turno, compresa quella per l'uscita di pista di Fuoco.",
+      "tag": "Gare",
+      "source": "Sportscar365",
+      "url": "https://sportscar365.com/lemans/wec/milesi-leads-wet-free-practice-1-in-monza",
+      "published": "2026-11-06T11:05:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-04-saucy-mclaren",
       "title": "Saucy, campione ELMS, avrà un sedile sulla McLaren Hypercar",
       "summary": "Lo svizzero correrà con la MCL-HY nella stagione d'esordio della McLaren nel WEC, diventando il quinto pilota annunciato. Per l'ultimo posto libero è atteso Malthe Jakobsen.",
@@ -115,7 +135,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-06T10:55:00Z",
+    "updated": "2026-11-06T11:58:00Z",
     "nextGp": {
       "name": "6 Ore di Monza",
       "circuit": "Monza",

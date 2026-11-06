@@ -1,23 +1,33 @@
 {
   "news": [
     {
-      "id": "2026-11-05-sette-rookie-fp1-interlagos",
-      "title": "Sette debuttanti al volante nelle FP1 di Interlagos",
-      "summary": "Nella prima sessione di prove a San Paolo scenderanno in pista Fornaroli (McLaren), Beganovic (Ferrari), Browning (Williams), Slater (Audi), Mini (Alpine) e Herta (Cadillac), oltre a Câmara che con la Haas correrà l'intero weekend.",
-      "tag": "Paddock",
+      "id": "2026-11-06-domenicali-medio-oriente",
+      "title": "Domenicali prudente: Qatar e Abu Dhabi restano in programma «a questo punto»",
+      "summary": "Nella presentazione dei conti di Liberty Media l'amministratore delegato della F1 ha confermato l'intenzione di chiudere la stagione in Medio Oriente, senza però dare garanzie assolute. I ricavi, dopo il calo di primavera, sono tornati ai livelli del 2025.",
+      "tag": "Calendario",
       "source": "RacingNews365",
-      "url": "https://racingnews365.com/the-seven-f1-rookies-who-will-drive-in-sao-paulo-grand-prix-fp1",
-      "published": "2026-11-05T14:50:00Z",
+      "url": "https://racingnews365.com/f1-boss-gives-cautious-at-this-stage-verdict-on-season-ending-middle-east-races",
+      "published": "2026-11-06T10:55:00Z",
       "top": false
     },
     {
-      "id": "2026-11-05-alonso-interlagos",
-      "title": "Alonso frena le attese a Interlagos: «Per noi competitivi vuol dire 12° o 13°»",
-      "summary": "Il pilota Aston Martin, che a Interlagos ha vinto entrambi i suoi titoli, vede la squadra in crescita da Sepang ma punta a una qualifica a centro gruppo per raccogliere punti. Non teme problemi in caso di pioggia, pur ricordando quanto la salita della pista renda insidioso il bagnato.",
+      "id": "2026-11-06-russell-penalita-motore",
+      "title": "Russell partirà cinque posizioni più indietro a Interlagos per il motore",
+      "summary": "La Mercedes ha montato un nuovo motore termico oltre il limite stagionale sulla vettura di Russell, che sconterà cinque posizioni sulla griglia del GP del Brasile. Il pilota ha spiegato che la squadra ha scelto questo weekend per assorbire la penalità.",
+      "tag": "Mercedes",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/george-russell-eyes-lewis-hamilton-heroics-as-brazil-grid-penalty-confirmed",
+      "published": "2026-11-06T09:40:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-11-06-permane-rinnovo-racing-bulls",
+      "title": "Racing Bulls, Permane rinnova da team principal fino al 2031",
+      "summary": "Alan Permane ha firmato un nuovo contratto di lungo periodo con la Racing Bulls, dove resterà team principal e co-amministratore delegato per la parte sportiva fino alla fine del 2031.",
       "tag": "Team",
-      "source": "f1world.it",
-      "url": "https://f1world.it/gp-brasile-la-conferenza-stampa-alonso-camara-e-verstappen/",
-      "published": "2026-11-05T17:48:00Z",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/red-bull-make-key-decision-as-senior-racing-bulls-figure-handed-contract-extension",
+      "published": "2026-11-06T09:05:00Z",
       "top": false
     },
     {
@@ -28,6 +38,16 @@
       "source": "OA Sport",
       "url": "https://www.oasport.it/2026/11/f1-max-verstappen-interlagos-e-fantastica-ci-sono-tante-variabili-essere-secondo-nel-mondiale-e-una-sorpresa/",
       "published": "2026-11-05T17:51:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-05-alonso-interlagos",
+      "title": "Alonso frena le attese a Interlagos: «Per noi competitivi vuol dire 12° o 13°»",
+      "summary": "Il pilota Aston Martin, che a Interlagos ha vinto entrambi i suoi titoli, vede la squadra in crescita da Sepang ma punta a una qualifica a centro gruppo per raccogliere punti. Non teme problemi in caso di pioggia, pur ricordando quanto la salita della pista renda insidioso il bagnato.",
+      "tag": "Team",
+      "source": "f1world.it",
+      "url": "https://f1world.it/gp-brasile-la-conferenza-stampa-alonso-camara-e-verstappen/",
+      "published": "2026-11-05T17:48:00Z",
       "top": false
     },
     {
@@ -49,6 +69,16 @@
       "url": "https://readmotorsport.com/2026/11/05/f1-warns-of-possible-flooding-at-interlagos-ahead-of-sao-paulo-grand-prix/",
       "published": "2026-11-05T15:56:00Z",
       "top": true
+    },
+    {
+      "id": "2026-11-05-sette-rookie-fp1-interlagos",
+      "title": "Sette debuttanti al volante nelle FP1 di Interlagos",
+      "summary": "Nella prima sessione di prove a San Paolo scenderanno in pista Fornaroli (McLaren), Beganovic (Ferrari), Browning (Williams), Slater (Audi), Mini (Alpine) e Herta (Cadillac), oltre a Câmara che con la Haas correrà l'intero weekend.",
+      "tag": "Paddock",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/the-seven-f1-rookies-who-will-drive-in-sao-paulo-grand-prix-fp1",
+      "published": "2026-11-05T14:50:00Z",
+      "top": false
     },
     {
       "id": "2026-11-05-stroll-salta-media-day",
@@ -460,7 +490,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-06T10:55:00Z",
+    "updated": "2026-11-06T11:58:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
