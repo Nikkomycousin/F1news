@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-06-vasseur-confronto-hamilton-leclerc",
+      "title": "Ferrari, Vasseur riunisce Hamilton e Leclerc per chiarire dopo il Messico",
+      "summary": "Dopo il duello ravvicinato di Città del Messico e le dichiarazioni incrociate dei due piloti, il team principal ha convocato Hamilton e Leclerc a Interlagos per un faccia a faccia sulle regole interne.",
+      "tag": "Ferrari",
+      "source": "OA Sport",
+      "url": "https://www.oasport.it/2026/11/f1-alta-tensione-in-casa-ferrari-vasseur-convoca-hamilton-e-leclerc-per-un-confronto-in-brasile/",
+      "published": "2026-11-06T13:45:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-06-domenicali-medio-oriente",
       "title": "Domenicali prudente: Qatar e Abu Dhabi restano in programma «a questo punto»",
       "summary": "Nella presentazione dei conti di Liberty Media l'amministratore delegato della F1 ha confermato l'intenzione di chiudere la stagione in Medio Oriente, senza però dare garanzie assolute. I ricavi, dopo il calo di primavera, sono tornati ai livelli del 2025.",
@@ -78,6 +88,16 @@
       "source": "RacingNews365",
       "url": "https://racingnews365.com/the-seven-f1-rookies-who-will-drive-in-sao-paulo-grand-prix-fp1",
       "published": "2026-11-05T14:50:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-06-antonelli-livrea-senna",
+      "title": "Antonelli porta i colori di Senna a Interlagos con una livrea speciale",
+      "summary": "Il neo campione del mondo correrà in Brasile con una Mercedes dalla grafica dedicata ad Ayrton Senna, omaggio al tre volte iridato nel suo Gran Premio di casa.",
+      "tag": "Mercedes",
+      "source": "OA Sport",
+      "url": "https://www.oasport.it/2026/11/f1-kimi-antonelli-avra-una-livrea-speciale-in-brasile-nel-ricordo-del-mito-ayrton-senna/",
+      "published": "2026-11-05T14:00:00Z",
       "top": false
     },
     {
@@ -490,7 +510,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-06T13:52:00Z",
+    "updated": "2026-11-06T14:58:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
