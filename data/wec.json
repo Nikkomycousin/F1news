@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-07-monza-fp3-cassidy",
+      "title": "Monza, Cassidy porta la Peugeot #93 in testa nelle FP3 bagnate",
+      "summary": "Nel finale dell'ultima sessione di prove il neozelandese ha preceduto di appena 40 millesimi l'Alpine #36 di Martins, con la Ferrari #83 di Kubica terza dopo aver comandato a lungo. Pochi giri per la Ferrari #51, fermata da un problema elettronico ai freni.",
+      "tag": "Gare",
+      "source": "Sportscar365",
+      "url": "https://sportscar365.com/lemans/wec/peugeots-cassidy-tops-wet-monza-fp3",
+      "published": "2026-11-07T10:45:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-06-monza-fp2-kubica",
       "title": "Monza, Kubica porta la Ferrari #83 in vetta alle FP2 sulla pista che si asciuga",
       "summary": "Con il passaggio alle gomme slick nel finale, il polacco ha preceduto di quasi otto decimi l'Aston Martin #007 di Tincknell, con la BMW #15 di Marciello terza. Sessione regolare, interrotta solo da una Full Course Yellow.",
@@ -145,7 +155,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-07T10:50:00Z",
+    "updated": "2026-11-07T11:55:00Z",
     "nextGp": {
       "name": "6 Ore di Monza",
       "circuit": "Monza",

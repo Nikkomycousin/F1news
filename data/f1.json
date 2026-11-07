@@ -1,6 +1,26 @@
 {
   "news": [
     {
+      "id": "2026-11-07-verstappen-sterzo-interlagos",
+      "title": "Verstappen chiede a Red Bull di risolvere un problema allo sterzo prima delle qualifiche",
+      "summary": "L'olandese, terzo nelle seconde libere a 0,259 da Antonelli, ha lamentato un difetto allo sterzo già emerso in FP1; il team aveva fermato in anticipo la sua sessione per intervenire sull'assetto da gara. Per le qualifiche il rischio pioggia è stimato tra il 50 e il 70%.",
+      "tag": "Red Bull",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/max-verstappen-urges-red-bull-problem-fix-as-wet-weather-plea-issued",
+      "published": "2026-11-07T11:20:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-07-russell-indagine-mercedes",
+      "title": "Russell spera nella fine dei guai: Mercedes indaga dopo il Messico",
+      "summary": "Dopo un GP del Messico segnato da un problema in partenza e da una penalità, Russell arriva a Interlagos con aspettative basse. Secondo i suoi ingegneri solo sei gare della stagione sono state prive di inconvenienti.",
+      "tag": "Mercedes",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/george-russell-praying-mercedes-issues-end-as-post-mexico-investigation-launched",
+      "published": "2026-11-07T08:00:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-06-camara-reprimenda-leclerc",
       "title": "Interlagos, solo una reprimenda a Câmara per l'ostacolo a Leclerc nelle libere 2",
       "summary": "I commissari hanno chiuso l'indagine sull'episodio delle seconde libere con una reprimenda per l'esordiente della Haas, che aveva rallentato il giro veloce del ferrarista. Nessuna penalità in griglia per il brasiliano.",
@@ -539,7 +559,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-07T10:50:00Z",
+    "updated": "2026-11-07T11:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
