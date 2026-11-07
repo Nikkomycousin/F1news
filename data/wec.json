@@ -175,7 +175,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-07T19:55:00Z",
+    "updated": "2026-11-07T20:55:00Z",
     "nextGp": {
       "name": "6 Ore di Monza",
       "circuit": "Monza",
@@ -355,6 +355,15 @@
     ]
   },
   "videos": [
+    {
+      "id": "2026-11-07-monza-hyperpole",
+      "gp": "6 Ore di Monza",
+      "session": "Hyperpole",
+      "title": "Highlights di qualifiche e Hyperpole – 6 Ore di Monza 2026",
+      "youtube": "_6ZtGFeXdRE",
+      "channel": "FIA World Endurance Championship",
+      "published": "2026-11-07T16:30:00Z"
+    },
     {
       "id": "2026-10-18-barcellona-gara",
       "gp": "6 Ore di Barcellona",

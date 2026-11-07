@@ -1,6 +1,36 @@
 {
   "news": [
     {
+      "id": "2026-11-07-griglia-brasile-penalita",
+      "title": "Griglia del Brasile rivoluzionata: Antonelli in prima fila, Leclerc e Hamilton indietro",
+      "summary": "Russell scala di cinque posizioni per il motore e cede la prima fila al compagno. Leclerc perde dieci posti, mentre Hamilton (cambio completo di power unit), Verstappen e Pérez partiranno dal fondo.",
+      "tag": "Ferrari",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/brazilian-grand-prix-2026-penalty-fia",
+      "published": "2026-11-07T20:40:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-11-07-alonso-q3-aston",
+      "title": "Alonso porta l'Aston Martin in Q3 per la prima volta nel 2026",
+      "summary": "Sul bagnato lo spagnolo ha centrato la prima Q3 stagionale della squadra, chiudendo nono. In Q2 sono usciti invece Hamilton e Piastri, con Câmara finito contro il muro al debutto.",
+      "tag": "Team",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/2026-brazilian-grand-prix-qualifying-report",
+      "published": "2026-11-07T20:35:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-07-norris-pole-interlagos",
+      "title": "Interlagos, Norris in pole nel caos della pioggia davanti a Russell",
+      "summary": "Il pilota McLaren ha domato la pista bagnata in Q3 rifilando 0,204 secondi a Russell. Per Norris è la terza pole del 2026; Antonelli completa il podio virtuale delle qualifiche.",
+      "tag": "Gare",
+      "source": "Crash.net",
+      "url": "https://www.crash.net/f1/news/1109818/1/lando-norris-takes-pole-heavily-delayed-wet-brazil-gp-qualifying",
+      "published": "2026-11-07T20:30:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-07-qualifiche-pioggia-bandiera-rossa",
       "title": "Interlagos, diluvio sulle qualifiche: bandiera rossa e ripartenza dopo 83 minuti",
       "summary": "Un violento temporale ha costretto la direzione gara a esporre la bandiera rossa a pochi minuti dall'inizio della Q1, con acqua stagnante in pista e un'allerta meteo per il pubblico. Dopo l'ispezione della safety car la sessione è ripresa alle 16:26 locali (20:26 italiane).",
@@ -8,7 +38,7 @@
       "source": "GPblog",
       "url": "https://www.gpblog.com/en/breaking-news/positive-update-raises-hopes-of-qualifying-restart-as-new-start-time-emerges",
       "published": "2026-11-07T19:30:00Z",
-      "top": true
+      "top": false
     },
     {
       "id": "2026-11-07-libere3-verstappen-interlagos",
@@ -589,7 +619,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-07T19:55:00Z",
+    "updated": "2026-11-07T20:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
@@ -644,311 +674,161 @@
     ]
   },
   "results": {
-    "gp": "GP del Messico",
-    "round": 19,
-    "updated": "2026-11-02T16:00:00Z",
-    "summary": "Verstappen vince resistendo fino all'ultimo giro a Hamilton, staccato di appena otto decimi. Le Ferrari erano davanti dopo il via, ma la lotta tra Leclerc e Hamilton e la penalità a Leclerc hanno aperto la porta a Max. Antonelli chiude terzo senza rischiare e diventa il campione del mondo più giovane della storia. Dopo la gara penalità per Piastri (10 secondi, fuori dai punti), Colapinto e Gasly: ne approfittano Bortoleto, Hadjar e l'esordiente Hirakawa, a punti al debutto.",
+    "gp": "GP del Brasile",
+    "round": 20,
+    "updated": "2026-11-07T20:55:00Z",
+    "summary": "Qualifiche stravolte dal temporale a Interlagos: bandiera rossa in Q1 e oltre 80 minuti di stop prima della ripartenza. Norris conquista la pole, la sua terza stagionale, con due decimi su Russell, che però sconterà cinque posizioni di penalità per il motore: in prima fila salirà Antonelli. Leclerc chiude quarto ma retrocederà di dieci posti, mentre Hamilton e Verstappen partiranno in fondo per le sostituzioni di power unit. Alonso porta per la prima volta quest'anno un'Aston Martin in Q3.",
     "tabs": [
-      {
-        "label": "Gara",
-        "kind": "race",
-        "rows": [
-          {
-            "pos": "1",
-            "name": "Max Verstappen",
-            "team": "Red Bull",
-            "gap": "2:20:28.772",
-            "points": 25
-          },
-          {
-            "pos": "2",
-            "name": "Lewis Hamilton",
-            "team": "Ferrari",
-            "gap": "+0.799s",
-            "points": 18
-          },
-          {
-            "pos": "3",
-            "name": "Kimi Antonelli",
-            "team": "Mercedes",
-            "gap": "+4.006s",
-            "points": 15
-          },
-          {
-            "pos": "4",
-            "name": "Charles Leclerc",
-            "team": "Ferrari",
-            "gap": "+10.707s",
-            "points": 12
-          },
-          {
-            "pos": "5",
-            "name": "Lando Norris",
-            "team": "McLaren",
-            "gap": "+11.778s",
-            "points": 10
-          },
-          {
-            "pos": "6",
-            "name": "George Russell",
-            "team": "Mercedes",
-            "gap": "+12.263s",
-            "points": 8
-          },
-          {
-            "pos": "7",
-            "name": "Liam Lawson",
-            "team": "Racing Bulls",
-            "gap": "+20.899s",
-            "points": 6
-          },
-          {
-            "pos": "8",
-            "name": "Gabriel Bortoleto",
-            "team": "Audi",
-            "gap": "+22.041s",
-            "points": 4
-          },
-          {
-            "pos": "9",
-            "name": "Isack Hadjar",
-            "team": "Red Bull",
-            "gap": "+22.503s",
-            "points": 2
-          },
-          {
-            "pos": "10",
-            "name": "Ryo Hirakawa",
-            "team": "Haas",
-            "gap": "+25.373s",
-            "points": 1
-          },
-          {
-            "pos": "11",
-            "name": "Alexander Albon",
-            "team": "Williams",
-            "gap": "+27.562s"
-          },
-          {
-            "pos": "12",
-            "name": "Carlos Sainz",
-            "team": "Williams",
-            "gap": "+28.638s"
-          },
-          {
-            "pos": "13",
-            "name": "Oscar Piastri",
-            "team": "McLaren",
-            "gap": "+29.475s",
-            "note": "10s di penalità"
-          },
-          {
-            "pos": "14",
-            "name": "Nico Hülkenberg",
-            "team": "Audi",
-            "gap": "+29.977s"
-          },
-          {
-            "pos": "15",
-            "name": "Franco Colapinto",
-            "team": "Alpine",
-            "gap": "+30.204s",
-            "note": "10s di penalità"
-          },
-          {
-            "pos": "16",
-            "name": "Sergio Pérez",
-            "team": "Cadillac",
-            "gap": "+30.695s"
-          },
-          {
-            "pos": "17",
-            "name": "Pierre Gasly",
-            "team": "Alpine",
-            "gap": "+51.483s",
-            "note": "stop & go"
-          },
-          {
-            "pos": "RIT",
-            "name": "Arvid Lindblad",
-            "team": "Racing Bulls",
-            "gap": "giro 58"
-          },
-          {
-            "pos": "RIT",
-            "name": "Oliver Bearman",
-            "team": "Haas",
-            "gap": "giro 47"
-          },
-          {
-            "pos": "RIT",
-            "name": "Valtteri Bottas",
-            "team": "Cadillac",
-            "gap": "giro 42"
-          },
-          {
-            "pos": "RIT",
-            "name": "Lance Stroll",
-            "team": "Aston Martin",
-            "gap": "giro 5"
-          },
-          {
-            "pos": "RIT",
-            "name": "Fernando Alonso",
-            "team": "Aston Martin",
-            "gap": "giro 5"
-          }
-        ]
-      },
       {
         "label": "Qualifiche",
         "kind": "quali",
         "rows": [
           {
             "pos": "1",
-            "name": "Lewis Hamilton",
-            "team": "Ferrari",
-            "time": "1:16.514"
+            "name": "Lando Norris",
+            "team": "McLaren",
+            "time": "1:27.470",
+            "note": "Pole"
           },
           {
             "pos": "2",
             "name": "George Russell",
             "team": "Mercedes",
-            "time": "1:16.523"
+            "time": "1:27.674",
+            "note": "5 posizioni di penalità (motore)"
           },
           {
             "pos": "3",
-            "name": "Charles Leclerc",
-            "team": "Ferrari",
-            "time": "1:16.633"
+            "name": "Kimi Antonelli",
+            "team": "Mercedes",
+            "time": "1:28.095"
           },
           {
             "pos": "4",
-            "name": "Max Verstappen",
-            "team": "Red Bull",
-            "time": "1:16.692",
-            "note": "penalità in griglia"
+            "name": "Charles Leclerc",
+            "team": "Ferrari",
+            "time": "1:28.289",
+            "note": "10 posizioni di penalità (motore)"
           },
           {
             "pos": "5",
-            "name": "Kimi Antonelli",
-            "team": "Mercedes",
-            "time": "1:16.707"
+            "name": "Liam Lawson",
+            "team": "Racing Bulls",
+            "time": "1:28.321"
           },
           {
             "pos": "6",
-            "name": "Lando Norris",
-            "team": "McLaren",
-            "time": "1:16.824"
+            "name": "Nico Hülkenberg",
+            "team": "Audi",
+            "time": "1:28.668"
           },
           {
             "pos": "7",
             "name": "Isack Hadjar",
             "team": "Red Bull",
-            "time": "1:16.900"
+            "time": "1:28.763"
           },
           {
             "pos": "8",
-            "name": "Arvid Lindblad",
-            "team": "Racing Bulls",
-            "time": "1:17.117"
+            "name": "Oliver Bearman",
+            "team": "Haas",
+            "time": "1:29.831"
           },
           {
             "pos": "9",
-            "name": "Pierre Gasly",
-            "team": "Alpine",
-            "time": "1:17.153"
+            "name": "Fernando Alonso",
+            "team": "Aston Martin",
+            "time": "1:30.311"
           },
           {
             "pos": "10",
-            "name": "Nico Hülkenberg",
-            "team": "Audi",
-            "time": "1:17.306",
-            "note": "Q2"
+            "name": "Alexander Albon",
+            "team": "Williams",
+            "time": "1:30.456"
           },
           {
             "pos": "11",
-            "name": "Franco Colapinto",
-            "team": "Alpine",
-            "time": "1:17.640",
-            "note": "Q2"
+            "name": "Lewis Hamilton",
+            "team": "Ferrari",
+            "time": "1:30.001",
+            "note": "Eliminato in Q2 · partirà in fondo (power unit)"
           },
           {
             "pos": "12",
             "name": "Oscar Piastri",
             "team": "McLaren",
-            "time": "1:17.646",
-            "note": "Q2"
+            "time": "1:30.369",
+            "note": "Eliminato in Q2"
           },
           {
             "pos": "13",
-            "name": "Gabriel Bortoleto",
-            "team": "Audi",
-            "time": "1:17.680",
-            "note": "Q2"
+            "name": "Rafael Câmara",
+            "team": "Haas",
+            "time": "1:31.515",
+            "note": "Eliminato in Q2 · incidente"
           },
           {
             "pos": "14",
-            "name": "Oliver Bearman",
-            "team": "Haas",
-            "time": "1:18.083",
-            "note": "Q2"
+            "name": "Arvid Lindblad",
+            "team": "Racing Bulls",
+            "time": "1:31.687",
+            "note": "Eliminato in Q2"
           },
           {
             "pos": "15",
             "name": "Carlos Sainz",
             "team": "Williams",
-            "time": "1:18.885",
-            "note": "Q2"
+            "time": "1:31.785",
+            "note": "Eliminato in Q2"
           },
           {
             "pos": "16",
-            "name": "Alexander Albon",
-            "team": "Williams",
-            "time": "1:18.630",
-            "note": "Q1"
+            "name": "Max Verstappen",
+            "team": "Red Bull",
+            "time": "—",
+            "note": "Non sceso in pista in Q2 · partirà in fondo (30 posizioni)"
           },
           {
             "pos": "17",
-            "name": "Fernando Alonso",
-            "team": "Aston Martin",
-            "time": "1:18.908",
-            "note": "Q1"
+            "name": "Franco Colapinto",
+            "team": "Alpine",
+            "time": "1:33.327",
+            "note": "Eliminato in Q1"
           },
           {
             "pos": "18",
-            "name": "Ryo Hirakawa",
-            "team": "Haas",
-            "time": "1:18.958",
-            "note": "Q1"
+            "name": "Pierre Gasly",
+            "team": "Alpine",
+            "time": "1:33.449",
+            "note": "Eliminato in Q1"
           },
           {
             "pos": "19",
             "name": "Lance Stroll",
             "team": "Aston Martin",
-            "time": "1:19.072",
-            "note": "Q1"
+            "time": "1:33.653",
+            "note": "Eliminato in Q1"
           },
           {
             "pos": "20",
-            "name": "Sergio Pérez",
+            "name": "Valtteri Bottas",
             "team": "Cadillac",
-            "time": "1:19.105",
-            "note": "Q1"
+            "time": "1:33.774",
+            "note": "Eliminato in Q1"
           },
           {
             "pos": "21",
-            "name": "Valtteri Bottas",
+            "name": "Sergio Pérez",
             "team": "Cadillac",
-            "time": "1:19.852",
-            "note": "Q1"
+            "time": "1:34.509",
+            "note": "Eliminato in Q1 · 30 posizioni di penalità (motore)"
           },
           {
-            "pos": "SQ",
-            "name": "Liam Lawson",
-            "team": "Racing Bulls",
-            "time": "1:17.029",
-            "note": "squalificato"
+            "pos": "22",
+            "name": "Gabriel Bortoleto",
+            "team": "Audi",
+            "time": "1:41.564",
+            "note": "Eliminato in Q1 · testacoda"
           }
         ]
       }
