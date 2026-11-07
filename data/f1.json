@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-07-penalita-motore-verstappen-leclerc-hamilton",
+      "title": "Interlagos, Verstappen, Pérez, Leclerc e Hamilton oltre il limite delle power unit",
+      "summary": "Il rapporto tecnico FIA segnala che i quattro hanno montato componenti oltre l'allocazione stagionale, con Verstappen e Pérez fuori quota su tre elementi. Le penalità in griglia saranno definite dopo le qualifiche.",
+      "tag": "Gare",
+      "source": "GPblog",
+      "url": "https://www.gpblog.com/en/breaking-news/verstappen-and-ferrari-pair-exceed-engine-limits-at-sao-paulo-gp",
+      "published": "2026-11-07T14:46:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-07-verstappen-sterzo-interlagos",
       "title": "Verstappen chiede a Red Bull di risolvere un problema allo sterzo prima delle qualifiche",
       "summary": "L'olandese, terzo nelle seconde libere a 0,259 da Antonelli, ha lamentato un difetto allo sterzo già emerso in FP1; il team aveva fermato in anticipo la sua sessione per intervenire sull'assetto da gara. Per le qualifiche il rischio pioggia è stimato tra il 50 e il 70%.",
@@ -559,7 +569,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-07T13:50:00Z",
+    "updated": "2026-11-07T15:00:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",

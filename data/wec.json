@@ -1,6 +1,26 @@
 {
   "news": [
     {
+      "id": "2026-11-07-monza-pole-fuoco",
+      "title": "Monza, Fuoco regala alla Ferrari #50 la pole davanti alla Genesis di Jaminet",
+      "summary": "Su una pista ancora scivolosa Fuoco ha firmato il miglior tempo dell'Hyperpole per meno di un decimo sulla Genesis #19; terza la Cadillac #38 e quarta la Ferrari #51. È la prima pole Hypercar della Ferrari a Monza.",
+      "tag": "Ferrari",
+      "source": "Sportscar365",
+      "url": "https://sportscar365.com/lemans/wec/fuoco-narrowly-pips-jaminet-to-give-ferrari-pole-at-monza",
+      "published": "2026-11-07T14:45:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-11-07-monza-toyota-indietro",
+      "title": "Qualifiche in salita per Toyota: le due auto in corsa per il titolo partono 15ª e 16ª",
+      "summary": "Nessuna delle due GR010 ha superato la prima fase: la #8 di Hirakawa ha preceduto di tre decimi la #7 di Kobayashi. Fuori dall'Hyperpole anche le due Aston Martin, la Genesis #17 e la BMW #15.",
+      "tag": "Toyota",
+      "source": "Dailysportscar",
+      "url": "https://www.dailysportscar.com/2026/11/07/fuoco-flys-to-home-pole-position-for-ferrari.html",
+      "published": "2026-11-07T14:50:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-07-monza-fp3-cassidy",
       "title": "Monza, Cassidy porta la Peugeot #93 in testa nelle FP3 bagnate",
       "summary": "Nel finale dell'ultima sessione di prove il neozelandese ha preceduto di appena 40 millesimi l'Alpine #36 di Martins, con la Ferrari #83 di Kubica terza dopo aver comandato a lungo. Pochi giri per la Ferrari #51, fermata da un problema elettronico ai freni.",
@@ -155,7 +175,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-07T13:50:00Z",
+    "updated": "2026-11-07T15:00:00Z",
     "nextGp": {
       "name": "6 Ore di Monza",
       "circuit": "Monza",
@@ -211,121 +231,124 @@
     ]
   },
   "results": {
-    "gp": "6 Ore di Barcellona",
-    "round": 7,
-    "updated": "2026-10-18T17:00:00Z",
-    "summary": "Doppietta Toyota nella prima 6 Ore di Barcellona, corsa in condizioni difficili tra pista bagnata e ripartenze. La #8 di Buemi, Hartley e Hirakawa batte la gemella #7 per poco più di mezzo secondo e la Toyota si assicura il titolo Costruttori con una gara d'anticipo. Terza la Ferrari #50 di Fuoco, Molina e Nielsen, staccata di circa 40 secondi. In qualifica pole storica per la Genesis #19 con Jaubert.",
+    "gp": "6 Ore di Monza",
+    "round": 8,
+    "updated": "2026-11-07T15:00:00Z",
+    "summary": "Pole position per la Ferrari #50 nella finale di Monza: Antonio Fuoco ha chiuso l'Hyperpole in 1:33.364, appena 96 millesimi meglio della Genesis #19 di Jaminet, che ha mollato nell'ultimo settore. Terza la Cadillac #38 di Bamber davanti all'altra Ferrari ufficiale #51 di Giovinazzi. Sessioni su pista umida e in via di asciugatura; giornata difficile per Toyota, con le due auto, in lotta per il titolo, solo 15ª e 16ª.",
     "tabs": [
       {
-        "label": "Gara Hypercar",
-        "kind": "race",
+        "label": "Hyperpole",
+        "kind": "quali",
         "rows": [
           {
             "pos": "1",
-            "name": "Buemi · Hartley · Hirakawa",
-            "team": "Toyota #8",
-            "gap": "6:01:20.906",
-            "points": 25
+            "name": "Fuoco · Molina · Nielsen",
+            "team": "Ferrari #50",
+            "time": "1:33.364",
+            "note": "Pole (Fuoco)"
           },
           {
             "pos": "2",
-            "name": "Conway · Kobayashi · de Vries",
-            "team": "Toyota #7",
-            "gap": "+0.583",
-            "points": 18
+            "name": "Jaminet · Chatin · Juncadella",
+            "team": "Genesis #19",
+            "time": "1:33.460"
           },
           {
             "pos": "3",
-            "name": "Fuoco · Molina · Nielsen",
-            "team": "Ferrari #50",
-            "gap": "+39.725",
-            "points": 15
+            "name": "Bamber · Bourdais · Aitken",
+            "team": "Cadillac #38",
+            "time": "—"
           },
           {
             "pos": "4",
-            "name": "Bamber · Bourdais · Aitken",
-            "team": "Cadillac #38",
-            "gap": "+52.811",
-            "points": 12
+            "name": "Pier Guidi · Calado · Giovinazzi",
+            "team": "Ferrari #51",
+            "time": "—"
           },
           {
             "pos": "5",
-            "name": "Ye · Kubica · Hanson",
-            "team": "Ferrari #83 (AF Corse)",
-            "gap": "+53.353",
-            "points": 10
+            "name": "Duval · Jakobsen · Pourchaire",
+            "team": "Peugeot #94",
+            "time": "—"
           },
           {
             "pos": "6",
-            "name": "Stevens · Nato",
-            "team": "Cadillac #12",
-            "gap": "+1:20.751",
-            "points": 8
+            "name": "Gounon · Martins",
+            "team": "Alpine #36",
+            "time": "1:33.858"
           },
           {
             "pos": "7",
-            "name": "Magnussen · Marciello · Vanthoor",
-            "team": "BMW #15",
-            "gap": "+1:32.135",
-            "points": 6
+            "name": "Stevens · Nato · Lynn",
+            "team": "Cadillac #12",
+            "time": "—"
           },
           {
             "pos": "8",
-            "name": "Gounon · Martins",
-            "team": "Alpine #36",
-            "gap": "+1:32.956",
-            "points": 4
+            "name": "Ye · Kubica · Hanson",
+            "team": "Ferrari #83 (AF Corse)",
+            "time": "—"
           },
           {
             "pos": "9",
-            "name": "Riberas · Sørensen",
-            "team": "Aston Martin #009",
-            "gap": "+1 giro",
-            "points": 2
+            "name": "di Resta · Cassidy · Quinn",
+            "team": "Peugeot #93",
+            "time": "—"
           },
           {
             "pos": "10",
-            "name": "Milesi · Habsburg · Félix da Costa",
-            "team": "Alpine #35",
-            "gap": "+1 giro",
-            "points": 1
+            "name": "Frijns · Rast · van der Linde",
+            "team": "BMW #20",
+            "time": "—"
           },
           {
             "pos": "11",
-            "name": "Genesis #19",
-            "team": "Genesis",
-            "gap": "",
-            "note": "pole"
+            "name": "Milesi · Habsburg",
+            "team": "Alpine #35",
+            "time": "—",
+            "note": "Eliminata in Q1"
           },
           {
             "pos": "12",
-            "name": "Peugeot #93",
-            "team": "Peugeot",
-            "gap": ""
+            "name": "Riberas · Sørensen",
+            "team": "Aston Martin #009",
+            "time": "—",
+            "note": "Eliminata in Q1"
           },
           {
             "pos": "13",
-            "name": "Peugeot #94",
-            "team": "Peugeot",
-            "gap": ""
+            "name": "Lotterer · Derani · Jaubert",
+            "team": "Genesis #17",
+            "time": "—",
+            "note": "Eliminata in Q1"
           },
           {
             "pos": "14",
-            "name": "Frijns · Rast · van der Linde",
-            "team": "BMW #20",
-            "gap": ""
+            "name": "Tincknell · Gamble",
+            "team": "Aston Martin #007",
+            "time": "—",
+            "note": "Eliminata in Q1"
           },
           {
             "pos": "15",
-            "name": "Calado · Giovinazzi · Pier Guidi",
-            "team": "Ferrari #51",
-            "gap": ""
+            "name": "Buemi · Hartley · Hirakawa",
+            "team": "Toyota #8",
+            "time": "—",
+            "note": "Eliminata in Q1"
           },
           {
             "pos": "16",
-            "name": "Genesis #17",
-            "team": "Genesis",
-            "gap": ""
+            "name": "Conway · Kobayashi · de Vries",
+            "team": "Toyota #7",
+            "time": "—",
+            "note": "Eliminata in Q1"
+          },
+          {
+            "pos": "17",
+            "name": "Magnussen · Marciello · Vanthoor",
+            "team": "BMW #15",
+            "time": "—",
+            "note": "Eliminata in Q1"
           }
         ]
       }
