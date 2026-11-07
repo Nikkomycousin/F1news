@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-07-qualifiche-pioggia-bandiera-rossa",
+      "title": "Interlagos, diluvio sulle qualifiche: bandiera rossa e ripartenza dopo 83 minuti",
+      "summary": "Un violento temporale ha costretto la direzione gara a esporre la bandiera rossa a pochi minuti dall'inizio della Q1, con acqua stagnante in pista e un'allerta meteo per il pubblico. Dopo l'ispezione della safety car la sessione è ripresa alle 16:26 locali (20:26 italiane).",
+      "tag": "Gare",
+      "source": "GPblog",
+      "url": "https://www.gpblog.com/en/breaking-news/positive-update-raises-hopes-of-qualifying-restart-as-new-start-time-emerges",
+      "published": "2026-11-07T19:30:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-07-libere3-verstappen-interlagos",
       "title": "Interlagos, Verstappen il più rapido nelle libere 3 davanti ad Antonelli",
       "summary": "Nell'ultima sessione di prove l'olandese della Red Bull ha girato in 1:11.622, appena 25 millesimi meglio di Antonelli, con Norris e Russell a seguire. Pomeriggio complicato per Hamilton, fermato da vibrazioni al motore e fumo in abitacolo.",
@@ -579,7 +589,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-07T18:50:00Z",
+    "updated": "2026-11-07T19:55:00Z",
     "nextGp": {
       "name": "GP del Brasile",
       "circuit": "Interlagos, San Paolo",
