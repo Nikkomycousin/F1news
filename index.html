@@ -167,7 +167,7 @@
   .podium div:nth-child(1){min-height:84px}.podium div:nth-child(2){min-height:104px;background:linear-gradient(180deg,rgba(242,193,78,.22),var(--card2))}.podium div:nth-child(3){min-height:72px}
   .podium b{display:block;font-size:22px}
   .podium span{font-size:15px;font-weight:700;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .spoilwrap.spoil .rhead p,.spoilwrap.spoil .podium,.spoilwrap.spoil .table .row{filter:blur(7px);pointer-events:none;user-select:none}
+
   .cal .row.next{background:var(--tint)}
   .cal .rnd{width:30px;font-weight:900;font-style:italic;font-size:16px;color:var(--faint);text-align:center}
   .cal .dt{text-align:right;font-size:13px;color:var(--muted);min-width:64px}
@@ -178,8 +178,10 @@
 
   /* spoiler e modale */
   .card.spoil{position:relative;pointer-events:none}
-  .card.spoil h3,.card.spoil p,.card.spoil .src{filter:blur(7px);user-select:none}
-  .table.spoil .row{filter:blur(6px)}
+
+  .ghost{display:inline-block;height:.8em;border-radius:6px;background:#3d4148;vertical-align:middle;max-width:100%}
+  .card.spoil .ghost{height:1em;margin:3px 0}
+  .vcard.spoil .vthumb{background:#2f3238!important}
   .sbanner{display:flex;align-items:center;gap:10px;background:var(--tint);border-radius:16px;padding:10px 12px;margin:0 0 12px;font-size:14px;line-height:1.4}
   #list .sbanner{margin:12px 0}
   .sbanner span{flex:1}
@@ -208,7 +210,7 @@
   .vbody h3{margin:0 0 4px;font-size:17px;line-height:1.3;font-weight:700}
   .vbody .meta{margin:0}
   .vbody a{color:var(--red2);text-decoration:none;font-weight:600}
-  .vcard.spoil .vthumb,.vcard.spoil h3{filter:blur(9px);pointer-events:none;user-select:none}
+  .vcard.spoil .vthumb{pointer-events:none}
 
   .toast{position:fixed;left:50%;bottom:calc(var(--nav) + 16px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(16px);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:14.5px;font-weight:600;opacity:0;transition:.25s;z-index:60;max-width:90vw;text-align:center;pointer-events:none}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -357,7 +359,7 @@ function dayLabel(iso){
 }
 
 function renderChips(){
-  const tags=["Tutte",...new Set(news.map(n=>n.tag).filter(Boolean))];
+  const tags=["Tutte",...new Set(news.filter(n=>!isSpoiler(n)).map(n=>n.tag).filter(Boolean))];
   $("#chips").innerHTML=tags.map(t=>`<button class="chip${t===filter?" on":""}" data-t="${esc(t)}">${esc(t)}</button>`).join("");
   $("#chips").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{filter=b.dataset.t;try{localStorage.setItem("f1f",filter)}catch(e){};render()});
 }
@@ -400,9 +402,12 @@ function checkSpoiler(){
   const sing=lbl.startsWith("la ");
   $("#spP").textContent=`${weekend.gp}: ${lbl} ${sing?"è iniziata":"sono iniziate"} alle ${hm(s.start)}.${tv} Se non ${sing?"l'hai vista":"le hai viste"}, nascondo le notizie che potrebbero rovinarti la sorpresa.`;
   $("#spModal").hidden=false;
-  $("#spYes").onclick=()=>{lsSet(sKey(s),"1");spoilerHidden=false;$("#spModal").hidden=true;render();renderStandings();renderResults();renderVideos();renderDuel()};
-  $("#spNo").onclick=()=>{spoilerHidden=true;$("#spModal").hidden=true;render();renderStandings();renderResults();renderVideos();renderDuel()};
+  $("#spYes").onclick=()=>{lsSet(sKey(s),"1");spoilerHidden=false;$("#spModal").hidden=true;render();renderStandings();renderResults();renderVideos();renderDuel();renderCal();renderH2H()};
+  $("#spNo").onclick=()=>{spoilerHidden=true;$("#spModal").hidden=true;render();renderStandings();renderResults();renderVideos();renderDuel();renderCal();renderH2H()};
 }
+function spoilAfter(iso){const sp=spoilerSession();return !!(spoilerHidden&&sp&&iso&&new Date(iso).getTime()>=new Date(sp.start).getTime()-30*60e3)}
+const ghost=(w)=>`<i class="ghost" style="width:${w}"></i>`;
+function ghostRows(n,sub){let h="";for(let i=1;i<=n;i++)h+=`<div class="row"><div class="pos">${i}</div><div class="bar" style="background:#4a4e55"></div><div class="who"><b>${ghost("62%")}</b>${sub?`<small>${ghost("34%")}</small>`:""}</div><div class="pts">${ghost("38px")}</div></div>`;return h}
 function isSpoiler(n){
   if(!spoilerHidden) return false;
   const s=spoilerSession(); if(!s) return false;
@@ -412,7 +417,7 @@ function spoilerBanner(){
   const s=spoilerSession(); if(!spoilerHidden||!s) return "";
   return `<div class="sbanner"><span>🙈 Notizie ${esc(sLabel(s).replace(/^la /,"sulla ").replace(/^le /,"sulle "))} nascoste per evitare spoiler</span><button onclick="revealSpoiler()">Ora l'ho visto</button></div>`;
 }
-function revealSpoiler(){const s=spoilerSession();if(s)lsSet(sKey(s),"1");spoilerHidden=false;render();renderStandings();renderResults();renderVideos();renderDuel()}
+function revealSpoiler(){const s=spoilerSession();if(s)lsSet(sKey(s),"1");spoilerHidden=false;render();renderStandings();renderResults();renderVideos();renderDuel();renderCal();renderH2H()}
 
 function render(){
   renderChips();
@@ -423,7 +428,8 @@ function render(){
     const dl=dayLabel(n.published);
     if(dl!==last){html+=`<div class="day">${esc(dl)}</div>`;last=dl}
     const href=/^https?:\/\//.test(n.url||"")?n.url:"#";
-    html+=`<a class="card${n.top?" top":""}${isSpoiler(n)?" spoil":""}" href="${esc(href)}" target="_blank" rel="noopener">
+    if(isSpoiler(n)){html+=`<div class="card spoil"><div class="meta"><span class="tag" style="color:var(--muted)">🙈 Nascosta</span><span>${esc(rel(n.published))}</span></div><h3>${ghost("92%")}<br>${ghost("60%")}</h3><p>${ghost("100%")}<br>${ghost("78%")}</p></div>`;return}
+    html+=`<a class="card${n.top?" top":""}" href="${esc(href)}" target="_blank" rel="noopener">
       <div class="meta">${n.tag?`<span class="tag">${esc(n.tag)}</span>`:""}<span>${esc(rel(n.published))}</span></div>
       <h3>${esc(n.title)}</h3>
       ${n.summary?`<p>${esc(n.summary)}</p>`:""}
@@ -479,8 +485,10 @@ function renderStandings(){
     <div class="pts">${esc(c.points)}${c.pos>1?`<small>-${tl-c.points}</small>`:"<small>pt</small>"}</div></div>`).join("");
   // classifiche nascoste se aggiornate dopo l'inizio della sessione non ancora vista
   const sp=spoilerSession(), hide=spoilerHidden&&sp&&s.updated&&new Date(s.updated)>=new Date(sp.start);
-  ["#drivers","#teams"].forEach(id=>{$(id).classList.toggle("spoil",!!hide);
-    if(hide)$(id).insertAdjacentHTML("afterbegin",spoilerBanner())});
+  if(hide){
+    $("#drivers").innerHTML=spoilerBanner()+ghostRows((s.drivers||[]).length||20,true);
+    $("#teams").innerHTML=spoilerBanner()+ghostRows((s.constructors||[]).length||10,true);
+  }
 }
 let weekend=null;
 const hm=iso=>new Date(iso).toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Rome"});
@@ -530,7 +538,14 @@ function renderResults(){
   const tabs=resTabs(r); if(resMode>=tabs.length) resMode=0;
   const first=tabs.find(t=>t.kind!=="quali");
   const pod=(r.podium||first?.rows||[]).slice(0,3);
-  let h=`<div class="spoilwrap${hide?" spoil":""}">${hide?spoilerBanner():""}
+  if(hide){
+    const n=Math.max(...tabs.map(t=>(t.rows||[]).length),10);
+    el.innerHTML=`<div class="spoilwrap spoil">${spoilerBanner()}<div class="rhead"><div class="lbl">${S().last}${r.round?" · Round "+esc(r.round):""}</div><h3>${esc(r.gp)}</h3>
+      <div class="podium">${["🥈","🥇","🥉"].map(m=>`<div><b>${m}</b><span>?</span></div>`).join("")}</div>
+      <p style="margin-top:10px">${ghost("100%")}<br>${ghost("90%")}<br>${ghost("70%")}</p></div><div class="table">${ghostRows(Math.min(n,20),true)}</div></div>`;
+    return;
+  }
+  let h=`<div class="spoilwrap">
     <div class="rhead"><div class="lbl">${S().last}${r.round?" · Round "+esc(r.round):""}</div><h3>${esc(r.gp)}</h3>
     ${pod.length===3?`<div class="podium">${[1,0,2].map(i=>`<div><b>${["🥇","🥈","🥉"][i]}</b><span>${esc(String(pod[i].name).split(" ").slice(-1)[0])}</span></div>`).join("")}</div>${first&&!r.podium?`<div style="font-size:11.5px;color:var(--muted);margin-top:6px">Podio: ${esc(first.label)}</div>`:""}`:""}
     ${r.summary?`<p style="margin-top:10px">${esc(r.summary)}</p>`:""}</div>
@@ -561,7 +576,8 @@ function renderVideos(){
   list.forEach(v=>{
     const id=ytId(v), gp=v.gp||"";
     if(gp!==last){h+=`<div class="vgp">${esc(gp)}</div>`;last=gp}
-    h+=`<div class="vcard${videoSpoiler(v)?" spoil":""}">
+    if(videoSpoiler(v)){h+=`<div class="vcard spoil"><div class="vthumb"></div><div class="vbody"><h3>🙈 Video nascosto</h3><div class="meta"><span>${esc(rel(v.published))}</span></div></div></div>`;return}
+    h+=`<div class="vcard">
       <button class="vthumb" data-yt="${esc(id)}" aria-label="Guarda: ${esc(v.title)}" style="background-image:url('https://i.ytimg.com/vi/${esc(id)}/hqdefault.jpg')"><span class="vplay"></span></button>
       <div class="vbody"><h3>${esc(v.title)}</h3>
       <div class="meta">${v.session?`<span class="tag">${esc(v.session)}</span>`:""}<span>${esc(rel(v.published))}</span>${v.channel?`<span>· ${esc(v.channel)}</span>`:""}<span>· <a href="https://www.youtube.com/watch?v=${esc(id)}" target="_blank" rel="noopener">Apri su YouTube ›</a></span></div></div>
@@ -588,7 +604,10 @@ function renderCal(){
   const canc=x=>/^annullat/i.test(x.status||"");
   const nextR=c.rounds.find(x=>!x.winner&&!canc(x)&&x.date>=today);
   const done=c.rounds.filter(x=>x.winner).length;
-  const wins={}; c.rounds.forEach(x=>{(x.wins||(x.winner?[x.winner]:[])).forEach(w=>wins[w]=(wins[w]||0)+1)});
+  const sp=spoilerHidden?spoilerSession():null, spDay=sp?new Date(new Date(sp.start).getTime()-36*3600e3).toISOString().slice(0,10):null;
+  const hid=x=>!!(spDay&&x.winner&&x.date>=spDay);
+  const anyHid=c.rounds.some(hid);
+  const wins={}; c.rounds.filter(x=>!hid(x)).forEach(x=>{(x.wins||(x.winner?[x.winner]:[])).forEach(w=>wins[w]=(wins[w]||0)+1)});
   const top=Object.entries(wins).sort((a,b)=>b[1]-a[1]);
   let h=`<div class="rhead"><div class="lbl">Stagione ${esc(c.season)}</div><h3>${done} ${S().unit} ${series==="wec"?"corse":"corsi"} su ${c.rounds.filter(x=>!canc(x)).length}</h3>
     <p>${S().wins}: ${top.map(([n,w])=>`${esc(n.split(" ").slice(-1)[0])} <b>${w}</b>`).join(" · ")}</p></div><div class="table cal">`;
@@ -596,6 +615,7 @@ function renderCal(){
     const d=new Date(x.date+"T12:00:00Z");
     const ds=d.toLocaleDateString("it-IT",{day:"numeric",month:"short"});
     const isNext=nextR&&x.round===nextR.round;
+    if(hid(x)) return `<div class="row"><div class="rnd">${esc(x.round)}</div><div class="bar" style="background:#4a4e55"></div><div class="who"><b>${esc(x.name)}</b><div class="win">🙈 Vincitore nascosto</div></div><div class="dt"><b>${esc(ds)}</b>${x.sprint?"Sprint":""}</div></div>`;
     return `<div class="row${x.winner?" done":""}${isNext?" next":""}">
       <div class="rnd">${esc(x.round)}</div><div class="bar" style="background:${x.winner?teamColor(x.team):"#333"}"></div>
       <div class="who"><b>${esc(x.name)}${isNext?'<span class="badge next">Prossimo</span>':""}</b>
@@ -610,6 +630,7 @@ let h2h=null, duels=null;
 function renderH2H(){
   const el=$("#h2h"); if(!el) return;
   if(!h2h?.pairs?.length){el.innerHTML=`<div class="empty">Confronti non ancora disponibili.</div>`;return}
+  if(spoilAfter(h2h.updated)){el.innerHTML=spoilerBanner()+`<div class="empty">🙈 Confronti nascosti: sono già aggiornati con la sessione che non hai ancora visto.</div>`;return}
   const line=(lab,x,y,c)=>{const t=(x+y)||1;return `<div class="ln"><b>${x}</b><div class="tr l"><i style="width:${x/t*100}%;background:${c}"></i></div><span class="lbl">${lab}</span><div class="tr"><i style="width:${y/t*100}%;background:${c};opacity:.45"></i></div><b>${y}</b></div>`};
   el.innerHTML=`<div class="sub" style="padding:0 2px 10px">Chi è stato davanti tra compagni di squadra, ${esc(h2h.after||"")}</div>`+h2h.pairs.map(p=>{
     const c=teamColor(p.team);
@@ -755,7 +776,7 @@ async function load(fresh){
     info=d.info||null; results=d.results||null; calendar=d.calendar||null; weekend=d.weekend||null; standings=d.standings||null; videos=Array.isArray(d.videos)?d.videos:[]; h2h=d.h2h||null; duels=d.duels||null;
     const safe=(f,...a)=>{try{f(...a)}catch(e){console.error(f.name,e);lastErr=f.name+": "+e.message}};
     safe(renderInfo); safe(renderResults); safe(renderCal); safe(renderStandings); safe(renderSched); safe(renderVideos); safe(renderPages,series==="f1"?d.pages?.list:null);
-    safe(checkSpoiler); safe(render); safe(renderStandings); safe(renderResults); safe(renderH2H); safe(renderDuel);
+    safe(checkSpoiler); safe(render); safe(renderStandings); safe(renderResults); safe(renderH2H); safe(renderDuel); safe(renderCal); safe(renderVideos);
     return changed?"new":"same";
   }catch(e){
     if(my!==loadSeq) return;
@@ -796,7 +817,7 @@ $("#refreshBtn").onclick=async()=>{
   load(true);
   setInterval(()=>{if(!document.hidden) load(false)},10*60e3);
   setInterval(()=>{if(weekend){renderSched();checkSpoiler()}},60000);
-  document.addEventListener("visibilitychange",()=>{if(!document.hidden){askedFor=null;load(false);if(weekend){checkSpoiler();render();renderStandings();renderResults();renderVideos();renderDuel()}}});
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden){askedFor=null;load(false);if(weekend){checkSpoiler();render();renderStandings();renderResults();renderVideos();renderDuel();renderCal();renderH2H()}}});
   if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
 </script>
