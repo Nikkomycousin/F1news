@@ -1,6 +1,44 @@
 {
   "news": [
     {
+      "id": "2026-11-08-norris-vince-interlagos",
+      "title": "Norris domina sotto la pioggia di Interlagos e vince il GP del Brasile",
+      "summary": "Il pilota McLaren, partito dalla pole, approfitta del testacoda di Antonelli al giro 16 e controlla la gara fino al traguardo con quasi 15 secondi di margine.",
+      "tag": "Gare",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/2026-brazilian-grand-prix-race-report",
+      "published": "2026-11-08T18:45:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-11-08-mercedes-campione-costruttori",
+      "title": "Mercedes campione del mondo costruttori con tre gare d'anticipo",
+      "summary": "Nonostante i testacoda di Antonelli e Russell, la squadra di Brackley chiude quarta e quinta e mette al sicuro il titolo: il vantaggio su Ferrari non è più colmabile.",
+      "tag": "Mercedes",
+      "source": "RaceFans",
+      "url": "https://www.racefans.net/2026/11/08/2026-brazilian-grand-prix-race-result-and-championship-points/",
+      "published": "2026-11-08T18:50:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-11-08-verstappen-rimonta-brasile",
+      "title": "Verstappen dal fondo al secondo posto, Hadjar completa il podio Red Bull",
+      "summary": "Partito in coda per la penalità sulla power unit, l'olandese risale fino alla seconda piazza; nel corso della gara Red Bull ha scambiato le posizioni dei suoi piloti.",
+      "tag": "Red Bull",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/f1-results-sao-paulo-grand-prix-2026-race-brazil",
+      "published": "2026-11-08T18:48:00Z"
+    },
+    {
+      "id": "2026-11-08-ferrari-brasile-delusione",
+      "title": "Ferrari senza acuti in Brasile: Leclerc settimo, Hamilton nono doppiato",
+      "summary": "Hamilton, scattato dal fondo, ha dovuto restituire una posizione a Bearman e nel finale è finito in testacoda tentando le slick sul bagnato; Leclerc non è andato oltre la settima piazza.",
+      "tag": "Ferrari",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/2026-brazilian-grand-prix-race-report",
+      "published": "2026-11-08T18:52:00Z"
+    },
+    {
       "id": "2026-11-07-griglia-brasile-penalita",
       "title": "Griglia del Brasile rivoluzionata: Antonelli in prima fila, Leclerc e Hamilton indietro",
       "summary": "Russell scala di cinque posizioni per il motore e cede la prima fila al compagno. Leclerc perde dieci posti, mentre Hamilton (cambio completo di power unit), Verstappen e Pérez partiranno dal fondo.",
@@ -619,11 +657,11 @@
     }
   ],
   "info": {
-    "updated": "2026-11-08T17:50:00Z",
+    "updated": "2026-11-08T18:55:00Z",
     "nextGp": {
-      "name": "GP del Brasile",
-      "circuit": "Interlagos, San Paolo",
-      "date": "2026-11-08T17:00:00Z",
+      "name": "GP di Las Vegas",
+      "circuit": "Las Vegas Strip Circuit",
+      "date": "2026-11-22T04:00:00Z",
       "label": "Gara"
     }
   },
@@ -676,9 +714,172 @@
   "results": {
     "gp": "GP del Brasile",
     "round": 20,
-    "updated": "2026-11-07T20:55:00Z",
-    "summary": "Qualifiche stravolte dal temporale a Interlagos: bandiera rossa in Q1 e oltre 80 minuti di stop prima della ripartenza. Norris conquista la pole, la sua terza stagionale, con due decimi su Russell, che però sconterà cinque posizioni di penalità per il motore: in prima fila salirà Antonelli. Leclerc chiude quarto ma retrocederà di dieci posti, mentre Hamilton e Verstappen partiranno in fondo per le sostituzioni di power unit. Alonso porta per la prima volta quest'anno un'Aston Martin in Q3.",
+    "updated": "2026-11-08T18:55:00Z",
+    "summary": "Gara condizionata dalla pioggia a Interlagos: tutti al via con le intermedie, poi slick e di nuovo intermedie nel finale. Antonelli scatta meglio e comanda fino al testacoda al giro 16 che spiana la strada a Norris, vincitore dalla pole. Verstappen rimonta dal fondo fino al secondo posto e completa la doppietta Red Bull sul podio con Hadjar; Mercedes quarta e quinta ma campione costruttori. Ferrari in difficoltà: Leclerc settimo, Hamilton nono con un giro di ritardo.",
     "tabs": [
+      {
+        "label": "Gara",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Lando Norris",
+            "team": "McLaren",
+            "gap": "71 giri",
+            "points": 25
+          },
+          {
+            "pos": "2",
+            "name": "Max Verstappen",
+            "team": "Red Bull",
+            "gap": "+14.602",
+            "points": 18,
+            "note": "Partito dal fondo"
+          },
+          {
+            "pos": "3",
+            "name": "Isack Hadjar",
+            "team": "Red Bull",
+            "gap": "+24.485",
+            "points": 15
+          },
+          {
+            "pos": "4",
+            "name": "George Russell",
+            "team": "Mercedes",
+            "gap": "+33.991",
+            "points": 12
+          },
+          {
+            "pos": "5",
+            "name": "Kimi Antonelli",
+            "team": "Mercedes",
+            "gap": "+36.017",
+            "points": 10,
+            "note": "Sotto investigazione (unsafe release)"
+          },
+          {
+            "pos": "6",
+            "name": "Oscar Piastri",
+            "team": "McLaren",
+            "gap": "+56.475",
+            "points": 8
+          },
+          {
+            "pos": "7",
+            "name": "Charles Leclerc",
+            "team": "Ferrari",
+            "gap": "+1:13.586",
+            "points": 6
+          },
+          {
+            "pos": "8",
+            "name": "Liam Lawson",
+            "team": "Racing Bulls",
+            "gap": "+1:15.402",
+            "points": 4
+          },
+          {
+            "pos": "9",
+            "name": "Lewis Hamilton",
+            "team": "Ferrari",
+            "gap": "+1 giro",
+            "points": 2
+          },
+          {
+            "pos": "10",
+            "name": "Nico Hülkenberg",
+            "team": "Audi",
+            "gap": "+1 giro",
+            "points": 1
+          },
+          {
+            "pos": "11",
+            "name": "Arvid Lindblad",
+            "team": "Racing Bulls",
+            "gap": "+1 giro",
+            "points": 0
+          },
+          {
+            "pos": "12",
+            "name": "Fernando Alonso",
+            "team": "Aston Martin",
+            "gap": "+1 giro",
+            "points": 0
+          },
+          {
+            "pos": "13",
+            "name": "Franco Colapinto",
+            "team": "Alpine",
+            "gap": "+1 giro",
+            "points": 0
+          },
+          {
+            "pos": "14",
+            "name": "Pierre Gasly",
+            "team": "Alpine",
+            "gap": "+1 giro",
+            "points": 0
+          },
+          {
+            "pos": "15",
+            "name": "Alexander Albon",
+            "team": "Williams",
+            "gap": "+1 giro",
+            "points": 0
+          },
+          {
+            "pos": "16",
+            "name": "Gabriel Bortoleto",
+            "team": "Audi",
+            "gap": "+1 giro",
+            "points": 0
+          },
+          {
+            "pos": "17",
+            "name": "Oliver Bearman",
+            "team": "Haas",
+            "gap": "+1 giro",
+            "points": 0
+          },
+          {
+            "pos": "18",
+            "name": "Sergio Pérez",
+            "team": "Cadillac",
+            "gap": "+2 giri",
+            "points": 0
+          },
+          {
+            "pos": "19",
+            "name": "Carlos Sainz",
+            "team": "Williams",
+            "gap": "+2 giri",
+            "points": 0
+          },
+          {
+            "pos": "20",
+            "name": "Rafael Câmara",
+            "team": "Haas",
+            "gap": "+2 giri",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Lance Stroll",
+            "team": "Aston Martin",
+            "gap": "Ritirato",
+            "points": 0
+          },
+          {
+            "pos": "NP",
+            "name": "Valtteri Bottas",
+            "team": "Cadillac",
+            "gap": "Non partito",
+            "points": 0,
+            "note": "Dado ruota bloccato in griglia"
+          }
+        ]
+      },
       {
         "label": "Qualifiche",
         "kind": "quali",
@@ -832,6 +1033,17 @@
           }
         ]
       }
+    ],
+    "podium": [
+      {
+        "name": "Lando Norris"
+      },
+      {
+        "name": "Max Verstappen"
+      },
+      {
+        "name": "Isack Hadjar"
+      }
     ]
   },
   "videos": [
@@ -855,63 +1067,63 @@
     }
   ],
   "standings": {
-    "updated": "2026-11-02T15:45:00Z",
-    "after": "dopo il GP del Messico",
+    "updated": "2026-11-08T18:55:00Z",
+    "after": "dopo il GP del Brasile",
     "drivers": [
       {
         "pos": 1,
         "name": "Kimi Antonelli",
         "team": "Mercedes",
-        "points": 380,
+        "points": 390,
         "champion": true
       },
       {
         "pos": 2,
         "name": "Max Verstappen",
         "team": "Red Bull",
-        "points": 261
+        "points": 279
       },
       {
         "pos": 3,
-        "name": "Lewis Hamilton",
-        "team": "Ferrari",
-        "points": 259
+        "name": "George Russell",
+        "team": "Mercedes",
+        "points": 262
       },
       {
         "pos": 4,
-        "name": "George Russell",
-        "team": "Mercedes",
-        "points": 250
+        "name": "Lewis Hamilton",
+        "team": "Ferrari",
+        "points": 261
       },
       {
         "pos": 5,
         "name": "Charles Leclerc",
         "team": "Ferrari",
-        "points": 245
+        "points": 251
       },
       {
         "pos": 6,
         "name": "Lando Norris",
         "team": "McLaren",
-        "points": 221
+        "points": 246
       },
       {
         "pos": 7,
         "name": "Oscar Piastri",
         "team": "McLaren",
-        "points": 144
+        "points": 152
       },
       {
         "pos": 8,
         "name": "Isack Hadjar",
         "team": "Red Bull",
-        "points": 107
+        "points": 122
       },
       {
         "pos": 9,
         "name": "Liam Lawson",
         "team": "Racing Bulls",
-        "points": 83
+        "points": 87
       },
       {
         "pos": 10,
@@ -947,7 +1159,7 @@
         "pos": 15,
         "name": "Nico Hülkenberg",
         "team": "Audi",
-        "points": 13
+        "points": 14
       },
       {
         "pos": 16,
@@ -1002,37 +1214,44 @@
         "name": "Sergio Pérez",
         "team": "Cadillac",
         "points": 0
+      },
+      {
+        "pos": 25,
+        "name": "Rafael Câmara",
+        "team": "Haas",
+        "points": 0
       }
     ],
     "constructors": [
       {
         "pos": 1,
         "team": "Mercedes",
-        "points": 630,
-        "drivers": "Antonelli · Russell"
+        "points": 652,
+        "drivers": "Antonelli · Russell",
+        "champion": true
       },
       {
         "pos": 2,
         "team": "Ferrari",
-        "points": 504,
+        "points": 512,
         "drivers": "Hamilton · Leclerc"
       },
       {
         "pos": 3,
         "team": "Red Bull",
-        "points": 382,
+        "points": 415,
         "drivers": "Verstappen · Hadjar"
       },
       {
         "pos": 4,
         "team": "McLaren",
-        "points": 365,
+        "points": 398,
         "drivers": "Norris · Piastri"
       },
       {
         "pos": 5,
         "team": "Racing Bulls",
-        "points": 108,
+        "points": 112,
         "drivers": "Lawson · Lindblad"
       },
       {
@@ -1050,7 +1269,7 @@
       {
         "pos": 8,
         "team": "Audi",
-        "points": 27,
+        "points": 28,
         "drivers": "Bortoleto · Hülkenberg"
       },
       {
@@ -1233,7 +1452,9 @@
         "round": 20,
         "name": "GP del Brasile",
         "circuit": "Interlagos",
-        "date": "2026-11-08"
+        "date": "2026-11-08",
+        "winner": "Lando Norris",
+        "team": "McLaren"
       },
       {
         "round": 21,
@@ -1270,8 +1491,8 @@
     ]
   },
   "h2h": {
-    "after": "dopo le qualifiche del GP del Brasile",
-    "updated": "2026-11-07T21:55:00Z",
+    "after": "dopo il GP del Brasile",
+    "updated": "2026-11-08T18:55:00Z",
     "source": "Sky Sports",
     "pairs": [
       {
@@ -1283,7 +1504,7 @@
           11
         ],
         "race": [
-          5,
+          6,
           14
         ]
       },
@@ -1296,7 +1517,7 @@
           9
         ],
         "race": [
-          9,
+          10,
           10
         ]
       },
@@ -1309,7 +1530,7 @@
           7
         ],
         "race": [
-          11,
+          12,
           8
         ]
       },
@@ -1322,7 +1543,7 @@
           5
         ],
         "race": [
-          13,
+          14,
           3
         ],
         "extra": "Con Lawson (Olanda, Italia, Spagna): Verstappen 3-0 in qualifica, 2-1 in gara"
@@ -1336,7 +1557,7 @@
           7
         ],
         "race": [
-          12,
+          13,
           4
         ],
         "extra": "Con Tsunoda (Olanda, Italia, Spagna): Lindblad 3-0 in qualifica, 2-1 in gara"
@@ -1351,7 +1572,7 @@
         ],
         "race": [
           10,
-          8
+          9
         ]
       },
       {
@@ -1366,7 +1587,7 @@
           10,
           7
         ],
-        "extra": "Con Hirakawa (Messico): Bearman 1-0 in qualifica, 0-1 in gara · Con Câmara (Brasile): Bearman 1-0 in qualifica"
+        "extra": "Con Hirakawa (Messico): Bearman 1-0 in qualifica, 1-0 in gara, 0-1 in gara · Con Câmara (Brasile): Bearman 1-0 in qualifica, 1-0 in gara"
       },
       {
         "team": "Audi",
@@ -1377,7 +1598,7 @@
           9
         ],
         "race": [
-          10,
+          11,
           9
         ]
       },
@@ -1390,7 +1611,7 @@
           15
         ],
         "race": [
-          8,
+          9,
           11
         ]
       },
@@ -1496,7 +1717,20 @@
             "a": "Sergio Pérez",
             "b": "Valtteri Bottas"
           }
-        ]
+        ],
+        "outcome": {
+          "mer": "a",
+          "fer": "a",
+          "mcl": "a",
+          "rbr": "a",
+          "rb": "a",
+          "alp": "b",
+          "has": "a",
+          "aud": "a",
+          "wil": "a",
+          "ast": "a",
+          "cad": "x"
+        }
       }
     ]
   }
