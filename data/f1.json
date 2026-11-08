@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "2026-11-08-penalita-dopo-brasile",
+      "title": "Penalità post gara in Brasile: Leclerc scivola ottavo, Lawson guadagna una posizione",
+      "summary": "I commissari danno 5 secondi a Leclerc per il contatto con Lawson alla curva 12 e altrettanti ad Antonelli e Bearman per rilasci pericolosi ai box; Antonelli conserva comunque il quinto posto.",
+      "tag": "Gare",
+      "source": "GPblog",
+      "url": "https://www.gpblog.com/en/breaking-news/fia-delivers-double-penalty-following-brazilian-gp-investigations",
+      "published": "2026-11-08T21:31:00Z"
+    },
+    {
       "id": "2026-11-08-norris-vince-interlagos",
       "title": "Norris domina sotto la pioggia di Interlagos e vince il GP del Brasile",
       "summary": "Il pilota McLaren, partito dalla pole, approfitta del testacoda di Antonelli al giro 16 e controlla la gara fino al traguardo con quasi 15 secondi di margine.",
@@ -657,7 +666,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-08T21:54:00Z",
+    "updated": "2026-11-08T22:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
@@ -714,8 +723,8 @@
   "results": {
     "gp": "GP del Brasile",
     "round": 20,
-    "updated": "2026-11-08T18:55:00Z",
-    "summary": "Gara condizionata dalla pioggia a Interlagos: tutti al via con le intermedie, poi slick e di nuovo intermedie nel finale. Antonelli scatta meglio e comanda fino al testacoda al giro 16 che spiana la strada a Norris, vincitore dalla pole. Verstappen rimonta dal fondo fino al secondo posto e completa la doppietta Red Bull sul podio con Hadjar; Mercedes quarta e quinta ma campione costruttori. Ferrari in difficoltà: Leclerc settimo, Hamilton nono con un giro di ritardo.",
+    "updated": "2026-11-08T22:55:00Z",
+    "summary": "Gara condizionata dalla pioggia a Interlagos: tutti al via con le intermedie, poi slick e di nuovo intermedie nel finale. Antonelli scatta meglio e comanda fino al testacoda al giro 16 che spiana la strada a Norris, vincitore dalla pole. Verstappen rimonta dal fondo fino al secondo posto e completa la doppietta Red Bull sul podio con Hadjar; Mercedes quarta e quinta ma campione costruttori. Ferrari in difficoltà: Leclerc ottavo dopo una penalità di 5 secondi per il contatto con Lawson, Hamilton nono con un giro di ritardo.",
     "tabs": [
       {
         "label": "Gara",
@@ -756,7 +765,7 @@
             "team": "Mercedes",
             "gap": "+36.017",
             "points": 10,
-            "note": "Sotto investigazione (unsafe release)"
+            "note": "+5 s (unsafe release), resta quinto"
           },
           {
             "pos": "6",
@@ -767,17 +776,18 @@
           },
           {
             "pos": "7",
-            "name": "Charles Leclerc",
-            "team": "Ferrari",
-            "gap": "+1:13.586",
+            "name": "Liam Lawson",
+            "team": "Racing Bulls",
+            "gap": "+1:15.402",
             "points": 6
           },
           {
             "pos": "8",
-            "name": "Liam Lawson",
-            "team": "Racing Bulls",
-            "gap": "+1:15.402",
-            "points": 4
+            "name": "Charles Leclerc",
+            "team": "Ferrari",
+            "gap": "+1:18.586",
+            "points": 4,
+            "note": "+5 s (contatto con Lawson)"
           },
           {
             "pos": "9",
@@ -840,7 +850,8 @@
             "name": "Oliver Bearman",
             "team": "Haas",
             "gap": "+1 giro",
-            "points": 0
+            "points": 0,
+            "note": "+5 s (unsafe release)"
           },
           {
             "pos": "18",
@@ -1067,7 +1078,7 @@
     }
   ],
   "standings": {
-    "updated": "2026-11-08T18:55:00Z",
+    "updated": "2026-11-08T22:55:00Z",
     "after": "dopo il GP del Brasile",
     "drivers": [
       {
@@ -1099,7 +1110,7 @@
         "pos": 5,
         "name": "Charles Leclerc",
         "team": "Ferrari",
-        "points": 251
+        "points": 249
       },
       {
         "pos": 6,
@@ -1123,7 +1134,7 @@
         "pos": 9,
         "name": "Liam Lawson",
         "team": "Racing Bulls",
-        "points": 87
+        "points": 89
       },
       {
         "pos": 10,
@@ -1233,7 +1244,7 @@
       {
         "pos": 2,
         "team": "Ferrari",
-        "points": 512,
+        "points": 510,
         "drivers": "Hamilton · Leclerc"
       },
       {
@@ -1251,7 +1262,7 @@
       {
         "pos": 5,
         "team": "Racing Bulls",
-        "points": 112,
+        "points": 114,
         "drivers": "Lawson · Lindblad"
       },
       {
