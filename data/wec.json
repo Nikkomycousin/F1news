@@ -1,6 +1,36 @@
 {
   "news": [
     {
+      "id": "2026-11-08-monza-cadillac-toyota-campioni",
+      "title": "Monza, vince la Cadillac #38; Toyota #8 campione del mondo Hypercar",
+      "summary": "Aitken, Bamber e Bourdais hanno guidato quasi tutta la finale e regalato alla Cadillac Jota il primo successo stagionale. A Buemi, Hartley e Hirakawa è bastato l'11° posto per chiudere i conti con la Toyota gemella.",
+      "tag": "Gare",
+      "source": "Sportscar365",
+      "url": "https://sportscar365.com/lemans/wec/jota-cadillac-wins-monza-finale-no-8-toyota-takes-title",
+      "published": "2026-11-08T16:15:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-11-08-monza-aston-perde-podio",
+      "title": "Aston Martin perde il primo podio: 20 secondi per le pressioni gomme",
+      "summary": "La Valkyrie #007 aveva tagliato il traguardo terza, ma la penalità per pressioni troppo basse l'ha fatta scivolare quarta, promuovendo sul podio la Ferrari #51. Resta aperta anche un'indagine sull'uso dell'energia.",
+      "tag": "Gare",
+      "source": "Dive Bomb",
+      "url": "https://www.dive-bomb.com/article/wec-monza-race-report",
+      "published": "2026-11-08T16:30:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-08-monza-alpine-addio",
+      "title": "Alpine saluta il WEC con un secondo posto e il botto di Milesi",
+      "summary": "Nell'ultima gara del marchio nel mondiale, Martins e Gounon hanno chiuso a meno di sei secondi dal vincitore, mentre la #35 è uscita di scena per un forte incidente di Milesi alla Parabolica.",
+      "tag": "Team",
+      "source": "Dailysportscar",
+      "url": "https://www.dailysportscar.com/2026/11/08/cadillac-wins-at-monza-as-8-toyota-crowned-champions.html",
+      "published": "2026-11-08T16:20:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-07-monza-pole-fuoco",
       "title": "Monza, Fuoco regala alla Ferrari #50 la pole davanti alla Genesis di Jaminet",
       "summary": "Su una pista ancora scivolosa Fuoco ha firmato il miglior tempo dell'Hyperpole per meno di un decimo sulla Genesis #19; terza la Cadillac #38 e quarta la Ferrari #51. È la prima pole Hypercar della Ferrari a Monza.",
@@ -175,14 +205,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-08T15:50:00Z",
-    "nextGp": {
-      "name": "6 Ore di Monza",
-      "circuit": "Monza",
-      "date": "2026-11-08T10:00:00Z",
-      "label": "Gara",
-      "note": "finale di stagione"
-    }
+    "updated": "2026-11-08T17:00:00Z"
   },
   "weekend": {
     "gp": "6 Ore di Monza",
@@ -233,9 +256,141 @@
   "results": {
     "gp": "6 Ore di Monza",
     "round": 8,
-    "updated": "2026-11-07T15:00:00Z",
-    "summary": "Pole position per la Ferrari #50 nella finale di Monza: Antonio Fuoco ha chiuso l'Hyperpole in 1:33.364, appena 96 millesimi meglio della Genesis #19 di Jaminet, che ha mollato nell'ultimo settore. Terza la Cadillac #38 di Bamber davanti all'altra Ferrari ufficiale #51 di Giovinazzi. Sessioni su pista umida e in via di asciugatura; giornata difficile per Toyota, con le due auto, in lotta per il titolo, solo 15ª e 16ª.",
+    "updated": "2026-11-08T17:00:00Z",
+    "summary": "La Cadillac #38 di Aitken, Bamber e Bourdais ha vinto la 6 Ore di Monza, finale di stagione, dopo aver preso il comando già nelle prime fasi e averlo difeso fino alla bandiera a scacchi dall'Alpine #36 di Martins e Gounon, seconda a 5,6 secondi nell'ultima gara del marchio francese. Il podio è stato completato dalla Ferrari #51, promossa dopo la penalità di 20 secondi inflitta all'Aston Martin #007 per le pressioni delle gomme. La Toyota #8 di Buemi, Hartley e Hirakawa, solo 11ª, si è laureata campione del mondo Hypercar davanti alla gemella #7. Classifica ancora provvisoria: restano aperte alcune indagini dei commissari.",
     "tabs": [
+      {
+        "label": "Gara Hypercar",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Aitken · Bamber · Bourdais",
+            "team": "Cadillac #38",
+            "gap": "191 giri",
+            "points": 25
+          },
+          {
+            "pos": "2",
+            "name": "Gounon · Martins",
+            "team": "Alpine #36",
+            "gap": "+5.607",
+            "points": 18
+          },
+          {
+            "pos": "3",
+            "name": "Pier Guidi · Calado · Giovinazzi",
+            "team": "Ferrari #51",
+            "gap": "+35.767",
+            "points": 15,
+            "note": "Promossa dopo la penalità alla #007"
+          },
+          {
+            "pos": "4",
+            "name": "Tincknell · Gamble",
+            "team": "Aston Martin #007",
+            "gap": "—",
+            "points": 12,
+            "note": "20 s di penalità (pressione gomme); 3ª al traguardo"
+          },
+          {
+            "pos": "5",
+            "name": "Duval · Jakobsen · Pourchaire",
+            "team": "Peugeot #94",
+            "gap": "+54.890",
+            "points": 10
+          },
+          {
+            "pos": "6",
+            "name": "Magnussen · Marciello · Vanthoor",
+            "team": "BMW #15",
+            "gap": "+1:03.128",
+            "points": 8
+          },
+          {
+            "pos": "7",
+            "name": "Fuoco · Molina · Nielsen",
+            "team": "Ferrari #50",
+            "gap": "+1:12.899",
+            "points": 7,
+            "note": "+1 punto pole"
+          },
+          {
+            "pos": "8",
+            "name": "Ye · Kubica · Hanson",
+            "team": "Ferrari #83 (AF Corse)",
+            "gap": "+1:26.952",
+            "points": 4
+          },
+          {
+            "pos": "9",
+            "name": "Frijns · Rast · van der Linde",
+            "team": "BMW #20",
+            "gap": "+1:29.925",
+            "points": 2
+          },
+          {
+            "pos": "10",
+            "name": "di Resta · Cassidy · Quinn",
+            "team": "Peugeot #93",
+            "gap": "+1:31.878",
+            "points": 1
+          },
+          {
+            "pos": "11",
+            "name": "Buemi · Hartley · Hirakawa",
+            "team": "Toyota #8",
+            "gap": "+1 giro",
+            "points": 0,
+            "note": "Campioni del mondo"
+          },
+          {
+            "pos": "12",
+            "name": "Conway · Kobayashi · de Vries",
+            "team": "Toyota #7",
+            "gap": "+1 giro",
+            "points": 0
+          },
+          {
+            "pos": "13",
+            "name": "Lotterer · Derani · Jaubert",
+            "team": "Genesis #17",
+            "gap": "+2 giri",
+            "points": 0
+          },
+          {
+            "pos": "14",
+            "name": "Riberas · Sørensen",
+            "team": "Aston Martin #009",
+            "gap": "+2 giri",
+            "points": 0
+          },
+          {
+            "pos": "15",
+            "name": "Stevens · Nato · Lynn",
+            "team": "Cadillac #12",
+            "gap": "+3 giri",
+            "points": 0,
+            "note": "Incidente di Lynn al penultimo giro"
+          },
+          {
+            "pos": "RIT",
+            "name": "Milesi · Habsburg",
+            "team": "Alpine #35",
+            "gap": "102 giri",
+            "points": 0,
+            "note": "Incidente alla Parabolica"
+          },
+          {
+            "pos": "RIT",
+            "name": "Jaminet · Chatin · Juncadella",
+            "team": "Genesis #19",
+            "gap": "62 giri",
+            "points": 0,
+            "note": "Problema elettrico"
+          }
+        ]
+      },
       {
         "label": "Hyperpole",
         "kind": "quali",
@@ -352,6 +507,17 @@
           }
         ]
       }
+    ],
+    "podium": [
+      {
+        "name": "Aitken · Bamber · Bourdais"
+      },
+      {
+        "name": "Gounon · Martins"
+      },
+      {
+        "name": "Pier Guidi · Calado · Giovinazzi"
+      }
     ]
   },
   "videos": [
@@ -384,26 +550,29 @@
     }
   ],
   "standings": {
-    "updated": "2026-10-18T17:00:00Z",
-    "after": "dopo la 6 Ore di Barcellona",
+    "updated": "2026-11-08T17:00:00Z",
+    "after": "dopo la 6 Ore di Monza (finale, classifica provvisoria)",
     "drivers": [
       {
         "pos": 1,
         "name": "Sébastien Buemi",
         "team": "Toyota #8",
-        "points": 114
+        "points": 114,
+        "champion": true
       },
       {
         "pos": 1,
         "name": "Brendon Hartley",
         "team": "Toyota #8",
-        "points": 114
+        "points": 114,
+        "champion": true
       },
       {
         "pos": 1,
         "name": "Ryō Hirakawa",
         "team": "Toyota #8",
-        "points": 114
+        "points": 114,
+        "champion": true
       },
       {
         "pos": 2,
@@ -427,73 +596,91 @@
         "pos": 3,
         "name": "Kevin Magnussen",
         "team": "BMW #15",
-        "points": 75
+        "points": 83
       },
       {
         "pos": 3,
         "name": "Raffaele Marciello",
         "team": "BMW #15",
-        "points": 75
+        "points": 83
       },
       {
         "pos": 4,
+        "name": "Earl Bamber",
+        "team": "Cadillac #38",
+        "points": 81
+      },
+      {
+        "pos": 4,
+        "name": "Sébastien Bourdais",
+        "team": "Cadillac #38",
+        "points": 81
+      },
+      {
+        "pos": 5,
         "name": "Robin Frijns",
         "team": "BMW #20",
-        "points": 75
+        "points": 77
       },
       {
-        "pos": 4,
+        "pos": 5,
         "name": "René Rast",
         "team": "BMW #20",
-        "points": 75
+        "points": 77
       },
       {
         "pos": 5,
         "name": "Dries Vanthoor",
         "team": "BMW #15",
-        "points": 69
+        "points": 77
+      },
+      {
+        "pos": 5,
+        "name": "Jack Aitken",
+        "team": "Cadillac #38",
+        "points": 77
       },
       {
         "pos": 6,
         "name": "Antonio Fuoco",
         "team": "Ferrari #50",
-        "points": 69
+        "points": 76
       },
       {
         "pos": 6,
         "name": "Miguel Molina",
         "team": "Ferrari #50",
-        "points": 69
+        "points": 76
       },
       {
         "pos": 6,
         "name": "Nicklas Nielsen",
         "team": "Ferrari #50",
-        "points": 69
+        "points": 76
       },
       {
         "pos": 7,
-        "name": "Sheldon van der Linde",
-        "team": "BMW #20",
-        "points": 65
-      },
-      {
-        "pos": 8,
         "name": "James Calado",
         "team": "Ferrari #51",
-        "points": 59
+        "points": 74
       },
       {
-        "pos": 8,
+        "pos": 7,
         "name": "Antonio Giovinazzi",
         "team": "Ferrari #51",
-        "points": 59
+        "points": 74
+      },
+      {
+        "pos": 7,
+        "name": "Alessandro Pier Guidi",
+        "team": "Ferrari #51",
+        "points": 74
       },
       {
         "pos": 8,
-        "name": "Alessandro Pier Guidi",
-        "team": "Ferrari #51",
-        "points": 59
+        "name": "Sheldon van der Linde",
+        "team": "BMW #20",
+        "points": 67
       },
       {
         "pos": 9,
@@ -521,21 +708,45 @@
       },
       {
         "pos": 11,
-        "name": "Earl Bamber",
-        "team": "Cadillac #38",
-        "points": 56
+        "name": "Tom Gamble",
+        "team": "Aston Martin #007",
+        "points": 54
       },
       {
         "pos": 11,
-        "name": "Sébastien Bourdais",
-        "team": "Cadillac #38",
-        "points": 56
+        "name": "Harry Tincknell",
+        "team": "Aston Martin #007",
+        "points": 54
+      },
+      {
+        "pos": 11,
+        "name": "Jules Gounon",
+        "team": "Alpine #36",
+        "points": 54
+      },
+      {
+        "pos": 11,
+        "name": "Victor Martins",
+        "team": "Alpine #36",
+        "points": 54
       },
       {
         "pos": 12,
-        "name": "Jack Aitken",
-        "team": "Cadillac #38",
-        "points": 52
+        "name": "Phil Hanson",
+        "team": "Ferrari #83 (AF Corse)",
+        "points": 45
+      },
+      {
+        "pos": 12,
+        "name": "Robert Kubica",
+        "team": "Ferrari #83 (AF Corse)",
+        "points": 45
+      },
+      {
+        "pos": 12,
+        "name": "Ye Yifei",
+        "team": "Ferrari #83 (AF Corse)",
+        "points": 45
       },
       {
         "pos": 13,
@@ -545,141 +756,105 @@
       },
       {
         "pos": 14,
-        "name": "Tom Gamble",
-        "team": "Aston Martin #007",
-        "points": 42
-      },
-      {
-        "pos": 14,
-        "name": "Harry Tincknell",
-        "team": "Aston Martin #007",
-        "points": 42
-      },
-      {
-        "pos": 15,
-        "name": "Phil Hanson",
-        "team": "Ferrari #83 (AF Corse)",
-        "points": 41
-      },
-      {
-        "pos": 15,
-        "name": "Robert Kubica",
-        "team": "Ferrari #83 (AF Corse)",
-        "points": 41
-      },
-      {
-        "pos": 15,
-        "name": "Ye Yifei",
-        "team": "Ferrari #83 (AF Corse)",
-        "points": 41
-      },
-      {
-        "pos": 16,
-        "name": "Jules Gounon",
-        "team": "Alpine #36",
-        "points": 36
-      },
-      {
-        "pos": 16,
-        "name": "Victor Martins",
-        "team": "Alpine #36",
-        "points": 36
-      },
-      {
-        "pos": 17,
         "name": "Louis Delétraz",
         "team": "",
         "points": 26
       },
       {
-        "pos": 18,
+        "pos": 15,
+        "name": "Loïc Duval",
+        "team": "Peugeot #94",
+        "points": 22
+      },
+      {
+        "pos": 15,
+        "name": "Malthe Jakobsen",
+        "team": "Peugeot #94",
+        "points": 22
+      },
+      {
+        "pos": 15,
+        "name": "Théo Pourchaire",
+        "team": "Peugeot #94",
+        "points": 22
+      },
+      {
+        "pos": 16,
         "name": "Frédéric Makowiecki",
         "team": "Alpine #36",
         "points": 14
       },
       {
-        "pos": 19,
-        "name": "Loïc Duval",
-        "team": "Peugeot",
-        "points": 12
-      },
-      {
-        "pos": 19,
-        "name": "Malthe Jakobsen",
-        "team": "Peugeot",
-        "points": 12
-      },
-      {
-        "pos": 19,
-        "name": "Théo Pourchaire",
-        "team": "",
-        "points": 12
-      },
-      {
-        "pos": 20,
+        "pos": 17,
         "name": "Luis Felipe Derani",
         "team": "",
         "points": 11
       },
       {
-        "pos": 20,
+        "pos": 17,
         "name": "Mathys Jaubert",
         "team": "Genesis",
         "points": 11
       },
       {
-        "pos": 20,
+        "pos": 17,
         "name": "André Lotterer",
         "team": "Genesis",
         "points": 11
       },
       {
-        "pos": 21,
+        "pos": 18,
         "name": "Alex Lynn",
         "team": "",
         "points": 8
       },
       {
-        "pos": 22,
+        "pos": 18,
         "name": "Ross Gunn",
         "team": "Aston Martin",
         "points": 8
       },
       {
-        "pos": 23,
+        "pos": 19,
         "name": "Nick Cassidy",
-        "team": "",
-        "points": 6
+        "team": "Peugeot #93",
+        "points": 7
       },
       {
-        "pos": 23,
+        "pos": 19,
         "name": "Paul Di Resta",
-        "team": "Peugeot",
-        "points": 6
+        "team": "Peugeot #93",
+        "points": 7
       },
       {
-        "pos": 24,
+        "pos": 20,
         "name": "Stoffel Vandoorne",
         "team": "Peugeot",
         "points": 6
       },
       {
-        "pos": 25,
+        "pos": 20,
         "name": "Alex Riberas",
         "team": "Aston Martin #009",
         "points": 6
       },
       {
-        "pos": 25,
+        "pos": 20,
         "name": "Marco Sørensen",
         "team": "Aston Martin #009",
         "points": 6
       },
       {
-        "pos": 26,
+        "pos": 21,
         "name": "Ricky Taylor",
         "team": "",
         "points": 2
+      },
+      {
+        "pos": 22,
+        "name": "Alexander Quinn",
+        "team": "Peugeot #93",
+        "points": 1
       }
     ],
     "constructors": [
@@ -693,37 +868,37 @@
       {
         "pos": 2,
         "team": "BMW",
-        "points": 154,
+        "points": 164,
         "drivers": "#15 · #20"
       },
       {
         "pos": 3,
         "team": "Ferrari",
-        "points": 130,
+        "points": 152,
         "drivers": "#50 · #51"
       },
       {
         "pos": 4,
         "team": "Cadillac",
-        "points": 118,
+        "points": 143,
         "drivers": "#12 · #38"
       },
       {
         "pos": 5,
         "team": "Alpine",
-        "points": 104,
+        "points": 122,
         "drivers": "#35 · #36"
       },
       {
         "pos": 6,
         "team": "Aston Martin",
-        "points": 58,
+        "points": 70,
         "drivers": "#007 · #009"
       },
       {
         "pos": 7,
         "team": "Peugeot",
-        "points": 24,
+        "points": 35,
         "drivers": "#93 · #94"
       },
       {
@@ -819,7 +994,12 @@
         "round": 8,
         "name": "6 Ore di Monza",
         "circuit": "Monza",
-        "date": "2026-11-08"
+        "date": "2026-11-08",
+        "winner": "#38 Aitken · Bamber · Bourdais",
+        "team": "Cadillac",
+        "wins": [
+          "Cadillac"
+        ]
       },
       {
         "round": "✕",
