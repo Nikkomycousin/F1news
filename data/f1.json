@@ -666,7 +666,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-08T23:55:00Z",
+    "updated": "2026-11-09T00:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
@@ -675,48 +675,41 @@
     }
   },
   "weekend": {
-    "gp": "GP del Brasile",
-    "circuit": "Interlagos, San Paolo",
-    "updated": "2026-11-02T15:50:00Z",
+    "gp": "GP di Las Vegas",
+    "circuit": "Las Vegas Strip Circuit",
+    "updated": "2026-11-09T00:55:00Z",
+    "tv8note": "Programmazione TV8 non ancora annunciata: diretta integrale su Sky Sport F1 e NOW.",
     "sessions": [
       {
         "name": "Prove libere 1",
-        "start": "2026-11-06T15:30:00Z",
-        "end": "2026-11-06T16:30:00Z",
+        "start": "2026-11-20T00:30:00Z",
+        "end": "2026-11-20T01:30:00Z",
         "live": "Diretta Sky Sport F1 · NOW"
       },
       {
         "name": "Prove libere 2",
-        "start": "2026-11-06T19:00:00Z",
-        "end": "2026-11-06T20:00:00Z",
+        "start": "2026-11-20T04:00:00Z",
+        "end": "2026-11-20T05:00:00Z",
         "live": "Diretta Sky Sport F1 · NOW"
       },
       {
         "name": "Prove libere 3",
-        "start": "2026-11-07T14:30:00Z",
-        "end": "2026-11-07T15:30:00Z",
+        "start": "2026-11-21T00:30:00Z",
+        "end": "2026-11-21T01:30:00Z",
         "live": "Diretta Sky Sport F1 · NOW"
       },
       {
         "name": "Qualifiche",
-        "start": "2026-11-07T18:00:00Z",
-        "end": "2026-11-07T19:00:00Z",
+        "start": "2026-11-21T04:00:00Z",
+        "end": "2026-11-21T05:00:00Z",
         "live": "Diretta Sky Sport F1 · NOW",
-        "key": true,
-        "tv8": {
-          "live": false,
-          "time": "2026-11-07T20:30:00Z"
-        }
+        "key": true
       },
       {
-        "name": "Gara (71 giri)",
-        "start": "2026-11-08T17:00:00Z",
+        "name": "Gara (50 giri)",
+        "start": "2026-11-22T04:00:00Z",
         "live": "Diretta Sky Sport F1 · NOW",
-        "key": true,
-        "tv8": {
-          "live": false,
-          "time": "2026-11-08T20:00:00Z"
-        }
+        "key": true
       }
     ]
   },
