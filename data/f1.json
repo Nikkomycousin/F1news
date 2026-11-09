@@ -1,6 +1,26 @@
 {
   "news": [
     {
+      "id": "2026-11-09-hamilton-ferrari-indagine-sf26",
+      "title": "Hamilton «devastato» dopo Interlagos: Ferrari indaga sulla SF-26 prima di Las Vegas",
+      "summary": "Il britannico, nono al traguardo in Brasile, ha puntato il dito su gomme e sovrasterzo nelle condizioni difficili di Interlagos. A Maranello è partita un'analisi approfondita della vettura in vista del prossimo appuntamento.",
+      "tag": "Ferrari",
+      "source": "planetf1.com",
+      "url": "https://www.planetf1.com/news/lewis-hamilton-ferrari-sf-26-investigation-f1-2026-brazilian-grand-prix",
+      "published": "2026-11-09T16:23:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-09-leclerc-allarme-las-vegas",
+      "title": "Leclerc avverte: con il freddo di Las Vegas la Ferrari rischia di soffrire ancora",
+      "summary": "Dopo un Brasile in cui la vettura era quasi inguidabile per la difficoltà a scaldare le gomme, il monegasco teme che le basse temperature notturne del Nevada possano riproporre lo stesso problema.",
+      "tag": "Ferrari",
+      "source": "grandepremio.com",
+      "url": "https://grandepremio.com/en/f1/leclerc-warns-ferrari-faces-more-trouble-in-las-vegas-after-undriveable-sao-paulo-gp/",
+      "published": "2026-11-09T11:30:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-mekies-verstappen-simulazioni",
       "title": "Mekies: «In Brasile Verstappen è andato oltre le nostre simulazioni»",
       "summary": "Il team principal Red Bull ha spiegato che la rimonta di Verstappen dal fondo al secondo posto a Interlagos ha superato quanto previsto dagli strumenti di simulazione della squadra. Secondo Mekies non è la prima volta che l'olandese batte i numeri del simulatore.",
@@ -706,7 +726,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-09T17:48:00Z",
+    "updated": "2026-11-09T18:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
