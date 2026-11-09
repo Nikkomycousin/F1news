@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-09-mekies-verstappen-simulazioni",
+      "title": "Mekies: «In Brasile Verstappen è andato oltre le nostre simulazioni»",
+      "summary": "Il team principal Red Bull ha spiegato che la rimonta di Verstappen dal fondo al secondo posto a Interlagos ha superato quanto previsto dagli strumenti di simulazione della squadra. Secondo Mekies non è la prima volta che l'olandese batte i numeri del simulatore.",
+      "tag": "Red Bull",
+      "source": "formula1.com",
+      "url": "https://www.formula1.com/en/latest/article/mekies-explains-how-verstappen-outperformed-red-bulls-own-simulations-in-brazil.1ps87tyvjdEf23vDCaDXOZ",
+      "published": "2026-11-09T12:30:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-audi-haas-settimo-posto",
       "title": "Audi a tre punti dalla Haas: lotta aperta per il settimo posto costruttori",
       "summary": "Dopo Interlagos la Haas resta davanti all'Audi 31 a 28 nella classifica costruttori. Hülkenberg ha salvato un punto nonostante una penalità di 10 secondi, mentre Bortoleto ha chiuso sedicesimo nella gara di casa.",
@@ -696,7 +706,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-09T12:52:00Z",
+    "updated": "2026-11-09T13:58:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",

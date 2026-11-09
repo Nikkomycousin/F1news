@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-09-kubica-lascia-af-corse",
+      "title": "Kubica lascia AF Corse dopo tre stagioni sulla Ferrari 499P gialla",
+      "summary": "Dopo la 6 Ore di Monza il polacco ha annunciato sui social la fine del rapporto con il team privato della Ferrari #83, reduce da un 2026 senza podi. Il vincitore di Le Mans 2025 non ha ancora svelato i piani per il 2027, ma spera di tornare alla 24 Ore.",
+      "tag": "Mercato",
+      "source": "pitdebrief.com",
+      "url": "https://www.pitdebrief.com/post/robert-kubica-announces-departure-from-af-corse-ferrari-after-three-wec-seasons/",
+      "published": "2026-11-09T00:07:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-08-monza-cadillac-toyota-campioni",
       "title": "Monza, vince la Cadillac #38; Toyota #8 campione del mondo Hypercar",
       "summary": "Aitken, Bamber e Bourdais hanno guidato quasi tutta la finale e regalato alla Cadillac Jota il primo successo stagionale. A Buemi, Hartley e Hirakawa è bastato l'11° posto per chiudere i conti con la Toyota gemella.",
@@ -205,7 +215,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-09T12:52:00Z"
+    "updated": "2026-11-09T13:58:00Z"
   },
   "weekend": {
     "gp": "6 Ore di Monza",
