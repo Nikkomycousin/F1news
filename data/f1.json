@@ -11,6 +11,16 @@
       "top": false
     },
     {
+      "id": "2026-11-09-wolff-russell-secondo",
+      "title": "Wolff vuole Russell vicecampione, ma George pensa alla prestazione",
+      "summary": "Il team principal Mercedes punta al secondo posto di Russell, ora a 17 punti da Verstappen, e lascia intendere che potrebbe essere favorito su Antonelli nelle ultime gare. Il britannico però dice di badare più al rendimento che ai risultati.",
+      "tag": "Mercedes",
+      "source": "GPblog",
+      "url": "https://www.gpblog.com/en/news/russell-plays-down-verstappen-chase-as-wolff-wants-him-to-finish-second",
+      "published": "2026-11-09T16:30:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-hamilton-ferrari-indagine-sf26",
       "title": "Hamilton «devastato» dopo Interlagos: Ferrari indaga sulla SF-26 prima di Las Vegas",
       "summary": "Il britannico, nono al traguardo in Brasile, ha puntato il dito su gomme e sovrasterzo nelle condizioni difficili di Interlagos. A Maranello è partita un'analisi approfondita della vettura in vista del prossimo appuntamento.",
@@ -18,16 +28,6 @@
       "source": "planetf1.com",
       "url": "https://www.planetf1.com/news/lewis-hamilton-ferrari-sf-26-investigation-f1-2026-brazilian-grand-prix",
       "published": "2026-11-09T16:23:00Z",
-      "top": false
-    },
-    {
-      "id": "2026-11-09-leclerc-allarme-las-vegas",
-      "title": "Leclerc avverte: con il freddo di Las Vegas la Ferrari rischia di soffrire ancora",
-      "summary": "Dopo un Brasile in cui la vettura era quasi inguidabile per la difficoltà a scaldare le gomme, il monegasco teme che le basse temperature notturne del Nevada possano riproporre lo stesso problema.",
-      "tag": "Ferrari",
-      "source": "grandepremio.com",
-      "url": "https://grandepremio.com/en/f1/leclerc-warns-ferrari-faces-more-trouble-in-las-vegas-after-undriveable-sao-paulo-gp/",
-      "published": "2026-11-09T11:30:00Z",
       "top": false
     },
     {
@@ -41,6 +41,16 @@
       "top": false
     },
     {
+      "id": "2026-11-09-leclerc-allarme-las-vegas",
+      "title": "Leclerc avverte: con il freddo di Las Vegas la Ferrari rischia di soffrire ancora",
+      "summary": "Dopo un Brasile in cui la vettura era quasi inguidabile per la difficoltà a scaldare le gomme, il monegasco teme che le basse temperature notturne del Nevada possano riproporre lo stesso problema.",
+      "tag": "Ferrari",
+      "source": "grandepremio.com",
+      "url": "https://grandepremio.com/en/f1/leclerc-warns-ferrari-faces-more-trouble-in-las-vegas-after-undriveable-sao-paulo-gp/",
+      "published": "2026-11-09T11:30:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-audi-haas-settimo-posto",
       "title": "Audi a tre punti dalla Haas: lotta aperta per il settimo posto costruttori",
       "summary": "Dopo Interlagos la Haas resta davanti all'Audi 31 a 28 nella classifica costruttori. Hülkenberg ha salvato un punto nonostante una penalità di 10 secondi, mentre Bortoleto ha chiuso sedicesimo nella gara di casa.",
@@ -49,6 +59,15 @@
       "url": "https://www.formula1.it/news/33874/1/audi-mette-nel-mirino-la-haas-tre-punti-di-distacco-e-un-finale-tutto-da-vivere",
       "published": "2026-11-09T07:55:00Z",
       "top": false
+    },
+    {
+      "id": "2026-11-08-penalita-dopo-brasile",
+      "title": "Penalità post gara in Brasile: Leclerc scivola ottavo, Lawson guadagna una posizione",
+      "summary": "I commissari danno 5 secondi a Leclerc per il contatto con Lawson alla curva 12 e altrettanti ad Antonelli e Bearman per rilasci pericolosi ai box; Antonelli conserva comunque il quinto posto.",
+      "tag": "Gare",
+      "source": "GPblog",
+      "url": "https://www.gpblog.com/en/breaking-news/fia-delivers-double-penalty-following-brazilian-gp-investigations",
+      "published": "2026-11-08T21:31:00Z"
     },
     {
       "id": "2026-11-08-camara-bottas-brasile",
@@ -71,23 +90,13 @@
       "top": false
     },
     {
-      "id": "2026-11-08-penalita-dopo-brasile",
-      "title": "Penalità post gara in Brasile: Leclerc scivola ottavo, Lawson guadagna una posizione",
-      "summary": "I commissari danno 5 secondi a Leclerc per il contatto con Lawson alla curva 12 e altrettanti ad Antonelli e Bearman per rilasci pericolosi ai box; Antonelli conserva comunque il quinto posto.",
-      "tag": "Gare",
-      "source": "GPblog",
-      "url": "https://www.gpblog.com/en/breaking-news/fia-delivers-double-penalty-following-brazilian-gp-investigations",
-      "published": "2026-11-08T21:31:00Z"
-    },
-    {
-      "id": "2026-11-08-norris-vince-interlagos",
-      "title": "Norris domina sotto la pioggia di Interlagos e vince il GP del Brasile",
-      "summary": "Il pilota McLaren, partito dalla pole, approfitta del testacoda di Antonelli al giro 16 e controlla la gara fino al traguardo con quasi 15 secondi di margine.",
-      "tag": "Gare",
+      "id": "2026-11-08-ferrari-brasile-delusione",
+      "title": "Ferrari senza acuti in Brasile: Leclerc settimo, Hamilton nono doppiato",
+      "summary": "Hamilton, scattato dal fondo, ha dovuto restituire una posizione a Bearman e nel finale è finito in testacoda tentando le slick sul bagnato; Leclerc non è andato oltre la settima piazza.",
+      "tag": "Ferrari",
       "source": "PlanetF1",
       "url": "https://www.planetf1.com/news/2026-brazilian-grand-prix-race-report",
-      "published": "2026-11-08T18:45:00Z",
-      "top": true
+      "published": "2026-11-08T18:52:00Z"
     },
     {
       "id": "2026-11-08-mercedes-campione-costruttori",
@@ -109,13 +118,14 @@
       "published": "2026-11-08T18:48:00Z"
     },
     {
-      "id": "2026-11-08-ferrari-brasile-delusione",
-      "title": "Ferrari senza acuti in Brasile: Leclerc settimo, Hamilton nono doppiato",
-      "summary": "Hamilton, scattato dal fondo, ha dovuto restituire una posizione a Bearman e nel finale è finito in testacoda tentando le slick sul bagnato; Leclerc non è andato oltre la settima piazza.",
-      "tag": "Ferrari",
+      "id": "2026-11-08-norris-vince-interlagos",
+      "title": "Norris domina sotto la pioggia di Interlagos e vince il GP del Brasile",
+      "summary": "Il pilota McLaren, partito dalla pole, approfitta del testacoda di Antonelli al giro 16 e controlla la gara fino al traguardo con quasi 15 secondi di margine.",
+      "tag": "Gare",
       "source": "PlanetF1",
       "url": "https://www.planetf1.com/news/2026-brazilian-grand-prix-race-report",
-      "published": "2026-11-08T18:52:00Z"
+      "published": "2026-11-08T18:45:00Z",
+      "top": true
     },
     {
       "id": "2026-11-07-griglia-brasile-penalita",
@@ -736,7 +746,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-09T20:55:00Z",
+    "updated": "2026-11-09T21:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",

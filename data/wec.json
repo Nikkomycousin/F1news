@@ -21,16 +21,6 @@
       "top": true
     },
     {
-      "id": "2026-11-08-monza-cadillac-toyota-campioni",
-      "title": "Monza, vince la Cadillac #38; Toyota #8 campione del mondo Hypercar",
-      "summary": "Aitken, Bamber e Bourdais hanno guidato quasi tutta la finale e regalato alla Cadillac Jota il primo successo stagionale. A Buemi, Hartley e Hirakawa è bastato l'11° posto per chiudere i conti con la Toyota gemella.",
-      "tag": "Gare",
-      "source": "Sportscar365",
-      "url": "https://sportscar365.com/lemans/wec/jota-cadillac-wins-monza-finale-no-8-toyota-takes-title",
-      "published": "2026-11-08T16:15:00Z",
-      "top": true
-    },
-    {
       "id": "2026-11-08-monza-aston-perde-podio",
       "title": "Aston Martin perde il primo podio: 20 secondi per le pressioni gomme",
       "summary": "La Valkyrie #007 aveva tagliato il traguardo terza, ma la penalità per pressioni troppo basse l'ha fatta scivolare quarta, promuovendo sul podio la Ferrari #51. Resta aperta anche un'indagine sull'uso dell'energia.",
@@ -51,13 +41,13 @@
       "top": false
     },
     {
-      "id": "2026-11-07-monza-pole-fuoco",
-      "title": "Monza, Fuoco regala alla Ferrari #50 la pole davanti alla Genesis di Jaminet",
-      "summary": "Su una pista ancora scivolosa Fuoco ha firmato il miglior tempo dell'Hyperpole per meno di un decimo sulla Genesis #19; terza la Cadillac #38 e quarta la Ferrari #51. È la prima pole Hypercar della Ferrari a Monza.",
-      "tag": "Ferrari",
+      "id": "2026-11-08-monza-cadillac-toyota-campioni",
+      "title": "Monza, vince la Cadillac #38; Toyota #8 campione del mondo Hypercar",
+      "summary": "Aitken, Bamber e Bourdais hanno guidato quasi tutta la finale e regalato alla Cadillac Jota il primo successo stagionale. A Buemi, Hartley e Hirakawa è bastato l'11° posto per chiudere i conti con la Toyota gemella.",
+      "tag": "Gare",
       "source": "Sportscar365",
-      "url": "https://sportscar365.com/lemans/wec/fuoco-narrowly-pips-jaminet-to-give-ferrari-pole-at-monza",
-      "published": "2026-11-07T14:45:00Z",
+      "url": "https://sportscar365.com/lemans/wec/jota-cadillac-wins-monza-finale-no-8-toyota-takes-title",
+      "published": "2026-11-08T16:15:00Z",
       "top": true
     },
     {
@@ -68,6 +58,26 @@
       "source": "Dailysportscar",
       "url": "https://www.dailysportscar.com/2026/11/07/fuoco-flys-to-home-pole-position-for-ferrari.html",
       "published": "2026-11-07T14:50:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-07-monza-pole-fuoco",
+      "title": "Monza, Fuoco regala alla Ferrari #50 la pole davanti alla Genesis di Jaminet",
+      "summary": "Su una pista ancora scivolosa Fuoco ha firmato il miglior tempo dell'Hyperpole per meno di un decimo sulla Genesis #19; terza la Cadillac #38 e quarta la Ferrari #51. È la prima pole Hypercar della Ferrari a Monza.",
+      "tag": "Ferrari",
+      "source": "Sportscar365",
+      "url": "https://sportscar365.com/lemans/wec/fuoco-narrowly-pips-jaminet-to-give-ferrari-pole-at-monza",
+      "published": "2026-11-07T14:45:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-11-09-signatech-hypercar-2027",
+      "title": "Signatech cerca un costruttore per restare in Hypercar dopo l'addio Alpine",
+      "summary": "Saltata la trattativa con Geely per proseguire con l'A424, la squadra francese ha tempo fino al 23 novembre per iscriversi al 2027. Sinault parla di emergenza e valuta l'ELMS o un rientro nel 2028.",
+      "tag": "Team",
+      "source": "RACER",
+      "url": "https://racer.com/2026/11/07/signatech-weighs-options-as-hypercar-deadline-looms",
+      "published": "2026-11-07T14:34:00Z",
       "top": false
     },
     {
@@ -225,7 +235,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-09T20:55:00Z"
+    "updated": "2026-11-09T21:55:00Z"
   },
   "weekend": {
     "gp": "6 Ore di Monza",
