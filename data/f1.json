@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-09-audi-haas-settimo-posto",
+      "title": "Audi a tre punti dalla Haas: lotta aperta per il settimo posto costruttori",
+      "summary": "Dopo Interlagos la Haas resta davanti all'Audi 31 a 28 nella classifica costruttori. Hülkenberg ha salvato un punto nonostante una penalità di 10 secondi, mentre Bortoleto ha chiuso sedicesimo nella gara di casa.",
+      "tag": "Team",
+      "source": "Formula1.it",
+      "url": "https://www.formula1.it/news/33874/1/audi-mette-nel-mirino-la-haas-tre-punti-di-distacco-e-un-finale-tutto-da-vivere",
+      "published": "2026-11-09T07:55:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-08-camara-bottas-brasile",
       "title": "Brasile amaro per Câmara e Bottas: esordio in fondo e mancato via",
       "summary": "Al debutto in F1 con la Haas, Câmara ha chiuso ultimo tra i classificati a due giri, frenato anche dalle penalità per i limiti della pista. Bottas invece non è partito per un dado ruota avvitato storto che ha bloccato la ruota in griglia.",
@@ -686,7 +696,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-09T09:55:00Z",
+    "updated": "2026-11-09T10:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
