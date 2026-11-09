@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-08-camara-bottas-brasile",
+      "title": "Brasile amaro per Câmara e Bottas: esordio in fondo e mancato via",
+      "summary": "Al debutto in F1 con la Haas, Câmara ha chiuso ultimo tra i classificati a due giri, frenato anche dalle penalità per i limiti della pista. Bottas invece non è partito per un dado ruota avvitato storto che ha bloccato la ruota in griglia.",
+      "tag": "Gare",
+      "source": "The Race",
+      "url": "https://www.the-race.com/formula-1/winners-and-losers-from-f1-2026-brazilian-grand-prix/",
+      "published": "2026-11-08T20:50:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-08-vasseur-ferrari-incostante",
       "title": "Vasseur: «Ferrari troppo discontinua in gara», sotto accusa le pressioni gomme",
       "summary": "Il team principal ha spiegato che il calo di Hamilton dopo l'ottima partenza è legato probabilmente alla pressione degli pneumatici, problema che ha frenato la Ferrari per tutta la gara di Interlagos.",
@@ -676,7 +686,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-09T05:49:00Z",
+    "updated": "2026-11-09T06:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
