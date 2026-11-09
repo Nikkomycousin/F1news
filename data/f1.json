@@ -686,7 +686,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-09T07:52:00Z",
+    "updated": "2026-11-09T08:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
@@ -1071,6 +1071,15 @@
     ]
   },
   "videos": [
+    {
+      "id": "2026-11-08-brasile-gara",
+      "gp": "GP del Brasile",
+      "session": "Gara",
+      "title": "Highlights della gara – GP del Brasile 2026",
+      "youtube": "lkb5kqDJYXk",
+      "channel": "FORMULA 1",
+      "published": "2026-11-08T21:00:00Z"
+    },
     {
       "id": "2026-11-01-messico-gara",
       "gp": "GP del Messico",
