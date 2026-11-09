@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-08-vasseur-ferrari-incostante",
+      "title": "Vasseur: «Ferrari troppo discontinua in gara», sotto accusa le pressioni gomme",
+      "summary": "Il team principal ha spiegato che il calo di Hamilton dopo l'ottima partenza è legato probabilmente alla pressione degli pneumatici, problema che ha frenato la Ferrari per tutta la gara di Interlagos.",
+      "tag": "Ferrari",
+      "source": "PaddockNews24",
+      "url": "https://paddocknews24.com/news-f1-notizie/f1-vasseur-fa-chiarezza-individuate-le-cause-delle-difficolta-ferrari-in-brasile",
+      "published": "2026-11-08T20:30:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-08-penalita-dopo-brasile",
       "title": "Penalità post gara in Brasile: Leclerc scivola ottavo, Lawson guadagna una posizione",
       "summary": "I commissari danno 5 secondi a Leclerc per il contatto con Lawson alla curva 12 e altrettanti ad Antonelli e Bearman per rilasci pericolosi ai box; Antonelli conserva comunque il quinto posto.",
@@ -666,7 +676,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-09T01:55:00Z",
+    "updated": "2026-11-09T02:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
