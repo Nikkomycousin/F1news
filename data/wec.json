@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-09-bmw-seconda-costruttori",
+      "title": "BMW chiude il 2026 seconda tra i costruttori Hypercar, davanti alla Ferrari",
+      "summary": "Nonostante un finale opaco a Monza, con la #15 sesta e la #20 nona, BMW conquista il secondo posto nel mondiale marche alle spalle di Toyota. La stagione ha portato cinque podi e le vittorie a Spa e San Paolo, con Magnussen e Marciello terzi tra i piloti.",
+      "tag": "Mondiale",
+      "source": "BimmerLife",
+      "url": "https://bimmerlife.com/2026/11/09/bmw-finishes-second-in-fia-wec-hypercar-manufacturer-championship/",
+      "published": "2026-11-09T19:00:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-kubica-lascia-af-corse",
       "title": "Kubica lascia AF Corse dopo tre stagioni sulla Ferrari 499P gialla",
       "summary": "Dopo la 6 Ore di Monza il polacco ha annunciato sui social la fine del rapporto con il team privato della Ferrari #83, reduce da un 2026 senza podi. Il vincitore di Le Mans 2025 non ha ancora svelato i piani per il 2027, ma spera di tornare alla 24 Ore.",
@@ -215,7 +225,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-09T19:48:00Z"
+    "updated": "2026-11-09T20:55:00Z"
   },
   "weekend": {
     "gp": "6 Ore di Monza",
