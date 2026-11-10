@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-10-fia-conferma-qatar-abu-dhabi",
+      "title": "Ufficiale: la FIA conferma Qatar e Abu Dhabi, Imola esce di scena",
+      "summary": "Ben Sulayem ha annunciato sui canali FIA che il conto alla rovescia per Lusail e Yas Marina è iniziato: il Mondiale si chiuderà in Medio Oriente come previsto. Tramonta così l'ipotesi di Imola come riserva per il 6 dicembre.",
+      "tag": "Calendario",
+      "source": "L'Altra Imola",
+      "url": "https://www.laltraimola.it/2026/11/10/f1-sfuma-lipotesi-imola-la-fia-conferma-i-gran-premi-di-qatar-e-abu-dhabi/",
+      "published": "2026-11-10T12:54:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-10-imola-verso-stop",
       "title": "Imola verso lo stop: la F1 pronta a confermare Qatar e Abu Dhabi",
       "summary": "Il termine per attivare Imola come riserva è arrivato e la FOM si prepara ad annunciare che il finale si correrà regolarmente a Lusail e Yas Marina. L'ufficialità potrebbe arrivare già in giornata.",
@@ -8,7 +18,7 @@
       "source": "PlanetF1",
       "url": "https://www.planetf1.com/news/qatar-abu-dhabi-grand-prix-f1-2026-calendar-decision",
       "published": "2026-11-10T11:23:00Z",
-      "top": true
+      "top": false
     },
     {
       "id": "2026-11-09-lawson-racing-bulls-attesa",
@@ -796,7 +806,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-10T12:49:00Z",
+    "updated": "2026-11-10T13:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
