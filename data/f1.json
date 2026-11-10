@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-10-ferrari-nero-giallo-las-vegas",
+      "title": "Ferrari in nero e giallo a Las Vegas: nuova divisa per Hamilton e Leclerc",
+      "summary": "Per il weekend sulla Strip la Scuderia abbandona il classico rosso nell'abbigliamento del team: insieme a PUMA ha preparato una collezione nera con dettagli gialli, con maglia e cappellino dedicati ai due piloti.",
+      "tag": "Ferrari",
+      "source": "Formula1.it",
+      "url": "https://www.formula1.it/news/33893/1/ferrari-una-veste-inedita-per-las-vegas-ecco-la-nuova-collezione",
+      "published": "2026-11-10T09:28:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-10-fia-conferma-qatar-abu-dhabi",
       "title": "Ufficiale: la FIA conferma Qatar e Abu Dhabi, Imola esce di scena",
       "summary": "Ben Sulayem ha annunciato sui canali FIA che il conto alla rovescia per Lusail e Yas Marina è iniziato: il Mondiale si chiuderà in Medio Oriente come previsto. Tramonta così l'ipotesi di Imola come riserva per il 6 dicembre.",
@@ -806,7 +816,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-10T13:55:00Z",
+    "updated": "2026-11-10T14:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
