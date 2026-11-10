@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-10-finale-qatar-abu-dhabi-confermato",
+      "title": "Via libera al finale: la F2 chiuderà la stagione a Lusail e Yas Marina",
+      "summary": "Con la conferma ufficiale di Qatar e Abu Dhabi da parte della FIA, anche gli ultimi due round della F2 si disputeranno come previsto. La sfida per il titolo tra Câmara e Dunne si deciderà quindi in pista nei due weekend di fine novembre e inizio dicembre.",
+      "tag": "Calendario",
+      "source": "GrandPrix.com",
+      "url": "https://www.grandprix.com/news/qatar-and-abu-dhabi-confirmed-as-2026-finale.html",
+      "published": "2026-11-10T13:00:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-05-camara-decisione-titolo",
       "title": "Câmara rinvia la scelta: «Del titolo F2 parleremo dopo Interlagos»",
       "summary": "Il leader della F2, sette punti davanti a Tsolov a due round dalla fine, non ha ancora deciso se rinunciare al campionato per restare in Haas. Il brasiliano ha detto che la questione sarà affrontata dopo il weekend del debutto in F1.",
@@ -105,7 +115,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-10T21:48:00Z",
+    "updated": "2026-11-10T22:50:00Z",
     "nextGp": {
       "name": "Round 13 · Qatar",
       "circuit": "Lusail",
