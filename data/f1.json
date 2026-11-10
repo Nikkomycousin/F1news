@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-09-ben-sulayem-qatar-abu-dhabi",
+      "title": "Ben Sulayem: Qatar e Abu Dhabi restano in calendario nonostante le tensioni",
+      "summary": "Il presidente della FIA assicura che le ultime due gare del 2026 si disputeranno come previsto, anche se la Dakar 2027 lascia l'Arabia Saudita per motivi di sicurezza. Nella stessa intervista apre al ritorno dei V8 e a un possibile dodicesimo team cinese.",
+      "tag": "Calendario",
+      "source": "The National",
+      "url": "https://www.thenationalnews.com/sport/f1/2026/11/09/exclusive-mohammed-ben-sulayem-abu-dhabi-qatar-gp/",
+      "published": "2026-11-09T09:40:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-10-imola-scadenza-finale",
       "title": "Scade oggi il termine per Imola: il finale in Medio Oriente resta in bilico",
       "summary": "Il 10 novembre è l'ultima data utile per attivare Imola come gara sostitutiva il 6 dicembre, come confermato anche da Komatsu. Qatar e Abu Dhabi restano in calendario; se saltassero dopo oggi, la stagione potrebbe chiudersi a Las Vegas.",
@@ -766,7 +776,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-10T07:50:00Z",
+    "updated": "2026-11-10T08:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
@@ -777,8 +787,8 @@
   "weekend": {
     "gp": "GP di Las Vegas",
     "circuit": "Las Vegas Strip Circuit",
-    "updated": "2026-11-09T00:55:00Z",
-    "tv8note": "Programmazione TV8 non ancora annunciata: diretta integrale su Sky Sport F1 e NOW.",
+    "updated": "2026-11-10T08:55:00Z",
+    "tv8note": "TV8 trasmetterà qualifiche e gara in differita (orari ancora da annunciare); diretta integrale su Sky Sport F1 e NOW.",
     "sessions": [
       {
         "name": "Prove libere 1",
