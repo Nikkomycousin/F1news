@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-10-imola-scadenza-finale",
+      "title": "Scade oggi il termine per Imola: il finale in Medio Oriente resta in bilico",
+      "summary": "Il 10 novembre è l'ultima data utile per attivare Imola come gara sostitutiva il 6 dicembre, come confermato anche da Komatsu. Qatar e Abu Dhabi restano in calendario; se saltassero dopo oggi, la stagione potrebbe chiudersi a Las Vegas.",
+      "tag": "Calendario",
+      "source": "dpa / Yahoo Sports",
+      "url": "https://sports.yahoo.com/articles/reports-formula-one-tuesday-deadline-121834758.html",
+      "published": "2026-11-07T12:18:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-vicecampione-cinque-in-33-punti",
       "title": "Vicecampionato aperto: cinque piloti racchiusi in 33 punti prima di Las Vegas",
       "summary": "Con il titolo già di Antonelli, la sfida per il secondo posto coinvolge Verstappen, Russell, Hamilton, Leclerc e Norris, separati da appena 33 punti. Las Vegas apre il trittico finale con Qatar e Abu Dhabi, ancora legati alla situazione nel Golfo.",
@@ -746,7 +756,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-10T01:48:00Z",
+    "updated": "2026-11-10T02:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
