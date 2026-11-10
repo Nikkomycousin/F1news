@@ -1,6 +1,15 @@
 {
   "news": [
     {
+      "id": "2026-11-10-aduo-terzo-periodo",
+      "title": "ADUO, terzo periodo: la FIA non concede nuovi aiuti ai motoristi",
+      "summary": "La revisione FIA sulle gare da Zandvoort ad Austin lascia invariate le concessioni: Red Bull Powertrains resta il riferimento, Mercedes ha un'omologazione extra, mentre Ferrari, Audi e Honda mantengono il pacchetto massimo. La prossima verifica riguarderà le prime sei gare del 2027.",
+      "tag": "Paddock",
+      "source": "Sky Sport",
+      "url": "https://sport.sky.it/formula-1/2026/11/10/f1-risultati-aduo-2026-power-unit-fia",
+      "published": "2026-11-10T12:38:00Z"
+    },
+    {
       "id": "2026-11-10-ferrari-nero-giallo-las-vegas",
       "title": "Ferrari in nero e giallo a Las Vegas: nuova divisa per Hamilton e Leclerc",
       "summary": "Per il weekend sulla Strip la Scuderia abbandona il classico rosso nell'abbigliamento del team: insieme a PUMA ha preparato una collezione nera con dettagli gialli, con maglia e cappellino dedicati ai due piloti.",
@@ -816,7 +825,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-10T16:55:00Z",
+    "updated": "2026-11-10T17:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",

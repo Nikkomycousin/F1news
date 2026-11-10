@@ -105,14 +105,13 @@
     }
   ],
   "info": {
-    "updated": "2026-11-10T16:55:00Z",
+    "updated": "2026-11-10T17:55:00Z",
     "nextGp": {
       "name": "Round 13 · Qatar",
       "circuit": "Lusail",
       "date": "2026-11-28T23:00:00Z",
       "dateOnly": true,
-      "label": "Feature Race",
-      "note": "round in dubbio"
+      "label": "Feature Race"
     }
   },
   "weekend": {
@@ -1081,15 +1080,13 @@
         "round": 13,
         "name": "Lusail (Qatar)",
         "circuit": "Lusail",
-        "date": "2026-11-29",
-        "status": "In dubbio: possibile annullamento"
+        "date": "2026-11-29"
       },
       {
         "round": 14,
         "name": "Yas Marina (Abu Dhabi)",
         "circuit": "Yas Marina",
-        "date": "2026-12-06",
-        "status": "Da confermare"
+        "date": "2026-12-06"
       }
     ]
   }
