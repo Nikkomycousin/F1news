@@ -11,6 +11,16 @@
       "top": false
     },
     {
+      "id": "2026-11-09-piastri-lascia-webber",
+      "title": "Piastri chiude il rapporto con il manager Mark Webber dopo sette anni",
+      "summary": "Il pilota McLaren e lo staff guidato da Mark e Ann Webber si separano di comune accordo; la scelta segue la presenza ridotta di Webber ai circuiti in questa stagione. Piastri ha ringraziato entrambi per il sostegno ricevuto dal 2019.",
+      "tag": "McLaren",
+      "source": "RACER",
+      "url": "https://racer.com/2026/11/09/piastri-parts-ways-with-manager-webber",
+      "published": "2026-11-09T12:33:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-vicecampione-cinque-in-33-punti",
       "title": "Vicecampionato aperto: cinque piloti racchiusi in 33 punti prima di Las Vegas",
       "summary": "Con il titolo già di Antonelli, la sfida per il secondo posto coinvolge Verstappen, Russell, Hamilton, Leclerc e Norris, separati da appena 33 punti. Las Vegas apre il trittico finale con Qatar e Abu Dhabi, ancora legati alla situazione nel Golfo.",
@@ -756,7 +766,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-10T04:55:00Z",
+    "updated": "2026-11-10T05:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
