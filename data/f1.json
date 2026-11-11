@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-11-bearman-haas-tre-settimane",
+      "title": "Bearman: «Tre settimane orribili per la Haas, per fortuna sono finite»",
+      "summary": "Dopo i ritiri di Austin e Città del Messico, a Interlagos Bearman è scivolato al 17° posto per soste lente ai box. La Haas resta settima tra i costruttori con appena tre punti di margine sull'Audi a tre gare dalla fine.",
+      "tag": "Team",
+      "source": "formula1.com",
+      "url": "https://www.formula1.com/en/latest/article/bearman-relieved-horrible-three-weeks-for-haas-are-over.2DZIcOEVILLVUfQT00bStA",
+      "published": "2026-11-11T10:35:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-10-hamilton-confine-gaza",
       "title": "Hamilton al confine con Gaza prima di Las Vegas per conoscere gli aiuti umanitari",
       "summary": "Il pilota Ferrari si è recato sul lato egiziano del valico di Rafah, incontrando operatori e responsabili della Mezzaluna Rossa a El Arish. Una visita fuori dalla pista arrivata due giorni dopo il suo 400° Gran Premio.",
@@ -893,7 +903,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T11:49:00Z",
+    "updated": "2026-11-11T12:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
