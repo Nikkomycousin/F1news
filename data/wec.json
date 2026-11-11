@@ -245,7 +245,15 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T00:50:00Z"
+    "updated": "2026-11-11T01:50:00Z",
+    "nextGp": {
+      "name": "Qatar 1812 km",
+      "circuit": "Lusail",
+      "date": "2027-03-26T23:00:00Z",
+      "dateOnly": true,
+      "label": "Gara",
+      "note": "Prima gara della stagione 2027 (Prologo a Lusail il 21-22 marzo)"
+    }
   },
   "weekend": {
     "gp": "6 Ore di Monza",
@@ -950,110 +958,62 @@
     ]
   },
   "calendar": {
-    "season": 2026,
-    "updated": "2026-11-02T16:45:00Z",
+    "season": 2027,
+    "updated": "2026-11-11T01:50:00Z",
     "rounds": [
       {
         "round": 1,
-        "name": "6 Ore di Imola",
-        "circuit": "Imola",
-        "date": "2026-04-19",
-        "winner": "#8 Buemi · Hartley · Hirakawa",
-        "team": "Toyota",
-        "wins": [
-          "Toyota"
-        ]
+        "name": "Qatar 1812 km",
+        "circuit": "Lusail",
+        "date": "2027-03-27"
       },
       {
         "round": 2,
-        "name": "6 Ore di Spa",
-        "circuit": "Spa-Francorchamps",
-        "date": "2026-05-09",
-        "winner": "#20 Frijns · Rast · van der Linde",
-        "team": "BMW",
-        "wins": [
-          "BMW"
-        ]
+        "name": "6 Ore di Imola",
+        "circuit": "Imola",
+        "date": "2027-04-11"
       },
       {
         "round": 3,
-        "name": "24 Ore di Le Mans",
-        "circuit": "La Sarthe",
-        "date": "2026-06-14",
-        "winner": "#7 Conway · Kobayashi · de Vries",
-        "team": "Toyota",
-        "wins": [
-          "Toyota"
-        ]
+        "name": "6 Ore di Silverstone",
+        "circuit": "Silverstone",
+        "date": "2027-04-25"
       },
       {
         "round": 4,
-        "name": "6 Ore di San Paolo",
-        "circuit": "Interlagos",
-        "date": "2026-07-12",
-        "winner": "#15 Magnussen · Marciello · Vanthoor",
-        "team": "BMW",
-        "wins": [
-          "BMW"
-        ]
+        "name": "6 Ore di Spa",
+        "circuit": "Spa-Francorchamps",
+        "date": "2027-05-15"
       },
       {
         "round": 5,
-        "name": "Lone Star Le Mans",
-        "circuit": "Austin (COTA)",
-        "date": "2026-09-06",
-        "winner": "#50 Fuoco · Molina · Nielsen",
-        "team": "Ferrari",
-        "wins": [
-          "Ferrari"
-        ]
+        "name": "24 Ore di Le Mans",
+        "circuit": "Circuit de la Sarthe",
+        "date": "2027-06-12"
       },
       {
         "round": 6,
-        "name": "6 Ore del Fuji",
-        "circuit": "Fuji",
-        "date": "2026-09-27",
-        "winner": "#8 Buemi · Hartley · Hirakawa",
-        "team": "Toyota",
-        "wins": [
-          "Toyota"
-        ]
+        "name": "6 Ore di San Paolo",
+        "circuit": "Interlagos",
+        "date": "2027-07-11"
       },
       {
         "round": 7,
-        "name": "6 Ore di Barcellona",
-        "circuit": "Montmeló",
-        "date": "2026-10-18",
-        "winner": "#8 Buemi · Hartley · Hirakawa",
-        "team": "Toyota",
-        "wins": [
-          "Toyota"
-        ]
+        "name": "Lone Star Le Mans",
+        "circuit": "Circuit of the Americas",
+        "date": "2027-09-12"
       },
       {
         "round": 8,
-        "name": "6 Ore di Monza",
-        "circuit": "Monza",
-        "date": "2026-11-08",
-        "winner": "#38 Aitken · Bamber · Bourdais",
-        "team": "Cadillac",
-        "wins": [
-          "Cadillac"
-        ]
+        "name": "6 Ore del Fuji",
+        "circuit": "Fuji Speedway",
+        "date": "2027-09-26"
       },
       {
-        "round": "✕",
-        "name": "Qatar 1812 km",
-        "circuit": "Lusail",
-        "date": "2026-10-24",
-        "status": "Annullata (sostituita da Barcellona)"
-      },
-      {
-        "round": "✕",
+        "round": 9,
         "name": "8 Ore del Bahrain",
         "circuit": "Sakhir",
-        "date": "2026-11-07",
-        "status": "Annullata (sostituita da Monza)"
+        "date": "2027-11-06"
       }
     ]
   }
