@@ -11,7 +11,7 @@ Web app (PWA) con orari italiani, canali TV, notizie, risultati, classifiche e c
 
 La pagina iniziale **Weekend** mette insieme le sessioni dei prossimi 7 giorni di tutti i campionati e il prossimo appuntamento di ciascuno.
 
-Si apre senza account: https://nikkomycousin.github.io/F1news/
+Si apre senza account: https://nikkomycousin.github.io/Motortime/
 
 ## Struttura
 
