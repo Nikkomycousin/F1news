@@ -245,7 +245,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T07:55:00Z",
+    "updated": "2026-11-11T08:55:00Z",
     "nextGp": {
       "name": "Qatar 1812 km",
       "circuit": "Lusail",
@@ -256,50 +256,10 @@
     }
   },
   "weekend": {
-    "gp": "6 Ore di Monza",
-    "circuit": "Autodromo Nazionale Monza",
-    "updated": "2026-11-03T13:00:00Z",
-    "tv8note": "TV8 non trasmette il WEC. La gara è in chiaro su Rai Sport e Rai 2 (dalle 15:30) e in diretta integrale su Sky Sport Max, NOW, Eurosport/Discovery+ e FIAWEC+.",
-    "sessions": [
-      {
-        "name": "Prove libere 1",
-        "start": "2026-11-06T09:30:00Z",
-        "end": "2026-11-06T11:00:00Z",
-        "live": "Solo live timing (FIAWEC+)"
-      },
-      {
-        "name": "Prove libere 2",
-        "start": "2026-11-06T13:30:00Z",
-        "end": "2026-11-06T15:00:00Z",
-        "live": "Solo live timing (FIAWEC+)"
-      },
-      {
-        "name": "Prove libere 3",
-        "start": "2026-11-07T09:30:00Z",
-        "end": "2026-11-07T10:30:00Z",
-        "live": "Streaming gratis su YouTube · FIAWEC+"
-      },
-      {
-        "name": "Qualifiche Hypercar",
-        "start": "2026-11-07T14:00:00Z",
-        "end": "2026-11-07T14:12:00Z",
-        "live": "Streaming Discovery+ · HBO Max · FIAWEC+",
-        "key": true
-      },
-      {
-        "name": "Hyperpole Hypercar",
-        "start": "2026-11-07T14:20:00Z",
-        "end": "2026-11-07T14:30:00Z",
-        "live": "Streaming Discovery+ · HBO Max · FIAWEC+",
-        "key": true
-      },
-      {
-        "name": "Gara (6 Ore)",
-        "start": "2026-11-08T10:00:00Z",
-        "live": "Diretta Sky Sport Max · Eurosport 1 · Rai Sport (10:50-13:40) e Rai 2 (15:30-17:15) · NOW · Discovery+ · FIAWEC+",
-        "key": true
-      }
-    ]
+    "gp": "Qatar 1812 km",
+    "circuit": "Lusail International Circuit",
+    "updated": "2026-11-11T08:55:00Z",
+    "sessions": []
   },
   "results": {
     "gp": "6 Ore di Monza",
