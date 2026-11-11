@@ -1,11 +1,962 @@
 {
- "news": [],
- "info": {
-  "updated": null
- },
- "weekend": null,
- "results": null,
- "videos": [],
- "standings": null,
- "calendar": null
+  "news": [
+    {
+      "id": "2026-11-08-portimao-orari",
+      "title": "Portimão, gli orari della Moto3: gara domenica alle 15:30 dopo la MotoGP",
+      "summary": "Il penultimo appuntamento si disputa dal 20 al 22 novembre in Algarve, con qualifiche sabato dalle 13:45 italiane. Sky e NOW coprono tutto il weekend, TV8 dovrebbe trasmettere in chiaro qualifiche e gara.",
+      "tag": "Calendario",
+      "source": "OA Sport",
+      "url": "https://www.oasport.it/2026/11/dove-la-prossima-gara-di-motogp-gp-portogallo-2026-programma-orari-tv/",
+      "published": "2026-11-08T14:35:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-08-qatar-almansa-vince",
+      "title": "Lusail, Almansa domina e vince; Fernández e Quiles completano il podio",
+      "summary": "Lo spagnolo dell'Intact ha firmato la quarta vittoria del 2026 davanti a Fernández e al campione Quiles. Guido Pini, undicesimo, è stato il migliore degli italiani.",
+      "tag": "Gare",
+      "source": "Moto.it",
+      "url": "https://www.moto.it/MotoGP/moto3-david-almansa-domina-qatar-podio-fernandez-quiles-11-pini-classifica.html",
+      "published": "2026-11-08T16:30:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-11-08-qatar-classifica",
+      "title": "Aspar campione tra i team, Almansa consolida il secondo posto nel mondiale",
+      "summary": "Dopo Lusail Quiles è a quota 392 punti, con Almansa secondo davanti a Carpe e Uriarte. La squadra CFMOTO Aspar ha chiuso i conti nella classifica a squadre con due gare d'anticipo.",
+      "tag": "Mondiale",
+      "source": "Crash.net",
+      "url": "https://www.crash.net/moto3/results/1109840/1/2026-qatar-moto3-race-results",
+      "published": "2026-11-08T17:00:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-07-qatar-pole-quiles",
+      "title": "Quiles in pole a Lusail, Almansa e Uriarte in prima fila",
+      "summary": "Il campione del mondo ha centrato la quarta pole stagionale in 2'02.288, battendo Almansa di 155 millesimi. Pratama penalizzato di sei posizioni per non aver rispettato le bandiere gialle.",
+      "tag": "Gare",
+      "source": "Crash.net",
+      "url": "https://www.crash.net/moto3/results/1109646/1/2026-qatar-moto3-qualifying-results",
+      "published": "2026-11-07T15:00:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-10-11-quiles-campione",
+      "title": "Quiles campione del mondo Moto3 a 18 anni con la vittoria di Mandalika",
+      "summary": "Il pilota dell'Aspar ha chiuso matematicamente il campionato in Indonesia con quattro gare d'anticipo. Nel 2027 salirà in Moto2 restando con la squadra di Jorge Martínez.",
+      "tag": "Mondiale",
+      "source": "MotoGP.com",
+      "url": "https://www.motogp.com/en/news/2026/10/10/quiles-se-proclama-campeon-del-mundo-de-moto3-con-una-nueva-victoria/1174842",
+      "published": "2026-10-11T08:00:00Z",
+      "top": true
+    }
+  ],
+  "info": {
+    "updated": "2026-11-11T15:58:00Z",
+    "nextGp": {
+      "name": "GP del Portogallo",
+      "circuit": "Portimão",
+      "date": "2026-11-22T14:30:00Z",
+      "label": "Gara",
+      "note": "Penultimo round: titolo piloti già assegnato a Quiles, Almansa in corsa per il secondo posto"
+    }
+  },
+  "weekend": {
+    "gp": "GP del Portogallo",
+    "circuit": "Autódromo Internacional do Algarve, Portimão",
+    "updated": "2026-11-11T15:45:00Z",
+    "tv8note": "Palinsesto TV8 non ancora ufficiale: in chiaro sono attese in diretta le qualifiche e la gara della Moto3; diretta integrale su Sky Sport MotoGP e NOW.",
+    "sessions": [
+      {
+        "name": "Prove libere 1",
+        "start": "2026-11-20T09:00:00Z",
+        "end": "2026-11-20T09:35:00Z",
+        "live": "Diretta Sky Sport MotoGP · NOW"
+      },
+      {
+        "name": "Practice",
+        "start": "2026-11-20T13:15:00Z",
+        "end": "2026-11-20T13:50:00Z",
+        "live": "Diretta Sky Sport MotoGP · NOW"
+      },
+      {
+        "name": "Prove libere 2",
+        "start": "2026-11-21T08:40:00Z",
+        "end": "2026-11-21T09:10:00Z",
+        "live": "Diretta Sky Sport MotoGP · NOW"
+      },
+      {
+        "name": "Qualifiche",
+        "start": "2026-11-21T12:45:00Z",
+        "end": "2026-11-21T13:25:00Z",
+        "live": "Diretta Sky Sport MotoGP · NOW · TV8",
+        "key": true,
+        "tv8": {
+          "live": true,
+          "time": "2026-11-21T12:45:00Z"
+        }
+      },
+      {
+        "name": "Gara",
+        "start": "2026-11-22T14:30:00Z",
+        "live": "Diretta Sky Sport MotoGP · NOW · TV8",
+        "key": true,
+        "tv8": {
+          "live": true,
+          "time": "2026-11-22T14:30:00Z"
+        }
+      }
+    ]
+  },
+  "results": {
+    "gp": "GP del Qatar",
+    "round": 20,
+    "updated": "2026-11-11T15:45:00Z",
+    "summary": "A Lusail David Almansa ha preso il comando nelle prime fasi e ha controllato la gara fino al traguardo, cogliendo il quarto successo stagionale con due secondi e mezzo di vantaggio. Adrián Fernández ha conquistato il secondo posto sorpassando nel finale il campione del mondo Máximo Quiles, scattato dalla pole e terzo per appena sette centesimi. Quarto Veda Ega Pratama davanti a Carpe e Kelso, mentre Guido Pini ha chiuso undicesimo. Con questo risultato la CFMOTO Aspar si è assicurata il titolo a squadre e Brian Uriarte, 14° dopo una caduta al via, quello di miglior debuttante.",
+    "podium": [
+      {
+        "name": "David Almansa"
+      },
+      {
+        "name": "Adrián Fernández"
+      },
+      {
+        "name": "Máximo Quiles"
+      }
+    ],
+    "tabs": [
+      {
+        "label": "Gara",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "David Almansa",
+            "team": "Intact GP · KTM",
+            "gap": "38'09.479",
+            "points": 25
+          },
+          {
+            "pos": "2",
+            "name": "Adrián Fernández",
+            "team": "Leopard · Honda",
+            "gap": "+2.516",
+            "points": 20
+          },
+          {
+            "pos": "3",
+            "name": "Máximo Quiles",
+            "team": "Aspar · KTM",
+            "gap": "+2.585",
+            "points": 16,
+            "note": "Partito dalla pole"
+          },
+          {
+            "pos": "4",
+            "name": "Veda Ega Pratama",
+            "team": "Honda Team Asia · Honda",
+            "gap": "+5.653",
+            "points": 13,
+            "note": "Arretrato di 6 posizioni in griglia"
+          },
+          {
+            "pos": "5",
+            "name": "Álvaro Carpe",
+            "team": "Red Bull KTM Ajo · KTM",
+            "gap": "+5.700",
+            "points": 11
+          },
+          {
+            "pos": "6",
+            "name": "Joel Kelso",
+            "team": "GRYD · Honda",
+            "gap": "+5.954",
+            "points": 10
+          },
+          {
+            "pos": "7",
+            "name": "Hakim Danish",
+            "team": "MSI · KTM",
+            "gap": "+7.315",
+            "points": 9
+          },
+          {
+            "pos": "8",
+            "name": "David Muñoz",
+            "team": "Intact GP · KTM",
+            "gap": "+11.428",
+            "points": 8,
+            "note": "Tre Long Lap Penalty per contatti in gara"
+          },
+          {
+            "pos": "9",
+            "name": "Ryusei Yamanaka",
+            "team": "MSI · KTM",
+            "gap": "+11.465",
+            "points": 7
+          },
+          {
+            "pos": "10",
+            "name": "Scott Ogden",
+            "team": "CIP Green Power · KTM",
+            "gap": "+11.465",
+            "points": 6
+          },
+          {
+            "pos": "11",
+            "name": "Guido Pini",
+            "team": "Leopard · Honda",
+            "gap": "+11.575",
+            "points": 5
+          },
+          {
+            "pos": "12",
+            "name": "Rico Salmela",
+            "team": "Red Bull KTM Tech3 · KTM",
+            "gap": "+11.982",
+            "points": 4
+          },
+          {
+            "pos": "13",
+            "name": "Zen Mitani",
+            "team": "Honda Team Asia · Honda",
+            "gap": "+12.391",
+            "points": 3
+          },
+          {
+            "pos": "14",
+            "name": "Brian Uriarte",
+            "team": "Red Bull KTM Ajo · KTM",
+            "gap": "+14.318",
+            "points": 2,
+            "note": "Caduto alla prima curva e ripartito; Rookie of the Year"
+          },
+          {
+            "pos": "15",
+            "name": "Marco Morelli",
+            "team": "Aspar · KTM",
+            "gap": "+15.151",
+            "points": 1
+          },
+          {
+            "pos": "16",
+            "name": "Valentín Perrone",
+            "team": "Red Bull KTM Tech3 · KTM",
+            "gap": "+20.176",
+            "points": 0
+          },
+          {
+            "pos": "17",
+            "name": "Jesús Ríos",
+            "team": "Rivacold Snipers · Honda",
+            "gap": "+20.297",
+            "points": 0
+          },
+          {
+            "pos": "18",
+            "name": "Casey O'Gorman",
+            "team": "SIC58 · Honda",
+            "gap": "+21.473",
+            "points": 0
+          },
+          {
+            "pos": "19",
+            "name": "Kiattisak Singhapong",
+            "team": "Rivacold Snipers · Honda",
+            "gap": "+33.793",
+            "points": 0
+          },
+          {
+            "pos": "20",
+            "name": "Leo Rammerstorfer",
+            "team": "SIC58 · Honda",
+            "gap": "+34.131",
+            "points": 0
+          },
+          {
+            "pos": "21",
+            "name": "Ruché Moodley",
+            "team": "CODE Motorsports · KTM",
+            "gap": "+36.595",
+            "points": 0
+          },
+          {
+            "pos": "22",
+            "name": "Kgopotso Mononyane",
+            "team": "CODE Motorsports · KTM",
+            "gap": "+1'01.373",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Eddie O'Shea",
+            "team": "GRYD · Honda",
+            "gap": "",
+            "points": 0,
+            "note": "Caduto dopo un contatto con Muñoz"
+          },
+          {
+            "pos": "RIT",
+            "name": "Joel Esteban",
+            "team": "Level Up MTA · KTM",
+            "gap": "",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Adrián Cruces",
+            "team": "CIP Green Power · KTM",
+            "gap": "",
+            "points": 0
+          },
+          {
+            "pos": "NP",
+            "name": "Matteo Bertelle",
+            "team": "Level Up MTA · KTM",
+            "gap": "",
+            "points": 0,
+            "note": "Forfait dopo una brutta caduta nel weekend"
+          }
+        ]
+      },
+      {
+        "label": "Qualifiche",
+        "kind": "quali",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Máximo Quiles",
+            "team": "Aspar · KTM",
+            "time": "2'02.288",
+            "note": "Pole, la quarta del 2026"
+          },
+          {
+            "pos": "2",
+            "name": "David Almansa",
+            "team": "Intact GP · KTM",
+            "time": "+0.155"
+          },
+          {
+            "pos": "3",
+            "name": "Brian Uriarte",
+            "team": "Red Bull KTM Ajo · KTM",
+            "time": "+0.495",
+            "note": "Promosso dalla Q1"
+          },
+          {
+            "pos": "4",
+            "name": "Álvaro Carpe",
+            "team": "Red Bull KTM Ajo · KTM",
+            "time": "+0.616",
+            "note": "Promosso dalla Q1"
+          },
+          {
+            "pos": "5",
+            "name": "David Muñoz",
+            "team": "Intact GP · KTM",
+            "time": "+0.680"
+          },
+          {
+            "pos": "6",
+            "name": "Adrián Fernández",
+            "team": "Leopard · Honda",
+            "time": "+0.708"
+          },
+          {
+            "pos": "7",
+            "name": "Hakim Danish",
+            "team": "MSI · KTM",
+            "time": "+0.880"
+          },
+          {
+            "pos": "8",
+            "name": "Veda Ega Pratama",
+            "team": "Honda Team Asia · Honda",
+            "time": "+0.950",
+            "note": "Penalità di 6 posizioni in griglia (bandiere gialle)"
+          },
+          {
+            "pos": "9",
+            "name": "Scott Ogden",
+            "team": "CIP Green Power · KTM",
+            "time": "+1.130"
+          },
+          {
+            "pos": "10",
+            "name": "Rico Salmela",
+            "team": "Red Bull KTM Tech3 · KTM",
+            "time": "+1.336"
+          },
+          {
+            "pos": "11",
+            "name": "Valentín Perrone",
+            "team": "Red Bull KTM Tech3 · KTM",
+            "time": "+1.356"
+          },
+          {
+            "pos": "12",
+            "name": "Joel Esteban",
+            "team": "Level Up MTA · KTM",
+            "time": "+1.437"
+          },
+          {
+            "pos": "13",
+            "name": "Ryusei Yamanaka",
+            "team": "MSI · KTM",
+            "time": "+1.473"
+          },
+          {
+            "pos": "14",
+            "name": "Joel Kelso",
+            "team": "GRYD · Honda",
+            "time": "+1.649"
+          },
+          {
+            "pos": "15",
+            "name": "Casey O'Gorman",
+            "team": "SIC58 · Honda",
+            "time": "+1.876"
+          },
+          {
+            "pos": "16",
+            "name": "Eddie O'Shea",
+            "team": "GRYD · Honda",
+            "time": "+1.901"
+          },
+          {
+            "pos": "17",
+            "name": "Zen Mitani",
+            "team": "Honda Team Asia · Honda",
+            "time": "+2.865"
+          },
+          {
+            "pos": "18",
+            "name": "Marco Morelli",
+            "team": "Aspar · KTM",
+            "time": "+2.933"
+          },
+          {
+            "pos": "19",
+            "name": "Guido Pini",
+            "team": "Leopard · Honda",
+            "time": "2'03.503",
+            "note": "Eliminato in Q1"
+          },
+          {
+            "pos": "20",
+            "name": "Jesús Ríos",
+            "team": "Rivacold Snipers · Honda",
+            "time": "2'03.747",
+            "note": "Eliminato in Q1"
+          },
+          {
+            "pos": "21",
+            "name": "Kiattisak Singhapong",
+            "team": "Rivacold Snipers · Honda",
+            "time": "2'04.272",
+            "note": "Eliminato in Q1"
+          },
+          {
+            "pos": "22",
+            "name": "Leo Rammerstorfer",
+            "team": "SIC58 · Honda",
+            "time": "2'04.446",
+            "note": "Eliminato in Q1"
+          },
+          {
+            "pos": "23",
+            "name": "Ruché Moodley",
+            "team": "CODE Motorsports · KTM",
+            "time": "2'04.564",
+            "note": "Eliminato in Q1"
+          },
+          {
+            "pos": "24",
+            "name": "Adrián Cruces",
+            "team": "CIP Green Power · KTM",
+            "time": "2'04.576",
+            "note": "Eliminato in Q1"
+          },
+          {
+            "pos": "25",
+            "name": "Kgopotso Mononyane",
+            "team": "CODE Motorsports · KTM",
+            "time": "2'05.754",
+            "note": "Eliminato in Q1"
+          },
+          {
+            "pos": "NP",
+            "name": "Matteo Bertelle",
+            "team": "Level Up MTA · KTM",
+            "time": "",
+            "note": "Non ha preso parte alle qualifiche"
+          }
+        ]
+      }
+    ]
+  },
+  "videos": [],
+  "standings": {
+    "updated": "2026-11-11T15:45:00Z",
+    "after": "dopo il GP del Qatar",
+    "drivers": [
+      {
+        "pos": 1,
+        "name": "Máximo Quiles",
+        "team": "Aspar · KTM",
+        "points": 392,
+        "champion": true
+      },
+      {
+        "pos": 2,
+        "name": "David Almansa",
+        "team": "Intact GP · KTM",
+        "points": 255
+      },
+      {
+        "pos": 3,
+        "name": "Álvaro Carpe",
+        "team": "Red Bull KTM Ajo · KTM",
+        "points": 218
+      },
+      {
+        "pos": 4,
+        "name": "Brian Uriarte",
+        "team": "Red Bull KTM Ajo · KTM",
+        "points": 212
+      },
+      {
+        "pos": 5,
+        "name": "Veda Ega Pratama",
+        "team": "Honda Team Asia · Honda",
+        "points": 148
+      },
+      {
+        "pos": 6,
+        "name": "Marco Morelli",
+        "team": "Aspar · KTM",
+        "points": 147
+      },
+      {
+        "pos": 7,
+        "name": "Hakim Danish",
+        "team": "MSI · KTM",
+        "points": 129
+      },
+      {
+        "pos": 8,
+        "name": "Valentín Perrone",
+        "team": "Red Bull KTM Tech3 · KTM",
+        "points": 124
+      },
+      {
+        "pos": 9,
+        "name": "Matteo Bertelle",
+        "team": "Level Up MTA · KTM",
+        "points": 109
+      },
+      {
+        "pos": 10,
+        "name": "Adrián Fernández",
+        "team": "Leopard · Honda",
+        "points": 100
+      },
+      {
+        "pos": 11,
+        "name": "Rico Salmela",
+        "team": "Red Bull KTM Tech3 · KTM",
+        "points": 96
+      },
+      {
+        "pos": 12,
+        "name": "Guido Pini",
+        "team": "Leopard · Honda",
+        "points": 87
+      },
+      {
+        "pos": 13,
+        "name": "Adrián Cruces",
+        "team": "CIP Green Power · KTM",
+        "points": 85
+      },
+      {
+        "pos": 14,
+        "name": "Joel Esteban",
+        "team": "Level Up MTA · KTM",
+        "points": 83
+      },
+      {
+        "pos": 15,
+        "name": "David Muñoz",
+        "team": "Intact GP · KTM",
+        "points": 77
+      },
+      {
+        "pos": 16,
+        "name": "Joel Kelso",
+        "team": "GRYD · Honda",
+        "points": 77
+      },
+      {
+        "pos": 17,
+        "name": "Eddie O'Shea",
+        "team": "GRYD · Honda",
+        "points": 71
+      },
+      {
+        "pos": 18,
+        "name": "Casey O'Gorman",
+        "team": "SIC58 · Honda",
+        "points": 70
+      },
+      {
+        "pos": 19,
+        "name": "Ryusei Yamanaka",
+        "team": "MSI · KTM",
+        "points": 56
+      },
+      {
+        "pos": 20,
+        "name": "Jesús Ríos",
+        "team": "Rivacold Snipers · Honda",
+        "points": 50
+      },
+      {
+        "pos": 21,
+        "name": "Scott Ogden",
+        "team": "CIP Green Power · KTM",
+        "points": 42
+      },
+      {
+        "pos": 22,
+        "name": "Zen Mitani",
+        "team": "Honda Team Asia · Honda",
+        "points": 8
+      },
+      {
+        "pos": 23,
+        "name": "David González",
+        "team": "Intact GP · KTM",
+        "points": 7
+      },
+      {
+        "pos": 24,
+        "name": "Marcos Uriarte",
+        "team": "Intact GP · KTM",
+        "points": 6
+      },
+      {
+        "pos": 25,
+        "name": "Cormac Buchanan",
+        "team": "CODE Motorsports · KTM",
+        "points": 5
+      },
+      {
+        "pos": 26,
+        "name": "Leo Rammerstorfer",
+        "team": "SIC58 · Honda",
+        "points": 4
+      },
+      {
+        "pos": 27,
+        "name": "Ruché Moodley",
+        "team": "CODE Motorsports · KTM",
+        "points": 1
+      },
+      {
+        "pos": 28,
+        "name": "Kiattisak Singhapong",
+        "team": "Rivacold Snipers · Honda",
+        "points": 1
+      },
+      {
+        "pos": 29,
+        "name": "Nicola Fabio Carraro",
+        "team": "Rivacold Snipers · Honda",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Ryota Ogiwara",
+        "team": "CODE Motorsports · KTM",
+        "points": 0
+      },
+      {
+        "pos": 31,
+        "name": "Leonardo Abruzzo",
+        "team": "CODE Motorsports · KTM",
+        "points": 0
+      },
+      {
+        "pos": 32,
+        "name": "Eduardo Gutiérrez",
+        "team": "CODE Motorsports · KTM",
+        "points": 0
+      },
+      {
+        "pos": 33,
+        "name": "Kgopotso Mononyane",
+        "team": "CODE Motorsports · KTM",
+        "points": 0
+      }
+    ],
+    "constructors": [
+      {
+        "pos": 1,
+        "team": "Aspar · KTM",
+        "points": 539,
+        "drivers": "Quiles, Morelli",
+        "champion": true
+      },
+      {
+        "pos": 2,
+        "team": "Red Bull KTM Ajo · KTM",
+        "points": 430,
+        "drivers": "Carpe, Uriarte"
+      },
+      {
+        "pos": 3,
+        "team": "Intact GP · KTM",
+        "points": 345,
+        "drivers": "Almansa, Muñoz"
+      },
+      {
+        "pos": 4,
+        "team": "Red Bull KTM Tech3 · KTM",
+        "points": 220,
+        "drivers": "Perrone, Salmela"
+      },
+      {
+        "pos": 5,
+        "team": "Level Up MTA · KTM",
+        "points": 192,
+        "drivers": "Bertelle, Esteban"
+      },
+      {
+        "pos": 6,
+        "team": "Leopard · Honda",
+        "points": 187,
+        "drivers": "Fernández, Pini"
+      },
+      {
+        "pos": 7,
+        "team": "MSI · KTM",
+        "points": 185,
+        "drivers": "Danish, Yamanaka"
+      },
+      {
+        "pos": 8,
+        "team": "Honda Team Asia · Honda",
+        "points": 157,
+        "drivers": "Pratama, Mitani"
+      },
+      {
+        "pos": 9,
+        "team": "GRYD · Honda",
+        "points": 148,
+        "drivers": "Kelso, O'Shea"
+      },
+      {
+        "pos": 10,
+        "team": "CIP Green Power · KTM",
+        "points": 127,
+        "drivers": "Cruces, Ogden"
+      },
+      {
+        "pos": 11,
+        "team": "SIC58 · Honda",
+        "points": 74,
+        "drivers": "O'Gorman, Rammerstorfer"
+      },
+      {
+        "pos": 12,
+        "team": "Rivacold Snipers · Honda",
+        "points": 50,
+        "drivers": "Ríos, Singhapong"
+      },
+      {
+        "pos": 13,
+        "team": "CODE Motorsports · KTM",
+        "points": 6,
+        "drivers": "Moodley, Mononyane"
+      }
+    ]
+  },
+  "calendar": {
+    "season": 2026,
+    "updated": "2026-11-11T15:45:00Z",
+    "rounds": [
+      {
+        "round": 1,
+        "name": "GP di Thailandia",
+        "circuit": "Buriram",
+        "date": "2026-03-01",
+        "winner": "David Almansa",
+        "team": "Intact GP · KTM"
+      },
+      {
+        "round": 2,
+        "name": "GP del Brasile",
+        "circuit": "Goiânia",
+        "date": "2026-03-22",
+        "winner": "Máximo Quiles",
+        "team": "Aspar · KTM"
+      },
+      {
+        "round": 3,
+        "name": "GP delle Americhe",
+        "circuit": "Circuit of the Americas",
+        "date": "2026-03-29",
+        "winner": "Guido Pini",
+        "team": "Leopard · Honda"
+      },
+      {
+        "round": 4,
+        "name": "GP di Spagna",
+        "circuit": "Jerez",
+        "date": "2026-04-26",
+        "winner": "Máximo Quiles",
+        "team": "Aspar · KTM"
+      },
+      {
+        "round": 5,
+        "name": "GP di Francia",
+        "circuit": "Le Mans",
+        "date": "2026-05-10",
+        "winner": "Máximo Quiles",
+        "team": "Aspar · KTM"
+      },
+      {
+        "round": 6,
+        "name": "GP di Catalogna",
+        "circuit": "Barcellona",
+        "date": "2026-05-17",
+        "winner": "Máximo Quiles",
+        "team": "Aspar · KTM"
+      },
+      {
+        "round": 7,
+        "name": "GP d'Italia",
+        "circuit": "Mugello",
+        "date": "2026-05-31",
+        "winner": "Brian Uriarte",
+        "team": "Red Bull KTM Ajo · KTM"
+      },
+      {
+        "round": 8,
+        "name": "GP d'Ungheria",
+        "circuit": "Balaton Park",
+        "date": "2026-06-07",
+        "winner": "Máximo Quiles",
+        "team": "Aspar · KTM"
+      },
+      {
+        "round": 9,
+        "name": "GP della Repubblica Ceca",
+        "circuit": "Brno",
+        "date": "2026-06-21",
+        "winner": "Hakim Danish",
+        "team": "MSI · KTM"
+      },
+      {
+        "round": 10,
+        "name": "GP d'Olanda",
+        "circuit": "Assen",
+        "date": "2026-06-28",
+        "winner": "Máximo Quiles",
+        "team": "Aspar · KTM"
+      },
+      {
+        "round": 11,
+        "name": "GP di Germania",
+        "circuit": "Sachsenring",
+        "date": "2026-07-12",
+        "winner": "Brian Uriarte",
+        "team": "Red Bull KTM Ajo · KTM"
+      },
+      {
+        "round": 12,
+        "name": "GP di Gran Bretagna",
+        "circuit": "Silverstone",
+        "date": "2026-08-09",
+        "winner": "David Almansa",
+        "team": "Intact GP · KTM"
+      },
+      {
+        "round": 13,
+        "name": "GP di Aragona",
+        "circuit": "MotorLand Aragón",
+        "date": "2026-08-30",
+        "winner": "Máximo Quiles",
+        "team": "Aspar · KTM"
+      },
+      {
+        "round": 14,
+        "name": "GP di San Marino",
+        "circuit": "Misano",
+        "date": "2026-09-13",
+        "winner": "Máximo Quiles",
+        "team": "Aspar · KTM"
+      },
+      {
+        "round": 15,
+        "name": "GP d'Austria",
+        "circuit": "Red Bull Ring",
+        "date": "2026-09-20",
+        "winner": "Máximo Quiles",
+        "team": "Aspar · KTM"
+      },
+      {
+        "round": 16,
+        "name": "GP del Giappone",
+        "circuit": "Motegi",
+        "date": "2026-10-04",
+        "winner": "David Almansa",
+        "team": "Intact GP · KTM"
+      },
+      {
+        "round": 17,
+        "name": "GP d'Indonesia",
+        "circuit": "Mandalika",
+        "date": "2026-10-11",
+        "winner": "Máximo Quiles",
+        "team": "Aspar · KTM"
+      },
+      {
+        "round": 18,
+        "name": "GP d'Australia",
+        "circuit": "Phillip Island",
+        "date": "2026-10-25",
+        "status": "Annullata"
+      },
+      {
+        "round": 19,
+        "name": "GP della Malesia",
+        "circuit": "Sepang",
+        "date": "2026-11-01",
+        "winner": "Máximo Quiles",
+        "team": "Aspar · KTM"
+      },
+      {
+        "round": 20,
+        "name": "GP del Qatar",
+        "circuit": "Lusail",
+        "date": "2026-11-08",
+        "winner": "David Almansa",
+        "team": "Intact GP · KTM"
+      },
+      {
+        "round": 21,
+        "name": "GP del Portogallo",
+        "circuit": "Portimão",
+        "date": "2026-11-22"
+      },
+      {
+        "round": 22,
+        "name": "GP di Valencia",
+        "circuit": "Ricardo Tormo",
+        "date": "2026-11-29"
+      }
+    ]
+  }
 }

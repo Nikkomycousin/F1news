@@ -1,11 +1,754 @@
 {
- "news": [],
- "info": {
-  "updated": null
- },
- "weekend": null,
- "results": null,
- "videos": [],
- "standings": null,
- "calendar": null
+  "news": [
+    {
+      "id": "2026-10-19-artigas-primo-campione-sportbike",
+      "title": "Xavi Artigas è il primo campione del mondo Sportbike, erede della Supersport 300",
+      "summary": "Lo spagnolo della MTM Kawasaki ha chiuso a Jerez con 245 punti, otto in più del connazionale David Salvador. Kawasaki si è presa anche il titolo costruttori nella stagione d'esordio della nuova classe.",
+      "tag": "Mondiale",
+      "source": "Motorcycle.com",
+      "url": "https://www.motorcycle.com/bikes/news/artigas-takes-inaugural-world-sportbike-crown-44673037",
+      "published": "2026-10-19T14:49:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-10-18-jerez-thompson-artigas",
+      "title": "Jerez, finale al cardiopalma: Artigas vince Gara 1, Thompson si prende Gara 2",
+      "summary": "Sabato Artigas ha battuto Fleerackers per meno di un decimo mentre Salvador è rimasto a secco dopo un contatto con Thompson. Domenica l'australiano della BrCorse ha vinto con margine, all'iberico è bastato l'ottavo posto.",
+      "tag": "Gare",
+      "source": "Cycle News",
+      "url": "https://www.cyclenews.com/2026/10/article/2026-jerez-worldsbk-results/",
+      "published": "2026-10-18T18:00:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-10-18-prodina-titolo-team",
+      "title": "Kawasaki fa il pieno: titolo costruttori e classifica team a ProDina",
+      "summary": "La ZX-6R ha chiuso la stagione con 345 punti tra i costruttori, mentre il Team ProDina Kawasaki XCI ha vinto la graduatoria squadre davanti alla MTM.",
+      "tag": "Team",
+      "source": "Kawasaki",
+      "url": "https://www.kawasaki.com/en-us/racing/news/4444/artigas-wins-dramatic-season-worldspb-finale",
+      "published": "2026-10-18T17:00:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-10-01-calendario-sbk-2027",
+      "title": "Svelato il calendario SBK 2027: le date delle classi minori ancora da definire",
+      "summary": "Il provvisorio 2027 conta 12 round dal febbraio australiano a Shanghai; non è ancora stato indicato in quali appuntamenti europei correrà la Sportbike.",
+      "tag": "Calendario",
+      "source": "Crash.net",
+      "url": "https://www.crash.net/wsbk/news/1105926/1/worldsbk-reveals-2027-calendar-old-motogp-track-final-round",
+      "published": "2026-10-01T07:29:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-07-11-salvador-kawasaki-supersport",
+      "title": "David Salvador sale in Supersport nel 2027 con il team ufficiale Kawasaki",
+      "summary": "Il vicecampione Sportbike passerà alla categoria superiore con la squadra ufficiale di Akashi dopo una stagione da protagonista con ProDina.",
+      "tag": "Mercato",
+      "source": "Kawasaki",
+      "url": "https://www.kawasaki.com/en-us/racing/news/4383/david-salvador-joins-kawasaki-worldssp-team-for-2027",
+      "published": "2026-07-11T12:00:00Z",
+      "top": false
+    }
+  ],
+  "info": {
+    "updated": "2026-11-11T15:58:00Z",
+    "nextGp": {
+      "name": "Round del Portogallo",
+      "circuit": "Portimão",
+      "date": "2027-03-20T23:00:00Z",
+      "dateOnly": true,
+      "label": "Gara 1",
+      "note": "Dal 2026 la Supersport 300 è stata sostituita dalla Sportbike; il calendario 2027 della classe non è ancora ufficiale: Portimão (19-21 marzo) è il primo round europeo del provvisorio SBK"
+    }
+  },
+  "weekend": {
+    "gp": "Round del Portogallo",
+    "circuit": "Autódromo Internacional do Algarve",
+    "updated": "2026-11-11T15:50:00Z",
+    "tv8note": "Nel 2026 le gare della Sportbike sono state trasmesse da Sky Sport e in streaming su NOW, oltre che sul VideoPass ufficiale WorldSBK; nessuna diretta in chiaro. La copertura 2027 non è ancora stata comunicata.",
+    "sessions": []
+  },
+  "results": {
+    "gp": "Round di Spagna",
+    "round": 8,
+    "updated": "2026-11-11T15:50:00Z",
+    "summary": "Ultimo round della prima stagione della Sportbike, la classe che dal 2026 ha preso il posto della Supersport 300. In Gara 1 Xavi Artigas ha vinto in volata su Fleerackers e Fuertes, mentre il leader Salvador è rimasto senza punti dopo un contatto con Carter Thompson, poi penalizzato. In Gara 2 Thompson ha dominato davanti a Torres e Osuna; Salvador ha rimontato fino al quarto posto, ma l'ottava piazza è bastata ad Artigas per laurearsi campione con otto punti di margine.",
+    "podium": [
+      {
+        "name": "Xavier Artigas"
+      },
+      {
+        "name": "Ferre Fleerackers"
+      },
+      {
+        "name": "Álvaro Fuertes"
+      }
+    ],
+    "tabs": [
+      {
+        "label": "Gara 1",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Xavier Artigas",
+            "team": "MTM Kawasaki",
+            "gap": "Vincitore",
+            "points": 25
+          },
+          {
+            "pos": "2",
+            "name": "Ferre Fleerackers",
+            "team": "Track & Trades Wixx Suzuki",
+            "gap": "+0.096",
+            "points": 20
+          },
+          {
+            "pos": "3",
+            "name": "Álvaro Fuertes",
+            "team": "Deza-Box 77 Kawasaki",
+            "gap": "+0.128",
+            "points": 16
+          },
+          {
+            "pos": "4",
+            "name": "José Osuna",
+            "team": "Deza-Box 77 Kawasaki",
+            "gap": "+0.222",
+            "points": 13
+          },
+          {
+            "pos": "5",
+            "name": "Antonio Torres",
+            "team": "ProDina Kawasaki",
+            "gap": "+0.585",
+            "points": 11
+          },
+          {
+            "pos": "6",
+            "name": "Carter Thompson",
+            "team": "BrCorse Yamaha",
+            "gap": "n.d.",
+            "points": 10,
+            "note": "Long lap penalty per il contatto con Salvador"
+          },
+          {
+            "pos": "7",
+            "name": "Harrison Dessoy",
+            "team": "PHR Performance Triumph",
+            "gap": "n.d.",
+            "points": 9
+          },
+          {
+            "pos": "8",
+            "name": "Gonzalo Sánchez",
+            "team": "ARCO MotoR University Yamaha",
+            "gap": "n.d.",
+            "points": 8
+          },
+          {
+            "pos": "9",
+            "name": "Taiyo Aksu",
+            "team": "PATA AG Motorsport Honda",
+            "gap": "n.d.",
+            "points": 7
+          },
+          {
+            "pos": "10",
+            "name": "Elia Bartolini",
+            "team": "CM Triumph Factory Racing",
+            "gap": "n.d.",
+            "points": 6
+          },
+          {
+            "pos": "22",
+            "name": "David Salvador",
+            "team": "ProDina Kawasaki",
+            "gap": "n.d.",
+            "points": 0,
+            "note": "Coinvolto in un contatto con Thompson all'ultimo tornante"
+          }
+        ]
+      },
+      {
+        "label": "Gara 2",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Carter Thompson",
+            "team": "BrCorse Yamaha",
+            "gap": "Vincitore",
+            "points": 25
+          },
+          {
+            "pos": "2",
+            "name": "Antonio Torres",
+            "team": "ProDina Kawasaki",
+            "gap": "+4.565",
+            "points": 20
+          },
+          {
+            "pos": "3",
+            "name": "José Osuna",
+            "team": "Deza-Box 77 Kawasaki",
+            "gap": "+6.224",
+            "points": 16
+          },
+          {
+            "pos": "4",
+            "name": "David Salvador",
+            "team": "ProDina Kawasaki",
+            "gap": "+6.331",
+            "points": 13
+          },
+          {
+            "pos": "5",
+            "name": "Álvaro Fuertes",
+            "team": "Deza-Box 77 Kawasaki",
+            "gap": "+6.420",
+            "points": 11
+          },
+          {
+            "pos": "6",
+            "name": "Marco Gaggi",
+            "team": "BrCorse Yamaha",
+            "gap": "n.d.",
+            "points": 10
+          },
+          {
+            "pos": "7",
+            "name": "Juan Risueño",
+            "team": "Pons Italika Kawasaki",
+            "gap": "n.d.",
+            "points": 9
+          },
+          {
+            "pos": "8",
+            "name": "Xavier Artigas",
+            "team": "MTM Kawasaki",
+            "gap": "n.d.",
+            "points": 8,
+            "note": "Piazzamento che vale il titolo mondiale"
+          },
+          {
+            "pos": "10",
+            "name": "Taiyo Aksu",
+            "team": "PATA AG Motorsport Yamaha",
+            "gap": "+7.437",
+            "points": 6
+          }
+        ]
+      },
+      {
+        "label": "Superpole",
+        "kind": "quali",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "David Salvador",
+            "team": "ProDina Kawasaki",
+            "time": "1:45.802"
+          },
+          {
+            "pos": "2",
+            "name": "Carter Thompson",
+            "team": "BrCorse Yamaha",
+            "time": "1:46.503"
+          },
+          {
+            "pos": "3",
+            "name": "Xavier Artigas",
+            "team": "MTM Kawasaki",
+            "time": "1:46.889"
+          },
+          {
+            "pos": "4",
+            "name": "Juan Risueño",
+            "team": "Pons Italika Kawasaki",
+            "time": "1:46.950"
+          },
+          {
+            "pos": "5",
+            "name": "Marco Gaggi",
+            "team": "BrCorse Yamaha",
+            "time": "1:47.159"
+          },
+          {
+            "pos": "6",
+            "name": "Antonio Torres",
+            "team": "ProDina Kawasaki",
+            "time": "n.d."
+          },
+          {
+            "pos": "7",
+            "name": "Matteo Vannucci",
+            "team": "Revo-M2 Aprilia",
+            "time": "n.d."
+          },
+          {
+            "pos": "8",
+            "name": "Álvaro Fuertes",
+            "team": "Deza-Box 77 Kawasaki",
+            "time": "n.d."
+          },
+          {
+            "pos": "9",
+            "name": "Ferre Fleerackers",
+            "team": "Track & Trades Wixx Suzuki",
+            "time": "n.d."
+          },
+          {
+            "pos": "10",
+            "name": "Julian Correa",
+            "team": "Pons Italika Kawasaki",
+            "time": "n.d."
+          }
+        ]
+      }
+    ]
+  },
+  "videos": [],
+  "standings": {
+    "updated": "2026-11-11T15:50:00Z",
+    "after": "dopo il Round di Spagna a Jerez (classifica finale 2026)",
+    "drivers": [
+      {
+        "pos": 1,
+        "name": "Xavier Artigas",
+        "team": "MTM Kawasaki",
+        "points": 245,
+        "champion": true
+      },
+      {
+        "pos": 2,
+        "name": "David Salvador",
+        "team": "ProDina Kawasaki",
+        "points": 237
+      },
+      {
+        "pos": 3,
+        "name": "Carter Thompson",
+        "team": "BrCorse Yamaha",
+        "points": 193
+      },
+      {
+        "pos": 4,
+        "name": "Antonio Torres",
+        "team": "ProDina Kawasaki",
+        "points": 188
+      },
+      {
+        "pos": 5,
+        "name": "Ferre Fleerackers",
+        "team": "Track & Trades Wixx Suzuki",
+        "points": 143
+      },
+      {
+        "pos": 6,
+        "name": "Fenton Seabright",
+        "team": "PHR Performance Triumph",
+        "points": 127
+      },
+      {
+        "pos": 7,
+        "name": "Matteo Vannucci",
+        "team": "Revo-M2 Aprilia",
+        "points": 117
+      },
+      {
+        "pos": 8,
+        "name": "Jeffrey Buis",
+        "team": "Track & Trades Wixx Suzuki",
+        "points": 112
+      },
+      {
+        "pos": 9,
+        "name": "Álvaro Fuertes",
+        "team": "Deza-Box 77 Kawasaki",
+        "points": 106
+      },
+      {
+        "pos": 10,
+        "name": "Bruno Ieraci",
+        "team": "CM Triumph Factory Racing",
+        "points": 97
+      },
+      {
+        "pos": 11,
+        "name": "José Osuna",
+        "team": "Deza-Box 77 Kawasaki",
+        "points": 91
+      },
+      {
+        "pos": 12,
+        "name": "Harrison Dessoy",
+        "team": "PHR Performance Triumph",
+        "points": 90
+      },
+      {
+        "pos": 13,
+        "name": "Loris Veneman",
+        "team": "MTM Kawasaki",
+        "points": 83
+      },
+      {
+        "pos": 14,
+        "name": "Elia Bartolini",
+        "team": "CM Triumph Factory Racing",
+        "points": 67
+      },
+      {
+        "pos": 15,
+        "name": "Marco Gaggi",
+        "team": "BrCorse Yamaha",
+        "points": 64
+      },
+      {
+        "pos": 16,
+        "name": "Juan Risueño",
+        "team": "Pons Italika Kawasaki",
+        "points": 38
+      },
+      {
+        "pos": 17,
+        "name": "Filippo Bianchi",
+        "team": "MMP Velocita Aprilia",
+        "points": 33
+      },
+      {
+        "pos": 18,
+        "name": "Kas Beekmans",
+        "team": "VLR Racing Suzuki",
+        "points": 28
+      },
+      {
+        "pos": 19,
+        "name": "Mirko Gennai",
+        "team": "BGR Smrz Yamaha",
+        "points": 25
+      },
+      {
+        "pos": 20,
+        "name": "Julian Correa",
+        "team": "Pons Italika Kawasaki",
+        "points": 23
+      },
+      {
+        "pos": 21,
+        "name": "Beñat Fernández",
+        "team": "Kove Racing Team 109",
+        "points": 20
+      },
+      {
+        "pos": 22,
+        "name": "Felix Mulya",
+        "team": "ProGP NitiRacing Yamaha",
+        "points": 19
+      },
+      {
+        "pos": 23,
+        "name": "Diego Poncet",
+        "team": "Rac41 Honda",
+        "points": 18
+      },
+      {
+        "pos": 24,
+        "name": "Taiyo Aksu",
+        "team": "PATA AG Motorsport Yamaha",
+        "points": 14
+      },
+      {
+        "pos": 25,
+        "name": "Gonzalo Sánchez",
+        "team": "ARCO MotoR University Yamaha",
+        "points": 12
+      },
+      {
+        "pos": 25,
+        "name": "Alessandro Di Persio",
+        "team": "ARCO MotoR University Yamaha",
+        "points": 12
+      },
+      {
+        "pos": 25,
+        "name": "Thomas Benetti",
+        "team": "MMR Aprilia",
+        "points": 12
+      },
+      {
+        "pos": 28,
+        "name": "Jurrien Van Crugten",
+        "team": "MMR Aprilia",
+        "points": 10
+      },
+      {
+        "pos": 29,
+        "name": "Roberto Fernández",
+        "team": "MTM Kawasaki",
+        "points": 5
+      },
+      {
+        "pos": 30,
+        "name": "Manuel Rocca",
+        "team": "Rosso e Nero Triumph",
+        "points": 4
+      },
+      {
+        "pos": 30,
+        "name": "Humberto Maier",
+        "team": "AD78 FIMLA Yamaha",
+        "points": 4
+      },
+      {
+        "pos": 32,
+        "name": "Mattia Sorrenti",
+        "team": "Revo-M2 Aprilia",
+        "points": 2
+      },
+      {
+        "pos": 33,
+        "name": "Arai Agaska",
+        "team": "ProGP NitiRacing Yamaha",
+        "points": 1
+      },
+      {
+        "pos": 34,
+        "name": "Ioannis Peristeras",
+        "team": "MMR Aprilia",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Phillip Tonn",
+        "team": "Kove Racing Team 109",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Gabin Cazard",
+        "team": "AD78 FIMLA Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Troy Sovička",
+        "team": "BGR Smrz Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Daniel Mogeda",
+        "team": "Kove Racing Team 109",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Bartholomé Perrin",
+        "team": "ProGP NitiRacing Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Kevin Farkas",
+        "team": "ProGP NitiRacing Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Indi Schunselaar",
+        "team": "Ten Kate Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Luca Agostinelli",
+        "team": "MMR Aprilia",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Tomás Alonso",
+        "team": "Miguel Oliveira Team Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Hugo De Cancellis",
+        "team": "Kove Racing Team 109",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Alessandro Zanca",
+        "team": "Kove Racing Team 109",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Mattia Martella",
+        "team": "Miguel Oliveira Team Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Marc Vich",
+        "team": "Track & Trades Wixx Suzuki",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Marcos Ruda",
+        "team": "Miguel Oliveira Team Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Oliver Svendsen",
+        "team": "Kove Racing Team 109",
+        "points": 0
+      }
+    ],
+    "constructors": [
+      {
+        "pos": 1,
+        "team": "Kawasaki",
+        "points": 345,
+        "champion": true
+      },
+      {
+        "pos": 2,
+        "team": "Triumph",
+        "points": 228
+      },
+      {
+        "pos": 3,
+        "team": "Yamaha",
+        "points": 200
+      },
+      {
+        "pos": 4,
+        "team": "Suzuki",
+        "points": 192
+      },
+      {
+        "pos": 5,
+        "team": "Aprilia",
+        "points": 147
+      },
+      {
+        "pos": 6,
+        "team": "Honda",
+        "points": 31
+      },
+      {
+        "pos": 7,
+        "team": "Kove",
+        "points": 20
+      }
+    ]
+  },
+  "calendar": {
+    "season": 2026,
+    "updated": "2026-11-11T15:50:00Z",
+    "rounds": [
+      {
+        "round": 1,
+        "name": "Round del Portogallo",
+        "circuit": "Portimão",
+        "date": "2026-03-29",
+        "winner": "Torres · Veneman",
+        "team": "Kawasaki",
+        "wins": [
+          "Antonio Torres",
+          "Loris Veneman"
+        ]
+      },
+      {
+        "round": 2,
+        "name": "Round d'Olanda",
+        "circuit": "Assen",
+        "date": "2026-04-19",
+        "winner": "Buis · Fleerackers",
+        "team": "Suzuki",
+        "wins": [
+          "Jeffrey Buis",
+          "Ferre Fleerackers"
+        ]
+      },
+      {
+        "round": 3,
+        "name": "Round della Repubblica Ceca",
+        "circuit": "Most",
+        "date": "2026-05-17",
+        "winner": "Vannucci · Torres",
+        "team": "Aprilia",
+        "wins": [
+          "Matteo Vannucci",
+          "Antonio Torres"
+        ]
+      },
+      {
+        "round": 4,
+        "name": "Round di Aragón",
+        "circuit": "MotorLand Aragón",
+        "date": "2026-05-31",
+        "winner": "Salvador · Artigas",
+        "team": "Kawasaki",
+        "wins": [
+          "David Salvador",
+          "Xavier Artigas"
+        ]
+      },
+      {
+        "round": 5,
+        "name": "Round dell'Emilia-Romagna",
+        "circuit": "Misano",
+        "date": "2026-06-14",
+        "winner": "Ieraci · Salvador",
+        "team": "Triumph",
+        "wins": [
+          "Bruno Ieraci",
+          "David Salvador"
+        ]
+      },
+      {
+        "round": 6,
+        "name": "Round di Francia",
+        "circuit": "Magny-Cours",
+        "date": "2026-09-06",
+        "winner": "Seabright · Artigas",
+        "team": "Triumph",
+        "wins": [
+          "Fenton Seabright",
+          "Xavier Artigas"
+        ]
+      },
+      {
+        "round": 7,
+        "name": "Round d'Italia",
+        "circuit": "Cremona",
+        "date": "2026-09-27",
+        "winner": "Artigas · Thompson",
+        "team": "Kawasaki",
+        "wins": [
+          "Xavier Artigas",
+          "Carter Thompson"
+        ]
+      },
+      {
+        "round": 8,
+        "name": "Round di Spagna",
+        "circuit": "Jerez",
+        "date": "2026-10-18",
+        "winner": "Artigas · Thompson",
+        "team": "Kawasaki",
+        "wins": [
+          "Xavier Artigas",
+          "Carter Thompson"
+        ]
+      }
+    ]
+  }
 }

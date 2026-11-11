@@ -1,11 +1,1033 @@
 {
- "news": [],
- "info": {
-  "updated": null
- },
- "weekend": null,
- "results": null,
- "videos": [],
- "standings": null,
- "calendar": null
+  "news": [
+    {
+      "id": "2026-11-09-arenas-superbike-go-eleven",
+      "title": "Il campione Arenas lascia la Supersport: nel 2027 correrà in Superbike con Go Eleven",
+      "summary": "Il pilota spagnolo, iridato 2026 con la Yamaha del team AS Blu Cru, salirà di categoria in sella a una Ducati Panigale V4 del team Pata Go Eleven, al fianco di Lorenzo Baldassarri. Il debutto è atteso nei test di Valencia di dicembre.",
+      "tag": "Mercato",
+      "source": "Moto.it",
+      "url": "https://www.moto.it/superbike/sbk-albert-arenas-in-sbk-con-pata-go-eleven.html",
+      "published": "2026-11-09T12:00:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-10-30-aegerter-ptr-triumph",
+      "title": "Aegerter passa alla PTR Triumph per il 2027",
+      "summary": "Il due volte campione della Supersport guiderà la nuova Triumph Street Triple 798 RS del team PTR dopo una stagione con Kawasaki chiusa con il secondo posto nella gara finale di Jerez.",
+      "tag": "Mercato",
+      "source": "Motorcycle.com",
+      "url": "https://www.motorcycle.com/bikes/news/aegerter-joins-ptr-triumph-for-2027-worldssp-season-44673319",
+      "published": "2026-10-30T22:07:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-10-21-alcoba-yamaha-blu-cru",
+      "title": "Alcoba firma con Yamaha: nel 2027 prende il posto del campione nel team AS Blu Cru",
+      "summary": "Lo spagnolo, terzo nel Mondiale 2026 con Kawasaki, correrà con la Yamaha R9 della squadra svizzera che ha appena vinto il titolo piloti e quello team con Arenas.",
+      "tag": "Mercato",
+      "source": "Cycle News",
+      "url": "https://www.cyclenews.com/2026/10/article/alcoba-joins-yamaha-motor-europe-for-2027-worldssp/",
+      "published": "2026-10-21T12:00:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-10-18-alcoba-doppietta-kawasaki-jerez",
+      "title": "Jerez, Alcoba guida la prima doppietta Kawasaki in Supersport dal 2016",
+      "summary": "Nell'ultima gara della stagione, fermata in anticipo con la bandiera rossa, Alcoba ha preceduto il compagno Aegerter e si è preso il terzo posto finale nel Mondiale. Il campione Arenas era caduto nei primi giri.",
+      "tag": "Gare",
+      "source": "Kawasaki Racing",
+      "url": "https://www.kawasaki.com/en-us/racing/news/4441/astounding-12-for-kawasaki-worldssp-riders",
+      "published": "2026-10-18T16:00:00Z",
+      "top": true
+    }
+  ],
+  "info": {
+    "updated": "2026-11-11T15:58:00Z",
+    "nextGp": {
+      "name": "Round d'Australia",
+      "circuit": "Phillip Island",
+      "date": "2027-02-19T23:00:00Z",
+      "dateOnly": true,
+      "label": "Gara 1",
+      "note": "Apertura del Mondiale Supersport 2027 (weekend 19-21 febbraio, calendario provvisorio); orari non ancora pubblicati"
+    }
+  },
+  "weekend": {
+    "gp": "Round d'Australia",
+    "circuit": "Phillip Island Grand Prix Circuit",
+    "updated": "2026-11-11T15:50:00Z",
+    "tv8note": "Nel 2026 la Supersport è stata trasmessa in Italia su Sky Sport MotoGP e NOW; la copertura televisiva del 2027, anche in chiaro, non è ancora stata comunicata.",
+    "sessions": []
+  },
+  "results": {
+    "gp": "Round di Jerez",
+    "round": 12,
+    "updated": "2026-11-11T15:50:00Z",
+    "summary": "Albert Arenas, già campione, ha festeggiato il titolo vincendo Gara 1 a Jerez dopo aver firmato la pole con il nuovo record assoluto della pista. In Gara 2 lo spagnolo è caduto al primo giro insieme a Tom Booth-Amos, e Jeremy Alcoba ha vinto davanti al compagno Dominique Aegerter, regalando a Kawasaki la prima doppietta in Supersport dal 2016. La gara è stata interrotta con la bandiera rossa al dodicesimo giro per una caduta di Jorge Navarro, con Matteo Ferrari terzo. Grazie a questo risultato Alcoba ha chiuso il campionato al terzo posto, superando Can Öncü.",
+    "podium": [
+      {
+        "name": "Jeremy Alcoba"
+      },
+      {
+        "name": "Dominique Aegerter"
+      },
+      {
+        "name": "Matteo Ferrari"
+      }
+    ],
+    "tabs": [
+      {
+        "label": "Gara 1",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Albert Arenas",
+            "team": "AS Blu Cru Yamaha",
+            "gap": "Vincitore",
+            "points": 25
+          },
+          {
+            "pos": "2",
+            "name": "Jeremy Alcoba",
+            "team": "Kawasaki WorldSSP Team",
+            "gap": "+0.533",
+            "points": 20
+          },
+          {
+            "pos": "3",
+            "name": "Can Öncü",
+            "team": "Pata Yamaha Ten Kate",
+            "gap": "+2.261",
+            "points": 16
+          },
+          {
+            "pos": "4",
+            "name": "Tom Booth-Amos",
+            "team": "PTR Triumph Factory",
+            "gap": "+2.295",
+            "points": 13
+          },
+          {
+            "pos": "5",
+            "name": "Dominique Aegerter",
+            "team": "Kawasaki WorldSSP Team",
+            "gap": "+5.355",
+            "points": 11
+          },
+          {
+            "pos": "6",
+            "name": "Matteo Ferrari",
+            "team": "WRP Racing Ducati",
+            "gap": "+5.618",
+            "points": 10
+          },
+          {
+            "pos": "7",
+            "name": "Jorge Navarro",
+            "team": "PTR Triumph Factory",
+            "gap": "+5.925",
+            "points": 9
+          },
+          {
+            "pos": "8",
+            "name": "Filippo Farioli",
+            "team": "VFT Racing Yamaha",
+            "gap": "+11.438",
+            "points": 8
+          },
+          {
+            "pos": "9",
+            "name": "Alessandro Zaccone",
+            "team": "Althea Racing Ducati",
+            "gap": "+12.481",
+            "points": 7
+          },
+          {
+            "pos": "10",
+            "name": "Valentin Debise",
+            "team": "ZXMOTO Evan Bros",
+            "gap": "+13.242",
+            "points": 6
+          },
+          {
+            "pos": "11",
+            "name": "Mattia Casadei",
+            "team": "D34G Racing Ducati",
+            "gap": "+13.940",
+            "points": 5
+          },
+          {
+            "pos": "12",
+            "name": "Lucas Mahias",
+            "team": "GMT94 Yamaha",
+            "gap": "+17.037",
+            "points": 4
+          },
+          {
+            "pos": "13",
+            "name": "Borja Jiménez",
+            "team": "WRP Racing Ducati",
+            "gap": "+19.218",
+            "points": 3
+          },
+          {
+            "pos": "14",
+            "name": "Federico Caricasulo",
+            "team": "ZXMOTO Evan Bros",
+            "gap": "+20.224",
+            "points": 2
+          },
+          {
+            "pos": "15",
+            "name": "Josh Whatley",
+            "team": "Orelac Verdnatura Ducati",
+            "gap": "+20.648",
+            "points": 1
+          },
+          {
+            "pos": "16",
+            "name": "Philipp Öttl",
+            "team": "Feel Racing Ducati",
+            "gap": "+20.696",
+            "points": 0
+          },
+          {
+            "pos": "17",
+            "name": "Corentin Perolari",
+            "team": "Honda Racing WorldSSP",
+            "gap": "+20.923",
+            "points": 0
+          },
+          {
+            "pos": "18",
+            "name": "Ondřej Vostatek",
+            "team": "Compos Racing Triumph",
+            "gap": "+21.300",
+            "points": 0
+          },
+          {
+            "pos": "19",
+            "name": "Aldi Satya Mahendra",
+            "team": "AS Blu Cru Yamaha",
+            "gap": "+25.285",
+            "points": 0
+          },
+          {
+            "pos": "20",
+            "name": "Roberto García",
+            "team": "GMT94 Yamaha",
+            "gap": "+25.374",
+            "points": 0
+          },
+          {
+            "pos": "21",
+            "name": "Oliver König",
+            "team": "Compos Racing Triumph",
+            "gap": "+25.525",
+            "points": 0
+          },
+          {
+            "pos": "22",
+            "name": "Leonardo Taccini",
+            "team": "Althea Racing Ducati",
+            "gap": "+25.756",
+            "points": 0
+          },
+          {
+            "pos": "23",
+            "name": "Bahattin Sofuoğlu",
+            "team": "QJMOTOR Factory Racing",
+            "gap": "+25.908",
+            "points": 0
+          },
+          {
+            "pos": "24",
+            "name": "Raffaele De Rosa",
+            "team": "QJMOTOR Factory Racing",
+            "gap": "+26.995",
+            "points": 0
+          },
+          {
+            "pos": "25",
+            "name": "Andrea Giombini",
+            "team": "Motozoo MV Agusta",
+            "gap": "+44.143",
+            "points": 0
+          },
+          {
+            "pos": "26",
+            "name": "Samuel Di Sora",
+            "team": "Flembbo MV Agusta",
+            "gap": "+44.309",
+            "points": 0
+          },
+          {
+            "pos": "27",
+            "name": "Ana Carrasco",
+            "team": "Honda Racing WorldSSP",
+            "gap": "+44.469",
+            "points": 0
+          },
+          {
+            "pos": "28",
+            "name": "Eric Fernández",
+            "team": "Cerba Yamaha",
+            "gap": "+1 giro",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Marco Tapia",
+            "team": "Renzi Corse Ducati",
+            "gap": "—",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Andreas Kofler",
+            "team": "D34G Racing Yamaha",
+            "gap": "—",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Yuki Okamoto",
+            "team": "Pata Yamaha Ten Kate",
+            "gap": "—",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Simon Jespersen",
+            "team": "EAB Racing Ducati",
+            "gap": "—",
+            "points": 0
+          }
+        ]
+      },
+      {
+        "label": "Gara 2",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Jeremy Alcoba",
+            "team": "Kawasaki WorldSSP Team",
+            "gap": "Vincitore",
+            "points": 25,
+            "note": "Gara interrotta con bandiera rossa al 12° giro dei 17 previsti"
+          },
+          {
+            "pos": "2",
+            "name": "Dominique Aegerter",
+            "team": "Kawasaki WorldSSP Team",
+            "gap": "+0.482",
+            "points": 20
+          },
+          {
+            "pos": "3",
+            "name": "Matteo Ferrari",
+            "team": "WRP Racing Ducati",
+            "gap": "+0.720",
+            "points": 16
+          },
+          {
+            "pos": "4",
+            "name": "Can Öncü",
+            "team": "Pata Yamaha Ten Kate",
+            "gap": "+0.936",
+            "points": 13
+          },
+          {
+            "pos": "5",
+            "name": "Valentin Debise",
+            "team": "ZXMOTO Evan Bros",
+            "gap": "+1.987",
+            "points": 11
+          },
+          {
+            "pos": "6",
+            "name": "Alessandro Zaccone",
+            "team": "Althea Racing Ducati",
+            "gap": "+2.177",
+            "points": 10
+          },
+          {
+            "pos": "7",
+            "name": "Lucas Mahias",
+            "team": "GMT94 Yamaha",
+            "gap": "+2.734",
+            "points": 9
+          },
+          {
+            "pos": "8",
+            "name": "Roberto García",
+            "team": "GMT94 Yamaha",
+            "gap": "+2.985",
+            "points": 8
+          },
+          {
+            "pos": "9",
+            "name": "Mattia Casadei",
+            "team": "D34G Racing Ducati",
+            "gap": "+4.001",
+            "points": 7
+          },
+          {
+            "pos": "10",
+            "name": "Filippo Farioli",
+            "team": "VFT Racing Yamaha",
+            "gap": "+4.007",
+            "points": 6
+          },
+          {
+            "pos": "11",
+            "name": "Corentin Perolari",
+            "team": "Honda Racing WorldSSP",
+            "gap": "+6.000",
+            "points": 5
+          },
+          {
+            "pos": "12",
+            "name": "Philipp Öttl",
+            "team": "Feel Racing Ducati",
+            "gap": "+6.400",
+            "points": 4
+          },
+          {
+            "pos": "13",
+            "name": "Ondřej Vostatek",
+            "team": "Compos Racing Triumph",
+            "gap": "+6.851",
+            "points": 3
+          },
+          {
+            "pos": "14",
+            "name": "Federico Caricasulo",
+            "team": "ZXMOTO Evan Bros",
+            "gap": "+9.362",
+            "points": 2
+          },
+          {
+            "pos": "15",
+            "name": "Josh Whatley",
+            "team": "Orelac Verdnatura Ducati",
+            "gap": "+10.634",
+            "points": 1
+          },
+          {
+            "pos": "16",
+            "name": "Bahattin Sofuoğlu",
+            "team": "QJMOTOR Factory Racing",
+            "gap": "+11.514",
+            "points": 0
+          },
+          {
+            "pos": "17",
+            "name": "Aldi Satya Mahendra",
+            "team": "AS Blu Cru Yamaha",
+            "gap": "+12.732",
+            "points": 0
+          },
+          {
+            "pos": "18",
+            "name": "Borja Jiménez",
+            "team": "WRP Racing Ducati",
+            "gap": "+13.000",
+            "points": 0
+          },
+          {
+            "pos": "19",
+            "name": "Raffaele De Rosa",
+            "team": "QJMOTOR Factory Racing",
+            "gap": "+13.350",
+            "points": 0
+          },
+          {
+            "pos": "20",
+            "name": "Oliver König",
+            "team": "Compos Racing Triumph",
+            "gap": "+13.458",
+            "points": 0
+          },
+          {
+            "pos": "21",
+            "name": "Leonardo Taccini",
+            "team": "Althea Racing Ducati",
+            "gap": "+13.864",
+            "points": 0
+          },
+          {
+            "pos": "22",
+            "name": "Andreas Kofler",
+            "team": "D34G Racing Yamaha",
+            "gap": "+18.914",
+            "points": 0
+          },
+          {
+            "pos": "23",
+            "name": "Samuel Di Sora",
+            "team": "Flembbo MV Agusta",
+            "gap": "+19.356",
+            "points": 0
+          },
+          {
+            "pos": "24",
+            "name": "Marco Tapia",
+            "team": "Renzi Corse Ducati",
+            "gap": "+20.247",
+            "points": 0
+          },
+          {
+            "pos": "25",
+            "name": "Andrea Giombini",
+            "team": "Motozoo MV Agusta",
+            "gap": "+20.293",
+            "points": 0
+          },
+          {
+            "pos": "26",
+            "name": "Ana Carrasco",
+            "team": "Honda Racing WorldSSP",
+            "gap": "+21.380",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Jorge Navarro",
+            "team": "PTR Triumph Factory",
+            "gap": "—",
+            "points": 0,
+            "note": "Caduta che ha provocato la bandiera rossa"
+          },
+          {
+            "pos": "RIT",
+            "name": "Eric Fernández",
+            "team": "Cerba Yamaha",
+            "gap": "—",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Tom Booth-Amos",
+            "team": "PTR Triumph Factory",
+            "gap": "—",
+            "points": 0,
+            "note": "Caduta al primo giro"
+          },
+          {
+            "pos": "RIT",
+            "name": "Albert Arenas",
+            "team": "AS Blu Cru Yamaha",
+            "gap": "—",
+            "points": 0,
+            "note": "Caduta al primo giro"
+          }
+        ]
+      },
+      {
+        "label": "Superpole",
+        "kind": "quali",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Albert Arenas",
+            "team": "AS Blu Cru Yamaha",
+            "time": "1:41.084",
+            "note": "Nuovo record assoluto della pista"
+          },
+          {
+            "pos": "2",
+            "name": "Jorge Navarro",
+            "team": "PTR Triumph Factory",
+            "time": "1:41.435"
+          },
+          {
+            "pos": "3",
+            "name": "Can Öncü",
+            "team": "Pata Yamaha Ten Kate",
+            "time": "1:41.462"
+          },
+          {
+            "pos": "4",
+            "name": "Dominique Aegerter",
+            "team": "Kawasaki WorldSSP Team",
+            "time": "1:41.476"
+          },
+          {
+            "pos": "5",
+            "name": "Jeremy Alcoba",
+            "team": "Kawasaki WorldSSP Team",
+            "time": "1:41.562"
+          },
+          {
+            "pos": "6",
+            "name": "Mattia Casadei",
+            "team": "D34G Racing Ducati",
+            "time": "—"
+          },
+          {
+            "pos": "7",
+            "name": "Tom Booth-Amos",
+            "team": "PTR Triumph Factory",
+            "time": "—"
+          },
+          {
+            "pos": "8",
+            "name": "Matteo Ferrari",
+            "team": "WRP Racing Ducati",
+            "time": "—"
+          },
+          {
+            "pos": "9",
+            "name": "Alessandro Zaccone",
+            "team": "Althea Racing Ducati",
+            "time": "—"
+          },
+          {
+            "pos": "10",
+            "name": "Simon Jespersen",
+            "team": "EAB Racing Ducati",
+            "time": "—"
+          },
+          {
+            "pos": "11",
+            "name": "Lucas Mahias",
+            "team": "GMT94 Yamaha",
+            "time": "—"
+          },
+          {
+            "pos": "12",
+            "name": "Valentin Debise",
+            "team": "ZXMOTO Evan Bros",
+            "time": "—"
+          },
+          {
+            "pos": "13",
+            "name": "Filippo Farioli",
+            "team": "VFT Racing Yamaha",
+            "time": "—"
+          }
+        ]
+      }
+    ]
+  },
+  "videos": [],
+  "standings": {
+    "updated": "2026-11-11T15:50:00Z",
+    "after": "dopo il Round di Jerez (classifica finale 2026)",
+    "drivers": [
+      {
+        "pos": 1,
+        "name": "Albert Arenas",
+        "team": "AS Blu Cru Yamaha",
+        "points": 389,
+        "champion": true
+      },
+      {
+        "pos": 2,
+        "name": "Valentin Debise",
+        "team": "ZXMOTO Evan Bros",
+        "points": 308
+      },
+      {
+        "pos": 3,
+        "name": "Jeremy Alcoba",
+        "team": "Kawasaki WorldSSP Team",
+        "points": 274
+      },
+      {
+        "pos": 4,
+        "name": "Can Öncü",
+        "team": "Pata Yamaha Ten Kate",
+        "points": 263
+      },
+      {
+        "pos": 5,
+        "name": "Tom Booth-Amos",
+        "team": "PTR Triumph Factory",
+        "points": 230
+      },
+      {
+        "pos": 6,
+        "name": "Jaume Masià",
+        "team": "Orelac Verdnatura Ducati",
+        "points": 229
+      },
+      {
+        "pos": 7,
+        "name": "Roberto García",
+        "team": "GMT94 Yamaha",
+        "points": 182
+      },
+      {
+        "pos": 8,
+        "name": "Philipp Öttl",
+        "team": "Feel Racing Ducati",
+        "points": 173
+      },
+      {
+        "pos": 9,
+        "name": "Matteo Ferrari",
+        "team": "WRP Racing Ducati",
+        "points": 173
+      },
+      {
+        "pos": 10,
+        "name": "Alessandro Zaccone",
+        "team": "Althea Racing Ducati",
+        "points": 152
+      },
+      {
+        "pos": 11,
+        "name": "Lucas Mahias",
+        "team": "GMT94 Yamaha",
+        "points": 149
+      },
+      {
+        "pos": 12,
+        "name": "Filippo Farioli",
+        "team": "VFT Racing Yamaha",
+        "points": 133
+      },
+      {
+        "pos": 13,
+        "name": "Aldi Satya Mahendra",
+        "team": "AS Blu Cru Yamaha",
+        "points": 132
+      },
+      {
+        "pos": 14,
+        "name": "Oli Bayliss",
+        "team": "PTR Triumph Factory",
+        "points": 94
+      },
+      {
+        "pos": 15,
+        "name": "Dominique Aegerter",
+        "team": "Kawasaki WorldSSP Team",
+        "points": 88
+      },
+      {
+        "pos": 16,
+        "name": "Mattia Casadei",
+        "team": "D34G Racing Ducati",
+        "points": 80
+      },
+      {
+        "pos": 17,
+        "name": "Simon Jespersen",
+        "team": "EAB Racing Ducati",
+        "points": 72
+      },
+      {
+        "pos": 18,
+        "name": "Federico Caricasulo",
+        "team": "ZXMOTO Evan Bros",
+        "points": 62
+      },
+      {
+        "pos": 19,
+        "name": "Josh Whatley",
+        "team": "Orelac Verdnatura Ducati",
+        "points": 40
+      },
+      {
+        "pos": 20,
+        "name": "Corentin Perolari",
+        "team": "Honda Racing WorldSSP",
+        "points": 35
+      },
+      {
+        "pos": 21,
+        "name": "Ondřej Vostatek",
+        "team": "Compos Racing Triumph",
+        "points": 31
+      },
+      {
+        "pos": 22,
+        "name": "Jorge Navarro",
+        "team": "PTR Triumph Factory",
+        "points": 18
+      },
+      {
+        "pos": 23,
+        "name": "Borja Jiménez",
+        "team": "WRP Racing Ducati",
+        "points": 14
+      },
+      {
+        "pos": 24,
+        "name": "Andrea Giombini",
+        "team": "Motozoo MV Agusta",
+        "points": 13
+      },
+      {
+        "pos": 25,
+        "name": "Leonardo Taccini",
+        "team": "Althea Racing Ducati",
+        "points": 12
+      },
+      {
+        "pos": 26,
+        "name": "Yuki Okamoto",
+        "team": "Pata Yamaha Ten Kate",
+        "points": 6
+      },
+      {
+        "pos": 27,
+        "name": "Raffaele De Rosa",
+        "team": "QJMOTOR Factory Racing",
+        "points": 5
+      },
+      {
+        "pos": 28,
+        "name": "Xavi Cardelús",
+        "team": "Cerba Yamaha",
+        "points": 2
+      },
+      {
+        "pos": 29,
+        "name": "Kevin Zannoni",
+        "team": "Broncos Racing Ducati",
+        "points": 1
+      },
+      {
+        "pos": 30,
+        "name": "Jacopo Cretaro",
+        "team": "Flembbo MV Agusta",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Oliver König",
+        "team": "Compos Racing Triumph",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Riccardo Rossi",
+        "team": "Renzi Corse Ducati",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Andreas Kofler",
+        "team": "D34G Racing Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Ana Carrasco",
+        "team": "Honda Racing WorldSSP",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Martim Jesus",
+        "team": "Rosa Competición Honda",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Marcos Ramírez",
+        "team": "QJMOTOR Factory Racing",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Dirk Geiger",
+        "team": "Team Apreco Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Jack Kennedy",
+        "team": "Honda Racing WorldSSP",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Kadir Erbay",
+        "team": "I+Dent Racing Ducati",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Héctor Garzó",
+        "team": "Renzi Corse Ducati",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Luke Stapleford",
+        "team": "Scars Racing Ducati",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Mathieu Gines",
+        "team": "GMT94 Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Samuel Di Sora",
+        "team": "Flembbo MV Agusta",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Bahattin Sofuoğlu",
+        "team": "QJMOTOR Factory Racing",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Julio García",
+        "team": "MRT Corse Kawasaki",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Gonçalo Capote",
+        "team": "Motos VR Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Eric Fernández",
+        "team": "Cerba Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 30,
+        "name": "Marco Tapia",
+        "team": "Renzi Corse Ducati",
+        "points": 0
+      }
+    ],
+    "constructors": [
+      {
+        "pos": 1,
+        "team": "Yamaha",
+        "points": 481,
+        "champion": true
+      },
+      {
+        "pos": 2,
+        "team": "Ducati",
+        "points": 362
+      },
+      {
+        "pos": 3,
+        "team": "ZXMOTO",
+        "points": 310
+      },
+      {
+        "pos": 4,
+        "team": "Triumph",
+        "points": 287
+      },
+      {
+        "pos": 5,
+        "team": "Kawasaki",
+        "points": 278
+      },
+      {
+        "pos": 6,
+        "team": "Honda",
+        "points": 35
+      },
+      {
+        "pos": 7,
+        "team": "MV Agusta",
+        "points": 13
+      },
+      {
+        "pos": 8,
+        "team": "QJMOTOR",
+        "points": 5
+      }
+    ]
+  },
+  "calendar": {
+    "season": 2027,
+    "updated": "2026-11-11T15:50:00Z",
+    "rounds": [
+      {
+        "round": 1,
+        "name": "Round d'Australia",
+        "circuit": "Phillip Island",
+        "date": "2027-02-21"
+      },
+      {
+        "round": 2,
+        "name": "Round del Portogallo",
+        "circuit": "Portimão",
+        "date": "2027-03-21"
+      },
+      {
+        "round": 3,
+        "name": "Round di Spagna",
+        "circuit": "Valencia (Ricardo Tormo)",
+        "date": "2027-04-04"
+      },
+      {
+        "round": 4,
+        "name": "Round d'Olanda",
+        "circuit": "Assen",
+        "date": "2027-04-18"
+      },
+      {
+        "round": 5,
+        "name": "Round di Aragón",
+        "circuit": "MotorLand Aragón",
+        "date": "2027-05-23"
+      },
+      {
+        "round": 6,
+        "name": "Round della Repubblica Ceca",
+        "circuit": "Most",
+        "date": "2027-06-06"
+      },
+      {
+        "round": 7,
+        "name": "Round dell'Emilia-Romagna",
+        "circuit": "Misano",
+        "date": "2027-06-20"
+      },
+      {
+        "round": 8,
+        "name": "Round del Regno Unito",
+        "circuit": "Donington Park",
+        "date": "2027-07-11"
+      },
+      {
+        "round": 9,
+        "name": "Round di Francia",
+        "circuit": "Magny-Cours",
+        "date": "2027-09-05"
+      },
+      {
+        "round": 10,
+        "name": "Round d'Italia",
+        "circuit": "Cremona",
+        "date": "2027-09-26"
+      },
+      {
+        "round": 11,
+        "name": "Round di Estoril",
+        "circuit": "Estoril",
+        "date": "2027-10-17"
+      },
+      {
+        "round": 12,
+        "name": "Round di Cina",
+        "circuit": "Shanghai",
+        "date": "2027-10-31"
+      }
+    ]
+  }
 }

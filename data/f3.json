@@ -1,11 +1,1052 @@
 {
- "news": [],
- "info": {
-  "updated": null
- },
- "weekend": null,
- "results": null,
- "videos": [],
- "standings": null,
- "calendar": null
+  "news": [
+    {
+      "id": "2026-10-19-gowda-ln4-fusion",
+      "title": "Dion Gowda debutta in F3 nel 2027 con il team di Lando Norris",
+      "summary": "Il diciottenne indiano, campione rookie della FRECA 2025, correrà con LN4 Fusion, la nuova squadra di Norris che rileva il posto di AIX Racing. Suoi compagni saranno James Egozi e Gabriel Gomez.",
+      "tag": "Mercato",
+      "source": "Autocar India",
+      "url": "https://www.autocarindia.com/motor-sports-news-amp/dion-gowda-stepping-up-to-f3-with-lando-norris-team-441084",
+      "published": "2026-10-19T10:00:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-10-14-al-azhari-hitech",
+      "title": "Al Azhari primo emiratino in F3: correrà con Hitech nel 2027",
+      "summary": "Il giovane dell'Alpine Academy affiancherà Kanato Le e Michael Shin nella formazione Hitech della prossima stagione, dopo il sesto posto nel GB3 2025.",
+      "tag": "Mercato",
+      "source": "The National",
+      "url": "https://www.thenationalnews.com/sport/2026/10/14/keanu-al-azhari-to-represent-uae-with-immense-pride-after-landing-f3-contract-for-2027/",
+      "published": "2026-10-14T07:48:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-10-09-wheldon-trident",
+      "title": "Sebastian Wheldon sale in F3 con Trident per il 2027",
+      "summary": "Il figlio di Dan Wheldon, vicecampione della FRECA 2026 e sostenuto da Andretti, è il nuovo acquisto della squadra italiana per la prossima stagione.",
+      "tag": "Mercato",
+      "source": "RACER",
+      "url": "https://racer.com/2026/10/09/wheldon-signs-with-trident-for-2027-formula-3-season",
+      "published": "2026-10-09T12:54:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-10-05-calendario-2027",
+      "title": "Svelato il calendario F3 2027: dieci round, debutti a Gedda, Montréal e Istanbul",
+      "summary": "La stagione partirà dal Bahrain a metà marzo e si chiuderà a Istanbul a inizio ottobre. Montréal è ancora soggetta a contratto e Istanbul all'omologazione FIA.",
+      "tag": "Calendario",
+      "source": "Formula1.com",
+      "url": "https://formula1.com/en/latest/article/fia-formula-2-and-fia-formula-3-announce-2027-calendars.7IToHJjbGez7YrJpMiihyH",
+      "published": "2026-10-05T17:30:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-09-13-ugochukwu-campione",
+      "title": "Ugochukwu campione F3 2026, primo statunitense nella storia della serie",
+      "summary": "Secondo nell'ultima Feature Race di Madrid vinta da Taponen, il pilota Campos chiude a 159 punti contro i 145 di Slater. Alla Campos anche il titolo a squadre.",
+      "tag": "Mondiale",
+      "source": "Formula1.com",
+      "url": "https://www.formula1.com/en/latest/article/f3-ugochukwu-is-crowned-2026-champion-as-taponen-earns-maiden-win.7ksMVdTT8EyqtHDCSlLNXW",
+      "published": "2026-09-13T11:24:00Z",
+      "top": false
+    }
+  ],
+  "info": {
+    "updated": "2026-11-11T15:58:00Z",
+    "nextGp": {
+      "name": "Round 1 · Bahrain 2027",
+      "circuit": "Bahrain International Circuit",
+      "date": "2027-03-13T23:00:00Z",
+      "dateOnly": true,
+      "label": "Feature Race",
+      "note": "Prima gara della stagione 2027: orari non ancora pubblicati."
+    }
+  },
+  "weekend": {
+    "gp": "Round 1 · Sakhir (Bahrain)",
+    "circuit": "Bahrain International Circuit",
+    "updated": "2026-11-11T15:50:00Z",
+    "tv8note": "In Italia la F3 va in onda su Sky Sport F1 e in streaming su NOW: non è prevista una diretta in chiaro.",
+    "sessions": []
+  },
+  "results": {
+    "gp": "Madrid (Spagna)",
+    "round": 9,
+    "updated": "2026-09-13T13:00:00Z",
+    "summary": "Finale di stagione al Madring con tre gare. Naël domina la Sprint davanti alle due Prema di Wharton e Powell, poi Clerot coglie il primo successo in F3 nella Feature 1, in cui il ritiro di Slater consegna il titolo a squadre alla Campos e porta Ugochukwu alla pari in classifica. Nella Feature 2 Taponen vince partendo dalla pole, mentre il secondo posto basta a Ugochukwu per laurearsi campione con 14 punti su Slater, solo ottavo.",
+    "podium": [
+      {
+        "name": "Tuukka Taponen"
+      },
+      {
+        "name": "Ugo Ugochukwu"
+      },
+      {
+        "name": "Pedro Clerot"
+      }
+    ],
+    "tabs": [
+      {
+        "label": "Feature 2",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Tuukka Taponen",
+            "team": "MP Motorsport",
+            "gap": "37:25.407",
+            "points": 26,
+            "note": "pole"
+          },
+          {
+            "pos": "2",
+            "name": "Ugo Ugochukwu",
+            "team": "Campos Racing",
+            "gap": "+1.398",
+            "points": 18,
+            "note": "campione 2026"
+          },
+          {
+            "pos": "3",
+            "name": "Pedro Clerot",
+            "team": "Rodin Motorsport",
+            "gap": "+2.302",
+            "points": 15
+          },
+          {
+            "pos": "4",
+            "name": "Taito Kato",
+            "team": "ART Grand Prix",
+            "gap": "+2.701",
+            "points": 12
+          },
+          {
+            "pos": "5",
+            "name": "Mattia Colnaghi",
+            "team": "MP Motorsport",
+            "gap": "+3.321",
+            "points": 10
+          },
+          {
+            "pos": "6",
+            "name": "Alessandro Giusti",
+            "team": "MP Motorsport",
+            "gap": "+3.827",
+            "points": 8
+          },
+          {
+            "pos": "7",
+            "name": "Enzo Deligny",
+            "team": "Van Amersfoort Racing",
+            "gap": "+4.311",
+            "points": 6
+          },
+          {
+            "pos": "8",
+            "name": "Freddie Slater",
+            "team": "Trident",
+            "gap": "+4.780",
+            "points": 4
+          },
+          {
+            "pos": "9",
+            "name": "Ernesto Rivera",
+            "team": "Campos Racing",
+            "gap": "+5.222",
+            "points": 2
+          },
+          {
+            "pos": "10",
+            "name": "Yevan David",
+            "team": "AIX Racing",
+            "gap": "+5.625",
+            "points": 1
+          },
+          {
+            "pos": "11",
+            "name": "Brando Badoer",
+            "team": "Rodin Motorsport",
+            "gap": "+6.065"
+          },
+          {
+            "pos": "12",
+            "name": "Théophile Naël",
+            "team": "Campos Racing",
+            "gap": "+6.480"
+          },
+          {
+            "pos": "13",
+            "name": "Alex Powell",
+            "team": "Prema Racing",
+            "gap": "+7.117"
+          },
+          {
+            "pos": "14",
+            "name": "Fionn McLaughlin",
+            "team": "Hitech",
+            "gap": "+7.766"
+          },
+          {
+            "pos": "15",
+            "name": "Jin Nakamura",
+            "team": "Hitech",
+            "gap": "+8.758"
+          },
+          {
+            "pos": "16",
+            "name": "James Wharton",
+            "team": "Prema Racing",
+            "gap": "+9.532"
+          },
+          {
+            "pos": "17",
+            "name": "Bruno del Pino",
+            "team": "Van Amersfoort Racing",
+            "gap": "+10.056"
+          },
+          {
+            "pos": "18",
+            "name": "Matteo De Palo",
+            "team": "Trident",
+            "gap": "+10.865"
+          },
+          {
+            "pos": "19",
+            "name": "Kanato Le",
+            "team": "ART Grand Prix",
+            "gap": "+11.849"
+          },
+          {
+            "pos": "20",
+            "name": "Nicola Lacorte",
+            "team": "DAMS Lucas Oil",
+            "gap": "+13.134"
+          },
+          {
+            "pos": "21",
+            "name": "Noah Strømsted",
+            "team": "Trident",
+            "gap": "+14.011"
+          },
+          {
+            "pos": "22",
+            "name": "Maciej Gładysz",
+            "team": "ART Grand Prix",
+            "gap": "+14.554"
+          },
+          {
+            "pos": "23",
+            "name": "Fernando Barrichello",
+            "team": "AIX Racing",
+            "gap": "+15.101"
+          },
+          {
+            "pos": "24",
+            "name": "Niccolò Maccagnani",
+            "team": "Rodin Motorsport",
+            "gap": "+15.619"
+          },
+          {
+            "pos": "25",
+            "name": "Michael Shin",
+            "team": "Hitech",
+            "gap": "+20.893"
+          },
+          {
+            "pos": "26",
+            "name": "José Garfias",
+            "team": "Prema Racing",
+            "gap": "+47.420"
+          },
+          {
+            "pos": "27",
+            "name": "Nandhavud Bhirombhakdi",
+            "team": "DAMS Lucas Oil",
+            "gap": "+1 giro"
+          },
+          {
+            "pos": "28",
+            "name": "Hiyu Yamakoshi",
+            "team": "Van Amersfoort Racing",
+            "gap": "+3 giri"
+          }
+        ]
+      },
+      {
+        "label": "Feature 1",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Pedro Clerot",
+            "team": "Rodin Motorsport",
+            "gap": "1:07:36.729",
+            "points": 25
+          },
+          {
+            "pos": "2",
+            "name": "Taito Kato",
+            "team": "ART Grand Prix",
+            "gap": "+1.341",
+            "points": 20,
+            "note": "pole"
+          },
+          {
+            "pos": "3",
+            "name": "Tuukka Taponen",
+            "team": "MP Motorsport",
+            "gap": "+2.866",
+            "points": 16,
+            "note": "giro veloce"
+          },
+          {
+            "pos": "4",
+            "name": "Ugo Ugochukwu",
+            "team": "Campos Racing",
+            "gap": "+4.633",
+            "points": 12
+          },
+          {
+            "pos": "5",
+            "name": "Jin Nakamura",
+            "team": "Hitech",
+            "gap": "+5.503",
+            "points": 10
+          },
+          {
+            "pos": "6",
+            "name": "Alessandro Giusti",
+            "team": "MP Motorsport",
+            "gap": "+6.295",
+            "points": 8
+          },
+          {
+            "pos": "7",
+            "name": "Alex Powell",
+            "team": "Prema Racing",
+            "gap": "+7.498",
+            "points": 6
+          },
+          {
+            "pos": "8",
+            "name": "Ernesto Rivera",
+            "team": "Campos Racing",
+            "gap": "+9.670",
+            "points": 4
+          },
+          {
+            "pos": "9",
+            "name": "Théophile Naël",
+            "team": "Campos Racing",
+            "gap": "+10.149",
+            "points": 2
+          },
+          {
+            "pos": "10",
+            "name": "James Wharton",
+            "team": "Prema Racing",
+            "gap": "+11.421",
+            "points": 1
+          },
+          {
+            "pos": "11",
+            "name": "Yevan David",
+            "team": "AIX Racing",
+            "gap": "+13.161"
+          },
+          {
+            "pos": "12",
+            "name": "Mattia Colnaghi",
+            "team": "MP Motorsport",
+            "gap": "+14.887"
+          },
+          {
+            "pos": "13",
+            "name": "Kanato Le",
+            "team": "ART Grand Prix",
+            "gap": "+17.842"
+          },
+          {
+            "pos": "14",
+            "name": "Matteo De Palo",
+            "team": "Trident",
+            "gap": "+19.630"
+          },
+          {
+            "pos": "15",
+            "name": "Hiyu Yamakoshi",
+            "team": "Van Amersfoort Racing",
+            "gap": "+20.229"
+          },
+          {
+            "pos": "16",
+            "name": "Noah Strømsted",
+            "team": "Trident",
+            "gap": "+20.986"
+          },
+          {
+            "pos": "17",
+            "name": "Brando Badoer",
+            "team": "Rodin Motorsport",
+            "gap": "+21.394"
+          },
+          {
+            "pos": "18",
+            "name": "Niccolò Maccagnani",
+            "team": "Rodin Motorsport",
+            "gap": "+21.816"
+          },
+          {
+            "pos": "19",
+            "name": "Nandhavud Bhirombhakdi",
+            "team": "DAMS Lucas Oil",
+            "gap": "+22.450"
+          },
+          {
+            "pos": "20",
+            "name": "Nicola Lacorte",
+            "team": "DAMS Lucas Oil",
+            "gap": "+33.747"
+          },
+          {
+            "pos": "RIT",
+            "name": "Freddie Slater",
+            "team": "Trident",
+            "gap": "incidente giro 9"
+          },
+          {
+            "pos": "RIT",
+            "name": "Fionn McLaughlin",
+            "team": "Hitech",
+            "gap": "giro 2"
+          },
+          {
+            "pos": "RIT",
+            "name": "Enzo Deligny",
+            "team": "Van Amersfoort Racing",
+            "gap": "incidente prima della ripartenza"
+          },
+          {
+            "pos": "RIT",
+            "name": "Bruno del Pino",
+            "team": "Van Amersfoort Racing",
+            "gap": "incidente prima della ripartenza"
+          },
+          {
+            "pos": "RIT",
+            "name": "Maciej Gładysz",
+            "team": "ART Grand Prix",
+            "gap": "incidente prima della ripartenza"
+          },
+          {
+            "pos": "RIT",
+            "name": "José Garfias",
+            "team": "Prema Racing",
+            "gap": "incidente prima della ripartenza"
+          },
+          {
+            "pos": "RIT",
+            "name": "Michael Shin",
+            "team": "Hitech",
+            "gap": "incidente prima della ripartenza"
+          },
+          {
+            "pos": "RIT",
+            "name": "Fernando Barrichello",
+            "team": "AIX Racing",
+            "gap": "incidente prima della ripartenza"
+          }
+        ]
+      },
+      {
+        "label": "Sprint",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Théophile Naël",
+            "team": "Campos Racing",
+            "gap": "—",
+            "points": 11,
+            "note": "giro veloce"
+          },
+          {
+            "pos": "2",
+            "name": "James Wharton",
+            "team": "Prema Racing",
+            "gap": "—",
+            "points": 9,
+            "note": "partito dalla pole (griglia invertita)"
+          },
+          {
+            "pos": "3",
+            "name": "Alex Powell",
+            "team": "Prema Racing",
+            "gap": "—",
+            "points": 8
+          },
+          {
+            "pos": "4",
+            "name": "Bruno del Pino",
+            "team": "Van Amersfoort Racing",
+            "gap": "—",
+            "points": 7
+          },
+          {
+            "pos": "5",
+            "name": "Alessandro Giusti",
+            "team": "MP Motorsport",
+            "gap": "—",
+            "points": 6
+          },
+          {
+            "pos": "6",
+            "name": "Ernesto Rivera",
+            "team": "Campos Racing",
+            "gap": "—",
+            "points": 5
+          },
+          {
+            "pos": "7",
+            "name": "Jin Nakamura",
+            "team": "Hitech",
+            "gap": "—",
+            "points": 4
+          },
+          {
+            "pos": "8",
+            "name": "Ugo Ugochukwu",
+            "team": "Campos Racing",
+            "gap": "—",
+            "points": 3
+          },
+          {
+            "pos": "9",
+            "name": "Taito Kato",
+            "team": "ART Grand Prix",
+            "gap": "—",
+            "points": 2
+          },
+          {
+            "pos": "10",
+            "name": "Tuukka Taponen",
+            "team": "MP Motorsport",
+            "gap": "—",
+            "points": 1
+          },
+          {
+            "pos": "15",
+            "name": "Enzo Deligny",
+            "team": "Van Amersfoort Racing",
+            "gap": "—",
+            "note": "10s di penalità"
+          }
+        ]
+      },
+      {
+        "label": "Qualifiche 1",
+        "kind": "quali",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Taito Kato",
+            "team": "ART Grand Prix",
+            "time": "1:50.535"
+          },
+          {
+            "pos": "2",
+            "name": "Pedro Clerot",
+            "team": "Rodin Motorsport",
+            "time": "+0.012"
+          },
+          {
+            "pos": "3",
+            "name": "Tuukka Taponen",
+            "team": "MP Motorsport",
+            "time": "—"
+          },
+          {
+            "pos": "4",
+            "name": "Ugo Ugochukwu",
+            "team": "Campos Racing",
+            "time": "—"
+          },
+          {
+            "pos": "5",
+            "name": "Enzo Deligny",
+            "team": "Van Amersfoort Racing",
+            "time": "—"
+          },
+          {
+            "pos": "6",
+            "name": "Jin Nakamura",
+            "team": "Hitech",
+            "time": "—"
+          },
+          {
+            "pos": "7",
+            "name": "Ernesto Rivera",
+            "team": "Campos Racing",
+            "time": "—"
+          },
+          {
+            "pos": "8",
+            "name": "Alessandro Giusti",
+            "team": "MP Motorsport",
+            "time": "—"
+          },
+          {
+            "pos": "9",
+            "name": "Bruno del Pino",
+            "team": "Van Amersfoort Racing",
+            "time": "—"
+          },
+          {
+            "pos": "10",
+            "name": "Alex Powell",
+            "team": "Prema Racing",
+            "time": "—"
+          },
+          {
+            "pos": "11",
+            "name": "Théophile Naël",
+            "team": "Campos Racing",
+            "time": "—"
+          },
+          {
+            "pos": "12",
+            "name": "James Wharton",
+            "team": "Prema Racing",
+            "time": "—"
+          },
+          {
+            "pos": "17",
+            "name": "Freddie Slater",
+            "team": "Trident",
+            "time": "—"
+          }
+        ]
+      },
+      {
+        "label": "Qualifiche 2",
+        "kind": "quali",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Tuukka Taponen",
+            "team": "MP Motorsport",
+            "time": "1:49.750"
+          },
+          {
+            "pos": "2",
+            "name": "Ugo Ugochukwu",
+            "team": "Campos Racing",
+            "time": "+0.021"
+          },
+          {
+            "pos": "3",
+            "name": "Pedro Clerot",
+            "team": "Rodin Motorsport",
+            "time": "+0.080",
+            "note": "incidente nell'ultimo giro"
+          },
+          {
+            "pos": "4",
+            "name": "Taito Kato",
+            "team": "ART Grand Prix",
+            "time": "—"
+          },
+          {
+            "pos": "5",
+            "name": "Mattia Colnaghi",
+            "team": "MP Motorsport",
+            "time": "—"
+          },
+          {
+            "pos": "6",
+            "name": "Enzo Deligny",
+            "team": "Van Amersfoort Racing",
+            "time": "—"
+          },
+          {
+            "pos": "7",
+            "name": "Alessandro Giusti",
+            "team": "MP Motorsport",
+            "time": "—"
+          },
+          {
+            "pos": "8",
+            "name": "Freddie Slater",
+            "team": "Trident",
+            "time": "—"
+          },
+          {
+            "pos": "9",
+            "name": "Yevan David",
+            "team": "AIX Racing",
+            "time": "—"
+          },
+          {
+            "pos": "10",
+            "name": "Ernesto Rivera",
+            "team": "Campos Racing",
+            "time": "—"
+          },
+          {
+            "pos": "11",
+            "name": "Brando Badoer",
+            "team": "Rodin Motorsport",
+            "time": "—"
+          },
+          {
+            "pos": "12",
+            "name": "Alex Powell",
+            "team": "Prema Racing",
+            "time": "—"
+          }
+        ]
+      }
+    ]
+  },
+  "videos": [],
+  "standings": {
+    "updated": "2026-09-13T13:00:00Z",
+    "after": "classifica finale 2026, dopo il round di Madrid",
+    "drivers": [
+      {
+        "pos": 1,
+        "name": "Ugo Ugochukwu",
+        "team": "Campos Racing",
+        "points": 159,
+        "champion": true
+      },
+      {
+        "pos": 2,
+        "name": "Freddie Slater",
+        "team": "Trident",
+        "points": 145
+      },
+      {
+        "pos": 3,
+        "name": "Tuukka Taponen",
+        "team": "MP Motorsport",
+        "points": 109
+      },
+      {
+        "pos": 4,
+        "name": "Taito Kato",
+        "team": "ART Grand Prix",
+        "points": 105
+      },
+      {
+        "pos": 5,
+        "name": "Théophile Naël",
+        "team": "Campos Racing",
+        "points": 88
+      },
+      {
+        "pos": 6,
+        "name": "Pedro Clerot",
+        "team": "Rodin Motorsport",
+        "points": 88
+      },
+      {
+        "pos": 7,
+        "name": "Ernesto Rivera",
+        "team": "Campos Racing",
+        "points": 87
+      },
+      {
+        "pos": 8,
+        "name": "Brando Badoer",
+        "team": "Rodin Motorsport",
+        "points": 71
+      },
+      {
+        "pos": 9,
+        "name": "Hiyu Yamakoshi",
+        "team": "Van Amersfoort Racing",
+        "points": 71
+      },
+      {
+        "pos": 10,
+        "name": "Noah Strømsted",
+        "team": "Trident",
+        "points": 65
+      },
+      {
+        "pos": 11,
+        "name": "Bruno del Pino",
+        "team": "Van Amersfoort Racing",
+        "points": 57
+      },
+      {
+        "pos": 12,
+        "name": "Maciej Gładysz",
+        "team": "ART Grand Prix",
+        "points": 54
+      },
+      {
+        "pos": 13,
+        "name": "Mattia Colnaghi",
+        "team": "MP Motorsport",
+        "points": 54
+      },
+      {
+        "pos": 14,
+        "name": "Jin Nakamura",
+        "team": "Hitech",
+        "points": 53
+      },
+      {
+        "pos": 15,
+        "name": "Alessandro Giusti",
+        "team": "MP Motorsport",
+        "points": 45
+      },
+      {
+        "pos": 16,
+        "name": "Enzo Deligny",
+        "team": "Van Amersfoort Racing",
+        "points": 40
+      },
+      {
+        "pos": 17,
+        "name": "James Wharton",
+        "team": "Prema Racing",
+        "points": 39
+      },
+      {
+        "pos": 18,
+        "name": "Yevan David",
+        "team": "AIX Racing",
+        "points": 35
+      },
+      {
+        "pos": 19,
+        "name": "Nicola Lacorte",
+        "team": "DAMS Lucas Oil",
+        "points": 33
+      },
+      {
+        "pos": 20,
+        "name": "Kanato Le",
+        "team": "ART Grand Prix",
+        "points": 30
+      },
+      {
+        "pos": 21,
+        "name": "Louis Sharp",
+        "team": "Prema Racing",
+        "points": 21
+      },
+      {
+        "pos": 22,
+        "name": "Gerrard Xie",
+        "team": "DAMS Lucas Oil",
+        "points": 20
+      },
+      {
+        "pos": 23,
+        "name": "Alex Powell",
+        "team": "Prema Racing",
+        "points": 14
+      },
+      {
+        "pos": 24,
+        "name": "Matteo De Palo",
+        "team": "Trident",
+        "points": 7
+      },
+      {
+        "pos": 25,
+        "name": "Brad Benavides",
+        "team": "AIX Racing",
+        "points": 6
+      },
+      {
+        "pos": 26,
+        "name": "Christian Ho",
+        "team": "Rodin Motorsport",
+        "points": 2
+      },
+      {
+        "pos": 27,
+        "name": "Fionn McLaughlin",
+        "team": "Hitech",
+        "points": 2
+      },
+      {
+        "pos": 28,
+        "name": "Fernando Barrichello",
+        "team": "AIX Racing",
+        "points": 2
+      },
+      {
+        "pos": 29,
+        "name": "José Garfias",
+        "team": "Prema Racing",
+        "points": 1
+      },
+      {
+        "pos": 30,
+        "name": "Nandhavud Bhirombhakdi",
+        "team": "DAMS Lucas Oil",
+        "points": 0
+      },
+      {
+        "pos": 31,
+        "name": "Ricardo Escotto",
+        "team": "AIX Racing",
+        "points": 0
+      },
+      {
+        "pos": 32,
+        "name": "Patrick Heuzenroeder",
+        "team": "Campos Racing",
+        "points": 0
+      },
+      {
+        "pos": 33,
+        "name": "Michael Shin",
+        "team": "Hitech",
+        "points": 0
+      },
+      {
+        "pos": 34,
+        "name": "Salim Hanna",
+        "team": "AIX Racing",
+        "points": 0
+      }
+    ],
+    "constructors": [
+      {
+        "pos": 1,
+        "team": "Campos Racing",
+        "points": 334,
+        "drivers": "Ugochukwu · Naël · Rivera",
+        "champion": true
+      },
+      {
+        "pos": 2,
+        "team": "Trident",
+        "points": 217,
+        "drivers": "Slater · Strømsted · De Palo"
+      },
+      {
+        "pos": 3,
+        "team": "MP Motorsport",
+        "points": 208,
+        "drivers": "Taponen · Colnaghi · Giusti"
+      },
+      {
+        "pos": 4,
+        "team": "ART Grand Prix",
+        "points": 189,
+        "drivers": "Kato · Gładysz · Le"
+      },
+      {
+        "pos": 5,
+        "team": "Van Amersfoort Racing",
+        "points": 168,
+        "drivers": "Yamakoshi · del Pino · Deligny"
+      },
+      {
+        "pos": 6,
+        "team": "Rodin Motorsport",
+        "points": 161,
+        "drivers": "Clerot · Badoer · Ho"
+      },
+      {
+        "pos": 7,
+        "team": "Prema Racing",
+        "points": 75,
+        "drivers": "Wharton · Sharp · Powell · Garfias"
+      },
+      {
+        "pos": 8,
+        "team": "Hitech",
+        "points": 55,
+        "drivers": "Nakamura · McLaughlin · Shin"
+      },
+      {
+        "pos": 9,
+        "team": "DAMS Lucas Oil",
+        "points": 53,
+        "drivers": "Lacorte · Xie · Bhirombhakdi"
+      },
+      {
+        "pos": 10,
+        "team": "AIX Racing",
+        "points": 43,
+        "drivers": "David · Benavides · Barrichello"
+      }
+    ]
+  },
+  "calendar": {
+    "season": 2027,
+    "updated": "2026-11-11T15:50:00Z",
+    "rounds": [
+      {
+        "round": 1,
+        "name": "Sakhir (Bahrain)",
+        "circuit": "Bahrain International Circuit",
+        "date": "2027-03-14"
+      },
+      {
+        "round": 2,
+        "name": "Gedda (Arabia Saudita)",
+        "circuit": "Jeddah Corniche Circuit",
+        "date": "2027-03-21"
+      },
+      {
+        "round": 3,
+        "name": "Melbourne (Australia)",
+        "circuit": "Albert Park",
+        "date": "2027-04-04"
+      },
+      {
+        "round": 4,
+        "name": "Montréal (Canada)",
+        "circuit": "Gilles Villeneuve",
+        "date": "2027-05-23"
+      },
+      {
+        "round": 5,
+        "name": "Monaco",
+        "circuit": "Monte-Carlo",
+        "date": "2027-06-06"
+      },
+      {
+        "round": 6,
+        "name": "Silverstone (Gran Bretagna)",
+        "circuit": "Silverstone",
+        "date": "2027-07-04"
+      },
+      {
+        "round": 7,
+        "name": "Spielberg (Austria)",
+        "circuit": "Red Bull Ring",
+        "date": "2027-07-11"
+      },
+      {
+        "round": 8,
+        "name": "Monza (Italia)",
+        "circuit": "Monza",
+        "date": "2027-09-05"
+      },
+      {
+        "round": 9,
+        "name": "Madrid (Spagna)",
+        "circuit": "Madring",
+        "date": "2027-09-12"
+      },
+      {
+        "round": 10,
+        "name": "Istanbul (Turchia)",
+        "circuit": "Istanbul Park",
+        "date": "2027-10-03"
+      }
+    ]
+  }
 }
