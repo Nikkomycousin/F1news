@@ -1,6 +1,36 @@
 {
   "news": [
     {
+      "id": "2026-11-10-ocon-haas-tribunale",
+      "title": "Ocon-Haas, il licenziamento rischia di finire in tribunale",
+      "summary": "Secondo Speed Week la separazione tra Ocon e la Haas, decisa dopo lo scontro con Komatsu in Messico, potrebbe sfociare in una disputa contrattuale. Ocon nega qualsiasi contatto fisico, mentre Wolff difende la scelta del team principal.",
+      "tag": "Team",
+      "source": "F1GrandPrix.it",
+      "url": "https://f1grandprix.motorionline.com/ocon-haas-licenziamento-battaglia-legale-wolff/",
+      "published": "2026-11-10T17:00:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-10-pirelli-wet-critiche",
+      "title": "Gomme da bagnato sotto accusa dopo Interlagos, Pirelli si difende",
+      "summary": "Hadjar, Verstappen e Sainz lamentano aquaplaning e una finestra di utilizzo troppo stretta per wet e intermedie; Norris teme il freddo di Las Vegas. Pirelli ribatte che intermedie e soft hanno funzionato come previsto.",
+      "tag": "Paddock",
+      "source": "F1GrandPrix.it",
+      "url": "https://f1grandprix.motorionline.com/f1-pirelli-le-gomme-wet-finiscono-sotto-accusa/",
+      "published": "2026-11-10T16:00:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-10-alonso-non-si-diverte",
+      "title": "Alonso ammette: «Non mi diverto più, faccio il mio lavoro»",
+      "summary": "Lo spagnolo è frustrato dal deficit della power unit Honda sui rettilinei, pur lodando la tenuta in curva dell'Aston Martin sul bagnato in Brasile. Il team, assicura, sa dove intervenire in vista del 2027.",
+      "tag": "Team",
+      "source": "F1GrandPrix.it",
+      "url": "https://f1grandprix.motorionline.com/alonso-non-si-diverte-piu-f1-problemi-honda/",
+      "published": "2026-11-10T15:00:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-10-aduo-terzo-periodo",
       "title": "ADUO, terzo periodo: la FIA non concede nuovi aiuti ai motoristi",
       "summary": "La revisione FIA sulle gare da Zandvoort ad Austin lascia invariate le concessioni: Red Bull Powertrains resta il riferimento, Mercedes ha un'omologazione extra, mentre Ferrari, Audi e Honda mantengono il pacchetto massimo. La prossima verifica riguarderà le prime sei gare del 2027.",
@@ -825,7 +855,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T01:50:00Z",
+    "updated": "2026-11-11T02:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
