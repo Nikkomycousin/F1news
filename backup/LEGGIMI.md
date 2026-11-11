@@ -8,6 +8,6 @@ Questo è un punto di ripristino completo del sito Motortime, fatto dopo il cont
 - `backup/istruzioni-aggiornamento-automatico.txt`: il testo completo dell'attività pianificata che aggiorna i dati 7 volte al giorno (alle 0:47, 8:47, 11:47, 14:47, 19:47, 21:47, 23:47 ora italiana). Serve per ricrearla se venisse cancellata.
 
 ## Come ripristinare
-- Il backup è salvato nel tag `backup-2026-11-11` e nel branch `backup-2026-11-11` del repository.
+- Il backup è salvato nel branch `backup-2026-11-11` del repository Motortime su GitHub (non va modificato: è il punto di ripristino). Una copia identica è nel file zip `motortime-backup-2026-11-11.zip`.
 - Per tornare a questa versione basta chiedere a Claude: "ripristina il backup Motortime dell'11 novembre". Claude riporterà `main` a questo stato (solo i file dell'app, oppure anche i dati, a scelta).
 - Se l'aggiornamento automatico sparisce: chiedere a Claude di ricrearlo con il testo di `istruzioni-aggiornamento-automatico.txt`, con orario `CRON_TZ=Europe/Rome 47 0,8,11,14,19,21,23 * * *`.
