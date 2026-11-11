@@ -1736,20 +1736,6 @@
       }
     ]
   },
-  "pages": {
-    "list": [
-      {
-        "name": "MemasGP",
-        "url": "https://www.facebook.com/memasgp/",
-        "color": "#e10600"
-      },
-      {
-        "name": "Hammer Time",
-        "url": "https://www.facebook.com/hammertimemagazine",
-        "color": "#7a5cff"
-      }
-    ]
-  },
   "h2h": {
     "after": "dopo il GP del Brasile",
     "updated": "2026-11-08T18:55:00Z",

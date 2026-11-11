@@ -32,7 +32,7 @@ Ogni file ha queste chiavi (tutte facoltative):
 - `videos`: lista di `{id, gp, session, title, youtube (ID di 11 caratteri), channel, published (ISO UTC)}`
 - `standings`: `{updated, after, drivers: [{pos, name, team, points, champion?}], constructors: [{pos, team, points, drivers, champion?}]}`
 - `calendar`: `{season, updated, rounds: [{round, name, circuit, date, winner?, team?, wins?, sprintWinner?, status?}]}`
-- solo in `f1.json`: `pages: {list: [{name, url, color}]}` (link alle pagine Facebook, da non toccare) e `h2h` (compagni di squadra)
+- solo in `f1.json`: `h2h` (compagni di squadra)
 
 Gli orari sono sempre in UTC nei file; l'app li mostra in ora italiana.
 
