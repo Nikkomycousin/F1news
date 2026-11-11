@@ -218,7 +218,7 @@
 
   .toast{position:fixed;left:50%;bottom:calc(var(--nav) + 16px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(16px);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:14.5px;font-weight:600;opacity:0;transition:.25s;z-index:60;max-width:90vw;text-align:center;pointer-events:none}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-  body[data-view=results] .hero,body[data-view=video] .hero,body[data-view=drivers] .hero,body[data-view=cal] .hero,body[data-view=sfida] .hero{display:none}
+  body[data-view=results] .hero,body[data-view=video] .hero,body[data-view=drivers] .hero,body[data-view=cal] .hero{display:none}
   body.notf1 .f1only{display:none}
   /* pagina Weekend (tutte le serie) */
   body.home #tabs,body.home #hero,body.home section[id^="v-"]:not(#v-home){display:none!important}
@@ -247,43 +247,6 @@
   .h2h .tr.l{justify-content:flex-end}
   .h2h .tr i{display:block;height:100%;border-radius:4px}
   .h2h .ex{font-size:12.5px;color:var(--faint);margin-top:6px}
-  /* sfida */
-  .dhead{background:var(--card);border-radius:20px;padding:16px;margin-bottom:12px;position:relative;overflow:hidden}
-  .dhead:before{content:"";position:absolute;inset:0 0 auto 0;height:3px;background:repeating-linear-gradient(90deg,var(--red) 0 14px,#f1eee8 14px 28px)}
-  .dhead h3{font-weight:900;font-style:italic;font-size:28px;line-height:1;margin:6px 0 6px}
-  .dhead p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5}
-  .score{display:flex;gap:10px;margin-top:14px}
-  .score div{flex:1;background:var(--card2);border-radius:14px;padding:10px 12px}
-  .score div.lead{background:linear-gradient(180deg,rgba(242,193,78,.22),var(--card2))}
-  .score small{display:block;font-size:13px;color:var(--muted);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .score b{font-size:30px;font-weight:900;font-style:italic;line-height:1.1}
-  .duel{background:var(--card);border-radius:18px;padding:10px;margin-bottom:8px}
-  .duel .tm{font-size:13px;color:var(--muted);font-weight:600;padding:0 4px 6px;display:flex;align-items:center;gap:6px}
-  .duel .tm i{width:9px;height:9px;border-radius:50%;display:inline-block}
-  .duel .opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-  .duel button{position:relative;border:2px solid transparent;background:var(--card2);color:var(--text);border-radius:14px;padding:12px 10px 10px;font:700 15.5px var(--f);text-align:left;cursor:pointer;min-height:58px}
-  .duel button small{display:block;font-size:12px;font-weight:600;color:var(--muted);margin-top:2px}
-  .duel button.mine{border-color:var(--red);background:var(--tint)}
-  .duel button.win{box-shadow:inset 0 0 0 2px var(--gold)}
-  .duel button:disabled{cursor:default}
-  .duel .rv{position:absolute;top:8px;right:8px;width:22px;height:22px;border-radius:50%;background:#8f7bff;color:#fff;font-size:11px;font-weight:700;display:flex;align-items:center;justify-content:center}
-  .duel .ok{position:absolute;bottom:8px;right:10px;font-size:15px}
-  .dact{display:flex;gap:8px;margin:14px 0 6px}
-  .dact button{flex:1;border:0;border-radius:999px;padding:13px;font:700 15px var(--f);cursor:pointer}
-  .dact .wa{background:#25d366;color:#08311a}
-  .dact .sec{background:var(--card2);color:var(--text);flex:0 0 auto;padding:13px 16px}
-  .dnote{font-size:13px;color:var(--muted);line-height:1.5;margin:6px 2px 14px}
-  .nameset{background:var(--card);border-radius:20px;padding:16px;margin-bottom:12px}
-  .nameset label{display:block;font-weight:700;margin-bottom:8px}
-  .nameset input{width:100%;font:600 17px var(--f);padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card2);color:var(--text)}
-  .nameset button{margin-top:10px;width:100%;border:0;border-radius:999px;padding:12px;font:700 15px var(--f);background:var(--red);color:#fff;cursor:pointer}
-  .hist{background:var(--card);border-radius:20px;overflow:hidden;margin-top:12px}
-  .hist .row{padding:10px 16px}
-  .promo{display:flex;align-items:center;gap:12px;background:var(--card);border-radius:18px;padding:12px 14px;margin:0 0 14px;cursor:pointer;border:1px solid var(--line)}
-  .promo .fl{font-size:24px}
-  .promo b{display:block;font-size:15.5px}
-  .promo small{color:var(--muted);font-size:13px}
-  .promo .go{margin-left:auto;color:var(--red2);font-weight:700;font-size:20px}
   footer{color:var(--faint);font-size:12.5px;text-align:center;margin-top:28px;line-height:1.5}
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
@@ -314,13 +277,11 @@
     <button data-v="results"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h13l-2.5 4L18 12H5"/></svg>Risultati</button>
     <button data-v="video"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5.5" width="18" height="13" rx="3"/><path d="M10.5 9.5v5l4-2.5z" fill="currentColor"/></svg>Video</button>
     <button data-v="drivers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M7 21h10"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 6h3a3 3 0 0 1-3 4M7 6H4a3 3 0 0 0 3 4"/></svg>Classifica</button>
-    <button data-v="sfida" class="f1only"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4"/><path d="M5 4h4v4H5zM9 8h4v4H9zM13 4h4v4h-4zM13 12h4v4h-4zM5 12h4v4H5zM17 8h2v4h-2" fill="currentColor" stroke="none"/><path d="M5 4h14v12H5"/></svg>Sfida</button>
     <button data-v="cal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Calendario</button>
   </nav>
 
   <section id="v-home"><div id="home"><div class="skel"></div><div class="skel"></div></div></section>
   <section id="v-news">
-    <div id="duelPromo"></div>
     <div class="pages" id="pages"></div>
     <nav class="chips" id="chips"></nav>
     <main id="list">
@@ -330,9 +291,6 @@
   <section id="v-sched" hidden><div id="sched"></div></section>
   <section id="v-results" hidden><div id="results"></div></section>
   <section id="v-video" hidden><div id="videos"></div></section>
-  <section id="v-sfida" hidden>
-    <div id="duel"></div>
-  </section>
   <section id="v-drivers" hidden>
     <div class="seg" id="segStand"><button data-s="drivers" class="on">Piloti</button><button data-s="teams">Scuderie</button><button data-s="h2h" class="f1only">Compagni</button></div>
     <div class="table" id="drivers"></div>
@@ -418,8 +376,8 @@ function checkSpoiler(){
   const sing=lbl.startsWith("la ");
   $("#spP").textContent=`${weekend.gp}: ${lbl} ${sing?"è iniziata":"sono iniziate"} alle ${hm(s.start)}.${tv} Se non ${sing?"l'hai vista":"le hai viste"}, nascondo le notizie che potrebbero rovinarti la sorpresa.`;
   $("#spModal").hidden=false;
-  $("#spYes").onclick=()=>{lsSet(sKey(s),"1");spoilerHidden=false;$("#spModal").hidden=true;render();renderStandings();renderResults();renderVideos();renderDuel();renderCal();renderH2H()};
-  $("#spNo").onclick=()=>{spoilerHidden=true;$("#spModal").hidden=true;render();renderStandings();renderResults();renderVideos();renderDuel();renderCal();renderH2H()};
+  $("#spYes").onclick=()=>{lsSet(sKey(s),"1");spoilerHidden=false;$("#spModal").hidden=true;render();renderStandings();renderResults();renderVideos();renderCal();renderH2H()};
+  $("#spNo").onclick=()=>{spoilerHidden=true;$("#spModal").hidden=true;render();renderStandings();renderResults();renderVideos();renderCal();renderH2H()};
 }
 function spoilAfter(iso){const sp=spoilerSession();return !!(spoilerHidden&&sp&&iso&&new Date(iso).getTime()>=new Date(sp.start).getTime()-30*60e3)}
 const ghost=(w)=>`<i class="ghost" style="width:${w}"></i>`;
@@ -433,7 +391,7 @@ function spoilerBanner(){
   const s=spoilerSession(); if(!spoilerHidden||!s) return "";
   return `<div class="sbanner"><span>🙈 Notizie ${esc(sLabel(s).replace(/^la /,"sulla ").replace(/^le /,"sulle "))} nascoste per evitare spoiler</span><button onclick="revealSpoiler()">Ora l'ho visto</button></div>`;
 }
-function revealSpoiler(){const s=spoilerSession();if(s)lsSet(sKey(s),"1");spoilerHidden=false;render();renderStandings();renderResults();renderVideos();renderDuel();renderCal();renderH2H()}
+function revealSpoiler(){const s=spoilerSession();if(s)lsSet(sKey(s),"1");spoilerHidden=false;render();renderStandings();renderResults();renderVideos();renderCal();renderH2H()}
 
 function render(){
   renderChips();
@@ -644,7 +602,7 @@ function renderCal(){
 }
 
 /* ---------- Compagni di squadra ---------- */
-let h2h=null, duels=null;
+let h2h=null;
 function renderH2H(){
   const el=$("#h2h"); if(!el) return;
   if(!h2h?.pairs?.length){el.innerHTML=`<div class="empty">Confronti non ancora disponibili.</div>`;return}
@@ -658,92 +616,6 @@ function renderH2H(){
       ${p.extra?`<div class="ex">${esc(p.extra)}</div>`:""}</div>`}).join("");
 }
 
-/* ---------- Sfida pronostici ---------- */
-const DKEY="f1duel";
-function dGet(){try{return JSON.parse(localStorage.getItem(DKEY))||{}}catch(e){return {}}}
-function dSet(o){try{localStorage.setItem(DKEY,JSON.stringify(o))}catch(e){}}
-const short=n=>String(n||"").split(" ").slice(-1)[0];
-function curRound(){const r=duels?.rounds||[];return r.find(x=>!x.outcome)||r[r.length-1]||null}
-function isLocked(rd){return rd&&rd.lock&&Date.now()>=new Date(rd.lock).getTime()}
-function scoreOf(picks){let pts=0,played=0;(duels?.rounds||[]).forEach(rd=>{if(!rd.outcome)return;const pk=picks?.[rd.round]||{};Object.keys(rd.outcome).forEach(id=>{const o=rd.outcome[id];if(o!=="a"&&o!=="b")return;if(pk[id]){played++;if(pk[id]===o)pts++}})});return {pts,played}}
-function duelSpoiler(rd){
-  if(!spoilerHidden||!rd?.outcome) return false;
-  const sp=spoilerSession(); return !!sp;
-}
-function renderDuelPromo(){
-  const el=$("#duelPromo"); if(!el) return;
-  const rd=curRound(); const st=dGet();
-  if(series!=="f1"||!rd||rd.outcome||isLocked(rd)){el.innerHTML="";return}
-  const mine=st.me?.picks?.[rd.round]||{}, done=rd.pairs.filter(p=>mine[p.id]).length;
-  if(done===rd.pairs.length){el.innerHTML="";return}
-  el.innerHTML=`<div class="promo" onclick="openDuel()"><span class="fl">🏁</span><div><b>Sfida ${esc(rd.gp)}</b><small>${done?`Hai scelto ${done} duelli su ${rd.pairs.length}`:"Scegli chi arriva davanti in ogni squadra"}</small></div><span class="go">›</span></div>`;
-}
-function openDuel(){showView("sfida");scrollTo({top:0})}
-function renderDuel(){
-  const el=$("#duel"); if(!el) return; renderDuelPromo();
-  if(!duels?.rounds?.length){el.innerHTML=`<div class="empty">La sfida si apre prima del prossimo GP.</div>`;return}
-  const st=dGet();
-  if(!st.me?.name){
-    el.innerHTML=`<div class="dhead"><h3>Sfida tra amici</h3><p>Prima di ogni GP scegli, squadra per squadra, quale dei due compagni arriva davanti in gara. Ogni scelta giusta vale un punto. Le scelte si chiudono all'inizio delle qualifiche.</p></div>
-    <form class="nameset" onsubmit="event.preventDefault();saveName()"><label for="dname">Come ti chiami?</label><input id="dname" maxlength="20" autocomplete="nickname" placeholder="Il tuo nome"><button type="submit">Inizia la sfida</button></form>`;
-    return;
-  }
-  const rd=curRound(), locked=isLocked(rd), hide=duelSpoiler(rd);
-  const mine=st.me.picks?.[rd.round]||{};
-  const rivals=Object.entries(st.rivals||{});
-  const players=[[st.me.name,st.me.picks,true],...rivals.map(([n,v])=>[n,v.picks,false])];
-  const sc=players.map(([n,p,me])=>({n,me,...scoreOf(p)}));
-  const top=Math.max(...sc.map(x=>x.pts));
-  const lockTxt=rd.lock?new Date(rd.lock).toLocaleString("it-IT",{weekday:"long",hour:"2-digit",minute:"2-digit",timeZone:"Europe/Rome"}):"";
-  let h=`<div class="dhead"><p>${rd.outcome?"Risultati della sfida":locked?"Scelte chiuse":"Sfida aperta"} · Round ${esc(rd.round)}</p><h3>${esc(rd.gp)}</h3>
-    <p>${rd.outcome?(hide?"Esiti nascosti per evitare spoiler.":"Ecco com'è andata."):locked?"Le qualifiche sono iniziate: si aspetta la gara.":`Scegli chi arriva davanti in gara. Puoi cambiare idea fino a ${esc(lockTxt)}.`}</p>
-    <div class="score">${sc.map(x=>`<div class="${!hide&&x.pts===top&&top>0?"lead":""}"><small>${esc(x.me?x.n+" (tu)":x.n)}</small><b>${hide?"–":x.pts}</b><small>${hide?"":"punti in stagione"}</small></div>`).join("")}${rivals.length?"":`<div><small>Il tuo sfidante</small><b>–</b><small>non ha ancora inviato</small></div>`}</div></div>`;
-  h+=rd.pairs.map(p=>{
-    const c=teamColor(p.team), o=hide?null:rd.outcome?.[p.id];
-    const btn=k=>{const nm=p[k];const rv=rivals.filter(([n,v])=>v.picks?.[rd.round]?.[p.id]===k).map(([n])=>n);
-      const showRv=locked||rd.outcome; // le scelte dello sfidante si vedono dopo la chiusura
-      return `<button data-p="${esc(p.id)}" data-k="${k}" class="${mine[p.id]===k?"mine":""} ${o===k?"win":""}" ${locked?"disabled":""}>${esc(short(nm))}<small>${esc(nm.split(" ").slice(0,-1).join(" ")||"")}</small>${showRv?rv.map(n=>`<span class="rv" title="${esc(n)}">${esc(n[0].toUpperCase())}</span>`).join(""):""}${o&&mine[p.id]===k?`<span class="ok">${o===k?"✅":"❌"}</span>`:""}</button>`};
-    return `<div class="duel"><div class="tm"><i style="background:${c}"></i>${esc(p.team)}${o==="x"?" · annullato":""}</div><div class="opts">${btn("a")}${btn("b")}</div></div>`;
-  }).join("");
-  const n=rd.pairs.filter(p=>mine[p.id]).length;
-  h+=`<div class="dact"><button class="wa" onclick="shareDuel()">Sfida un amico su WhatsApp</button></div>
-    <div class="dnote">${locked?"":`Hai scelto ${n} duelli su ${rd.pairs.length}. `}Quando invii, il tuo amico apre il link e le tue scelte entrano nella sua app; lui fa lo stesso con te. Le sue scelte compaiono qui (pallino viola) dopo la chiusura.</div>`;
-  const past=(duels.rounds||[]).filter(x=>x.outcome);
-  if(past.length&&!hide){
-    h+=`<div class="hist"><div class="sub">Gran Premi giocati</div>`+past.slice().reverse().map(x=>{
-      const pts=players.map(([nm,pk])=>{let v=0;const q=pk?.[x.round]||{};Object.keys(x.outcome).forEach(id=>{if(q[id]&&q[id]===x.outcome[id])v++});return `${esc(nm)} ${v}`}).join(" · ");
-      return `<div class="row"><div class="who"><b>${esc(x.gp)}</b><small>${pts}</small></div></div>`}).join("")+`</div>`;
-  }
-  h+=`<div class="dnote" style="text-align:center;margin-top:16px"><button class="btn" onclick="renameDuel()">Cambia nome</button></div>`;
-  el.innerHTML=h;
-  el.querySelectorAll(".duel button[data-p]").forEach(b=>b.onclick=()=>{
-    if(locked) return;
-    const s2=dGet(); s2.me.picks=s2.me.picks||{}; const r=s2.me.picks[rd.round]=s2.me.picks[rd.round]||{};
-    r[b.dataset.p]=b.dataset.k; dSet(s2); renderDuel();
-  });
-}
-function saveName(){const v=($("#dname").value||"").trim();if(!v){$("#dname").focus();return}const s2=dGet();s2.me={name:v,picks:s2.me?.picks||{}};dSet(s2);renderDuel()}
-function renameDuel(){const s2=dGet();delete s2.me.name;dSet(s2);renderDuel();setTimeout(()=>{const i=$("#dname");if(i)i.value=""},0)}
-function b64e(o){return btoa(unescape(encodeURIComponent(JSON.stringify(o)))).replace(/\+/g,"-").replace(/\//g,"_").replace(/=+$/,"")}
-function b64d(t){t=t.replace(/-/g,"+").replace(/_/g,"/");return JSON.parse(decodeURIComponent(escape(atob(t))))}
-async function shareDuel(){
-  const st=dGet(); if(!st.me?.name) return;
-  const url=location.origin+location.pathname+"#sfida="+b64e({n:st.me.name,p:st.me.picks||{}});
-  const rd=curRound();
-  const text=`🏁 I miei pronostici per la sfida ${rd?rd.gp:""} su Motortime. Apri il link per caricarli nella tua app: ${url}`;
-  if(navigator.share){try{await navigator.share({text});return}catch(e){if(e&&e.name==="AbortError")return}}
-  location.href="https://wa.me/?text="+encodeURIComponent(text);
-}
-function importDuel(){
-  const m=location.hash.match(/^#sfida=([\w-]+)/); if(!m) return false;
-  try{
-    const d=b64d(m[1]); const st=dGet();
-    if(st.me?.name&&st.me.name.toLowerCase()===String(d.n).toLowerCase()){toast("Questo è il tuo link: invialo al tuo sfidante")}
-    else{st.rivals=st.rivals||{}; st.rivals[d.n]={picks:d.p||{},at:new Date().toISOString()}; dSet(st); toast("✓ Pronostici di "+d.n+" caricati")}
-  }catch(e){toast("Link della sfida non valido")}
-  history.replaceState(null,"",location.pathname);
-  return true;
-}
 function segTo(k){
   document.querySelectorAll("#segStand button").forEach(x=>x.classList.toggle("on",x.dataset.s===k));
   ["drivers","teams","h2h"].forEach(id=>$("#"+id).hidden=id!==k);
@@ -752,10 +624,9 @@ function segTo(k){
 
 function showView(v){
   if(v==="teams") v="drivers";
-  if(v==="sfida"&&series!=="f1") v="news";
-  if(v==="sfida") renderDuel();
+  if(!["news","sched","results","video","drivers","cal"].includes(v)) v="news";
   document.querySelectorAll("#tabs button").forEach(b=>b.classList.toggle("on",b.dataset.v===v));
-  ["news","sched","results","video","drivers","cal","sfida"].forEach(k=>$("#v-"+k).hidden=k!==v);
+  ["news","sched","results","video","drivers","cal"].forEach(k=>$("#v-"+k).hidden=k!==v);
   document.body.dataset.view=v;
   try{localStorage.setItem("f1v",v)}catch(e){}
 }
@@ -903,10 +774,10 @@ async function load(fresh){
     lastJson[ser]=txt;
     const d=JSON.parse(txt);
     news=(d.news||[]).slice().sort((a,b)=>String(b.published).localeCompare(String(a.published)));
-    info=d.info||null; results=d.results||null; calendar=d.calendar||null; weekend=d.weekend||null; standings=d.standings||null; videos=Array.isArray(d.videos)?d.videos:[]; h2h=d.h2h||null; duels=d.duels||null;
+    info=d.info||null; results=d.results||null; calendar=d.calendar||null; weekend=d.weekend||null; standings=d.standings||null; videos=Array.isArray(d.videos)?d.videos:[]; h2h=d.h2h||null;
     const safe=(f,...a)=>{try{f(...a)}catch(e){console.error(f.name,e);lastErr=f.name+": "+e.message}};
     safe(renderInfo); safe(renderResults); safe(renderCal); safe(renderStandings); safe(renderSched); safe(renderVideos); safe(renderPages,series==="f1"?d.pages?.list:null);
-    safe(checkSpoiler); safe(render); safe(renderStandings); safe(renderResults); safe(renderH2H); safe(renderDuel); safe(renderCal); safe(renderVideos);
+    safe(checkSpoiler); safe(render); safe(renderStandings); safe(renderResults); safe(renderH2H); safe(renderCal); safe(renderVideos);
     return changed?"new":"same";
   }catch(e){
     if(my!==loadSeq) return;
@@ -918,8 +789,8 @@ async function load(fresh){
 }
 function switchSeries(v){
   series=(v==="all"||SER[v])?v:"all"; try{localStorage.setItem("f1series",series)}catch(e){}
-  news=[];info=null;results=null;calendar=null;weekend=null;standings=null;videos=[];h2h=null;duels=null;filter="Tutte";resMode=0;spoilerHidden=false;askedFor=null;
-  applySeriesUI(); if(series!=="f1"){segTo("drivers"); if(document.body.dataset.view==="sfida") showView("news")}
+  news=[];info=null;results=null;calendar=null;weekend=null;standings=null;videos=[];h2h=null;filter="Tutte";resMode=0;spoilerHidden=false;askedFor=null;
+  applySeriesUI(); if(series!=="f1"){segTo("drivers");}
   if(series==="all"){load(true);scrollTo({top:0});return}
   $("#list").innerHTML='<div class="skel"></div><div class="skel"></div><div class="skel"></div>';
   renderInfo();renderStandings();renderSched();renderPages();renderResults();renderCal();renderChips();renderVideos();
@@ -943,11 +814,10 @@ $("#refreshBtn").onclick=async()=>{
   applySeriesUI();
   renderStandings(); renderSched(); renderPages(); renderResults(); renderCal();
   document.querySelectorAll("#segStand button").forEach(b=>b.onclick=()=>segTo(b.dataset.s));
-  if(importDuel()){ if(series!=="f1"){series="f1";try{localStorage.setItem("f1series","f1")}catch(e){}applySeriesUI()} showView("sfida"); }
   load(true);
   setInterval(()=>{if(!document.hidden) load(false)},10*60e3);
   setInterval(()=>{if(series==="all"){renderHome();return}if(weekend){renderSched();checkSpoiler()}},60000);
-  document.addEventListener("visibilitychange",()=>{if(!document.hidden){askedFor=null;load(false);if(weekend&&series!=="all"){checkSpoiler();render();renderStandings();renderResults();renderVideos();renderDuel();renderCal();renderH2H()}}});
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden){askedFor=null;load(false);if(weekend&&series!=="all"){checkSpoiler();render();renderStandings();renderResults();renderVideos();renderCal();renderH2H()}}});
   if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
 </script>
