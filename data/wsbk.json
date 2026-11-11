@@ -1,11 +1,1009 @@
 {
- "news": [],
- "info": {
-  "updated": null
- },
- "weekend": null,
- "results": null,
- "videos": [],
- "standings": null,
- "calendar": null
+  "news": [
+    {
+      "id": "2026-11-09-arenas-go-eleven",
+      "title": "Albert Arenas sbarca in Superbike: sarà compagno di Baldassarri al Team Go Eleven",
+      "summary": "Il Team Go Eleven schiererà due moto nel 2027 e affianca a Lorenzo Baldassarri il due volte campione del mondo spagnolo. Pata diventa sponsor principale; il debutto della nuova coppia è previsto nei test di Valencia del 9-10 dicembre.",
+      "tag": "Mercato",
+      "source": "Moto.it",
+      "url": "https://www.moto.it/superbike/sbk-albert-arenas-in-sbk-con-pata-go-eleven.html",
+      "published": "2026-11-09T12:00:00Z",
+      "top": true
+    },
+    {
+      "id": "2026-10-28-freni-carboceramici-costi",
+      "title": "Dischi carboceramici obbligatori dal 2027: i costi dei freni triplicano per i team",
+      "summary": "Con i nuovi dischi Brembo in carbonio-ceramica la spesa annua per pilota passerebbe da circa 8.500 a 26.000 euro. I team privati, riuniti nell'associazione SITA, chiedono alla Commissione SBK misure di sostegno.",
+      "tag": "Team",
+      "source": "Moto.it",
+      "url": "https://www.moto.it/superbike/sbk-il-monofreno-brembo-incrementa-i-costi-e-ducati-aumenta-i-prezzi-tanto-lavoro-per-la-sita.html",
+      "published": "2026-10-28T12:00:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-10-27-ducati-tecnici-partenti",
+      "title": "Ducati perde tre tecnici: destinazione Honda, Yamaha e il British Superbike",
+      "summary": "Lasciano l'orbita Ducati l'elettronico Alessandro Castagnetti, Marco Carrieri, che entra nel team test HRC con Jonathan Rea, e Luca Minelli, atteso in Pata Maxus Yamaha.",
+      "tag": "Ducati",
+      "source": "Moto.it",
+      "url": "https://www.moto.it/superbike/sbk-ducati-perde-tre-tecnici-che-passano-a-honda-yamaha-e-bsb.html",
+      "published": "2026-10-27T12:00:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-10-22-test-jerez-michelin",
+      "title": "Test di Jerez, primo contatto con le Michelin: Sam Lowes il più veloce",
+      "summary": "Nel primo giorno di prove verso il 2027 il pilota del team Marc VDS ha preceduto Miguel Oliveira e Jonathan Rea. I team hanno iniziato a lavorare sulle gomme francesi che sostituiranno le Pirelli.",
+      "tag": "Mondiale",
+      "source": "Crash.net",
+      "url": "https://www.crash.net/wsbk/results/1107954/1/2026-jerez-worldsbk-test-results-day-one",
+      "published": "2026-10-22T19:25:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-10-18-bulega-tripletta-jerez",
+      "title": "Bulega saluta la Superbike con una tripletta e il record di Bayliss",
+      "summary": "Il campione 2026 ha vinto tutte e tre le gare dell'ultimo round a Jerez e ha raggiunto quota 52 successi nel Mondiale. Ducati ha chiuso la stagione imbattuta in tutte le 36 gare.",
+      "tag": "Gare",
+      "source": "Moto.it",
+      "url": "https://www.moto.it/superbike/a-jerez-nicolo-bulega-vince-anche-gara2-e-lascia-la-sbk-con-una-tripletta-e-un-record-di-vittorie-gallery.html",
+      "published": "2026-10-18T14:00:00Z",
+      "top": true
+    }
+  ],
+  "info": {
+    "updated": "2026-11-11T15:50:00Z",
+    "nextGp": {
+      "name": "Round d'Australia",
+      "circuit": "Phillip Island",
+      "date": "2027-02-20T23:00:00Z",
+      "dateOnly": true,
+      "label": "Gara 1",
+      "note": "Apertura del Mondiale 2027 (19-21 febbraio); test ufficiali a Phillip Island il 15-16 febbraio"
+    }
+  },
+  "weekend": {
+    "gp": "Round d'Australia",
+    "circuit": "Phillip Island Grand Prix Circuit",
+    "updated": "2026-11-11T15:45:00Z",
+    "tv8note": "Nel 2026 la Superbike è andata in onda su Sky Sport MotoGP e NOW, con le gare anche in chiaro su TV8 (in diretta o in differita a seconda del round); la copertura 2027 non è ancora stata comunicata.",
+    "sessions": []
+  },
+  "results": {
+    "gp": "Round di Jerez",
+    "round": 12,
+    "updated": "2026-11-11T15:45:00Z",
+    "summary": "Nicolò Bulega ha chiuso la sua avventura in Superbike con un tris a Jerez, vincendo Gara 1, Superpole Race e Gara 2 dopo aver firmato anche la Superpole. Con l'ultimo successo l'emiliano, campione 2026 e atteso in MotoGP, ha raggiunto le 52 vittorie di Troy Bayliss. In Gara 2 doppietta Aruba.it con Iker Lecuona secondo, mentre Sam Lowes ha strappato il terzo gradino del podio ad Álvaro Bautista all'ultimo giro. Ducati ha vinto tutte le 36 gare della stagione.",
+    "podium": [
+      {
+        "name": "Nicolò Bulega"
+      },
+      {
+        "name": "Iker Lecuona"
+      },
+      {
+        "name": "Sam Lowes"
+      }
+    ],
+    "tabs": [
+      {
+        "label": "Gara 1",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Nicolò Bulega",
+            "team": "Aruba.it Racing Ducati",
+            "gap": "Vincitore",
+            "points": 25
+          },
+          {
+            "pos": "2",
+            "name": "Sam Lowes",
+            "team": "Marc VDS Ducati",
+            "gap": "+1.657",
+            "points": 20
+          },
+          {
+            "pos": "3",
+            "name": "Iker Lecuona",
+            "team": "Aruba.it Racing Ducati",
+            "gap": "+2.853",
+            "points": 16
+          },
+          {
+            "pos": "4",
+            "name": "Álvaro Bautista",
+            "team": "Barni Spark Ducati",
+            "gap": "+5.328",
+            "points": 13
+          },
+          {
+            "pos": "5",
+            "name": "Yari Montella",
+            "team": "Barni Spark Ducati",
+            "gap": "+6.615",
+            "points": 11
+          },
+          {
+            "pos": "6",
+            "name": "Alberto Surra",
+            "team": "Motocorsa Ducati",
+            "gap": "+12.074",
+            "points": 10
+          },
+          {
+            "pos": "7",
+            "name": "Lorenzo Baldassarri",
+            "team": "Go Eleven Ducati",
+            "gap": "+12.192",
+            "points": 9
+          },
+          {
+            "pos": "8",
+            "name": "Alex Lowes",
+            "team": "Bimota by Kawasaki",
+            "gap": "+13.559",
+            "points": 8
+          },
+          {
+            "pos": "9",
+            "name": "Tommy Bridewell",
+            "team": "Superbike Advocates Ducati",
+            "gap": "+19.463",
+            "points": 7
+          },
+          {
+            "pos": "10",
+            "name": "Axel Bassani",
+            "team": "Bimota by Kawasaki",
+            "gap": "+21.863",
+            "points": 6
+          },
+          {
+            "pos": "11",
+            "name": "Jake Dixon",
+            "team": "Honda HRC",
+            "gap": "+23.970",
+            "points": 5
+          },
+          {
+            "pos": "12",
+            "name": "Loris Baz",
+            "team": "MGM Optical Express Ducati",
+            "gap": "+24.120",
+            "points": 4
+          },
+          {
+            "pos": "13",
+            "name": "Andrea Locatelli",
+            "team": "Pata Maxus Yamaha",
+            "gap": "+29.126",
+            "points": 3
+          },
+          {
+            "pos": "14",
+            "name": "Garrett Gerloff",
+            "team": "Kawasaki WorldSBK Team",
+            "gap": "+29.135",
+            "points": 2
+          },
+          {
+            "pos": "15",
+            "name": "Remy Gardner",
+            "team": "GYTR GRT Yamaha",
+            "gap": "+30.432",
+            "points": 1
+          },
+          {
+            "pos": "16",
+            "name": "Somkiat Chantra",
+            "team": "Honda HRC",
+            "gap": "+30.920",
+            "points": 0
+          },
+          {
+            "pos": "17",
+            "name": "Danilo Petrucci",
+            "team": "ROKiT BMW Motorrad",
+            "gap": "+31.457",
+            "points": 0
+          },
+          {
+            "pos": "18",
+            "name": "Stefano Manzi",
+            "team": "GYTR GRT Yamaha",
+            "gap": "+39.344",
+            "points": 0
+          },
+          {
+            "pos": "19",
+            "name": "Twan Smits",
+            "team": "Motoxracing Yamaha",
+            "gap": "+46.578",
+            "points": 0
+          },
+          {
+            "pos": "20",
+            "name": "Mattia Rato",
+            "team": "Motoxracing Yamaha",
+            "gap": "+46.612",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Xavi Vierge",
+            "team": "Pata Maxus Yamaha",
+            "gap": "—",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Miguel Oliveira",
+            "team": "ROKiT BMW Motorrad",
+            "gap": "—",
+            "points": 0
+          }
+        ]
+      },
+      {
+        "label": "Superpole Race",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Nicolò Bulega",
+            "team": "Aruba.it Racing Ducati",
+            "gap": "Vincitore",
+            "points": 12
+          },
+          {
+            "pos": "2",
+            "name": "Iker Lecuona",
+            "team": "Aruba.it Racing Ducati",
+            "gap": "+0.797",
+            "points": 9
+          },
+          {
+            "pos": "3",
+            "name": "Sam Lowes",
+            "team": "Marc VDS Ducati",
+            "gap": "+4.740",
+            "points": 7
+          },
+          {
+            "pos": "4",
+            "name": "Yari Montella",
+            "team": "Barni Spark Ducati",
+            "gap": "+8.350",
+            "points": 6
+          },
+          {
+            "pos": "5",
+            "name": "Alex Lowes",
+            "team": "Bimota by Kawasaki",
+            "gap": "+9.292",
+            "points": 5
+          },
+          {
+            "pos": "6",
+            "name": "Álvaro Bautista",
+            "team": "Barni Spark Ducati",
+            "gap": "+10.038",
+            "points": 4
+          },
+          {
+            "pos": "7",
+            "name": "Lorenzo Baldassarri",
+            "team": "Go Eleven Ducati",
+            "gap": "+10.738",
+            "points": 3
+          },
+          {
+            "pos": "8",
+            "name": "Alberto Surra",
+            "team": "Motocorsa Ducati",
+            "gap": "+15.039",
+            "points": 2
+          },
+          {
+            "pos": "9",
+            "name": "Xavi Vierge",
+            "team": "Pata Maxus Yamaha",
+            "gap": "+15.295",
+            "points": 1
+          },
+          {
+            "pos": "10",
+            "name": "Tommy Bridewell",
+            "team": "Superbike Advocates Ducati",
+            "gap": "+15.448",
+            "points": 0
+          },
+          {
+            "pos": "11",
+            "name": "Miguel Oliveira",
+            "team": "ROKiT BMW Motorrad",
+            "gap": "+15.714",
+            "points": 0
+          },
+          {
+            "pos": "12",
+            "name": "Axel Bassani",
+            "team": "Bimota by Kawasaki",
+            "gap": "+17.249",
+            "points": 0
+          },
+          {
+            "pos": "13",
+            "name": "Garrett Gerloff",
+            "team": "Kawasaki WorldSBK Team",
+            "gap": "+17.521",
+            "points": 0
+          },
+          {
+            "pos": "14",
+            "name": "Stefano Manzi",
+            "team": "GYTR GRT Yamaha",
+            "gap": "+20.937",
+            "points": 0
+          },
+          {
+            "pos": "15",
+            "name": "Jake Dixon",
+            "team": "Honda HRC",
+            "gap": "+21.158",
+            "points": 0
+          },
+          {
+            "pos": "16",
+            "name": "Loris Baz",
+            "team": "MGM Optical Express Ducati",
+            "gap": "+21.455",
+            "points": 0
+          },
+          {
+            "pos": "17",
+            "name": "Remy Gardner",
+            "team": "GYTR GRT Yamaha",
+            "gap": "+21.797",
+            "points": 0
+          },
+          {
+            "pos": "18",
+            "name": "Somkiat Chantra",
+            "team": "Honda HRC",
+            "gap": "+22.387",
+            "points": 0
+          },
+          {
+            "pos": "19",
+            "name": "Danilo Petrucci",
+            "team": "ROKiT BMW Motorrad",
+            "gap": "+23.890",
+            "points": 0
+          },
+          {
+            "pos": "20",
+            "name": "Andrea Locatelli",
+            "team": "Pata Maxus Yamaha",
+            "gap": "+27.651",
+            "points": 0
+          },
+          {
+            "pos": "21",
+            "name": "Twan Smits",
+            "team": "Motoxracing Yamaha",
+            "gap": "+27.976",
+            "points": 0
+          },
+          {
+            "pos": "RIT",
+            "name": "Mattia Rato",
+            "team": "Motoxracing Yamaha",
+            "gap": "—",
+            "points": 0
+          }
+        ]
+      },
+      {
+        "label": "Gara 2",
+        "kind": "race",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Nicolò Bulega",
+            "team": "Aruba.it Racing Ducati",
+            "gap": "Vincitore",
+            "points": 25,
+            "note": "52ª vittoria in carriera, eguagliato il record di Troy Bayliss"
+          },
+          {
+            "pos": "2",
+            "name": "Iker Lecuona",
+            "team": "Aruba.it Racing Ducati",
+            "gap": "+4.696",
+            "points": 20
+          },
+          {
+            "pos": "3",
+            "name": "Sam Lowes",
+            "team": "Marc VDS Ducati",
+            "gap": "+13.349",
+            "points": 16
+          },
+          {
+            "pos": "4",
+            "name": "Álvaro Bautista",
+            "team": "Barni Spark Ducati",
+            "gap": "+14.928",
+            "points": 13
+          },
+          {
+            "pos": "5",
+            "name": "Yari Montella",
+            "team": "Barni Spark Ducati",
+            "gap": "+17.192",
+            "points": 11
+          },
+          {
+            "pos": "6",
+            "name": "Lorenzo Baldassarri",
+            "team": "Go Eleven Ducati",
+            "gap": "+18.120",
+            "points": 10
+          },
+          {
+            "pos": "7",
+            "name": "Alex Lowes",
+            "team": "Bimota by Kawasaki",
+            "gap": "+22.596",
+            "points": 9
+          },
+          {
+            "pos": "8",
+            "name": "Axel Bassani",
+            "team": "Bimota by Kawasaki",
+            "gap": "+25.957",
+            "points": 8
+          },
+          {
+            "pos": "9",
+            "name": "Alberto Surra",
+            "team": "Motocorsa Ducati",
+            "gap": "+27.142",
+            "points": 7
+          },
+          {
+            "pos": "10",
+            "name": "Miguel Oliveira",
+            "team": "ROKiT BMW Motorrad",
+            "gap": "+28.002",
+            "points": 6
+          },
+          {
+            "pos": "11",
+            "name": "Tommy Bridewell",
+            "team": "Superbike Advocates Ducati",
+            "gap": "+29.051",
+            "points": 5
+          },
+          {
+            "pos": "12",
+            "name": "Xavi Vierge",
+            "team": "Pata Maxus Yamaha",
+            "gap": "+30.093",
+            "points": 4
+          },
+          {
+            "pos": "13",
+            "name": "Garrett Gerloff",
+            "team": "Kawasaki WorldSBK Team",
+            "gap": "+32.739",
+            "points": 3
+          },
+          {
+            "pos": "14",
+            "name": "Somkiat Chantra",
+            "team": "Honda HRC",
+            "gap": "+35.099",
+            "points": 2
+          },
+          {
+            "pos": "15",
+            "name": "Jake Dixon",
+            "team": "Honda HRC",
+            "gap": "+36.006",
+            "points": 1
+          },
+          {
+            "pos": "16",
+            "name": "Andrea Locatelli",
+            "team": "Pata Maxus Yamaha",
+            "gap": "+37.624",
+            "points": 0
+          },
+          {
+            "pos": "17",
+            "name": "Stefano Manzi",
+            "team": "GYTR GRT Yamaha",
+            "gap": "+38.753",
+            "points": 0
+          },
+          {
+            "pos": "18",
+            "name": "Loris Baz",
+            "team": "MGM Optical Express Ducati",
+            "gap": "+40.667",
+            "points": 0
+          },
+          {
+            "pos": "19",
+            "name": "Remy Gardner",
+            "team": "GYTR GRT Yamaha",
+            "gap": "+40.845",
+            "points": 0
+          },
+          {
+            "pos": "20",
+            "name": "Danilo Petrucci",
+            "team": "ROKiT BMW Motorrad",
+            "gap": "+47.825",
+            "points": 0
+          },
+          {
+            "pos": "21",
+            "name": "Twan Smits",
+            "team": "Motoxracing Yamaha",
+            "gap": "+51.601",
+            "points": 0
+          },
+          {
+            "pos": "22",
+            "name": "Mattia Rato",
+            "team": "Motoxracing Yamaha",
+            "gap": "+1:17.039",
+            "points": 0
+          }
+        ]
+      },
+      {
+        "label": "Superpole",
+        "kind": "quali",
+        "rows": [
+          {
+            "pos": "1",
+            "name": "Nicolò Bulega",
+            "team": "Aruba.it Racing Ducati",
+            "time": "1:36.643"
+          },
+          {
+            "pos": "2",
+            "name": "Sam Lowes",
+            "team": "Marc VDS Ducati",
+            "time": "1:36.960"
+          },
+          {
+            "pos": "3",
+            "name": "Iker Lecuona",
+            "team": "Aruba.it Racing Ducati",
+            "time": "1:37.098"
+          },
+          {
+            "pos": "4",
+            "name": "Yari Montella",
+            "team": "Barni Spark Ducati",
+            "time": "1:37.381"
+          },
+          {
+            "pos": "5",
+            "name": "Alex Lowes",
+            "team": "Bimota by Kawasaki",
+            "time": "1:37.443"
+          },
+          {
+            "pos": "6",
+            "name": "Lorenzo Baldassarri",
+            "team": "Go Eleven Ducati",
+            "time": "1:37.639"
+          },
+          {
+            "pos": "7",
+            "name": "Tommy Bridewell",
+            "team": "Superbike Advocates Ducati",
+            "time": "1:37.753"
+          },
+          {
+            "pos": "8",
+            "name": "Alberto Surra",
+            "team": "Motocorsa Ducati",
+            "time": "1:37.759"
+          },
+          {
+            "pos": "9",
+            "name": "Álvaro Bautista",
+            "team": "Barni Spark Ducati",
+            "time": "1:38.115"
+          },
+          {
+            "pos": "10",
+            "name": "Axel Bassani",
+            "team": "Bimota by Kawasaki",
+            "time": "1:38.178"
+          },
+          {
+            "pos": "11",
+            "name": "Xavi Vierge",
+            "team": "Pata Maxus Yamaha",
+            "time": "1:38.193"
+          },
+          {
+            "pos": "12",
+            "name": "Jake Dixon",
+            "team": "Honda HRC",
+            "time": "1:38.209"
+          },
+          {
+            "pos": "13",
+            "name": "Miguel Oliveira",
+            "team": "ROKiT BMW Motorrad",
+            "time": "1:38.312"
+          },
+          {
+            "pos": "14",
+            "name": "Loris Baz",
+            "team": "MGM Optical Express Ducati",
+            "time": "1:38.381"
+          },
+          {
+            "pos": "15",
+            "name": "Danilo Petrucci",
+            "team": "ROKiT BMW Motorrad",
+            "time": "1:38.392"
+          },
+          {
+            "pos": "16",
+            "name": "Garrett Gerloff",
+            "team": "Kawasaki WorldSBK Team",
+            "time": "1:38.416"
+          },
+          {
+            "pos": "17",
+            "name": "Remy Gardner",
+            "team": "GYTR GRT Yamaha",
+            "time": "1:38.542"
+          },
+          {
+            "pos": "18",
+            "name": "Somkiat Chantra",
+            "team": "Honda HRC",
+            "time": "1:38.606"
+          },
+          {
+            "pos": "19",
+            "name": "Stefano Manzi",
+            "team": "GYTR GRT Yamaha",
+            "time": "1:38.822"
+          },
+          {
+            "pos": "20",
+            "name": "Andrea Locatelli",
+            "team": "Pata Maxus Yamaha",
+            "time": "1:38.826"
+          },
+          {
+            "pos": "21",
+            "name": "Twan Smits",
+            "team": "Motoxracing Yamaha",
+            "time": "1:39.374"
+          },
+          {
+            "pos": "22",
+            "name": "Mattia Rato",
+            "team": "Motoxracing Yamaha",
+            "time": "1:39.563"
+          }
+        ]
+      }
+    ]
+  },
+  "videos": [],
+  "standings": {
+    "updated": "2026-11-11T15:45:00Z",
+    "after": "dopo il Round di Jerez (classifica finale 2026)",
+    "drivers": [
+      {
+        "pos": 1,
+        "name": "Nicolò Bulega",
+        "team": "Aruba.it Racing Ducati",
+        "points": 726,
+        "champion": true
+      },
+      {
+        "pos": 2,
+        "name": "Iker Lecuona",
+        "team": "Aruba.it Racing Ducati",
+        "points": 563
+      },
+      {
+        "pos": 3,
+        "name": "Yari Montella",
+        "team": "Barni Spark Ducati",
+        "points": 318
+      },
+      {
+        "pos": 4,
+        "name": "Sam Lowes",
+        "team": "Marc VDS Ducati",
+        "points": 268
+      },
+      {
+        "pos": 5,
+        "name": "Alex Lowes",
+        "team": "Bimota by Kawasaki",
+        "points": 259
+      },
+      {
+        "pos": 6,
+        "name": "Lorenzo Baldassarri",
+        "team": "Go Eleven Ducati",
+        "points": 236
+      },
+      {
+        "pos": 7,
+        "name": "Axel Bassani",
+        "team": "Bimota by Kawasaki",
+        "points": 222
+      },
+      {
+        "pos": 8,
+        "name": "Alberto Surra",
+        "team": "Motocorsa Ducati",
+        "points": 198
+      },
+      {
+        "pos": 9,
+        "name": "Álvaro Bautista",
+        "team": "Barni Spark Ducati",
+        "points": 167
+      },
+      {
+        "pos": 10,
+        "name": "Garrett Gerloff",
+        "team": "Kawasaki WorldSBK Team",
+        "points": 165
+      },
+      {
+        "pos": 11,
+        "name": "Miguel Oliveira",
+        "team": "ROKiT BMW Motorrad",
+        "points": 142
+      },
+      {
+        "pos": 12,
+        "name": "Andrea Locatelli",
+        "team": "Pata Maxus Yamaha",
+        "points": 121
+      },
+      {
+        "pos": 13,
+        "name": "Xavi Vierge",
+        "team": "Pata Maxus Yamaha",
+        "points": 113
+      },
+      {
+        "pos": 14,
+        "name": "Tommy Bridewell",
+        "team": "Superbike Advocates Ducati",
+        "points": 83
+      },
+      {
+        "pos": 15,
+        "name": "Tarran Mackenzie",
+        "team": "MGM Optical Express Ducati",
+        "points": 81
+      },
+      {
+        "pos": 16,
+        "name": "Remy Gardner",
+        "team": "GYTR GRT Yamaha",
+        "points": 63
+      },
+      {
+        "pos": 17,
+        "name": "Danilo Petrucci",
+        "team": "ROKiT BMW Motorrad",
+        "points": 61
+      },
+      {
+        "pos": 18,
+        "name": "Stefano Manzi",
+        "team": "GYTR GRT Yamaha",
+        "points": 46
+      },
+      {
+        "pos": 19,
+        "name": "Jake Dixon",
+        "team": "Honda HRC",
+        "points": 41
+      },
+      {
+        "pos": 20,
+        "name": "Michael van der Mark",
+        "team": "ROKiT BMW Motorrad",
+        "points": 23
+      },
+      {
+        "pos": 20,
+        "name": "Somkiat Chantra",
+        "team": "Honda HRC",
+        "points": 23
+      },
+      {
+        "pos": 22,
+        "name": "Tetsuta Nagashima",
+        "team": "Honda HRC",
+        "points": 7
+      },
+      {
+        "pos": 22,
+        "name": "Loris Baz",
+        "team": "MGM Optical Express Ducati",
+        "points": 7
+      },
+      {
+        "pos": 24,
+        "name": "Jonathan Rea",
+        "team": "Honda HRC",
+        "points": 6
+      },
+      {
+        "pos": 25,
+        "name": "Bahattin Sofuoğlu",
+        "team": "Motoxracing Yamaha",
+        "points": 4
+      },
+      {
+        "pos": 26,
+        "name": "Mattia Rato",
+        "team": "Motoxracing Yamaha",
+        "points": 3
+      },
+      {
+        "pos": 27,
+        "name": "Ryan Vickers",
+        "team": "Honda HRC",
+        "points": 1
+      },
+      {
+        "pos": 28,
+        "name": "Twan Smits",
+        "team": "Team Apreco Yamaha",
+        "points": 0
+      },
+      {
+        "pos": 28,
+        "name": "Yuki Kunii",
+        "team": "Honda HRC",
+        "points": 0
+      },
+      {
+        "pos": 28,
+        "name": "Hannes Soomer",
+        "team": "ROKiT BMW Motorrad",
+        "points": 0
+      }
+    ],
+    "constructors": [
+      {
+        "pos": 1,
+        "team": "Ducati",
+        "points": 744,
+        "champion": true
+      },
+      {
+        "pos": 2,
+        "team": "Bimota",
+        "points": 316
+      },
+      {
+        "pos": 3,
+        "team": "BMW",
+        "points": 184
+      },
+      {
+        "pos": 4,
+        "team": "Yamaha",
+        "points": 183
+      },
+      {
+        "pos": 5,
+        "team": "Kawasaki",
+        "points": 165
+      },
+      {
+        "pos": 6,
+        "team": "Honda",
+        "points": 64
+      }
+    ]
+  },
+  "calendar": {
+    "season": 2027,
+    "updated": "2026-11-11T15:45:00Z",
+    "rounds": [
+      {
+        "round": 1,
+        "name": "Round d'Australia",
+        "circuit": "Phillip Island",
+        "date": "2027-02-21"
+      },
+      {
+        "round": 2,
+        "name": "Round del Portogallo",
+        "circuit": "Portimão",
+        "date": "2027-03-21"
+      },
+      {
+        "round": 3,
+        "name": "Round di Spagna",
+        "circuit": "Valencia (Ricardo Tormo)",
+        "date": "2027-04-04"
+      },
+      {
+        "round": 4,
+        "name": "Round d'Olanda",
+        "circuit": "Assen",
+        "date": "2027-04-18"
+      },
+      {
+        "round": 5,
+        "name": "Round di Aragón",
+        "circuit": "MotorLand Aragón",
+        "date": "2027-05-23"
+      },
+      {
+        "round": 6,
+        "name": "Round della Repubblica Ceca",
+        "circuit": "Most",
+        "date": "2027-06-06"
+      },
+      {
+        "round": 7,
+        "name": "Round dell'Emilia-Romagna",
+        "circuit": "Misano",
+        "date": "2027-06-20"
+      },
+      {
+        "round": 8,
+        "name": "Round del Regno Unito",
+        "circuit": "Donington Park",
+        "date": "2027-07-11"
+      },
+      {
+        "round": 9,
+        "name": "Round di Francia",
+        "circuit": "Magny-Cours",
+        "date": "2027-09-05"
+      },
+      {
+        "round": 10,
+        "name": "Round d'Italia",
+        "circuit": "Cremona",
+        "date": "2027-09-26"
+      },
+      {
+        "round": 11,
+        "name": "Round di Estoril",
+        "circuit": "Estoril",
+        "date": "2027-10-17"
+      },
+      {
+        "round": 12,
+        "name": "Round di Cina",
+        "circuit": "Shanghai",
+        "date": "2027-10-31"
+      }
+    ]
+  }
 }
