@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-10-documentario-dieci-anni",
+      "title": "Dieci anni di F2 in un documentario con Leclerc, Norris e Antonelli",
+      "summary": "La categoria celebra la sua decima stagione con un documentario dietro le quinte, in uscita l'11 novembre, che raccoglie le voci di nove piloti oggi in F1 e di dirigenti come Wolff e Domenicali.",
+      "tag": "Mondiale",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/star-studded-documentary-to-celebrate-decade-of-formula-2",
+      "published": "2026-11-10T14:34:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-10-finale-qatar-abu-dhabi-confermato",
       "title": "Via libera al finale: la F2 chiuderà la stagione a Lusail e Yas Marina",
       "summary": "Con la conferma ufficiale di Qatar e Abu Dhabi da parte della FIA, anche gli ultimi due round della F2 si disputeranno come previsto. La sfida per il titolo tra Câmara e Dunne si deciderà quindi in pista nei due weekend di fine novembre e inizio dicembre.",
@@ -115,7 +125,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T06:55:00Z",
+    "updated": "2026-11-11T07:55:00Z",
     "nextGp": {
       "name": "Round 13 · Qatar",
       "circuit": "Lusail",

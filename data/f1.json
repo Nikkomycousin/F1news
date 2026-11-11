@@ -41,6 +41,16 @@
       "top": false
     },
     {
+      "id": "2026-11-10-verstappen-chiede-indagine",
+      "title": "Verstappen chiede a Red Bull di indagare: «In Brasile qualcosa non andava»",
+      "summary": "Secondo a Interlagos partendo dal fondo, Verstappen lamenta un sovrasterzo anomalo con le gomme slick nelle curve veloci e vuole capire se sulla vettura si sia rotto qualcosa o ci sia stata una perdita aerodinamica.",
+      "tag": "Red Bull",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/max-verstappen-calls-for-red-bull-investigation-there-is-something-wrong",
+      "published": "2026-11-10T13:20:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-10-fia-conferma-qatar-abu-dhabi",
       "title": "Ufficiale: la FIA conferma Qatar e Abu Dhabi, Imola esce di scena",
       "summary": "Ben Sulayem ha annunciato sui canali FIA che il conto alla rovescia per Lusail e Yas Marina è iniziato: il Mondiale si chiuderà in Medio Oriente come previsto. Tramonta così l'ipotesi di Imola come riserva per il 6 dicembre.",
@@ -883,7 +893,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T06:55:00Z",
+    "updated": "2026-11-11T07:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
