@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-09-martin-polso-qatar-portimao",
+      "title": "Martín: «Ho quasi saltato il Qatar per il polso», ma conta di recuperare per Portimão",
+      "summary": "Con il polso destro fratturato nella Sprint australiana, Martín ha rischiato di non correre a Lusail, dove ha chiuso terzo nella Sprint e settimo in gara. Il dolore resta forte in frenata, ma lo spagnolo si aspetta di stare meglio in Portogallo.",
+      "tag": "Aprilia",
+      "source": "grandepremio.com",
+      "url": "https://grandepremio.com/en/motogp/motogp-today-marquez-closes-on-2026-title-as-martin-reveals-qatar-ordeal-and-portugal-hopes/",
+      "published": "2026-11-09T22:15:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-portimao-match-point-marquez",
       "title": "A Portimão Márquez può chiudere i conti: basta vincere la Sprint per il decimo titolo",
       "summary": "Con 60 punti su Martín e 74 su Bezzecchi, al pilota Ducati serve il successo nella Sprint del sabato per laurearsi campione e superare i nove titoli di Valentino Rossi. Il verdetto è atteso nel penultimo round in Portogallo.",
@@ -52,7 +62,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T15:50:00Z",
+    "updated": "2026-11-11T18:58:00Z",
     "nextGp": {
       "name": "GP del Portogallo",
       "circuit": "Autódromo Internacional do Algarve, Portimão",
