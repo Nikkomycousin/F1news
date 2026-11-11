@@ -1,7 +1,7 @@
 {
-  "name": "F1 News",
-  "short_name": "F1 News",
-  "description": "Notizie, orari, risultati e classifiche di Formula 1, Formula 2 e WEC Hypercar",
+  "name": "Motortime",
+  "short_name": "Motortime",
+  "description": "Orari italiani, TV, risultati e classifiche di Formula 1, F2, F3, MotoGP, Moto2, Moto3, Superbike e WEC",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
@@ -9,8 +9,21 @@
   "theme_color": "#1d1f23",
   "lang": "it",
   "icons": [
-    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
-    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"},
-    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ]
 }

@@ -4,13 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="F1 News">
+<meta name="apple-mobile-web-app-title" content="Motortime">
 <meta name="theme-color" content="#1d1f23">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
-<title>F1 News</title>
+<title>Motortime</title>
+<meta name="description" content="Orari italiani, canali TV, risultati, classifiche e notizie di Formula 1, F2, F3, MotoGP, Moto2, Moto3, Superbike e WEC.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
 <style>
@@ -22,8 +23,6 @@
     --f:"Titillium Web",system-ui,sans-serif;
     --nav:64px;
   }
-  body.f2{--red:#2f74ff;--red2:#7aa6ff;--tint:rgba(47,116,255,.16)}
-  body.wec{--red:#13b07b;--red2:#5fd9ad;--tint:rgba(19,176,123,.16)}
   *{box-sizing:border-box}
   html,body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
   body{padding:0 env(safe-area-inset-right) calc(var(--nav) + env(safe-area-inset-bottom) + 8px) env(safe-area-inset-left)}
@@ -42,11 +41,16 @@
   .serie .logo i{font-style:normal;font-weight:600;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:50%;width:24px;height:24px;display:inline-flex;align-items:center;justify-content:center;align-self:center;margin-left:2px}
   .serie select{position:absolute;width:1px;height:1px;opacity:0;pointer-events:none}
   .serie{cursor:default}
+  .logo{gap:0}
+  .logo small{margin-left:7px;font-style:normal;font-weight:600;font-size:12px;color:var(--muted);letter-spacing:.5px;text-transform:uppercase}
+  .grpbar{flex-basis:100%;display:flex;gap:4px;background:var(--card);border-radius:999px;padding:4px;margin-top:2px}
+  .grpbar button{flex:1 1 auto;min-width:0;border:0;background:none;color:var(--muted);border-radius:999px;padding:8px 6px;font:700 14px var(--f);cursor:pointer;white-space:nowrap;transition:background .2s,color .2s}
+  .grpbar button.on{background:var(--text);color:var(--bg)}
+  .serbar[hidden]{display:none}
   .serbar{flex-basis:100%;display:grid;grid-template-columns:repeat(3,1fr);gap:6px;background:var(--card);border-radius:16px;padding:4px;margin-top:2px}
   .serbar button{--c:#e8002d;border:0;background:none;color:var(--muted);border-radius:12px;padding:7px 4px 6px;font:inherit;cursor:pointer;display:flex;flex-direction:column;align-items:center;line-height:1.05;transition:background .2s,color .2s}
   .serbar button b{font-weight:900;font-style:italic;font-size:19px;letter-spacing:-.3px;color:var(--text);opacity:.55}
   .serbar button small{font-size:11px;font-weight:600;margin-top:2px}
-  .serbar button[data-ser=f2]{--c:#2f74ff}.serbar button[data-ser=wec]{--c:#13b07b}
   .serbar button.on{background:var(--c);color:rgba(255,255,255,.85);box-shadow:0 4px 14px -6px var(--c)}
   .serbar button.on b{opacity:1;color:#fff}
   .serbar button:not(.on) b:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--c);margin-right:5px;vertical-align:middle;position:relative;top:-2px}
@@ -215,7 +219,21 @@
   .toast{position:fixed;left:50%;bottom:calc(var(--nav) + 16px + env(safe-area-inset-bottom));transform:translateX(-50%) translateY(16px);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:14.5px;font-weight:600;opacity:0;transition:.25s;z-index:60;max-width:90vw;text-align:center;pointer-events:none}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
   body[data-view=results] .hero,body[data-view=video] .hero,body[data-view=drivers] .hero,body[data-view=cal] .hero,body[data-view=sfida] .hero{display:none}
-  body.f2 .f1only,body.wec .f1only{display:none}
+  body.notf1 .f1only{display:none}
+  /* pagina Weekend (tutte le serie) */
+  body.home #tabs,body.home #hero,body.home section[id^="v-"]:not(#v-home){display:none!important}
+  body:not(.home) #v-home{display:none}
+  body.home{padding-bottom:calc(env(safe-area-inset-bottom) + 8px)}
+  .stag{display:inline-block;font-size:11.5px;font-weight:700;color:#fff;border-radius:6px;padding:1px 7px;margin-right:6px;vertical-align:1px;white-space:nowrap}
+  .hsess{cursor:pointer}
+  .hsess:active{background:var(--card2)}
+  .hsess .n small{display:block;font-size:13px;color:var(--muted);margin-top:1px}
+  .hnext{cursor:pointer}
+  .hnext:active{background:var(--card2)}
+  .hnext .dt{text-align:right;font-size:13px;color:var(--muted);min-width:70px}
+  .hnext .dt b{display:block;color:var(--text);font-size:15px}
+  .hnext.off .who b{color:var(--muted);font-weight:600}
+  .hsec{font-size:14px;color:var(--muted);margin:20px 2px 8px;font-weight:600}
   /* compagni di squadra */
   .h2h{background:var(--card);border-radius:20px;padding:14px 16px;margin-bottom:10px}
   .h2h .tm{font-size:14px;font-weight:700;color:var(--muted);display:flex;align-items:center;gap:8px;margin-bottom:8px}
@@ -273,16 +291,13 @@
 <body>
 <div class="wrap">
   <header>
-    <label class="serie"><span class="logo"><b id="serLogo">F1</b>News<span>/</span></span><select id="serSel" aria-label="Campionato"><option value="f1">Formula 1</option><option value="f2">Formula 2</option><option value="wec">WEC Hypercar</option></select></label>
+    <div class="serie"><span class="logo">Motor<b>time</b><small>Italia</small></span></div>
     <div class="hright">
       <div class="stamp" id="stamp"></div>
       <button class="refresh" id="refreshBtn" aria-label="Aggiorna ora"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg></button>
     </div>
-    <div class="serbar" id="serBar" role="tablist" aria-label="Campionato">
-      <button data-ser="f1" role="tab"><b>F1</b><small>Formula 1</small></button>
-      <button data-ser="f2" role="tab"><b>F2</b><small>Formula 2</small></button>
-      <button data-ser="wec" role="tab"><b>WEC</b><small>Hypercar</small></button>
-    </div>
+    <nav class="grpbar" id="grpBar" aria-label="Sezione"></nav>
+    <div class="serbar" id="serBar" role="tablist" aria-label="Campionato"></div>
   </header>
 
   <section class="hero" id="hero" hidden>
@@ -303,6 +318,7 @@
     <button data-v="cal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Calendario</button>
   </nav>
 
+  <section id="v-home"><div id="home"><div class="skel"></div><div class="skel"></div></div></section>
   <section id="v-news">
     <div id="duelPromo"></div>
     <div class="pages" id="pages"></div>
@@ -333,7 +349,7 @@
       <button class="no" id="spNo">No, niente spoiler</button>
     </div>
   </div>
-  <footer>Notizie raccolte e riassunte da Claude dalle principali testate di motorsport.<br>Tocca una notizia per aprire l'articolo originale.</footer>
+  <footer>Orari italiani, TV, risultati e notizie di Formula 1, F2, F3, MotoGP, Moto2, Moto3, Superbike e WEC.<br>Notizie riassunte dalle principali testate di motorsport: tocca una notizia per aprire l'articolo originale.<br>Motortime è un sito indipendente, non affiliato a Formula 1, FIA, MotoGP, Dorna, WorldSBK o ai team citati.</footer>
 </div>
 
 <div class="toast" id="toast"></div>
@@ -390,7 +406,7 @@ function spoilerSession(){
   return cur;
 }
 const sKey=s=>"f1seen:"+series+":"+s.start;
-const sLabel=s=>{const n=s.name.toLowerCase();return n.startsWith("gara")?"la gara":n.includes("feature")?"la Feature Race":n.includes("sprint")&&!n.includes("qualif")?"la Sprint":n.includes("qualif")&&n.includes("sprint")?"le qualifiche Sprint":"le qualifiche"};
+const sLabel=s=>{const n=s.name.toLowerCase();return n.includes("superpole race")?"la Superpole Race":n.startsWith("superpole")?"la Superpole":n.startsWith("gara")?"la gara":n.includes("feature")?"la Feature Race":n.includes("sprint")&&!n.includes("qualif")?"la Sprint":n.includes("qualif")&&n.includes("sprint")?"le qualifiche Sprint":"le qualifiche"};
 function checkSpoiler(){
   const s=spoilerSession();
   if(!s||lsGet(sKey(s))==="1"){spoilerHidden=false;$("#spModal").hidden=true;return}
@@ -398,7 +414,7 @@ function checkSpoiler(){
   askedFor=sKey(s);
   const lbl=sLabel(s);
   $("#spQ").textContent=`Hai già visto ${lbl}?`;
-  const tv=s.tv8?` Su TV8 va in ${s.tv8.live?"diretta":"differita"} alle ${hm(s.tv8.time)}.`:"";
+  const tv=s.tv8?` Su ${esc(freeCh())} va in ${s.tv8.live?"diretta":"differita"} alle ${hm(s.tv8.time)}.`:"";
   const sing=lbl.startsWith("la ");
   $("#spP").textContent=`${weekend.gp}: ${lbl} ${sing?"è iniziata":"sono iniziate"} alle ${hm(s.start)}.${tv} Se non ${sing?"l'hai vista":"le hai viste"}, nascondo le notizie che potrebbero rovinarti la sorpresa.`;
   $("#spModal").hidden=false;
@@ -466,7 +482,8 @@ function renderInfo(){
   tick(); cdTimer=setInterval(tick,30000);
 }
 
-const TEAM_COLORS={mercedes:"#27f4d2",ferrari:"#e8002d","red bull":"#3671c6",mclaren:"#ff8000","racing bulls":"#6692ff",alpine:"#ff87bc",haas:"#b6babd",audi:"#bb0a30",williams:"#64c4ff","aston martin":"#229971",cadillac:"#c9a227",campos:"#ffb300",invicta:"#8e5cf0",rodin:"#9aa0a6","mp motorsport":"#ff6d00",dams:"#1e88e5","art grand prix":"#e8e8e8",trident:"#5c6bc0",hitech:"#26a69a","van amersfoort":"#f06292",prema:"#e53935",aix:"#a1887f",toyota:"#eb0a1e",bmw:"#1c69d4",porsche:"#c9c9c9",peugeot:"#9be15d",genesis:"#a78bfa"};
+const TEAM_COLORS={mercedes:"#27f4d2",ferrari:"#e8002d","red bull":"#3671c6",mclaren:"#ff8000","racing bulls":"#6692ff",alpine:"#ff87bc",haas:"#b6babd",audi:"#bb0a30",williams:"#64c4ff","aston martin":"#229971",cadillac:"#c9a227",campos:"#ffb300",invicta:"#8e5cf0",rodin:"#9aa0a6","mp motorsport":"#ff6d00",dams:"#1e88e5","art grand prix":"#e8e8e8",trident:"#5c6bc0",hitech:"#26a69a","van amersfoort":"#f06292",prema:"#e53935",aix:"#a1887f",toyota:"#eb0a1e",bmw:"#1c69d4",porsche:"#c9c9c9",peugeot:"#9be15d",genesis:"#a78bfa",
+  ducati:"#d50e1a",aprilia:"#6d5bd0",ktm:"#ff6a00",yamaha:"#2a4fd6",honda:"#e2231a",kawasaki:"#5fbf3a",bimota:"#e0e0e0",husqvarna:"#c6d0e0",gasgas:"#e4002b",cfmoto:"#00a0e0","mv agusta":"#b0b7c3",triumph:"#8d99ae",kalex:"#9aa0a6",boscoscuro:"#ffb300"};
 function teamColor(t){t=String(t||"").toLowerCase();for(const k in TEAM_COLORS)if(t.includes(k))return TEAM_COLORS[k];return "#666"}
 let standings=null;
 function renderStandings(){
@@ -491,6 +508,7 @@ function renderStandings(){
   }
 }
 let weekend=null;
+const freeCh=()=>weekend?.freeChannel||"TV8";
 const hm=iso=>new Date(iso).toLocaleTimeString("it-IT",{hour:"2-digit",minute:"2-digit",timeZone:"Europe/Rome"});
 const dayName=iso=>new Date(iso).toLocaleDateString("it-IT",{weekday:"long",day:"numeric",month:"long",timeZone:"Europe/Rome"});
 function renderSched(){
@@ -502,10 +520,10 @@ function renderSched(){
   const tv=ses.filter(s=>s.tv8);
   let h="";
   if(tv.length){
-    h+=`<div class="tv8"><h4>📺 In chiaro su TV8</h4>`+tv.map(s=>`<div class="l"><span>${esc(s.name)} · ${esc(dayName(s.tv8.time).split(" ")[0])}</span><b>${esc(hm(s.tv8.time))}</b></div>`).join("")+
-      `<div class="note">${tv.every(s=>s.tv8.live)?"In diretta":tv.some(s=>s.tv8.live)?"Alcune sessioni in diretta, altre in differita":"In differita"} · anche in streaming gratis su tv8.it</div></div>`;
+    h+=`<div class="tv8"><h4>📺 In chiaro su ${esc(freeCh())}</h4>`+tv.map(s=>`<div class="l"><span>${esc(s.name)} · ${esc(dayName(s.tv8.time).split(" ")[0])}</span><b>${esc(hm(s.tv8.time))}</b></div>`).join("")+
+      `<div class="note">${tv.every(s=>s.tv8.live)?"In diretta":tv.some(s=>s.tv8.live)?"Alcune sessioni in diretta, altre in differita":"In differita"}${freeCh()==="TV8"?" · anche in streaming gratis su tv8.it":""}</div></div>`;
   } else if(w.tv8note){
-    h+=`<div class="tv8"><h4>📺 TV8</h4><div class="note" style="margin:0">${esc(w.tv8note)}</div></div>`;
+    h+=`<div class="tv8"><h4>📺 ${esc(freeCh())}</h4><div class="note" style="margin:0">${esc(w.tv8note)}</div></div>`;
   }
   h+=`<div class="table"><div class="sub">${esc(w.gp||"")}${w.circuit?" · "+esc(w.circuit):""} · orari italiani</div>`;
   let last="";
@@ -514,7 +532,7 @@ function renderSched(){
     const st=new Date(s.start).getTime(), en=new Date(s.end||s.start).getTime()+(s.end?0:2*3600e3);
     const live=now>=st&&now<en, done=now>=en;
     const badge=live?`<span class="badge live">In corso</span>`:i===nextIdx?`<span class="badge next">Prossima</span>`:"";
-    const tv8=s.tv8?`<br><span class="p8">TV8 ${s.tv8.live?"diretta":"differita"} ore ${esc(hm(s.tv8.time))}</span>`:"";
+    const tv8=s.tv8?`<br><span class="p8">${esc(freeCh())} ${s.tv8.live?"diretta":"differita"} ore ${esc(hm(s.tv8.time))}</span>`:"";
     h+=`<div class="sess${s.key?" key":""}${done?" done":""}"><div class="t">${esc(hm(s.start))}${s.end?`<small>– ${esc(hm(s.end))}</small>`:""}</div>
       <div class="n"><b>${esc(s.name)}${badge}</b><div class="ch">${esc(s.live||"")}${tv8}</div></div></div>`;
   });
@@ -609,8 +627,8 @@ function renderCal(){
   const anyHid=c.rounds.some(hid);
   const wins={}; c.rounds.filter(x=>!hid(x)).forEach(x=>{(x.wins||(x.winner?[x.winner]:[])).forEach(w=>wins[w]=(wins[w]||0)+1)});
   const top=Object.entries(wins).sort((a,b)=>b[1]-a[1]);
-  let h=`<div class="rhead"><div class="lbl">Stagione ${esc(c.season)}</div><h3>${done} ${S().unit} ${series==="wec"?"corse":"corsi"} su ${c.rounds.filter(x=>!canc(x)).length}</h3>
-    <p>${S().wins}: ${top.map(([n,w])=>`${esc(n.split(" ").slice(-1)[0])} <b>${w}</b>`).join(" · ")}</p></div><div class="table cal">`;
+  let h=`<div class="rhead"><div class="lbl">Stagione ${esc(c.season)}</div><h3>${done} ${S().unit} ${S().fem?"corse":"corsi"} su ${c.rounds.filter(x=>!canc(x)).length}</h3>
+    ${top.length?`<p>${S().wins}: ${top.map(([n,w])=>`${esc(n.split(" ").slice(-1)[0])} <b>${w}</b>`).join(" · ")}</p>`:`<p>La stagione deve ancora cominciare.</p>`}</div><div class="table cal">`;
   h+=c.rounds.map(x=>{
     const d=new Date(x.date+"T12:00:00Z");
     const ds=d.toLocaleDateString("it-IT",{day:"numeric",month:"short"});
@@ -666,7 +684,7 @@ function renderDuel(){
   if(!duels?.rounds?.length){el.innerHTML=`<div class="empty">La sfida si apre prima del prossimo GP.</div>`;return}
   const st=dGet();
   if(!st.me?.name){
-    el.innerHTML=`<div class="dhead"><h3>Sfida tra fratelli</h3><p>Prima di ogni GP scegli, squadra per squadra, quale dei due compagni arriva davanti in gara. Ogni scelta giusta vale un punto. Le scelte si chiudono all'inizio delle qualifiche.</p></div>
+    el.innerHTML=`<div class="dhead"><h3>Sfida tra amici</h3><p>Prima di ogni GP scegli, squadra per squadra, quale dei due compagni arriva davanti in gara. Ogni scelta giusta vale un punto. Le scelte si chiudono all'inizio delle qualifiche.</p></div>
     <form class="nameset" onsubmit="event.preventDefault();saveName()"><label for="dname">Come ti chiami?</label><input id="dname" maxlength="20" autocomplete="nickname" placeholder="Il tuo nome"><button type="submit">Inizia la sfida</button></form>`;
     return;
   }
@@ -679,17 +697,17 @@ function renderDuel(){
   const lockTxt=rd.lock?new Date(rd.lock).toLocaleString("it-IT",{weekday:"long",hour:"2-digit",minute:"2-digit",timeZone:"Europe/Rome"}):"";
   let h=`<div class="dhead"><p>${rd.outcome?"Risultati della sfida":locked?"Scelte chiuse":"Sfida aperta"} · Round ${esc(rd.round)}</p><h3>${esc(rd.gp)}</h3>
     <p>${rd.outcome?(hide?"Esiti nascosti per evitare spoiler.":"Ecco com'è andata."):locked?"Le qualifiche sono iniziate: si aspetta la gara.":`Scegli chi arriva davanti in gara. Puoi cambiare idea fino a ${esc(lockTxt)}.`}</p>
-    <div class="score">${sc.map(x=>`<div class="${!hide&&x.pts===top&&top>0?"lead":""}"><small>${esc(x.me?x.n+" (tu)":x.n)}</small><b>${hide?"–":x.pts}</b><small>${hide?"":"punti in stagione"}</small></div>`).join("")}${rivals.length?"":`<div><small>Tuo fratello</small><b>–</b><small>non ha ancora inviato</small></div>`}</div></div>`;
+    <div class="score">${sc.map(x=>`<div class="${!hide&&x.pts===top&&top>0?"lead":""}"><small>${esc(x.me?x.n+" (tu)":x.n)}</small><b>${hide?"–":x.pts}</b><small>${hide?"":"punti in stagione"}</small></div>`).join("")}${rivals.length?"":`<div><small>Il tuo sfidante</small><b>–</b><small>non ha ancora inviato</small></div>`}</div></div>`;
   h+=rd.pairs.map(p=>{
     const c=teamColor(p.team), o=hide?null:rd.outcome?.[p.id];
     const btn=k=>{const nm=p[k];const rv=rivals.filter(([n,v])=>v.picks?.[rd.round]?.[p.id]===k).map(([n])=>n);
-      const showRv=locked||rd.outcome; // le scelte del fratello si vedono dopo la chiusura
+      const showRv=locked||rd.outcome; // le scelte dello sfidante si vedono dopo la chiusura
       return `<button data-p="${esc(p.id)}" data-k="${k}" class="${mine[p.id]===k?"mine":""} ${o===k?"win":""}" ${locked?"disabled":""}>${esc(short(nm))}<small>${esc(nm.split(" ").slice(0,-1).join(" ")||"")}</small>${showRv?rv.map(n=>`<span class="rv" title="${esc(n)}">${esc(n[0].toUpperCase())}</span>`).join(""):""}${o&&mine[p.id]===k?`<span class="ok">${o===k?"✅":"❌"}</span>`:""}</button>`};
     return `<div class="duel"><div class="tm"><i style="background:${c}"></i>${esc(p.team)}${o==="x"?" · annullato":""}</div><div class="opts">${btn("a")}${btn("b")}</div></div>`;
   }).join("");
   const n=rd.pairs.filter(p=>mine[p.id]).length;
-  h+=`<div class="dact"><button class="wa" onclick="shareDuel()">Invia a mio fratello su WhatsApp</button></div>
-    <div class="dnote">${locked?"":`Hai scelto ${n} duelli su ${rd.pairs.length}. `}Quando invii, tuo fratello apre il link e le tue scelte entrano nella sua app; lui fa lo stesso con te. Le sue scelte compaiono qui (pallino viola) dopo la chiusura.</div>`;
+  h+=`<div class="dact"><button class="wa" onclick="shareDuel()">Sfida un amico su WhatsApp</button></div>
+    <div class="dnote">${locked?"":`Hai scelto ${n} duelli su ${rd.pairs.length}. `}Quando invii, il tuo amico apre il link e le tue scelte entrano nella sua app; lui fa lo stesso con te. Le sue scelte compaiono qui (pallino viola) dopo la chiusura.</div>`;
   const past=(duels.rounds||[]).filter(x=>x.outcome);
   if(past.length&&!hide){
     h+=`<div class="hist"><div class="sub">Gran Premi giocati</div>`+past.slice().reverse().map(x=>{
@@ -712,7 +730,7 @@ async function shareDuel(){
   const st=dGet(); if(!st.me?.name) return;
   const url=location.origin+location.pathname+"#sfida="+b64e({n:st.me.name,p:st.me.picks||{}});
   const rd=curRound();
-  const text=`🏁 I miei pronostici per la sfida ${rd?rd.gp:""} su F1 News. Apri il link per caricarli nella tua app: ${url}`;
+  const text=`🏁 I miei pronostici per la sfida ${rd?rd.gp:""} su Motortime. Apri il link per caricarli nella tua app: ${url}`;
   if(navigator.share){try{await navigator.share({text});return}catch(e){if(e&&e.name==="AbortError")return}}
   location.href="https://wa.me/?text="+encodeURIComponent(text);
 }
@@ -720,7 +738,7 @@ function importDuel(){
   const m=location.hash.match(/^#sfida=([\w-]+)/); if(!m) return false;
   try{
     const d=b64d(m[1]); const st=dGet();
-    if(st.me?.name&&st.me.name.toLowerCase()===String(d.n).toLowerCase()){toast("Questo è il tuo link: invialo a tuo fratello")}
+    if(st.me?.name&&st.me.name.toLowerCase()===String(d.n).toLowerCase()){toast("Questo è il tuo link: invialo al tuo sfidante")}
     else{st.rivals=st.rivals||{}; st.rivals[d.n]={picks:d.p||{},at:new Date().toISOString()}; dSet(st); toast("✓ Pronostici di "+d.n+" caricati")}
   }catch(e){toast("Link della sfida non valido")}
   history.replaceState(null,"",location.pathname);
@@ -743,23 +761,135 @@ function showView(v){
 }
 document.querySelectorAll("#tabs button").forEach(b=>b.onclick=()=>{showView(b.dataset.v);scrollTo({top:0,behavior:"smooth"})});
 
-let series="f1";
-try{const v=localStorage.getItem("f1series");series=(v==="f2"||v==="wec")?v:"f1"}catch(e){}
-const SER={f1:{logo:"F1",title:"F1 News",next:"Prossimo Gran Premio",last:"Ultimo GP",unit:"GP",teams:"Scuderie",wins:"Vittorie"},f2:{logo:"F2",title:"F2 News",next:"Prossimo round",last:"Ultimo round",unit:"round",teams:"Scuderie",wins:"Vittorie Feature"},wec:{logo:"WEC",title:"WEC News",next:"Prossima gara",last:"Ultima gara",unit:"gare",teams:"Costruttori",wins:"Vittorie"}};
+/* ---------- Campionati e sezioni ---------- */
+const SER={
+  f1:{g:"formula",logo:"F1",name:"Formula 1",color:"#e8002d",next:"Prossimo Gran Premio",last:"Ultimo GP",unit:"GP",teams:"Scuderie",wins:"Vittorie"},
+  f2:{g:"formula",logo:"F2",name:"Formula 2",color:"#2f74ff",next:"Prossimo round",last:"Ultimo round",unit:"round",teams:"Scuderie",wins:"Vittorie Feature"},
+  f3:{g:"formula",logo:"F3",name:"Formula 3",color:"#8e5cf0",next:"Prossimo round",last:"Ultimo round",unit:"round",teams:"Scuderie",wins:"Vittorie Feature"},
+  motogp:{g:"moto",logo:"MotoGP",name:"Classe regina",color:"#e5541a",next:"Prossimo Gran Premio",last:"Ultimo GP",unit:"GP",teams:"Team",wins:"Vittorie"},
+  moto2:{g:"moto",logo:"Moto2",name:"Classe intermedia",color:"#b8860b",next:"Prossimo Gran Premio",last:"Ultimo GP",unit:"GP",teams:"Team",wins:"Vittorie"},
+  moto3:{g:"moto",logo:"Moto3",name:"Classe leggera",color:"#d6336c",next:"Prossimo Gran Premio",last:"Ultimo GP",unit:"GP",teams:"Team",wins:"Vittorie"},
+  wsbk:{g:"sbk",logo:"SBK",name:"Superbike",color:"#c8102e",next:"Prossimo round",last:"Ultimo round",unit:"round",teams:"Costruttori",wins:"Vittorie Gara 1 e 2"},
+  wssp:{g:"sbk",logo:"SSP",name:"Supersport",color:"#0a84c6",next:"Prossimo round",last:"Ultimo round",unit:"round",teams:"Costruttori",wins:"Vittorie"},
+  wssp300:{g:"sbk",logo:"SSP300",name:"Supersport 300",color:"#4c9a2a",next:"Prossimo round",last:"Ultimo round",unit:"round",teams:"Costruttori",wins:"Vittorie"},
+  wec:{g:"wec",logo:"WEC",name:"Hypercar",color:"#13a374",next:"Prossima gara",last:"Ultima gara",unit:"gare",fem:true,teams:"Costruttori",wins:"Vittorie"}
+};
+const GROUPS=[
+  {id:"all",label:"Weekend"},
+  {id:"formula",label:"Formula",ser:["f1","f2","f3"]},
+  {id:"moto",label:"MotoGP",ser:["motogp","moto2","moto3"]},
+  {id:"sbk",label:"Superbike",short:"SBK",ser:["wsbk","wssp","wssp300"]},
+  {id:"wec",label:"WEC",ser:["wec"]}
+];
+const BRAND="#e8002d";
+let series="all";
+try{const v=localStorage.getItem("f1series");if(v&&(v==="all"||SER[v]))series=v}catch(e){}
 const S=()=>SER[series]||SER.f1;
+const grpOf=k=>k==="all"?GROUPS[0]:GROUPS.find(g=>(g.ser||[]).includes(k))||GROUPS[0];
+function rgb(h){h=h.replace("#","");return [0,2,4].map(i=>parseInt(h.substr(i,2),16))}
+function setTheme(c){
+  const [r,g,b]=rgb(c), mix=x=>Math.round(x+(255-x)*.45);
+  const st=document.body.style;
+  st.setProperty("--red",c); st.setProperty("--red2",`rgb(${mix(r)},${mix(g)},${mix(b)})`); st.setProperty("--tint",`rgba(${r},${g},${b},.16)`);
+}
+function renderGroupBar(){
+  const cur=grpOf(series).id, narrow=innerWidth<400;
+  $("#grpBar").innerHTML=GROUPS.map(g=>`<button data-g="${g.id}" class="${g.id===cur?"on":""}">${esc(narrow&&g.short?g.short:g.label)}</button>`).join("");
+  $("#grpBar").querySelectorAll("button").forEach(b=>b.onclick=()=>{
+    const g=GROUPS.find(x=>x.id===b.dataset.g);
+    if(g.id==="all"){if(series!=="all")switchSeries("all");return}
+    if(grpOf(series).id===g.id) return;
+    let last=null; try{last=localStorage.getItem("mt:grp:"+g.id)}catch(e){}
+    switchSeries(g.ser.includes(last)?last:g.ser[0]);
+  });
+}
+function renderSerBar(){
+  const g=grpOf(series), el=$("#serBar");
+  el.hidden=!g.ser||g.ser.length<2;
+  el.style.gridTemplateColumns=`repeat(${(g.ser||[]).length||1},1fr)`;
+  el.innerHTML=(g.ser||[]).map(k=>`<button data-ser="${k}" role="tab" style="--c:${SER[k].color}" class="${k===series?"on":""}" aria-selected="${k===series}"><b>${esc(SER[k].logo)}</b><small>${esc(SER[k].name)}</small></button>`).join("");
+  el.querySelectorAll("button").forEach(b=>b.onclick=()=>{if(b.dataset.ser!==series){switchSeries(b.dataset.ser);scrollTo({top:0})}});
+}
 function applySeriesUI(){
-  document.body.classList.toggle("f2",series==="f2");
-  document.body.classList.toggle("wec",series==="wec");
-  $("#serLogo").textContent=S().logo;
-  $("#serSel").value=series;
-  document.querySelectorAll("#serBar button").forEach(b=>{const on=b.dataset.ser===series;b.classList.toggle("on",on);b.setAttribute("aria-selected",on)});
-  document.title=S().title;
+  const home=series==="all";
+  document.body.classList.toggle("home",home);
+  document.body.classList.toggle("notf1",series!=="f1");
+  setTheme(home?BRAND:S().color);
+  renderGroupBar(); renderSerBar();
+  if(!home){try{localStorage.setItem("mt:grp:"+S().g,series)}catch(e){}}
+  document.title=home?"Motortime · Il weekend dei motori":`${S().logo==="SBK"?"Superbike":S().logo} · Motortime`;
   const tb=document.querySelector('#segStand [data-s="teams"]'); if(tb) tb.textContent=S().teams;
+}
+addEventListener("resize",()=>renderGroupBar());
+
+/* ---------- Pagina Weekend: tutte le serie insieme ---------- */
+let homeData={}, homeAll=false;
+try{homeAll=localStorage.getItem("mt:homeAll")==="1"}catch(e){}
+async function loadHome(){
+  const keys=Object.keys(SER); let ok=0;
+  await Promise.all(keys.map(async k=>{
+    try{const r=await fetch("data/"+k+".json?t="+Date.now(),{cache:"no-store"}); if(r.ok){homeData[k]=await r.json();ok++}}catch(e){}
+  }));
+  if(series!=="all") return ok?"same":"err";
+  renderHome();
+  return ok?"same":"err";
+}
+function goSeries(k,view){switchSeries(k);if(view)showView(view);scrollTo({top:0})}
+function renderHome(){
+  const el=$("#home"), now=Date.now(), horizon=now+8*86400e3;
+  const ups=Object.values(homeData).map(d=>d?.info?.updated).filter(Boolean).sort();
+  $("#stamp").textContent=ups.length?"Agg. "+rel(ups[ups.length-1]):"";
+  if(!Object.keys(homeData).length){el.innerHTML=`<div class="empty">Non riesco a scaricare i dati in questo momento.<br><button class="btn" onclick="loadHome()">Riprova</button></div>`;return}
+  // sessioni dei prossimi giorni, da tutti i campionati
+  let all=[];
+  for(const k in SER){
+    const w=homeData[k]?.weekend; if(!w?.sessions?.length) continue;
+    w.sessions.forEach(s=>{
+      const st=new Date(s.start).getTime(); if(isNaN(st)) return;
+      const en=s.end?new Date(s.end).getTime():st+2*3600e3;
+      if(en<now||st>horizon) return;
+      all.push({k,s,st,en,gp:w.gp,ch:w.freeChannel||"TV8"});
+    });
+  }
+  all.sort((a,b)=>a.st-b.st);
+  const keyCount=all.filter(x=>x.s.key).length;
+  const list=homeAll?all:all.filter(x=>x.s.key);
+  let h=`<div class="rhead"><div class="lbl">Il weekend dei motori</div><h3>${all.length?"In pista nei prossimi giorni":"Nessuna sessione in programma"}</h3>
+    <p>${all.length?`${keyCount===1?"Una sessione":keyCount+" sessioni"} tra gare e qualifiche ${(n=>n===1?"in un campionato":`in ${n} campionati`)(new Set(all.map(x=>x.k)).size)}. Orari italiani; tocca una sessione per i dettagli.`:"Nei prossimi 7 giorni non ci sono sessioni in calendario. Qui sotto trovi i prossimi appuntamenti di ogni campionato."}</p></div>`;
+  if(all.length){
+    h+=`<div class="seg" id="homeSeg"><button data-a="0" class="${homeAll?"":"on"}">Gare e qualifiche</button><button data-a="1" class="${homeAll?"on":""}">Tutte le sessioni</button></div>`;
+    h+=`<div class="table">`; let last="";
+    if(!list.length) h+=`<div class="empty" style="padding:24px 10px">Solo prove libere nei prossimi giorni.</div>`;
+    list.forEach(x=>{
+      const d=dayName(x.s.start); if(d!==last){h+=`<div class="dayh">${esc(d)}</div>`;last=d}
+      const live=now>=x.st&&now<x.en, c=SER[x.k];
+      const tv=x.s.tv8?` · <span style="color:#b9abff;font-weight:600">${esc(x.ch)} ${x.s.tv8.live?"diretta":"differita ore "+esc(hm(x.s.tv8.time))}</span>`:"";
+      h+=`<div class="sess hsess${x.s.key?" key":""}" data-k="${x.k}"><div class="t">${esc(hm(x.s.start))}</div>
+        <div class="n"><b><span class="stag" style="background:${c.color}">${esc(c.logo)}</span>${esc(x.s.name)}${live?'<span class="badge live">In corso</span>':""}</b><small>${esc(x.gp||"")}${tv}</small></div></div>`;
+    });
+    h+=`</div>`;
+  }
+  // prossimo appuntamento di ogni campionato
+  const nx=Object.keys(SER).map(k=>{const n=homeData[k]?.info?.nextGp;return {k,n,t:n?.date?new Date(n.date).getTime():Infinity}}).sort((a,b)=>a.t-b.t);
+  h+=`<div class="hsec">Prossimi appuntamenti</div><div class="table cal">`+nx.map(({k,n,t})=>{
+    const c=SER[k], d=homeData[k];
+    const sub=n?esc(n.name):d?(d.calendar?.rounds?.length?"Stagione conclusa, calendario in arrivo":"Dati in arrivo"):"Dati non disponibili";
+    const ds=n?new Date(t).toLocaleDateString("it-IT",{day:"numeric",month:"short",timeZone:"Europe/Rome"}):"";
+    const yr=n&&new Date(t).getFullYear()!==new Date().getFullYear()?new Date(t).getFullYear():"";
+    return `<div class="row hnext${n?"":" off"}" data-k="${k}"><div class="bar" style="background:${c.color}"></div>
+      <div class="who"><b>${esc(c.logo==="SBK"?"Superbike":c.logo)} <span style="font-weight:600;color:var(--muted);font-size:13px">${esc(c.logo==="SBK"?"":c.name)}</span></b><small>${sub}</small></div>
+      <div class="dt">${n?`<b>${esc(ds)}</b>${esc(yr)}`:""}</div></div>`;
+  }).join("")+`</div>`;
+  el.innerHTML=h;
+  el.querySelectorAll("#homeSeg button").forEach(b=>b.onclick=()=>{homeAll=b.dataset.a==="1";try{localStorage.setItem("mt:homeAll",homeAll?"1":"0")}catch(e){};renderHome()});
+  el.querySelectorAll(".hsess").forEach(r=>r.onclick=()=>goSeries(r.dataset.k,"sched"));
+  el.querySelectorAll(".hnext").forEach(r=>r.onclick=()=>goSeries(r.dataset.k,"news"));
 }
 let loadSeq=0, lastJson={};
 let manual=false;
 let lastErr="";
 async function load(fresh){
+  if(series==="all"){++loadSeq;return loadHome()}
   const my=++loadSeq, ser=series;
   try{
     let r;
@@ -787,15 +917,14 @@ async function load(fresh){
   }
 }
 function switchSeries(v){
-  series=["f2","wec"].includes(v)?v:"f1"; try{localStorage.setItem("f1series",series)}catch(e){}
+  series=(v==="all"||SER[v])?v:"all"; try{localStorage.setItem("f1series",series)}catch(e){}
   news=[];info=null;results=null;calendar=null;weekend=null;standings=null;videos=[];h2h=null;duels=null;filter="Tutte";resMode=0;spoilerHidden=false;askedFor=null;
   applySeriesUI(); if(series!=="f1"){segTo("drivers"); if(document.body.dataset.view==="sfida") showView("news")}
+  if(series==="all"){load(true);scrollTo({top:0});return}
   $("#list").innerHTML='<div class="skel"></div><div class="skel"></div><div class="skel"></div>';
   renderInfo();renderStandings();renderSched();renderPages();renderResults();renderCal();renderChips();renderVideos();
   load(true); scrollTo({top:0});
 }
-$("#serSel").onchange=e=>switchSeries(e.target.value);
-document.querySelectorAll("#serBar button").forEach(b=>b.onclick=()=>{if(b.dataset.ser!==series){switchSeries(b.dataset.ser);scrollTo({top:0})}});
 let toastT=null;
 function toast(msg){const t=$("#toast");t.textContent=msg;t.classList.add("show");clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove("show"),2800)}
 $("#refreshBtn").onclick=async()=>{
@@ -804,6 +933,7 @@ $("#refreshBtn").onclick=async()=>{
   const before=info?.updated;
   let r; try{ r=await load(true); } finally { manual=false; setTimeout(()=>b.classList.remove("spin"),400); }
   if(r==="err") toast(navigator.onLine===false?"Sei offline: riprova quando hai rete":"Aggiornamento non riuscito, riprova tra poco");
+  else if(series==="all") toast("✓ Weekend aggiornato");
   else if(r==="new"||info?.updated!==before) toast("✓ Dati aggiornati");
   else toast("Sei già aggiornato · ultimo aggiornamento "+(info?.updated?rel(info.updated):""));
 };
@@ -816,8 +946,8 @@ $("#refreshBtn").onclick=async()=>{
   if(importDuel()){ if(series!=="f1"){series="f1";try{localStorage.setItem("f1series","f1")}catch(e){}applySeriesUI()} showView("sfida"); }
   load(true);
   setInterval(()=>{if(!document.hidden) load(false)},10*60e3);
-  setInterval(()=>{if(weekend){renderSched();checkSpoiler()}},60000);
-  document.addEventListener("visibilitychange",()=>{if(!document.hidden){askedFor=null;load(false);if(weekend){checkSpoiler();render();renderStandings();renderResults();renderVideos();renderDuel();renderCal();renderH2H()}}});
+  setInterval(()=>{if(series==="all"){renderHome();return}if(weekend){renderSched();checkSpoiler()}},60000);
+  document.addEventListener("visibilitychange",()=>{if(!document.hidden){askedFor=null;load(false);if(weekend&&series!=="all"){checkSpoiler();render();renderStandings();renderResults();renderVideos();renderDuel();renderCal();renderH2H()}}});
   if("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js").catch(()=>{});
 })();
 </script>
