@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-10-hamilton-confine-gaza",
+      "title": "Hamilton al confine con Gaza prima di Las Vegas per conoscere gli aiuti umanitari",
+      "summary": "Il pilota Ferrari si è recato sul lato egiziano del valico di Rafah, incontrando operatori e responsabili della Mezzaluna Rossa a El Arish. Una visita fuori dalla pista arrivata due giorni dopo il suo 400° Gran Premio.",
+      "tag": "Paddock",
+      "source": "Grande Prêmio",
+      "url": "https://grandepremio.com/en/f1/f1-today-hamilton-visits-gaza-border-as-f1-drops-imola-and-las-vegas-finale-threat-emerges/",
+      "published": "2026-11-10T22:17:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-10-ocon-haas-tribunale",
       "title": "Ocon-Haas, il licenziamento rischia di finire in tribunale",
       "summary": "Secondo Speed Week la separazione tra Ocon e la Haas, decisa dopo lo scontro con Komatsu in Messico, potrebbe sfociare in una disputa contrattuale. Ocon nega qualsiasi contatto fisico, mentre Wolff difende la scelta del team principal.",
@@ -855,7 +865,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T02:55:00Z",
+    "updated": "2026-11-11T03:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
