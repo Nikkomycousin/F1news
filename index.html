@@ -265,6 +265,27 @@
   .h2h .tr i{display:block;height:100%;border-radius:4px}
   .h2h .ex{font-size:12.5px;color:var(--faint);margin-top:6px}
   footer{color:var(--faint);font-size:12.5px;text-align:center;margin-top:28px;line-height:1.5}
+  /* calendario, preferiti, meteo */
+  .calbtn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);color:var(--text);border-radius:999px;padding:9px 15px;font:600 14px var(--f);cursor:pointer;margin:0 8px 12px 0}
+  .calbtn svg{width:18px;height:18px;color:var(--red2)}
+  .calbtn:hover{background:var(--card2)}
+  .sess .add{margin-left:auto;align-self:center;flex:0 0 auto;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--muted);display:flex;align-items:center;justify-content:center;cursor:pointer;padding:0}
+  .sess .add:hover{color:var(--text);background:var(--card2)}
+  .sess .add svg{width:18px;height:18px}
+  .wx{display:inline-block;margin-top:3px;font-size:13.5px;color:var(--text);font-weight:600}
+  .wx small{color:var(--muted);font-weight:600;font-size:12.5px}
+  .wxnote{font-size:12px;color:var(--faint);padding:10px 16px 12px;border-top:1px solid var(--line)}
+  .star{border:0;background:none;color:var(--faint);font-size:21px;line-height:1;padding:6px 2px 6px 10px;cursor:pointer;flex:0 0 auto}
+  .star.on{color:var(--gold)}
+  .star:hover{color:var(--gold)}
+  .row.fav{background:linear-gradient(90deg,rgba(242,193,78,.16),transparent 75%)}
+  .favtag{color:var(--gold);font-weight:700;font-size:13px}
+  .sbox .sp.fav span{color:var(--gold)}
+  .hint{font-size:13px;color:var(--muted);margin:0 2px 10px}
+  .hnext .star{padding-left:4px}
+  .mbox .opt{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;border:1px solid var(--line);background:var(--card2);color:var(--text);border-radius:999px;padding:13px;font:700 15px var(--f);cursor:pointer;margin-top:8px}
+  .mbox .opt.pri{background:var(--red);border-color:var(--red);color:#fff}
+
   /* colonna laterale (solo desktop) */
   #side{display:none}
   .sbox{background:var(--card);border-radius:20px;padding:14px 16px;margin-top:14px}
@@ -381,6 +402,15 @@
   <footer>Orari italiani, TV, risultati e notizie di Formula 1, F2, F3, MotoGP, Moto2, Moto3, Superbike e WEC.<br>Notizie riassunte dalle principali testate di motorsport: tocca una notizia per aprire l'articolo originale.<br>Motortime è un sito indipendente, non affiliato a Formula 1, FIA, MotoGP, Dorna, WorldSBK o ai team citati.</footer>
   </div>
   </div>
+  <div class="modal" id="calModal" hidden>
+    <div class="mbox">
+      <div class="ico">📅</div>
+      <h2 id="calQ">Aggiungi al calendario</h2>
+      <p id="calP"></p>
+      <div id="calOpts"></div>
+      <button class="no" id="calNo">Annulla</button>
+    </div>
+  </div>
   <div class="modal" id="spModal" hidden>
     <div class="mbox">
       <div class="ico">🙈</div>
@@ -416,11 +446,141 @@ function dayLabel(iso){
 }
 
 function renderChips(){
-  const tags=["Tutte",...new Set(news.filter(n=>!isSpoiler(n)).map(n=>n.tag).filter(Boolean))];
+  const tags=["Tutte",...(news.some(favMention)?[FAVCHIP]:[]),...new Set(news.filter(n=>!isSpoiler(n)).map(n=>n.tag).filter(Boolean))];
+  if(filter===FAVCHIP&&!tags.includes(FAVCHIP)) filter="Tutte";
   $("#chips").innerHTML=tags.map(t=>`<button class="chip${t===filter?" on":""}" data-t="${esc(t)}">${esc(t)}</button>`).join("");
   $("#chips").querySelectorAll(".chip").forEach(b=>b.onclick=()=>{filter=b.dataset.t;try{localStorage.setItem("f1f",filter)}catch(e){};render()});
 }
 
+
+/* ---------- Preferiti (piloti, squadre, campionati) ---------- */
+const FAVCHIP="★ Preferiti";
+let FAV={d:[],t:[],s:[]};
+try{const f=JSON.parse(localStorage.getItem("mt:fav")||"null");if(f)FAV={d:f.d||[],t:f.t||[],s:f.s||[]}}catch(e){}
+const isFavD=n=>!!n&&FAV.d.includes(n), isFavT=t=>!!t&&FAV.t.includes(t), isFavS=k=>FAV.s.includes(k);
+function starBtn(kind,val){const on=FAV[kind].includes(val);return `<button class="star${on?" on":""}" data-fk="${kind}" data-fv="${esc(val)}" aria-label="${on?"Togli dai preferiti":"Aggiungi ai preferiti"}" title="${on?"Togli dai preferiti":"Aggiungi ai preferiti"}">${on?"★":"☆"}</button>`}
+function toggleFav(kind,val){
+  const a=FAV[kind], i=a.indexOf(val); if(i>=0)a.splice(i,1); else a.push(val);
+  try{localStorage.setItem("mt:fav",JSON.stringify(FAV))}catch(e){}
+  toast(i>=0?"Tolto dai preferiti":"★ "+(kind==="s"?(SER[val]?.logo==="SBK"?"Superbike":SER[val]?.logo):val)+" tra i preferiti");
+  if(series==="all"){renderHome();return}
+  render(); renderStandings(); renderResults();
+}
+document.addEventListener("click",e=>{const b=e.target.closest(".star");if(!b)return;e.preventDefault();e.stopPropagation();toggleFav(b.dataset.fk,b.dataset.fv)},true);
+const favWords=()=>[...FAV.d.map(n=>String(n).split(" ").slice(-1)[0]),...FAV.t.map(t=>String(t).split(/[ ·]/)[0])].filter(w=>w&&w.length>2);
+function favMention(n){
+  const ws=favWords(); if(!ws.length||isSpoiler(n)) return "";
+  const txt=(n.title+" "+(n.summary||"")).toLowerCase();
+  return ws.find(w=>new RegExp("(^|[^\\p{L}])"+w.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"([^\\p{L}]|$)","u").test(txt))||"";
+}
+
+/* ---------- Aggiungi al calendario (.ics e Google Calendar) ---------- */
+const CALICON=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4M12 13v5M9.5 15.5h5"/></svg>`;
+const icsEsc=t=>String(t||"").replace(/\\/g,"\\\\").replace(/;/g,"\\;").replace(/,/g,"\\,").replace(/\r?\n/g,"\\n");
+const icsDT=d=>new Date(d).toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
+const siteUrl=()=>location.origin+location.pathname;
+function icsEvent(o){
+  const L=["BEGIN:VEVENT","UID:"+o.uid+"@motortime","DTSTAMP:"+icsDT(Date.now())];
+  if(o.allDay){const n=new Date(o.start+"T12:00:00Z");n.setUTCDate(n.getUTCDate()+1);L.push("DTSTART;VALUE=DATE:"+o.start.replace(/-/g,""),"DTEND;VALUE=DATE:"+n.toISOString().slice(0,10).replace(/-/g,""))}
+  else L.push("DTSTART:"+icsDT(o.start),"DTEND:"+icsDT(o.end));
+  L.push("SUMMARY:"+icsEsc(o.title));
+  if(o.loc) L.push("LOCATION:"+icsEsc(o.loc));
+  L.push("DESCRIPTION:"+icsEsc((o.desc?o.desc+"\n":"")+"Orari e risultati: "+siteUrl()),"URL:"+siteUrl());
+  if(!o.allDay) L.push("BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:"+icsEsc(o.title),"TRIGGER:-PT15M","END:VALARM");
+  L.push("END:VEVENT"); return L;
+}
+function downloadIcs(name,evs){
+  const lines=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Motortime//IT","CALSCALE:GREGORIAN","METHOD:PUBLISH","X-WR-CALNAME:"+icsEsc(name),...evs.flatMap(icsEvent),"END:VCALENDAR"];
+  const url=URL.createObjectURL(new Blob([lines.join("\r\n")+"\r\n"],{type:"text/calendar;charset=utf-8"}));
+  const a=document.createElement("a"); a.href=url; a.download=(name.normalize("NFD").replace(/[^\w\s-]/g,"").trim().replace(/\s+/g,"-").toLowerCase()||"motortime")+".ics";
+  document.body.appendChild(a); a.click(); setTimeout(()=>{URL.revokeObjectURL(url);a.remove()},4000);
+  toast("📅 Apri il file scaricato per aggiungere "+(evs.length===1?"l'evento":evs.length+" eventi")+" al calendario");
+}
+function sessEvent(s){
+  const w=weekend, st=new Date(s.start).getTime();
+  const end=s.end?new Date(s.end).getTime():st+(s.key?2:1)*3600e3;
+  const tv=s.tv8?`${freeCh()} ${s.tv8.live?"in diretta":"in differita ore "+hm(s.tv8.time)}`:"";
+  return {uid:series+"-"+st,start:st,end,title:`${S().logo==="SBK"?"Superbike":S().logo} · ${s.name} – ${w.gp}`,loc:w.circuit||"",desc:[s.live,tv].filter(Boolean).join(" · ")};
+}
+function calChoose(title,text,opts){
+  $("#calQ").textContent=title; $("#calP").textContent=text;
+  $("#calOpts").innerHTML=opts.map((o,i)=>`<button class="opt${i===0?" pri":""}" data-i="${i}">${o.label}</button>`).join("");
+  $("#calOpts").querySelectorAll("button").forEach(b=>b.onclick=()=>{$("#calModal").hidden=true;opts[+b.dataset.i].run()});
+  $("#calNo").onclick=()=>$("#calModal").hidden=true;
+  $("#calModal").hidden=false;
+}
+function calSession(start){
+  const s=(weekend?.sessions||[]).find(x=>x.start===start); if(!s) return;
+  const e=sessEvent(s);
+  const g="https://calendar.google.com/calendar/render?action=TEMPLATE&text="+encodeURIComponent(e.title)+"&dates="+icsDT(e.start)+"/"+icsDT(e.end)+"&details="+encodeURIComponent((e.desc?e.desc+"\n":"")+siteUrl())+"&location="+encodeURIComponent(e.loc);
+  calChoose(s.name,`${weekend.gp} · ${dayName(s.start)} alle ${hm(s.start)}. Ti arriva un avviso 15 minuti prima.`,[
+    {label:"📱 Calendario del telefono",run:()=>downloadIcs(e.title,[e])},
+    {label:"Google Calendar",run:()=>window.open(g,"_blank","noopener")}
+  ]);
+}
+function calWeekend(){
+  const now=Date.now(), ses=(weekend?.sessions||[]).filter(s=>new Date(s.start).getTime()>now);
+  if(!ses.length){toast("Non ci sono sessioni future da aggiungere");return}
+  const key=ses.filter(s=>s.key);
+  const name=`${S().logo==="SBK"?"Superbike":S().logo} ${weekend.gp}`;
+  const opts=[];
+  if(key.length) opts.push({label:`Gare e qualifiche (${key.length})`,run:()=>downloadIcs(name,key.map(sessEvent))});
+  opts.push({label:`Tutte le sessioni (${ses.length})`,run:()=>downloadIcs(name,ses.map(sessEvent))});
+  calChoose("Aggiungi il weekend",`${weekend.gp}: ogni sessione con orario, canale TV e un avviso 15 minuti prima.`,opts);
+}
+function calSeason(){
+  const today=new Date().toISOString().slice(0,10);
+  const rs=(calendar?.rounds||[]).filter(x=>!x.winner&&!/^annullat/i.test(x.status||"")&&x.date>=today);
+  if(!rs.length) return;
+  const lg=S().logo==="SBK"?"Superbike":S().logo;
+  downloadIcs(`${lg} ${calendar.season}`,rs.map(x=>({uid:series+"-r"+calendar.season+"-"+x.round,allDay:true,start:x.date,title:`${lg} · ${x.name}`,loc:x.circuit||"",desc:`Round ${x.round}. Gli orari delle sessioni sono su Motortime nella settimana della gara.`})));
+}
+
+/* ---------- Meteo del circuito (Open-Meteo, gratuito, senza chiave) ---------- */
+const CIRCUITS=[
+  [/albert park|melbourne/,-37.85,144.97],[/shanghai/,31.34,121.22],[/suzuka/,34.84,136.54],[/sakhir|bahrain/,26.03,50.51],[/jeddah/,21.63,39.10],
+  [/miami/,25.96,-80.24],[/imola|enzo e dino/,44.34,11.72],[/monaco|monte.?carlo/,43.73,7.42],[/catalunya|montmel|barcellona|barcelona/,41.57,2.26],
+  [/madrid|madring/,40.47,-3.62],[/montr[eé]al|gilles/,45.50,-73.52],[/red bull ring|spielberg|austria/,47.22,14.76],[/silverstone/,52.07,-1.02],
+  [/\bspa\b|francorchamps|belgio/,50.44,5.97],[/hungaroring|budapest|ungheria/,47.58,19.25],[/zandvoort|olanda/,52.39,4.54],[/monza/,45.62,9.28],
+  [/baku|azerbaigian/,40.37,49.85],[/marina bay|singapore/,1.29,103.86],[/americas|austin|cota/,30.13,-97.64],[/hermanos|messico|mexico/,19.40,-99.09],
+  [/interlagos|s[ãa]o paulo|san paolo|brasile/,-23.70,-46.70],[/las vegas/,36.11,-115.17],[/lusail|losail|qatar/,25.49,51.45],[/yas marina|abu dhabi/,24.47,54.60],
+  [/portim|algarve|portogallo/,37.23,-8.63],[/ricardo tormo|cheste|valencia/,39.49,-0.63],[/mugello/,43.99,11.37],[/misano/,43.96,12.68],[/jerez/,36.71,-6.03],
+  [/arag[oó]n|motorland/,41.08,-0.20],[/assen/,52.96,6.52],[/sachsenring/,50.79,12.69],[/brno/,49.20,16.44],[/balaton/,46.89,17.98],[/le mans|sarthe/,47.96,0.21],
+  [/phillip island/,-38.50,145.23],[/sepang|malesia/,2.76,101.74],[/mandalika|indonesia/,-8.90,116.31],[/motegi|giappone/,36.53,140.23],
+  [/buriram|chang|thailandia/,14.96,103.08],[/termas|rio hondo|argentina/,-27.50,-64.86],[/goi[aâ]nia/,-16.71,-49.19],[/estoril/,38.75,-9.39],
+  [/most\b|autodrom most/,50.52,13.61],[/cremona/,45.10,10.06],[/donington/,52.83,-1.38],[/magny/,46.86,3.16],[/fuji/,35.37,138.93],
+  [/sebring/,27.45,-81.35],[/hockenheim/,49.33,8.57],[/n[üu]rburgring/,50.33,6.94]
+];
+function circuitCoords(w){
+  if(w&&isFinite(w.lat)&&isFinite(w.lon)) return [+w.lat,+w.lon];
+  const t=((w?.circuit||"")+" "+(w?.gp||"")).toLowerCase();
+  for(const [re,la,lo] of CIRCUITS) if(re.test(t)) return [la,lo];
+  return null;
+}
+const wxCache={};
+async function loadWeather(){
+  const w=weekend, c=circuitCoords(w); if(!c||!w?.sessions?.length) return;
+  const ts=w.sessions.map(s=>new Date(s.start).getTime()).filter(isFinite), now=Date.now();
+  if(!ts.length||Math.min(...ts)>now+15*86400e3||Math.max(...ts)<now-6*3600e3) return;
+  const key=c.join(",");
+  if(!wxCache[key]||now-wxCache[key].at>3600e3){
+    try{
+      const r=await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${c[0]}&longitude=${c[1]}&hourly=temperature_2m,precipitation_probability,weather_code&timezone=UTC&forecast_days=16`);
+      if(!r.ok) return; wxCache[key]={at:now,d:await r.json()};
+    }catch(e){return}
+  }
+  if(weekend===w) renderSched();
+}
+function wxFor(iso){
+  const c=circuitCoords(weekend); if(!c) return null;
+  const e=wxCache[c.join(",")], H=e?.d?.hourly; if(!H?.time) return null;
+  const t=new Date(iso); if(isNaN(t)) return null; t.setUTCMinutes(0,0,0);
+  const i=H.time.indexOf(t.toISOString().slice(0,13)+":00");
+  if(i<0||H.temperature_2m?.[i]==null) return null;
+  return {t:Math.round(H.temperature_2m[i]),p:H.precipitation_probability?.[i],c:H.weather_code?.[i]??0};
+}
+const wxIcon=c=>c===0?"☀️":c<=2?"🌤️":c===3?"☁️":c<=48?"🌫️":c<=57?"🌦️":c<=67?"🌧️":c<=77?"🌨️":c<=82?"🌧️":"⛈️";
+const wxHtml=x=>`<span class="wx">${wxIcon(x.c)} ${x.t}°C${x.p!=null?` <small>· pioggia ${x.p}%</small>`:""}</span>`;
 
 /* ---------- Anti-spoiler ---------- */
 let spoilerHidden=false, askedFor=null;
@@ -465,7 +625,7 @@ function revealSpoiler(){const s=spoilerSession();if(s)lsSet(sKey(s),"1");spoile
 
 function render(){
   renderChips();
-  const items=news.filter(n=>filter==="Tutte"||n.tag===filter);
+  const items=news.filter(n=>filter==="Tutte"||(filter===FAVCHIP?favMention(n):n.tag===filter));
   if(!items.length){$("#list").innerHTML=`<div class="empty">Nessuna notizia ancora.<br>Il prossimo aggiornamento arriverà a breve.</div>`;return}
   let html=spoilerBanner(), last="";
   items.forEach((n,i)=>{
@@ -474,7 +634,7 @@ function render(){
     const href=/^https?:\/\//.test(n.url||"")?n.url:"#";
     if(isSpoiler(n)){html+=`<div class="card spoil"><div class="meta"><span class="tag" style="color:var(--muted)">🙈 Nascosta</span><span>${esc(rel(n.published))}</span></div><h3>${ghost("92%")}<br>${ghost("60%")}</h3><p>${ghost("100%")}<br>${ghost("78%")}</p></div>`;return}
     html+=`<a class="card${n.top?" top":""}" href="${esc(href)}" target="_blank" rel="noopener">
-      <div class="meta">${n.tag?`<span class="tag">${esc(n.tag)}</span>`:""}<span>${esc(rel(n.published))}</span></div>
+      <div class="meta">${favMention(n)?`<span class="favtag">★ ${esc(favMention(n))}</span>`:""}${n.tag?`<span class="tag">${esc(n.tag)}</span>`:""}<span>${esc(rel(n.published))}</span></div>
       <h3>${esc(n.title)}</h3>
       ${n.summary?`<p>${esc(n.summary)}</p>`:""}
       ${n.source?`<div class="src">${esc(n.source)} ›</div>`:""}
@@ -517,17 +677,17 @@ let standings=null;
 function renderStandings(){
   const s=standings;
   if(!s){["#drivers","#teams"].forEach(id=>$(id).innerHTML=`<div class="empty">Classifica non ancora disponibile.</div>`);return}
-  const sub=`<div class="sub">Classifica ${esc(s.after||"")}${s.updated?" · aggiornata "+esc(rel(s.updated)):""}</div>`;
+  const sub=`<div class="sub">Classifica ${esc(s.after||"")}${s.updated?" · aggiornata "+esc(rel(s.updated)):""}${FAV.d.length||FAV.t.length?"":" · tocca ☆ per seguire un pilota o una squadra"}</div>`;
   const lead=(s.drivers||[])[0]?.points||0;
-  $("#drivers").innerHTML=sub+(s.drivers||[]).map(d=>`<div class="row p${d.pos}">
+  $("#drivers").innerHTML=sub+(s.drivers||[]).map(d=>`<div class="row p${d.pos}${isFavD(d.name)||isFavT(d.team)?" fav":""}">
     <div class="pos">${esc(d.pos)}</div><div class="bar" style="background:${teamColor(d.team)}"></div>
     <div class="who"><b>${esc(d.name)}${d.champion?'<span class="champ">Campione</span>':""}</b><small>${esc(d.team)}</small></div>
-    <div class="pts">${esc(d.points)}${d.pos>1?`<small>-${lead-d.points}</small>`:"<small>pt</small>"}</div></div>`).join("");
+    <div class="pts">${esc(d.points)}${d.pos>1?`<small>-${lead-d.points}</small>`:"<small>pt</small>"}</div>${starBtn("d",d.name)}</div>`).join("");
   const tl=(s.constructors||[])[0]?.points||0;
-  $("#teams").innerHTML=sub+(s.constructors||[]).map(c=>`<div class="row p${c.pos}">
+  $("#teams").innerHTML=sub+(s.constructors||[]).map(c=>`<div class="row p${c.pos}${isFavT(c.team)?" fav":""}">
     <div class="pos">${esc(c.pos)}</div><div class="bar" style="background:${teamColor(c.team)}"></div>
     <div class="who"><b>${esc(c.team)}${c.champion?'<span class="champ">Campione</span>':""}</b>${c.drivers?`<small>${esc(c.drivers)}</small>`:""}</div>
-    <div class="pts">${esc(c.points)}${c.pos>1?`<small>-${tl-c.points}</small>`:"<small>pt</small>"}</div></div>`).join("");
+    <div class="pts">${esc(c.points)}${c.pos>1?`<small>-${tl-c.points}</small>`:"<small>pt</small>"}</div>${starBtn("t",c.team)}</div>`).join("");
   // classifiche nascoste se aggiornate dopo l'inizio della sessione non ancora vista
   const sp=spoilerSession(), hide=spoilerHidden&&sp&&s.updated&&new Date(s.updated)>=new Date(sp.start);
   if(hide){
@@ -553,17 +713,20 @@ function renderSched(){
   } else if(w.tv8note){
     h+=`<div class="tv8"><h4>📺 ${esc(freeCh())}</h4><div class="note" style="margin:0">${esc(w.tv8note)}</div></div>`;
   }
+  h+=`<div><button class="calbtn" onclick="calWeekend()">${CALICON}Aggiungi il weekend al calendario</button></div>`;
   h+=`<div class="table"><div class="sub">${esc(w.gp||"")}${w.circuit?" · "+esc(w.circuit):""} · orari italiani</div>`;
-  let last="";
+  let last="", anyWx=false;
   ses.forEach((s,i)=>{
     const d=dayName(s.start); if(d!==last){h+=`<div class="dayh">${esc(d)}</div>`;last=d}
     const st=new Date(s.start).getTime(), en=new Date(s.end||s.start).getTime()+(s.end?0:2*3600e3);
     const live=now>=st&&now<en, done=now>=en;
     const badge=live?`<span class="badge live">In corso</span>`:i===nextIdx?`<span class="badge next">Prossima</span>`:"";
     const tv8=s.tv8?`<br><span class="p8">${esc(freeCh())} ${s.tv8.live?"diretta":"differita"} ore ${esc(hm(s.tv8.time))}</span>`:"";
+    const wx=done?null:wxFor(s.start); if(wx) anyWx=true;
     h+=`<div class="sess${s.key?" key":""}${done?" done":""}"><div class="t">${esc(hm(s.start))}${s.end?`<small>– ${esc(hm(s.end))}</small>`:""}</div>
-      <div class="n"><b>${esc(s.name)}${badge}</b><div class="ch">${esc(s.live||"")}${tv8}</div></div></div>`;
+      <div class="n"><b>${esc(s.name)}${badge}</b><div class="ch">${esc(s.live||"")}${tv8}</div>${wx?wxHtml(wx):""}</div>${done?"":`<button class="add" onclick="calSession('${esc(s.start)}')" aria-label="Aggiungi ${esc(s.name)} al calendario">${CALICON}</button>`}</div>`;
   });
+  if(anyWx) h+=`<div class="wxnote">Meteo previsto sul circuito all'ora della sessione · dati Open-Meteo, aggiornati ogni ora</div>`;
   el.innerHTML=h+`</div>`;
 }
 /* ---------- Risultati ---------- */
@@ -598,7 +761,7 @@ function renderResults(){
     <div class="seg" id="segRes" style="overflow-x:auto">${tabs.map((t,i)=>`<button data-i="${i}" class="${i===resMode?"on":""}" style="white-space:nowrap">${esc(t.label)}</button>`).join("")}</div>
     <div class="table">`;
   const t=tabs[resMode]||{rows:[]}, isQ=t.kind==="quali";
-  h+=(t.rows||[]).map(d=>`<div class="row p${esc(d.pos)}">
+  h+=(t.rows||[]).map(d=>`<div class="row p${esc(d.pos)}${isFavD(d.name)||isFavT(d.team)?" fav":""}">
     <div class="pos">${esc(d.pos)}</div><div class="bar" style="background:${teamColor(d.team)}"></div>
     <div class="who"><b>${esc(d.name)}${d.note?`<span class="note">${esc(d.note)}</span>`:""}</b><small>${esc(d.team)}</small></div>
     <div class="pts" style="font-size:15px;font-family:Inter;font-weight:500">${esc(isQ?d.time:d.gap||"")}${!isQ&&d.points?`<small>+${esc(d.points)} pt</small>`:""}</div></div>`).join("");
@@ -656,7 +819,8 @@ function renderCal(){
   const wins={}; c.rounds.filter(x=>!hid(x)).forEach(x=>{(x.wins||(x.winner?[x.winner]:[])).forEach(w=>wins[w]=(wins[w]||0)+1)});
   const top=Object.entries(wins).sort((a,b)=>b[1]-a[1]);
   let h=`<div class="rhead"><div class="lbl">Stagione ${esc(c.season)}</div><h3>${done} ${S().unit} ${S().fem?"corse":"corsi"} su ${c.rounds.filter(x=>!canc(x)).length}</h3>
-    ${top.length?`<p>${S().wins}: ${top.map(([n,w])=>`${esc(n.split(" ").slice(-1)[0])} <b>${w}</b>`).join(" · ")}</p>`:`<p>La stagione deve ancora cominciare.</p>`}</div><div class="table cal">`;
+    ${top.length?`<p>${S().wins}: ${top.map(([n,w])=>`${esc(n.split(" ").slice(-1)[0])} <b>${w}</b>`).join(" · ")}</p>`:`<p>La stagione deve ancora cominciare.</p>`}</div>
+    ${c.rounds.some(x=>!x.winner&&!canc(x)&&x.date>=today)?`<div><button class="calbtn" onclick="calSeason()">${CALICON}Aggiungi le prossime gare al calendario</button></div>`:""}<div class="table cal">`;
   h+=c.rounds.map(x=>{
     const d=new Date(x.date+"T12:00:00Z");
     const ds=d.toLocaleDateString("it-IT",{day:"numeric",month:"short"});
@@ -775,8 +939,8 @@ $("#themeBtn").onclick=()=>applyTheme(document.documentElement.dataset.theme==="
 try{matchMedia("(prefers-color-scheme: light)").addEventListener("change",e=>{let st=null;try{st=localStorage.getItem("mt:theme")}catch(x){}if(!st)applyTheme(e.matches?"light":"dark",false)})}catch(e){}
 
 /* ---------- Pagina Weekend: tutte le serie insieme ---------- */
-let homeData={}, homeAll=false;
-try{homeAll=localStorage.getItem("mt:homeAll")==="1"}catch(e){}
+let homeData={}, homeMode="key";
+try{const m=localStorage.getItem("mt:homeMode");homeMode=m==="all"||m==="fav"?m:(localStorage.getItem("mt:homeAll")==="1"?"all":"key")}catch(e){}
 async function loadHome(){
   const keys=Object.keys(SER); let ok=0;
   await Promise.all(keys.map(async k=>{
@@ -805,35 +969,36 @@ function renderHome(){
   }
   all.sort((a,b)=>a.st-b.st);
   const keyCount=all.filter(x=>x.s.key).length;
-  const list=homeAll?all:all.filter(x=>x.s.key);
+  if(homeMode==="fav"&&!FAV.s.length) homeMode="key";
+  const list=homeMode==="all"?all:homeMode==="fav"?all.filter(x=>isFavS(x.k)):all.filter(x=>x.s.key);
   let h=`<div class="hcol1"><div class="rhead"><div class="lbl">Il weekend dei motori</div><h3>${all.length?"In pista nei prossimi giorni":"Nessuna sessione in programma"}</h3>
     <p>${all.length?`${keyCount?`${keyCount===1?"Una sessione":keyCount+" sessioni"} tra gare e qualifiche`:"Per ora solo prove libere"} ${(n=>n===1?"in un campionato":`in ${n} campionati`)(new Set(all.map(x=>x.k)).size)}. Orari italiani; tocca una sessione per i dettagli.`:"Nei prossimi 7 giorni non ci sono sessioni in calendario. Qui sotto trovi i prossimi appuntamenti di ogni campionato."}</p></div>`;
   if(all.length){
-    h+=`<div class="seg" id="homeSeg"><button data-a="0" class="${homeAll?"":"on"}">Gare e qualifiche</button><button data-a="1" class="${homeAll?"on":""}">Tutte le sessioni</button></div>`;
+    h+=`<div class="seg" id="homeSeg"><button data-a="key" class="${homeMode==="key"?"on":""}">Gare e qualifiche</button><button data-a="all" class="${homeMode==="all"?"on":""}">Tutte</button>${FAV.s.length?`<button data-a="fav" class="${homeMode==="fav"?"on":""}">★ Preferiti</button>`:""}</div>`;
     h+=`<div class="table">`; let last="";
-    if(!list.length) h+=`<div class="empty" style="padding:24px 10px">Solo prove libere nei prossimi giorni.</div>`;
+    if(!list.length) h+=`<div class="empty" style="padding:24px 10px">${homeMode==="fav"?"I tuoi campionati preferiti non corrono nei prossimi giorni.":"Solo prove libere nei prossimi giorni."}</div>`;
     list.forEach(x=>{
       const d=dayName(x.s.start); if(d!==last){h+=`<div class="dayh">${esc(d)}</div>`;last=d}
       const live=now>=x.st&&now<x.en, c=SER[x.k];
       const tv=x.s.tv8?` · <span style="color:var(--tvc);font-weight:600">${esc(x.ch)} ${x.s.tv8.live?"diretta":"differita ore "+esc(hm(x.s.tv8.time))}</span>`:"";
       h+=`<div class="sess hsess${x.s.key?" key":""}" data-k="${x.k}"><div class="t">${esc(hm(x.s.start))}</div>
-        <div class="n"><b><span class="stag" style="background:${c.color}">${esc(c.logo)}</span>${esc(x.s.name)}${live?'<span class="badge live">In corso</span>':""}</b><small>${esc(x.gp||"")}${tv}</small></div></div>`;
+        <div class="n"><b><span class="stag" style="background:${c.color}">${isFavS(x.k)?"★ ":""}${esc(c.logo)}</span>${esc(x.s.name)}${live?'<span class="badge live">In corso</span>':""}</b><small>${esc(x.gp||"")}${tv}</small></div></div>`;
     });
     h+=`</div>`;
   }
   // prossimo appuntamento di ogni campionato
-  const nx=Object.keys(SER).map(k=>{const n=homeData[k]?.info?.nextGp;return {k,n,t:n?.date?new Date(n.date).getTime():Infinity}}).sort((a,b)=>a.t-b.t);
-  h+=`</div><div class="hcol2"><div class="hsec">Prossimi appuntamenti</div><div class="table cal">`+nx.map(({k,n,t})=>{
+  const nx=Object.keys(SER).map(k=>{const n=homeData[k]?.info?.nextGp;return {k,n,t:n?.date?new Date(n.date).getTime():Infinity}}).sort((a,b)=>(isFavS(b.k)-isFavS(a.k))||(a.t-b.t));
+  h+=`</div><div class="hcol2"><div class="hsec">Prossimi appuntamenti</div>${FAV.s.length?"":`<div class="hint">Tocca ☆ per mettere un campionato tra i preferiti: lo vedrai sempre in cima.</div>`}<div class="table cal">`+nx.map(({k,n,t})=>{
     const c=SER[k], d=homeData[k];
     const sub=n?esc(n.name):d?(d.calendar?.rounds?.length?"Stagione conclusa, calendario in arrivo":"Dati in arrivo"):"Dati non disponibili";
     const ds=n?new Date(t).toLocaleDateString("it-IT",{day:"numeric",month:"short",timeZone:"Europe/Rome"}):"";
     const yr=n&&new Date(t).getFullYear()!==new Date().getFullYear()?new Date(t).getFullYear():"";
     return `<div class="row hnext${n?"":" off"}" data-k="${k}"><div class="bar" style="background:${c.color}"></div>
       <div class="who"><b>${esc(c.logo==="SBK"?"Superbike":c.logo)} <span style="font-weight:600;color:var(--muted);font-size:13px">${esc(c.logo==="SBK"?"":c.name)}</span></b><small>${sub}</small></div>
-      <div class="dt">${n?`<b>${esc(ds)}</b>${esc(yr)}`:""}</div></div>`;
+      <div class="dt">${n?`<b>${esc(ds)}</b>${esc(yr)}`:""}</div>${starBtn("s",k)}</div>`;
   }).join("")+`</div></div>`;
   el.innerHTML=h;
-  el.querySelectorAll("#homeSeg button").forEach(b=>b.onclick=()=>{homeAll=b.dataset.a==="1";try{localStorage.setItem("mt:homeAll",homeAll?"1":"0")}catch(e){};renderHome()});
+  el.querySelectorAll("#homeSeg button").forEach(b=>b.onclick=()=>{homeMode=b.dataset.a;try{localStorage.setItem("mt:homeMode",homeMode)}catch(e){};renderHome()});
   el.querySelectorAll(".hsess").forEach(r=>r.onclick=()=>goSeries(r.dataset.k,"sched"));
   el.querySelectorAll(".hnext").forEach(r=>r.onclick=()=>goSeries(r.dataset.k,"news"));
 }
@@ -859,6 +1024,7 @@ async function load(fresh){
     const safe=(f,...a)=>{try{f(...a)}catch(e){console.error(f.name,e);lastErr=f.name+": "+e.message}};
     safe(renderInfo); safe(renderResults); safe(renderCal); safe(renderStandings); safe(renderSched); safe(renderVideos);
     safe(checkSpoiler); safe(render); safe(renderStandings); safe(renderResults); safe(renderH2H); safe(renderCal); safe(renderVideos);
+    loadWeather();
     return changed?"new":"same";
   }catch(e){
     if(my!==loadSeq) return;
@@ -896,14 +1062,14 @@ function renderSide(){
   const now=Date.now(); let h="";
   const ses=(weekend?.sessions||[]).filter(s=>{const st=new Date(s.start).getTime();const en=s.end?new Date(s.end).getTime():st+2*3600e3;return en>now}).sort((a,b)=>new Date(a.start)-new Date(b.start)).slice(0,5);
   h+=`<div class="sbox"><h4>Prossime sessioni<button onclick="showView('sched')">Tutti gli orari ›</button></h4>`;
-  h+=ses.length?ses.map(s=>{const live=now>=new Date(s.start).getTime();return `<div class="sl${s.key?" key":""}"><b>${esc(hm(s.start))}</b><span>${esc(s.name)}${live?' <span class="badge live">In corso</span>':""}</span><small>${esc(dayName(s.start).split(" ").slice(0,2).join(" "))}</small></div>`}).join("")
+  h+=ses.length?ses.map(s=>{const live=now>=new Date(s.start).getTime(), wx=wxFor(s.start);return `<div class="sl${s.key?" key":""}"><b>${esc(hm(s.start))}</b><span>${esc(s.name)}${live?' <span class="badge live">In corso</span>':""}</span><small>${wx?wxIcon(wx.c)+" "+wx.t+"° · ":""}${esc(dayName(s.start).split(" ").slice(0,2).join(" "))}</small></div>`}).join("")
     :`<div class="none">${weekend?.gp?esc(weekend.gp)+": orari non ancora pubblicati.":"Nessuna sessione in programma."}</div>`;
   h+=`</div>`;
   const st=standings, sp=spoilerSession(), hide=spoilerHidden&&sp&&st?.updated&&new Date(st.updated)>=new Date(sp.start);
   h+=`<div class="sbox"><h4>Classifica<button onclick="showView('drivers')">Completa ›</button></h4>`;
   h+=!st?.drivers?.length?`<div class="none">Classifica non ancora disponibile.</div>`
     :hide?`<div class="none">🙈 Nascosta per evitare spoiler.</div>`
-    :st.drivers.slice(0,5).map(d=>`<div class="sp"><i>${esc(d.pos)}</i><div class="bar" style="background:${teamColor(d.team)}"></div><span>${esc(d.name)}</span><b>${esc(d.points)}</b></div>`).join("");
+    :st.drivers.slice(0,5).map(d=>`<div class="sp${isFavD(d.name)||isFavT(d.team)?" fav":""}"><i>${esc(d.pos)}</i><div class="bar" style="background:${teamColor(d.team)}"></div><span>${esc(d.name)}</span><b>${esc(d.points)}</b></div>`).join("");
   h+=`</div>`;
   el.innerHTML=h;
 }

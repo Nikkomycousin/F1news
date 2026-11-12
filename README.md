@@ -25,7 +25,8 @@ Ogni file ha queste chiavi (tutte facoltative):
 
 - `news`: lista di `{id, title, summary, tag, source, url, published (ISO UTC), top?}`
 - `info`: `{updated, nextGp: {name, circuit, date (ISO UTC), dateOnly?, label, note?}}`
-- `weekend`: `{gp, circuit, updated, freeChannel?, tv8note?, sessions: [{name, start, end?, live, key?, tv8?: {live, time}}]}`
+- `weekend`: `{gp, circuit, lat?, lon?, updated, freeChannel?, tv8note?, sessions: [{name, start, end?, live, key?, tv8?: {live, time}}]}`
+  - `lat`, `lon`: coordinate del circuito per il meteo (Open-Meteo). Se mancano, l'app le cerca in una tabella dei circuiti più noti.
   - `freeChannel`: nome del canale in chiaro (predefinito `"TV8"`); il campo `tv8` di ogni sessione indica la messa in onda su quel canale.
   - `key: true` per le sessioni principali (qualifiche, Superpole, sprint, gare): sono quelle mostrate nella pagina Weekend.
 - `results`: `{gp, round, updated, summary, podium?, tabs: [{label, kind: "race"|"quali", rows: [...]}]}`
@@ -35,6 +36,13 @@ Ogni file ha queste chiavi (tutte facoltative):
 - solo in `f1.json`: `h2h` (compagni di squadra)
 
 Gli orari sono sempre in UTC nei file; l'app li mostra in ora italiana.
+
+## Funzioni lato utente
+
+- **Aggiungi al calendario**: file `.ics` (una sessione, il weekend o le prossime gare della stagione) con avviso 15 minuti prima, oppure Google Calendar per la singola sessione.
+- **Preferiti**: stella su piloti, squadre (Classifica) e campionati (pagina Weekend), salvati nel browser (`mt:fav`).
+- **Meteo**: previsioni Open-Meteo per ogni sessione dei prossimi 15 giorni.
+- **Tema chiaro/scuro**: segue il dispositivo finché l'utente non sceglie (`mt:theme`).
 
 I dati vengono aggiornati automaticamente da Claude.
 
