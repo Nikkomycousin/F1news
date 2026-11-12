@@ -21,6 +21,16 @@
       "top": false
     },
     {
+      "id": "2026-11-11-limite-potenza-bagnato",
+      "title": "Limite di potenza sul bagnato, Lindblad e Bortoleto: «Impossibile sorpassare»",
+      "summary": "A Interlagos la potenza elettrica è stata ridotta da 350 a 250 kW per motivi di sicurezza sul bagnato. I due rookie lamentano che il taglio in rettilineo ha reso quasi impossibile attaccare o staccare gli avversari.",
+      "tag": "Paddock",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/f1-drivers-air-frustrations-after-speed-limit-introduction",
+      "published": "2026-11-11T11:30:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-11-bearman-haas-tre-settimane",
       "title": "Bearman: «Tre settimane orribili per la Haas, per fortuna sono finite»",
       "summary": "Dopo i ritiri di Austin e Città del Messico, a Interlagos Bearman è scivolato al 17° posto per soste lente ai box. La Haas resta settima tra i costruttori con appena tre punti di margine sull'Audi a tre gare dalla fine.",
@@ -943,7 +953,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-12T07:55:00Z",
+    "updated": "2026-11-12T10:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
