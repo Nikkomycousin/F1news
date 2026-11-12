@@ -11,6 +11,16 @@
       "top": false
     },
     {
+      "id": "2026-11-10-locatelli-miller-michelin",
+      "title": "Locatelli si affida a Miller per capire le Michelin nel 2027",
+      "summary": "Il miglior pilota Yamaha del 2026 conta sull'esperienza del nuovo compagno, in arrivo dalla MotoGP, ora che Michelin diventa fornitore unico. Locatelli prevede una stagione più equilibrata, con più marche in grado di vincere.",
+      "tag": "Team",
+      "source": "corsedimoto.com",
+      "url": "https://www.corsedimoto.com/superbike/locatelli-punta-su-jack-miller-ha-tanta-esperienza-con-le-michelin-ci-aiutera",
+      "published": "2026-11-10T17:15:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-arenas-go-eleven",
       "title": "Albert Arenas sbarca in Superbike: sarà compagno di Baldassarri al Team Go Eleven",
       "summary": "Il Team Go Eleven schiererà due moto nel 2027 e affianca a Lorenzo Baldassarri il due volte campione del mondo spagnolo. Pata diventa sponsor principale; il debutto della nuova coppia è previsto nei test di Valencia del 9-10 dicembre.",
@@ -62,7 +72,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-12T18:55:00Z",
+    "updated": "2026-11-12T20:55:00Z",
     "nextGp": {
       "name": "Round d'Australia",
       "circuit": "Phillip Island",

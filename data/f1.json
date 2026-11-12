@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-12-mercato-2027-ultimi-sedili",
+      "title": "Mercato 2027 quasi chiuso: Bottas in bilico in Cadillac, Herta in attesa",
+      "summary": "Con Lawson e Lindblad confermati in Racing Bulls resta da definire un ultimo posto: Bottas non ha certezze in Cadillac e il collaudatore Herta è il candidato principale. Bearman dovrebbe restare in Haas, mentre Ocon potrebbe ripartire da un ruolo di riserva.",
+      "tag": "Mercato",
+      "source": "formula1.com",
+      "url": "https://www.formula1.com/en/latest/article/analysis-why-the-f1-driver-market-might-produce-one-last-twist-for-2027.6t7AwtqfHWkDqSgQZ3ElQ3",
+      "published": "2026-11-12T19:30:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-12-tsolov-riserva-red-bull-2027",
       "title": "Tsolov sarà il pilota di riserva di Red Bull e Racing Bulls nel 2027",
       "summary": "Rimasto senza sedile titolare, il bulgaro secondo in F2 avrà un programma fatto di FP1, test gomme, simulatore e chilometri con monoposto vecchie per prepararsi al debutto.",
@@ -983,7 +993,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-12T18:55:00Z",
+    "updated": "2026-11-12T20:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
