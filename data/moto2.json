@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-10-guevara-motore-triumph",
+      "title": "Guevara ko in Qatar, Pramac Yamaha chiede spiegazioni sul motore Triumph",
+      "summary": "Il ritiro di Lusail è stato causato da un guasto al motore e il team chiede risposte chiare al fornitore. Guevara sostiene che i problemi all'iniezione erano già emersi a Sepang; ora insegue Gonzalez a 13,5 punti.",
+      "tag": "Mondiale",
+      "source": "Corsedimoto",
+      "url": "https://www.corsedimoto.com/in-pista/guevara-il-motore-triumph-sotto-accusa-pramac-yamaha-chiede-risposte-chiare-dopo-il-ritiro-in-qatar",
+      "published": "2026-11-10T16:00:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-portimao-orari",
       "title": "Portimão, a Gonzalez il primo match point: gli orari del weekend Moto2",
       "summary": "Il penultimo round si corre dal 20 al 22 novembre in Algarve, con la gara Moto2 domenica alle 12:15 italiane. Sky trasmette tutto il weekend, TV8 dovrebbe proporre in chiaro qualifiche e gara.",
@@ -52,7 +62,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T23:50:00Z",
+    "updated": "2026-11-12T07:55:00Z",
     "nextGp": {
       "name": "GP del Portogallo",
       "circuit": "Portimão",

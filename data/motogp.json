@@ -1,6 +1,26 @@
 {
   "news": [
     {
+      "id": "2026-11-11-bagnaia-operato-torino",
+      "title": "Bagnaia operato a Torino: intervento riuscito, Portimão resta in forse",
+      "summary": "Al pilota Ducati sono state ridotte con una placca le fratture al quarto e quinto metatarso del piede destro. Pecco vorrebbe provarci in Portogallo, ma servirà l'ok dei medici; Tardozzi considera quasi certa la sua presenza a Valencia.",
+      "tag": "Ducati",
+      "source": "Paddock News 24",
+      "url": "https://www.paddocknews24.com/en/moto/motogp/motogp-bagnaias-surgery-is-successful-but-his-return-date-remains-uncertain",
+      "published": "2026-11-11T17:00:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-11-moreira-ritiro-qatar-gomito",
+      "title": "Moreira spiega il ritiro in Qatar: colpa di un nervo del gomito",
+      "summary": "Il debuttante della LCR Honda si è fermato al sedicesimo giro per un problema al nervo del gomito, strascico della caduta del Sachsenring in Moto2. Conta di tornare in piena forma per Portimão dopo una settimana di riposo.",
+      "tag": "Team",
+      "source": "Corsedimoto",
+      "url": "https://www.corsedimoto.com/motogp/diogo-moreira-svela-il-motivo-del-ritiro-in-qatar-il-nervo-del-gomito-e-andata-sempre-peggio",
+      "published": "2026-11-11T07:12:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-martin-polso-qatar-portimao",
       "title": "Martín: «Ho quasi saltato il Qatar per il polso», ma conta di recuperare per Portimão",
       "summary": "Con il polso destro fratturato nella Sprint australiana, Martín ha rischiato di non correre a Lusail, dove ha chiuso terzo nella Sprint e settimo in gara. Il dolore resta forte in frenata, ma lo spagnolo si aspetta di stare meglio in Portogallo.",
@@ -59,20 +79,10 @@
       "url": "https://www.moto.it/MotoGP/ufficiale-yamaha-non-andra-gp-qatar-motogp-storce-la-bocca-disappunto.html",
       "published": "2026-11-01T12:00:00Z",
       "top": false
-    },
-    {
-      "id": "2026-11-11-bagnaia-operato-torino",
-      "title": "Bagnaia operato a Torino: intervento riuscito, Portimão resta in forse",
-      "summary": "Al pilota Ducati sono state ridotte con una placca le fratture al quarto e quinto metatarso del piede destro. Pecco vorrebbe provarci in Portogallo, ma servirà l'ok dei medici; Tardozzi considera quasi certa la sua presenza a Valencia.",
-      "tag": "Ducati",
-      "source": "Paddock News 24",
-      "url": "https://www.paddocknews24.com/en/moto/motogp/motogp-bagnaias-surgery-is-successful-but-his-return-date-remains-uncertain",
-      "published": "2026-11-11T17:00:00Z",
-      "top": false
     }
   ],
   "info": {
-    "updated": "2026-11-11T23:50:00Z",
+    "updated": "2026-11-12T07:55:00Z",
     "nextGp": {
       "name": "GP del Portogallo",
       "circuit": "Autódromo Internacional do Algarve, Portimão",

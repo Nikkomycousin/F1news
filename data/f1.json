@@ -11,6 +11,16 @@
       "top": false
     },
     {
+      "id": "2026-11-11-mercedes-brasile-gomme-fredde",
+      "title": "Mercedes spiega il Brasile: W17 fuori finestra con le gomme fredde",
+      "summary": "Dall'analisi del team emerge che sul bagnato le gomme lavoravano sotto la temperatura ideale, rendendo la vettura molto sovrasterzante. Antonelli e Russell avevano descritto la macchina come «rotta» e hanno chiuso solo quarto e quinto.",
+      "tag": "Mercedes",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/mercedes-brazilian-grand-prix-2026-investigation",
+      "published": "2026-11-11T16:21:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-11-bearman-haas-tre-settimane",
       "title": "Bearman: «Tre settimane orribili per la Haas, per fortuna sono finite»",
       "summary": "Dopo i ritiri di Austin e Città del Messico, a Interlagos Bearman è scivolato al 17° posto per soste lente ai box. La Haas resta settima tra i costruttori con appena tre punti di margine sull'Audi a tre gare dalla fine.",
@@ -18,6 +28,16 @@
       "source": "formula1.com",
       "url": "https://www.formula1.com/en/latest/article/bearman-relieved-horrible-three-weeks-for-haas-are-over.2DZIcOEVILLVUfQT00bStA",
       "published": "2026-11-11T10:35:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-11-camara-haas-resto-stagione",
+      "title": "Câmara e la Haas trattano per il finale di stagione: «Non so ancora»",
+      "summary": "L'ingaggio del brasiliano era stato annunciato solo per Interlagos e ora si discute se resterà fino ad Abu Dhabi. Restare in F1 significherebbe però rinunciare alla corsa al titolo F2, di cui è leader.",
+      "tag": "Mercato",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/rafael-camara-reveals-discussions-to-see-out-f1-season-with-haas",
+      "published": "2026-11-11T01:05:00Z",
       "top": false
     },
     {
@@ -923,7 +943,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T23:50:00Z",
+    "updated": "2026-11-12T07:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",

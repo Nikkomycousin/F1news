@@ -1,16 +1,6 @@
 {
   "news": [
     {
-      "id": "2026-11-09-jakobsen-mclaren",
-      "title": "Jakobsen passa dalla Peugeot alla McLaren: completata la line-up Hypercar 2027",
-      "summary": "Il danese è il sesto e ultimo pilota ingaggiato dalla McLaren per il debutto nel WEC 2027 con la MCL-HY. Gli equipaggi delle due vetture saranno decisi dopo i test di fine anno in Europa.",
-      "tag": "Mercato",
-      "source": "Sportscar365",
-      "url": "https://sportscar365.com/lemans/wec/jakobsen-confirmed-as-final-mclaren-hypercar-driver/",
-      "published": "2026-11-09T15:00:00Z",
-      "top": false
-    },
-    {
       "id": "2026-11-09-bmw-seconda-costruttori",
       "title": "BMW chiude il 2026 seconda tra i costruttori Hypercar, davanti alla Ferrari",
       "summary": "Nonostante un finale opaco a Monza, con la #15 sesta e la #20 nona, BMW conquista il secondo posto nel mondiale marche alle spalle di Toyota. La stagione ha portato cinque podi e le vittorie a Spa e San Paolo, con Magnussen e Marciello terzi tra i piloti.",
@@ -18,6 +8,16 @@
       "source": "BimmerLife",
       "url": "https://bimmerlife.com/2026/11/09/bmw-finishes-second-in-fia-wec-hypercar-manufacturer-championship/",
       "published": "2026-11-09T19:00:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-09-jakobsen-mclaren",
+      "title": "Jakobsen passa dalla Peugeot alla McLaren: completata la line-up Hypercar 2027",
+      "summary": "Il danese è il sesto e ultimo pilota ingaggiato dalla McLaren per il debutto nel WEC 2027 con la MCL-HY. Gli equipaggi delle due vetture saranno decisi dopo i test di fine anno in Europa.",
+      "tag": "Mercato",
+      "source": "Sportscar365",
+      "url": "https://sportscar365.com/lemans/wec/jakobsen-confirmed-as-final-mclaren-hypercar-driver/",
+      "published": "2026-11-09T15:00:00Z",
       "top": false
     },
     {
@@ -245,7 +245,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T23:50:00Z",
+    "updated": "2026-11-12T07:55:00Z",
     "nextGp": {
       "name": "Qatar 1812 km",
       "circuit": "Lusail",

@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-11-bautista-futuro-2027",
+      "title": "Bautista senza sella nel 2027: il futuro dello spagnolo resta aperto",
+      "summary": "Con la griglia Superbike 2027 ormai completa, il due volte campione è rimasto fuori. Lo spagnolo non ha ancora deciso cosa farà la prossima stagione.",
+      "tag": "Mercato",
+      "source": "Corsedimoto",
+      "url": "https://www.corsedimoto.com/superbike/alvaro-bautista-il-futuro-nel-2027-resta-aperto-la-superbike-si-e-giocata-un-personaggio",
+      "published": "2026-11-11T12:00:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-arenas-go-eleven",
       "title": "Albert Arenas sbarca in Superbike: sarà compagno di Baldassarri al Team Go Eleven",
       "summary": "Il Team Go Eleven schiererà due moto nel 2027 e affianca a Lorenzo Baldassarri il due volte campione del mondo spagnolo. Pata diventa sponsor principale; il debutto della nuova coppia è previsto nei test di Valencia del 9-10 dicembre.",
@@ -52,7 +62,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T23:50:00Z",
+    "updated": "2026-11-12T07:55:00Z",
     "nextGp": {
       "name": "Round d'Australia",
       "circuit": "Phillip Island",

@@ -1,13 +1,13 @@
 {
   "news": [
     {
-      "id": "2026-11-08-portimao-orari",
-      "title": "Portimão, gli orari della Moto3: gara domenica alle 15:30 dopo la MotoGP",
-      "summary": "Il penultimo appuntamento si disputa dal 20 al 22 novembre in Algarve, con qualifiche sabato dalle 13:45 italiane. Sky e NOW coprono tutto il weekend, TV8 dovrebbe trasmettere in chiaro qualifiche e gara.",
-      "tag": "Calendario",
-      "source": "OA Sport",
-      "url": "https://www.oasport.it/2026/11/dove-la-prossima-gara-di-motogp-gp-portogallo-2026-programma-orari-tv/",
-      "published": "2026-11-08T14:35:00Z",
+      "id": "2026-11-08-qatar-classifica",
+      "title": "Aspar campione tra i team, Almansa consolida il secondo posto nel mondiale",
+      "summary": "Dopo Lusail Quiles è a quota 392 punti, con Almansa secondo davanti a Carpe e Uriarte. La squadra CFMOTO Aspar ha chiuso i conti nella classifica a squadre con due gare d'anticipo.",
+      "tag": "Mondiale",
+      "source": "Crash.net",
+      "url": "https://www.crash.net/moto3/results/1109840/1/2026-qatar-moto3-race-results",
+      "published": "2026-11-08T17:00:00Z",
       "top": false
     },
     {
@@ -21,13 +21,13 @@
       "top": true
     },
     {
-      "id": "2026-11-08-qatar-classifica",
-      "title": "Aspar campione tra i team, Almansa consolida il secondo posto nel mondiale",
-      "summary": "Dopo Lusail Quiles è a quota 392 punti, con Almansa secondo davanti a Carpe e Uriarte. La squadra CFMOTO Aspar ha chiuso i conti nella classifica a squadre con due gare d'anticipo.",
-      "tag": "Mondiale",
-      "source": "Crash.net",
-      "url": "https://www.crash.net/moto3/results/1109840/1/2026-qatar-moto3-race-results",
-      "published": "2026-11-08T17:00:00Z",
+      "id": "2026-11-08-portimao-orari",
+      "title": "Portimão, gli orari della Moto3: gara domenica alle 15:30 dopo la MotoGP",
+      "summary": "Il penultimo appuntamento si disputa dal 20 al 22 novembre in Algarve, con qualifiche sabato dalle 13:45 italiane. Sky e NOW coprono tutto il weekend, TV8 dovrebbe trasmettere in chiaro qualifiche e gara.",
+      "tag": "Calendario",
+      "source": "OA Sport",
+      "url": "https://www.oasport.it/2026/11/dove-la-prossima-gara-di-motogp-gp-portogallo-2026-programma-orari-tv/",
+      "published": "2026-11-08T14:35:00Z",
       "top": false
     },
     {
@@ -52,7 +52,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-11T23:50:00Z",
+    "updated": "2026-11-12T07:55:00Z",
     "nextGp": {
       "name": "GP del Portogallo",
       "circuit": "Portimão",
