@@ -11,6 +11,16 @@
       "top": false
     },
     {
+      "id": "2026-11-11-bezzecchi-12-vittorie-12-piste",
+      "title": "Bezzecchi da record: le prime 12 vittorie in MotoGP su 12 circuiti diversi",
+      "summary": "Con il successo di Lusail Bezzecchi ha vinto ognuno dei suoi primi dodici GP della classe regina su una pista diversa, un primato nella storia della MotoGP.",
+      "tag": "Aprilia",
+      "source": "Sky Sport",
+      "url": "https://sport.sky.it/motogp/2026/11/11/motogp-piloti-vittorie-gp-circuiti-diversi",
+      "published": "2026-11-11T12:06:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-11-moreira-ritiro-qatar-gomito",
       "title": "Moreira spiega il ritiro in Qatar: colpa di un nervo del gomito",
       "summary": "Il debuttante della LCR Honda si è fermato al sedicesimo giro per un problema al nervo del gomito, strascico della caduta del Sachsenring in Moto2. Conta di tornare in piena forma per Portimão dopo una settimana di riposo.",
@@ -18,6 +28,16 @@
       "source": "Corsedimoto",
       "url": "https://www.corsedimoto.com/motogp/diogo-moreira-svela-il-motivo-del-ritiro-in-qatar-il-nervo-del-gomito-e-andata-sempre-peggio",
       "published": "2026-11-11T07:12:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-10-savadori-aprilia-rinnovo-2028",
+      "title": "Aprilia conferma Savadori: il collaudatore rinnova fino al 2028",
+      "summary": "Lorenzo Savadori resterà il test rider dell'Aprilia per altre due stagioni: l'accordo ufficiale lo lega alla Casa di Noale fino a tutto il 2028.",
+      "tag": "Mercato",
+      "source": "Sky Sport",
+      "url": "https://sport.sky.it/motogp/2026/11/10/motogp-lorenzo-savadori-aprilia-rinnovo-news",
+      "published": "2026-11-10T15:40:00Z",
       "top": false
     },
     {
@@ -82,7 +102,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-12T10:55:00Z",
+    "updated": "2026-11-12T13:55:00Z",
     "nextGp": {
       "name": "GP del Portogallo",
       "circuit": "Autódromo Internacional do Algarve, Portimão",
