@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-10-penske-cadillac-trattativa-2028",
+      "title": "Penske tratta con Cadillac per un programma ufficiale WEC e IMSA dal 2028",
+      "summary": "Chiuso il rapporto con Porsche, la squadra americana valuta una o due Cadillac ufficiali, forse al posto di JOTA nel WEC, e una presenza a Le Mans già nel 2027. Nessuna conferma dalle parti.",
+      "tag": "Team",
+      "source": "Grande Prêmio",
+      "url": "https://grandepremio.com/en/endurance/wec/penske-in-talks-with-cadillac-over-possible-factory-wec-and-imsa-programmes-for-2028/",
+      "published": "2026-11-10T12:00:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-09-bmw-seconda-costruttori",
       "title": "BMW chiude il 2026 seconda tra i costruttori Hypercar, davanti alla Ferrari",
       "summary": "Nonostante un finale opaco a Monza, con la #15 sesta e la #20 nona, BMW conquista il secondo posto nel mondiale marche alle spalle di Toyota. La stagione ha portato cinque podi e le vittorie a Spa e San Paolo, con Magnussen e Marciello terzi tra i piloti.",
@@ -245,7 +255,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-12T10:55:00Z",
+    "updated": "2026-11-12T18:55:00Z",
     "nextGp": {
       "name": "Qatar 1812 km",
       "circuit": "Lusail",

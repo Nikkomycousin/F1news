@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-12-tsolov-riserva-red-bull",
+      "title": "Tsolov resta fuori dalla F1 2027: sarà riserva Red Bull",
+      "summary": "Con Lawson e Lindblad confermati dalla Racing Bulls, il secondo della classifica F2 farà il collaudatore per le due squadre Red Bull, con alcune uscite nelle prove libere.",
+      "tag": "Mercato",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/red-bull-nikola-tsolov-f1-2027-reserve-driver",
+      "published": "2026-11-12T15:29:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-10-documentario-dieci-anni",
       "title": "Dieci anni di F2 in un documentario con Leclerc, Norris e Antonelli",
       "summary": "La categoria celebra la sua decima stagione con un documentario dietro le quinte, in uscita l'11 novembre, che raccoglie le voci di nove piloti oggi in F1 e di dirigenti come Wolff e Domenicali.",
@@ -125,7 +135,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-12T10:55:00Z",
+    "updated": "2026-11-12T18:55:00Z",
     "nextGp": {
       "name": "Round 13 · Qatar",
       "circuit": "Lusail",

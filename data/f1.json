@@ -1,6 +1,36 @@
 {
   "news": [
     {
+      "id": "2026-11-12-tsolov-riserva-red-bull-2027",
+      "title": "Tsolov sarà il pilota di riserva di Red Bull e Racing Bulls nel 2027",
+      "summary": "Rimasto senza sedile titolare, il bulgaro secondo in F2 avrà un programma fatto di FP1, test gomme, simulatore e chilometri con monoposto vecchie per prepararsi al debutto.",
+      "tag": "Red Bull",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/red-bull-nikola-tsolov-f1-2027-reserve-driver",
+      "published": "2026-11-12T15:29:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-12-honda-indagine-batteria-stroll",
+      "title": "Honda indaga sulla batteria dopo il quattordicesimo ritiro di Stroll",
+      "summary": "Il guasto che ha fermato Stroll in Brasile si è già ripetuto più volte e la causa resta sconosciuta: Honda analizzerà dati e componenti per settimane per non portarsi il problema nel 2027.",
+      "tag": "Team",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/honda-investigation-lance-stroll-aston-martin-battery",
+      "published": "2026-11-12T12:47:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-12-racing-bulls-lawson-lindblad-2027",
+      "title": "Racing Bulls conferma Lawson e Lindblad anche per il 2027",
+      "summary": "La squadra di Faenza ha ufficializzato la coppia attuale per la prossima stagione: Lawson, nono nel mondiale con 15 arrivi a punti, si guadagna la conferma dopo settimane di incertezza.",
+      "tag": "Mercato",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/liam-lawson-racing-bulls-f1-2027-announcement",
+      "published": "2026-11-12T11:04:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-11-mclaren-novita-las-vegas",
       "title": "McLaren porta altre novità a Las Vegas: le basi della monoposto 2027",
       "summary": "Dopo il successo di Norris a Interlagos con ala anteriore e fondo nuovi, Stella annuncia ulteriori componenti per Las Vegas. L'ala anteriore introdotta in Brasile sarà presente anche sulla vettura di lancio 2027.",
@@ -953,7 +983,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-12T13:55:00Z",
+    "updated": "2026-11-12T18:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",

@@ -1,6 +1,26 @@
 {
   "news": [
     {
+      "id": "2026-11-12-ducati-presentazione-campiglio-2027",
+      "title": "Ducati svelerà la squadra 2027 il 18 gennaio a Madonna di Campiglio",
+      "summary": "Durante Campioni in Pista Márquez e Acosta si mostreranno per la prima volta insieme in rosso; il primo incontro in pista sarà già al test di Valencia, ma Acosta resta legato a KTM fino a fine anno.",
+      "tag": "Ducati",
+      "source": "Corsedimoto",
+      "url": "https://www.corsedimoto.com/motogp/ducati-gioca-danticipo-il-super-team-motogp-2027-si-svela-il-18-gennaio-a-madonna-di-campiglio",
+      "published": "2026-11-12T14:14:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-12-test-jerez-850-pioggia",
+      "title": "Test collaudatori a Jerez sotto la pioggia: Pol Espargaró davanti a Bulega",
+      "summary": "Nella prima giornata bagnata con le nuove 850 il collaudatore KTM ha preceduto di otto decimi il campione Superbike Bulega, in pista solo al mattino; più staccati Savadori e Pirro.",
+      "tag": "Paddock",
+      "source": "Corsedimoto",
+      "url": "https://www.corsedimoto.com/motogp/test-jerez-sotto-la-pioggia-pol-espargaro-beffa-bulega-il-campione-sbk-a-otto-decimi",
+      "published": "2026-11-12T06:29:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-11-bagnaia-operato-torino",
       "title": "Bagnaia operato a Torino: intervento riuscito, Portimão resta in forse",
       "summary": "Al pilota Ducati sono state ridotte con una placca le fratture al quarto e quinto metatarso del piede destro. Pecco vorrebbe provarci in Portogallo, ma servirà l'ok dei medici; Tardozzi considera quasi certa la sua presenza a Valencia.",
@@ -102,7 +122,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-12T13:55:00Z",
+    "updated": "2026-11-12T18:55:00Z",
     "nextGp": {
       "name": "GP del Portogallo",
       "circuit": "Autódromo Internacional do Algarve, Portimão",
