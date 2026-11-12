@@ -40,7 +40,7 @@ Gli orari sono sempre in UTC nei file; l'app li mostra in ora italiana.
 ## Funzioni lato utente
 
 - **Aggiungi al calendario**: file `.ics` (una sessione, il weekend o le prossime gare della stagione) con avviso 15 minuti prima, oppure Google Calendar per la singola sessione.
-- **Preferiti**: stella su piloti, squadre (Classifica) e campionati (pagina Weekend), salvati nel browser (`mt:fav`).
+- **Preferiti**: stella su piloti, squadre (Classifica) e campionati (pagina Weekend), salvati nel browser (`mt:fav`); riquadro "I miei preferiti" in cima alla pagina Weekend con posizione, prossima sessione e ultima notizia.
 - **Meteo**: previsioni Open-Meteo per ogni sessione dei prossimi 15 giorni.
 - **Tema chiaro/scuro**: segue il dispositivo finché l'utente non sceglie (`mt:theme`).
 

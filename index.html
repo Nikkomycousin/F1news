@@ -286,6 +286,25 @@
   .mbox .opt{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;border:1px solid var(--line);background:var(--card2);color:var(--text);border-radius:999px;padding:13px;font:700 15px var(--f);cursor:pointer;margin-top:8px}
   .mbox .opt.pri{background:var(--red);border-color:var(--red);color:#fff}
 
+  /* I miei preferiti (pagina Weekend) */
+  .favs{margin:14px 0 4px}
+  .favs .hsec{margin:0 2px 8px;display:flex;justify-content:space-between;align-items:baseline}
+  .favs .hsec small{font-weight:600;color:var(--faint);font-size:12.5px}
+  .fgrid{display:flex;gap:10px;overflow-x:auto;margin:0 -16px;padding:2px 16px 8px;scroll-padding:0 16px;scroll-snap-type:x mandatory;scrollbar-width:none}
+  .fgrid::-webkit-scrollbar{display:none}
+  .fcard{position:relative;flex:0 0 78%;max-width:300px;scroll-snap-align:start;background:var(--card);border-radius:18px;padding:13px 14px 12px;cursor:pointer;border-top:3px solid var(--c);text-align:left;color:var(--text)}
+  .fcard:active{background:var(--card2)}
+  .fcard .star{position:absolute;top:6px;right:6px}
+  .fcard .k{font-size:12px;font-weight:700;color:var(--muted);margin-bottom:2px}
+  .fcard h5{margin:0;font-size:17px;font-weight:700;line-height:1.2;padding-right:26px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .fcard .big{display:flex;align-items:baseline;gap:8px;margin:6px 0 4px}
+  .fcard .big b{font-weight:900;font-style:italic;font-size:26px;line-height:1}
+  .fcard .big span{font-size:13.5px;color:var(--muted)}
+  .fcard .ln{font-size:13.5px;line-height:1.4;color:var(--body);margin-top:4px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .fcard .ln i{font-style:normal;color:var(--muted)}
+  .favhint{background:var(--card);border-radius:18px;padding:13px 16px;font-size:14px;line-height:1.5;color:var(--body);border:1px dashed var(--line)}
+  .favhint b{color:var(--gold)}
+
   /* colonna laterale (solo desktop) */
   #side{display:none}
   .sbox{background:var(--card);border-radius:20px;padding:14px 16px;margin-top:14px}
@@ -343,6 +362,10 @@
     body.home .maincol{grid-column:1}
     #home{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:24px;align-items:start}
     #home .hcol2 .hsec:first-child{margin-top:4px}
+    #home .favs{grid-column:1/-1;margin:0}
+    .fgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));overflow:visible;margin:0;padding:0}
+    .fcard{max-width:none}
+    .fcard:hover{background:var(--card2)}
   }
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
@@ -951,6 +974,57 @@ async function loadHome(){
   return ok?"same":"err";
 }
 function goSeries(k,view){switchSeries(k);if(view)showView(view);scrollTo({top:0})}
+/* ---------- I miei preferiti: schede in cima alla pagina Weekend ---------- */
+const serName=k=>SER[k]?.logo==="SBK"?"Superbike":SER[k]?.logo;
+function favNews(d,word){
+  if(!word) return null;
+  const re=new RegExp("(^|[^\\p{L}])"+word.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g,"\\$&")+"([^\\p{L}]|$)","u");
+  return (d?.news||[]).slice().sort((a,b)=>String(b.published).localeCompare(String(a.published))).find(n=>re.test((n.title+" "+(n.summary||"")).toLowerCase()))||null;
+}
+function nextKeySession(d){
+  const now=Date.now();
+  return (d?.weekend?.sessions||[]).filter(s=>s.key&&(s.end?new Date(s.end):new Date(new Date(s.start).getTime()+2*3600e3))>now).sort((a,b)=>new Date(a.start)-new Date(b.start))[0]||null;
+}
+const nextLine=(k,d)=>{
+  const s=nextKeySession(d);
+  if(s) return `<div class="ln"><i>Prossima:</i> ${esc(s.name)} · ${esc(dayName(s.start).split(" ").slice(0,2).join(" "))} ore ${esc(hm(s.start))}${s.tv8?` · <span style="color:var(--tvc)">${esc(d.weekend.freeChannel||"TV8")}</span>`:""}</div>`;
+  const n=d?.info?.nextGp;
+  return n?.date?`<div class="ln"><i>Prossima:</i> ${esc(n.name)} · ${esc(new Date(n.date).toLocaleDateString("it-IT",{day:"numeric",month:"short",year:new Date(n.date).getFullYear()!==new Date().getFullYear()?"numeric":undefined,timeZone:"Europe/Rome"}))}</div>`:"";
+};
+function favPanel(){
+  const cards=[];
+  for(const name of FAV.d){
+    let k=null,row=null;
+    for(const key in SER){const r=(homeData[key]?.standings?.drivers||[]).find(x=>x.name===name);if(r){k=key;row=r;break}}
+    const d=k?homeData[k]:null, nw=favNews(d,String(name).split(" ").slice(-1)[0]);
+    cards.push(`<div class="fcard" data-k="${k||""}" data-v="drivers" style="--c:${row?teamColor(row.team):"var(--gold)"}">${starBtn("d",name)}
+      <div class="k">${k?esc(serName(k))+" · ":""}Pilota</div><h5>${esc(name)}</h5>
+      ${row?`<div class="big"><b>${esc(row.pos)}°</b><span>${esc(row.points)} punti · ${esc(row.team)}${row.champion?" · 🏆 Campione":""}</span></div>`:`<div class="ln">Non trovato nelle classifiche attuali.</div>`}
+      ${d?nextLine(k,d):""}${nw?`<div class="ln"><i>Ultima notizia:</i> ${esc(nw.title)}</div>`:""}</div>`);
+  }
+  for(const team of FAV.t){
+    let k=null,row=null,inDrivers=false;
+    for(const key in SER){
+      const c=(homeData[key]?.standings?.constructors||[]).find(x=>x.team===team); if(c){k=key;row=c;break}
+      if((homeData[key]?.standings?.drivers||[]).some(x=>x.team===team)){k=key;inDrivers=true;break}
+    }
+    const d=k?homeData[k]:null, nw=favNews(d,String(team).split(/[ ·]/)[0]);
+    cards.push(`<div class="fcard" data-k="${k||""}" data-v="drivers" style="--c:${teamColor(team)}">${starBtn("t",team)}
+      <div class="k">${k?esc(serName(k))+" · ":""}Squadra</div><h5>${esc(team)}</h5>
+      ${row?`<div class="big"><b>${esc(row.pos)}°</b><span>${esc(row.points)} punti${row.drivers?" · "+esc(row.drivers):""}</span></div>`:inDrivers?"":`<div class="ln">Non trovata nelle classifiche attuali.</div>`}
+      ${d?nextLine(k,d):""}${nw?`<div class="ln"><i>Ultima notizia:</i> ${esc(nw.title)}</div>`:""}</div>`);
+  }
+  for(const k of FAV.s){
+    const d=homeData[k]; if(!SER[k]) continue;
+    const lead=d?.standings?.drivers?.[0];
+    cards.push(`<div class="fcard" data-k="${k}" data-v="sched" style="--c:${SER[k].color}">${starBtn("s",k)}
+      <div class="k">Campionato</div><h5>${esc(serName(k))} <span style="font-weight:600;color:var(--muted);font-size:13px">${esc(SER[k].logo==="SBK"?"":SER[k].name)}</span></h5>
+      ${nextLine(k,d)||`<div class="ln">Prossimo appuntamento non ancora annunciato.</div>`}
+      ${lead?`<div class="ln"><i>In testa:</i> ${esc(lead.name)} · ${esc(lead.points)} punti${lead.champion?" 🏆":""}</div>`:""}</div>`);
+  }
+  if(!cards.length) return `<div class="favs"><div class="favhint"><b>★ I miei preferiti</b> — tocca la stellina ☆ accanto a un pilota o a una squadra nella <b style="color:inherit">Classifica</b>, oppure accanto a un campionato qui sotto: li ritroverai sempre in questo riquadro.</div></div>`;
+  return `<div class="favs"><div class="hsec">★ I miei preferiti <small>tocca una scheda per i dettagli</small></div><div class="fgrid">${cards.join("")}</div></div>`;
+}
 function renderHome(){
   const el=$("#home"), now=Date.now(), horizon=now+8*86400e3;
   const ups=Object.values(homeData).map(d=>d?.info?.updated).filter(Boolean).sort();
@@ -971,7 +1045,7 @@ function renderHome(){
   const keyCount=all.filter(x=>x.s.key).length;
   if(homeMode==="fav"&&!FAV.s.length) homeMode="key";
   const list=homeMode==="all"?all:homeMode==="fav"?all.filter(x=>isFavS(x.k)):all.filter(x=>x.s.key);
-  let h=`<div class="hcol1"><div class="rhead"><div class="lbl">Il weekend dei motori</div><h3>${all.length?"In pista nei prossimi giorni":"Nessuna sessione in programma"}</h3>
+  let h=favPanel()+`<div class="hcol1"><div class="rhead"><div class="lbl">Il weekend dei motori</div><h3>${all.length?"In pista nei prossimi giorni":"Nessuna sessione in programma"}</h3>
     <p>${all.length?`${keyCount?`${keyCount===1?"Una sessione":keyCount+" sessioni"} tra gare e qualifiche`:"Per ora solo prove libere"} ${(n=>n===1?"in un campionato":`in ${n} campionati`)(new Set(all.map(x=>x.k)).size)}. Orari italiani; tocca una sessione per i dettagli.`:"Nei prossimi 7 giorni non ci sono sessioni in calendario. Qui sotto trovi i prossimi appuntamenti di ogni campionato."}</p></div>`;
   if(all.length){
     h+=`<div class="seg" id="homeSeg"><button data-a="key" class="${homeMode==="key"?"on":""}">Gare e qualifiche</button><button data-a="all" class="${homeMode==="all"?"on":""}">Tutte</button>${FAV.s.length?`<button data-a="fav" class="${homeMode==="fav"?"on":""}">★ Preferiti</button>`:""}</div>`;
@@ -1001,6 +1075,7 @@ function renderHome(){
   el.querySelectorAll("#homeSeg button").forEach(b=>b.onclick=()=>{homeMode=b.dataset.a;try{localStorage.setItem("mt:homeMode",homeMode)}catch(e){};renderHome()});
   el.querySelectorAll(".hsess").forEach(r=>r.onclick=()=>goSeries(r.dataset.k,"sched"));
   el.querySelectorAll(".hnext").forEach(r=>r.onclick=()=>goSeries(r.dataset.k,"news"));
+  el.querySelectorAll(".fcard").forEach(r=>r.onclick=()=>{if(r.dataset.k)goSeries(r.dataset.k,r.dataset.v)});
 }
 let loadSeq=0, lastJson={};
 let manual=false;
