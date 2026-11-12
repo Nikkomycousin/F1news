@@ -240,6 +240,64 @@
   .h2h .tr i{display:block;height:100%;border-radius:4px}
   .h2h .ex{font-size:12.5px;color:var(--faint);margin-top:6px}
   footer{color:var(--faint);font-size:12.5px;text-align:center;margin-top:28px;line-height:1.5}
+  /* colonna laterale (solo desktop) */
+  #side{display:none}
+  .sbox{background:var(--card);border-radius:20px;padding:14px 16px;margin-top:14px}
+  .sbox h4{margin:0 0 8px;font-size:14px;color:var(--muted);font-weight:600;display:flex;justify-content:space-between;align-items:baseline}
+  .sbox h4 button{border:0;background:none;color:var(--red2);font:600 13px var(--f);cursor:pointer;padding:0}
+  .sbox .sl{display:flex;gap:12px;align-items:baseline;padding:7px 0;border-top:1px solid var(--line);font-size:14.5px}
+  .sbox .sl:first-of-type{border-top:0}
+  .sbox .sl b{min-width:44px;font-weight:700}
+  .sbox .sl span{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sbox .sl small{color:var(--muted);font-size:12.5px}
+  .sbox .sl.key b{color:var(--red2)}
+  .sbox .sp{display:flex;align-items:center;gap:10px;padding:7px 0;border-top:1px solid var(--line);font-size:14.5px}
+  .sbox .sp:first-of-type{border-top:0}
+  .sbox .sp i{font-style:italic;font-weight:900;width:18px;color:var(--faint);text-align:center}
+  .sbox .sp .bar{height:18px;width:3px}
+  .sbox .sp span{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:600}
+  .sbox .sp b{font-weight:700}
+  .sbox .none{color:var(--muted);font-size:14px;line-height:1.5}
+
+  /* ---------- versione desktop ---------- */
+  @media (min-width:1024px){
+    :root{--nav:0px}
+    body{padding-bottom:24px}
+    .wrap{max-width:1320px;padding:0 24px 32px}
+    header{display:grid;grid-template-columns:auto minmax(0,1fr) auto;column-gap:24px;row-gap:10px;margin:0 -24px;padding:calc(env(safe-area-inset-top) + 14px) 24px 12px}
+    header .serie{grid-column:1;grid-row:1}
+    header .grpbar{grid-column:2;grid-row:1;justify-self:center;width:100%;max-width:640px;margin:0}
+    header .hright{grid-column:3;grid-row:1}
+    header .serbar{grid-column:1/-1;grid-row:2;max-width:720px;width:100%;justify-self:center;margin:0}
+    .grpbar button{font-size:15px;padding:9px 10px}
+    .grpbar button:not(.on):hover,.serbar button:not(.on):hover{background:var(--card2);color:var(--text)}
+    .layout{display:grid;grid-template-columns:210px minmax(0,1fr) 340px;gap:24px;align-items:start;margin-top:18px}
+    .tabs{position:sticky;top:var(--hh,140px);left:auto;right:auto;bottom:auto;z-index:5;grid-column:1;grid-row:1;flex-direction:column;justify-content:flex-start;gap:2px;padding:8px;background:var(--card);border:0;border-radius:20px;backdrop-filter:none;-webkit-backdrop-filter:none}
+    .tabs button{flex:none;max-width:none;flex-direction:row;justify-content:flex-start;gap:12px;font-size:15px;padding:11px 14px;color:var(--muted)}
+    .tabs button svg{width:22px;height:22px}
+    .tabs button:hover{background:var(--card2);color:var(--text)}
+    .tabs button.on{background:var(--tint);color:var(--text)}
+    .maincol{grid-column:2;grid-row:1;min-width:0}
+    .side{grid-column:3;grid-row:1;position:sticky;top:var(--hh,140px);max-height:calc(100vh - var(--hh,140px) - 16px);overflow:auto;scrollbar-width:none}
+    .side::-webkit-scrollbar{display:none}
+    #side{display:block}
+    body[data-view] .hero:not([hidden]){display:block}
+    .side .hero{margin:0}
+    .side .hero .gp{font-size:32px}
+    .side .hero .lights i{width:26px;height:26px}
+    .chips{margin:0;padding-left:0;padding-right:0;flex-wrap:wrap;overflow:visible}
+    .card:hover h3{color:var(--red2)}
+    .hsess:hover,.hnext:hover{background:var(--card2)}
+    .vcard{display:inline-block;width:calc(50% - 8px);vertical-align:top;margin-right:12px}
+    .vcard:nth-of-type(2n){margin-right:0}
+    footer{text-align:left}
+    /* pagina Weekend: due colonne a tutta larghezza */
+    body.home .layout{grid-template-columns:minmax(0,1fr)}
+    body.home .side{display:none}
+    body.home .maincol{grid-column:1}
+    #home{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:24px;align-items:start}
+    #home .hcol2 .hsec:first-child{margin-top:4px}
+  }
   @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -255,6 +313,8 @@
     <div class="serbar" id="serBar" role="tablist" aria-label="Campionato"></div>
   </header>
 
+  <div class="layout">
+  <aside class="side" id="sideCol">
   <section class="hero" id="hero" hidden>
     <div class="lbl">Prossimo Gran Premio</div>
     <div class="gp" id="gpName"></div>
@@ -262,6 +322,8 @@
     <div class="lights" id="lights" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
     <div class="cd" id="cd"></div>
   </section>
+  <div id="side"></div>
+  </aside>
 
   <nav class="tabs" id="tabs" aria-label="Sezioni">
     <button data-v="news" class="on"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h11a2 2 0 0 1 2 2v13a1 1 0 0 0 2 0V8"/><path d="M5 4a1 1 0 0 0-1 1v13a2 2 0 0 0 2 2h14"/><path d="M8 8h6M8 12h6M8 16h4"/></svg>Notizie</button>
@@ -272,6 +334,7 @@
     <button data-v="cal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15.5" rx="3"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Calendario</button>
   </nav>
 
+  <div class="maincol">
   <section id="v-home"><div id="home"><div class="skel"></div><div class="skel"></div></div></section>
   <section id="v-news">
     <nav class="chips" id="chips"></nav>
@@ -289,6 +352,9 @@
     <div id="h2h" hidden></div>
   </section>
   <section id="v-cal" hidden><div id="cal"></div></section>
+  <footer>Orari italiani, TV, risultati e notizie di Formula 1, F2, F3, MotoGP, Moto2, Moto3, Superbike e WEC.<br>Notizie riassunte dalle principali testate di motorsport: tocca una notizia per aprire l'articolo originale.<br>Motortime è un sito indipendente, non affiliato a Formula 1, FIA, MotoGP, Dorna, WorldSBK o ai team citati.</footer>
+  </div>
+  </div>
   <div class="modal" id="spModal" hidden>
     <div class="mbox">
       <div class="ico">🙈</div>
@@ -298,7 +364,7 @@
       <button class="no" id="spNo">No, niente spoiler</button>
     </div>
   </div>
-  <footer>Orari italiani, TV, risultati e notizie di Formula 1, F2, F3, MotoGP, Moto2, Moto3, Superbike e WEC.<br>Notizie riassunte dalle principali testate di motorsport: tocca una notizia per aprire l'articolo originale.<br>Motortime è un sito indipendente, non affiliato a Formula 1, FIA, MotoGP, Dorna, WorldSBK o ai team citati.</footer>
+  
 </div>
 
 <div class="toast" id="toast"></div>
@@ -703,8 +769,8 @@ function renderHome(){
   all.sort((a,b)=>a.st-b.st);
   const keyCount=all.filter(x=>x.s.key).length;
   const list=homeAll?all:all.filter(x=>x.s.key);
-  let h=`<div class="rhead"><div class="lbl">Il weekend dei motori</div><h3>${all.length?"In pista nei prossimi giorni":"Nessuna sessione in programma"}</h3>
-    <p>${all.length?`${keyCount===1?"Una sessione":keyCount+" sessioni"} tra gare e qualifiche ${(n=>n===1?"in un campionato":`in ${n} campionati`)(new Set(all.map(x=>x.k)).size)}. Orari italiani; tocca una sessione per i dettagli.`:"Nei prossimi 7 giorni non ci sono sessioni in calendario. Qui sotto trovi i prossimi appuntamenti di ogni campionato."}</p></div>`;
+  let h=`<div class="hcol1"><div class="rhead"><div class="lbl">Il weekend dei motori</div><h3>${all.length?"In pista nei prossimi giorni":"Nessuna sessione in programma"}</h3>
+    <p>${all.length?`${keyCount?`${keyCount===1?"Una sessione":keyCount+" sessioni"} tra gare e qualifiche`:"Per ora solo prove libere"} ${(n=>n===1?"in un campionato":`in ${n} campionati`)(new Set(all.map(x=>x.k)).size)}. Orari italiani; tocca una sessione per i dettagli.`:"Nei prossimi 7 giorni non ci sono sessioni in calendario. Qui sotto trovi i prossimi appuntamenti di ogni campionato."}</p></div>`;
   if(all.length){
     h+=`<div class="seg" id="homeSeg"><button data-a="0" class="${homeAll?"":"on"}">Gare e qualifiche</button><button data-a="1" class="${homeAll?"on":""}">Tutte le sessioni</button></div>`;
     h+=`<div class="table">`; let last="";
@@ -720,7 +786,7 @@ function renderHome(){
   }
   // prossimo appuntamento di ogni campionato
   const nx=Object.keys(SER).map(k=>{const n=homeData[k]?.info?.nextGp;return {k,n,t:n?.date?new Date(n.date).getTime():Infinity}}).sort((a,b)=>a.t-b.t);
-  h+=`<div class="hsec">Prossimi appuntamenti</div><div class="table cal">`+nx.map(({k,n,t})=>{
+  h+=`</div><div class="hcol2"><div class="hsec">Prossimi appuntamenti</div><div class="table cal">`+nx.map(({k,n,t})=>{
     const c=SER[k], d=homeData[k];
     const sub=n?esc(n.name):d?(d.calendar?.rounds?.length?"Stagione conclusa, calendario in arrivo":"Dati in arrivo"):"Dati non disponibili";
     const ds=n?new Date(t).toLocaleDateString("it-IT",{day:"numeric",month:"short",timeZone:"Europe/Rome"}):"";
@@ -728,7 +794,7 @@ function renderHome(){
     return `<div class="row hnext${n?"":" off"}" data-k="${k}"><div class="bar" style="background:${c.color}"></div>
       <div class="who"><b>${esc(c.logo==="SBK"?"Superbike":c.logo)} <span style="font-weight:600;color:var(--muted);font-size:13px">${esc(c.logo==="SBK"?"":c.name)}</span></b><small>${sub}</small></div>
       <div class="dt">${n?`<b>${esc(ds)}</b>${esc(yr)}`:""}</div></div>`;
-  }).join("")+`</div>`;
+  }).join("")+`</div></div>`;
   el.innerHTML=h;
   el.querySelectorAll("#homeSeg button").forEach(b=>b.onclick=()=>{homeAll=b.dataset.a==="1";try{localStorage.setItem("mt:homeAll",homeAll?"1":"0")}catch(e){};renderHome()});
   el.querySelectorAll(".hsess").forEach(r=>r.onclick=()=>goSeries(r.dataset.k,"sched"));
@@ -786,6 +852,27 @@ $("#refreshBtn").onclick=async()=>{
   else if(r==="new"||info?.updated!==before) toast("✓ Dati aggiornati");
   else toast("Sei già aggiornato · ultimo aggiornamento "+(info?.updated?rel(info.updated):""));
 };
+
+/* ---------- Colonna laterale (desktop): prossime sessioni e classifica ---------- */
+function renderSide(){
+  const el=$("#side"); if(!el||series==="all") return;
+  const now=Date.now(); let h="";
+  const ses=(weekend?.sessions||[]).filter(s=>{const st=new Date(s.start).getTime();const en=s.end?new Date(s.end).getTime():st+2*3600e3;return en>now}).sort((a,b)=>new Date(a.start)-new Date(b.start)).slice(0,5);
+  h+=`<div class="sbox"><h4>Prossime sessioni<button onclick="showView('sched')">Tutti gli orari ›</button></h4>`;
+  h+=ses.length?ses.map(s=>{const live=now>=new Date(s.start).getTime();return `<div class="sl${s.key?" key":""}"><b>${esc(hm(s.start))}</b><span>${esc(s.name)}${live?' <span class="badge live">In corso</span>':""}</span><small>${esc(dayName(s.start).split(" ").slice(0,2).join(" "))}</small></div>`}).join("")
+    :`<div class="none">${weekend?.gp?esc(weekend.gp)+": orari non ancora pubblicati.":"Nessuna sessione in programma."}</div>`;
+  h+=`</div>`;
+  const st=standings, sp=spoilerSession(), hide=spoilerHidden&&sp&&st?.updated&&new Date(st.updated)>=new Date(sp.start);
+  h+=`<div class="sbox"><h4>Classifica<button onclick="showView('drivers')">Completa ›</button></h4>`;
+  h+=!st?.drivers?.length?`<div class="none">Classifica non ancora disponibile.</div>`
+    :hide?`<div class="none">🙈 Nascosta per evitare spoiler.</div>`
+    :st.drivers.slice(0,5).map(d=>`<div class="sp"><i>${esc(d.pos)}</i><div class="bar" style="background:${teamColor(d.team)}"></div><span>${esc(d.name)}</span><b>${esc(d.points)}</b></div>`).join("");
+  h+=`</div>`;
+  el.innerHTML=h;
+}
+{const a=renderStandings,b=renderSched;renderStandings=function renderStandings(){a();renderSide()};renderSched=function renderSched(){b();renderSide()}}
+// altezza della testata, per le colonne che restano ferme durante lo scorrimento
+if("ResizeObserver" in window){new ResizeObserver(()=>document.documentElement.style.setProperty("--hh",(document.querySelector("header").offsetHeight+16)+"px")).observe(document.querySelector("header"))}
 
 (function(){
   try{showView(localStorage.getItem("f1v")||"news")}catch(e){}
