@@ -11,20 +11,39 @@
 <link rel="apple-touch-icon" href="icon-180.png">
 <link rel="icon" href="icon-192.png">
 <title>Motortime</title>
+<script>(function(){var t=null;try{t=localStorage.getItem("mt:theme")}catch(e){}if(t!=="light"&&t!=="dark")t=matchMedia("(prefers-color-scheme: light)").matches?"light":"dark";document.documentElement.dataset.theme=t})()</script>
 <meta name="description" content="Orari italiani, canali TV, risultati, classifiche e notizie di Formula 1, F2, F3, MotoGP, Moto2, Moto3, Superbike e WEC.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#1d1f23; --card:#26292e; --card2:#2f3238; --line:#383c43;
+    --body:#c8c5bf; --ghost:#3d4148; --tvc:#b9abff; --done:#d9d6d0; --baroff:#4a4e55;
+    --hdr:rgba(29,31,35,.86); --navbg:rgba(29,31,35,.92);
+    --cf0:#1b1d21; --cf1:#202226; --cf2:#1e2024; --cf3:#1c1e22; --cf4:#1a1c20; --cf5:#1f2125;
     --text:#f1eee8; --muted:#a2a6ad; --faint:#6d7279;
     --red:#e8002d; --red2:#ff4d63; --tint:rgba(232,0,45,.14);
     --gold:#f2c14e; --silver:#cfd3d8; --bronze:#d4915a;
     --f:"Titillium Web",system-ui,sans-serif;
     --nav:64px;
   }
+  :root[data-theme=light]{
+    --bg:#eeece8; --card:#ffffff; --card2:#f2f0ec; --line:#e3e0db;
+    --text:#1b1d21; --muted:#5d6168; --faint:#8b8f96;
+    --body:#3b3e44; --ghost:#dcd9d4; --tvc:#5b43d6; --done:#45484e; --baroff:#cbc8c3;
+    --hdr:rgba(238,236,232,.88); --navbg:rgba(255,255,255,.94);
+    --cf0:#e8e6e2; --cf1:#eceae6; --cf2:#ebe9e5; --cf3:#e9e7e3; --cf4:#e6e4e0; --cf5:#edebe7;
+    --gold:#d9a521; --silver:#9aa1aa; --bronze:#c27a3f;
+  }
   *{box-sizing:border-box}
-  html,body{margin:0;background:var(--bg);color:var(--text);font-family:var(--f);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+  html,body{margin:0;background-color:var(--bg);color:var(--text);font-family:var(--f);-webkit-font-smoothing:antialiased;font-variant-numeric:tabular-nums}
+  /* sfondo in fibra di carbonio */
+  body{background-color:var(--cf0);background-image:
+    linear-gradient(27deg,var(--cf1) 5px,transparent 5px),linear-gradient(207deg,var(--cf1) 5px,transparent 5px),
+    linear-gradient(27deg,var(--cf2) 5px,transparent 5px),linear-gradient(207deg,var(--cf2) 5px,transparent 5px),
+    linear-gradient(90deg,var(--cf3) 10px,transparent 10px),
+    linear-gradient(var(--bg) 25%,var(--cf4) 25%,var(--cf4) 50%,transparent 50%,transparent 75%,var(--cf5) 75%,var(--cf5));
+    background-size:20px 20px;background-position:0 5px,10px 0,0 10px,10px 5px,0 0,0 0;background-attachment:fixed}
   body{padding:0 env(safe-area-inset-right) calc(var(--nav) + env(safe-area-inset-bottom) + 8px) env(safe-area-inset-left)}
   button{font-family:var(--f)}
   :focus-visible{outline:2px solid var(--red2);outline-offset:2px}
@@ -32,7 +51,7 @@
 
   /* testata: cordolo bianco-colore in cima */
   header{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;
-    margin:0 -16px;padding:calc(env(safe-area-inset-top) + 10px) 16px 10px;background:rgba(29,31,35,.86);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px)}
+    margin:0 -16px;padding:calc(env(safe-area-inset-top) + 10px) 16px 10px;background:var(--hdr);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px)}
   header:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:repeating-linear-gradient(90deg,var(--red) 0 18px,#f1eee8 18px 36px);opacity:.9}
   .serie{position:relative;display:inline-flex;align-items:center;cursor:pointer}
   .logo{display:inline-flex;align-items:baseline;gap:6px;font-weight:900;font-style:italic;font-size:28px;line-height:1;letter-spacing:-.5px}
@@ -60,6 +79,12 @@
   .refresh:active{background:var(--card2)}
   .refresh svg{width:18px;height:18px}
   .refresh.spin svg{animation:rot .8s linear infinite}
+  #themeBtn .i-moon{display:none}
+  :root[data-theme=light] .chip:not(.on){background:var(--card)}
+  :root[data-theme=light] #themeBtn .i-sun{display:none}
+  :root[data-theme=light] #themeBtn .i-moon{display:block}
+  :root[data-theme=light] .card.top:before,:root[data-theme=light] .hero:before{opacity:1}
+  :root[data-theme=light] .sbox,:root[data-theme=light] .table,:root[data-theme=light] .rhead,:root[data-theme=light] #list,:root[data-theme=light] .hero,:root[data-theme=light] .tabs,:root[data-theme=light] .grpbar,:root[data-theme=light] .serbar,:root[data-theme=light] .vcard,:root[data-theme=light] .tv8{box-shadow:0 1px 3px rgba(20,22,26,.07)}
   @keyframes rot{to{transform:rotate(360deg)}}
 
   /* hero: semaforo di partenza */
@@ -79,7 +104,7 @@
   /* barra di navigazione in basso */
   .tabs{position:fixed;left:0;right:0;bottom:0;z-index:30;display:flex;justify-content:space-around;
     padding:6px max(6px,env(safe-area-inset-right)) calc(6px + env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left));
-    background:rgba(29,31,35,.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--line)}
+    background:var(--navbg);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-top:1px solid var(--line)}
   .tabs button{flex:1;max-width:96px;display:flex;flex-direction:column;align-items:center;gap:3px;border:0;background:none;color:var(--faint);font-size:10.5px;font-weight:600;padding:6px 0 4px;min-width:0;white-space:nowrap;border-radius:12px;cursor:pointer}
   .tabs button svg{width:24px;height:24px}
   .tabs button.on{color:var(--text)}
@@ -105,16 +130,16 @@
   .meta{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--muted);margin-bottom:4px;flex-wrap:wrap}
   .tag{color:var(--red2);font-weight:700;font-size:13px}
   .card h3{margin:0 0 4px;font-size:17.5px;line-height:1.28;font-weight:600}
-  .card p{margin:0;color:#c8c5bf;font-size:15px;line-height:1.5}
+  .card p{margin:0;color:var(--body);font-size:15px;line-height:1.5}
   .src{margin-top:6px;font-size:13px;color:var(--muted);font-weight:600}
   .empty{color:var(--muted);text-align:center;padding:40px 10px;line-height:1.6;font-size:15px}
   .btn{display:inline-block;margin-top:10px;background:var(--card2);border:1px solid var(--line);color:var(--text);border-radius:999px;padding:8px 16px;font:600 14px var(--f);cursor:pointer}
-  .skel{height:92px;border-radius:14px;background:linear-gradient(90deg,#26292e,#2f3238,#26292e);background-size:200% 100%;animation:sh 1.2s infinite;margin:12px 0}
+  .skel{height:92px;border-radius:14px;background:linear-gradient(90deg,var(--card),var(--card2),var(--card));background-size:200% 100%;animation:sh 1.2s infinite;margin:12px 0}
   @keyframes sh{to{background-position:-200% 0}}
 
   /* orari */
-  .tv8{background:linear-gradient(135deg,rgba(143,123,255,.18),var(--card) 70%);border-radius:20px;padding:14px 16px;margin-bottom:12px}
-  .tv8 h4{margin:0 0 6px;font-size:15px;color:#b9abff;font-weight:700}
+  .tv8{background:linear-gradient(135deg,rgba(143,123,255,.18),var(--card) 70%);border:1px solid transparent;border-radius:20px;padding:14px 16px;margin-bottom:12px}
+  .tv8 h4{margin:0 0 6px;font-size:15px;color:var(--tvc);font-weight:700}
   .tv8 .l{display:flex;justify-content:space-between;gap:10px;padding:5px 0;font-size:16px}
   .tv8 .l b{font-weight:700;font-size:20px}
   .tv8 .note{font-size:13px;color:var(--muted);margin-top:4px;line-height:1.45}
@@ -126,7 +151,7 @@
   .sess .n b{display:block;font-size:16px;font-weight:700}
   .sess.key .t{color:var(--red2)}
   .sess .ch{font-size:13px;color:var(--muted);margin-top:2px;line-height:1.5}
-  .sess .ch .p8{color:#b9abff;font-weight:600}
+  .sess .ch .p8{color:var(--tvc);font-weight:600}
   .sess.done{opacity:.42}
   .badge{font-size:11.5px;font-weight:700;border-radius:999px;padding:1px 8px;margin-left:8px;vertical-align:2px}
   .badge.live{background:var(--red);color:#fff}.badge.next{background:var(--tint);color:var(--red2)}
@@ -157,7 +182,7 @@
   .rhead{background:var(--card);border-radius:20px;padding:16px;margin-bottom:12px;position:relative;overflow:hidden}
   .rhead .lbl{font-size:14px;color:var(--red2);font-weight:600}
   .rhead h3{font-weight:900;font-style:italic;font-size:30px;line-height:1;letter-spacing:-.5px;margin:4px 0 8px}
-  .rhead p{margin:0;color:#c8c5bf;font-size:15px;line-height:1.55}
+  .rhead p{margin:0;color:var(--body);font-size:15px;line-height:1.55}
   .podium{display:grid;grid-template-columns:1fr 1.15fr 1fr;align-items:end;gap:6px;margin:14px 0 4px}
   .podium div{background:var(--card2);border-radius:12px 12px 4px 4px;padding:10px 6px 8px;text-align:center}
   .podium div:nth-child(1){min-height:84px}.podium div:nth-child(2){min-height:104px;background:linear-gradient(180deg,rgba(242,193,78,.22),var(--card2))}.podium div:nth-child(3){min-height:72px}
@@ -170,14 +195,14 @@
   .cal .dt b{display:block;color:var(--text);font-size:15px}
   .cal .win{font-size:13px;color:var(--muted);line-height:1.4}
   .cal .win i{font-style:normal}
-  .cal .done .who b{color:#d9d6d0;font-weight:600}
+  .cal .done .who b{color:var(--done);font-weight:600}
 
   /* spoiler e modale */
   .card.spoil{position:relative;pointer-events:none}
 
-  .ghost{display:inline-block;height:.8em;border-radius:6px;background:#3d4148;vertical-align:middle;max-width:100%}
+  .ghost{display:inline-block;height:.8em;border-radius:6px;background:var(--ghost);vertical-align:middle;max-width:100%}
   .card.spoil .ghost{height:1em;margin:3px 0}
-  .vcard.spoil .vthumb{background:#2f3238!important}
+  .vcard.spoil .vthumb{background:var(--card2)!important}
   .sbanner{display:flex;align-items:center;gap:10px;background:var(--tint);border-radius:16px;padding:10px 12px;margin:0 0 12px;font-size:14px;line-height:1.4}
   #list .sbanner{margin:12px 0}
   .sbanner span{flex:1}
@@ -307,6 +332,7 @@
     <div class="serie"><span class="logo">Motor<b>time</b><small>Italia</small></span></div>
     <div class="hright">
       <div class="stamp" id="stamp"></div>
+      <button class="refresh" id="themeBtn" aria-label="Passa al tema chiaro" title="Tema chiaro / scuro"><svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg><svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg></button>
       <button class="refresh" id="refreshBtn" aria-label="Aggiorna ora"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg></button>
     </div>
     <nav class="grpbar" id="grpBar" aria-label="Sezione"></nav>
@@ -425,7 +451,7 @@ function checkSpoiler(){
 }
 function spoilAfter(iso){const sp=spoilerSession();return !!(spoilerHidden&&sp&&iso&&new Date(iso).getTime()>=new Date(sp.start).getTime()-30*60e3)}
 const ghost=(w)=>`<i class="ghost" style="width:${w}"></i>`;
-function ghostRows(n,sub){let h="";for(let i=1;i<=n;i++)h+=`<div class="row"><div class="pos">${i}</div><div class="bar" style="background:#4a4e55"></div><div class="who"><b>${ghost("62%")}</b>${sub?`<small>${ghost("34%")}</small>`:""}</div><div class="pts">${ghost("38px")}</div></div>`;return h}
+function ghostRows(n,sub){let h="";for(let i=1;i<=n;i++)h+=`<div class="row"><div class="pos">${i}</div><div class="bar" style="background:var(--baroff)"></div><div class="who"><b>${ghost("62%")}</b>${sub?`<small>${ghost("34%")}</small>`:""}</div><div class="pts">${ghost("38px")}</div></div>`;return h}
 function isSpoiler(n){
   if(!spoilerHidden) return false;
   const s=spoilerSession(); if(!s) return false;
@@ -635,9 +661,9 @@ function renderCal(){
     const d=new Date(x.date+"T12:00:00Z");
     const ds=d.toLocaleDateString("it-IT",{day:"numeric",month:"short"});
     const isNext=nextR&&x.round===nextR.round;
-    if(hid(x)) return `<div class="row"><div class="rnd">${esc(x.round)}</div><div class="bar" style="background:#4a4e55"></div><div class="who"><b>${esc(x.name)}</b><div class="win">🙈 Vincitore nascosto</div></div><div class="dt"><b>${esc(ds)}</b>${x.sprint?"Sprint":""}</div></div>`;
+    if(hid(x)) return `<div class="row"><div class="rnd">${esc(x.round)}</div><div class="bar" style="background:var(--baroff)"></div><div class="who"><b>${esc(x.name)}</b><div class="win">🙈 Vincitore nascosto</div></div><div class="dt"><b>${esc(ds)}</b>${x.sprint?"Sprint":""}</div></div>`;
     return `<div class="row${x.winner?" done":""}${isNext?" next":""}">
-      <div class="rnd">${esc(x.round)}</div><div class="bar" style="background:${x.winner?teamColor(x.team):"#333"}"></div>
+      <div class="rnd">${esc(x.round)}</div><div class="bar" style="background:${x.winner?teamColor(x.team):"var(--baroff)"}"></div>
       <div class="who"><b>${esc(x.name)}${isNext?'<span class="badge next">Prossimo</span>':""}</b>
       <div class="win">${x.winner?`<i>🏆</i> ${esc(x.winner)}${x.team?" · "+esc(x.team):""}`:esc(x.circuit||"")}${x.sprintWinner?`<br>Sprint: ${esc(x.sprintWinner)}`:""}${x.status?`<br><span style="color:#ffb74d">${esc(x.status)}</span>`:""}</div></div>
       <div class="dt"><b>${esc(ds)}</b>${x.sprint?"Sprint":""}</div></div>`;
@@ -703,7 +729,8 @@ const S=()=>SER[series]||SER.f1;
 const grpOf=k=>k==="all"?GROUPS[0]:GROUPS.find(g=>(g.ser||[]).includes(k))||GROUPS[0];
 function rgb(h){h=h.replace("#","");return [0,2,4].map(i=>parseInt(h.substr(i,2),16))}
 function setTheme(c){
-  const [r,g,b]=rgb(c), mix=x=>Math.round(x+(255-x)*.45);
+  const light=document.documentElement.dataset.theme==="light";
+  const [r,g,b]=rgb(c), mix=x=>light?Math.round(x*.78):Math.round(x+(255-x)*.45);
   const st=document.body.style;
   st.setProperty("--red",c); st.setProperty("--red2",`rgb(${mix(r)},${mix(g)},${mix(b)})`); st.setProperty("--tint",`rgba(${r},${g},${b},.16)`);
 }
@@ -736,6 +763,16 @@ function applySeriesUI(){
   const tb=document.querySelector('#segStand [data-s="teams"]'); if(tb) tb.textContent=S().teams;
 }
 addEventListener("resize",()=>renderGroupBar());
+/* ---------- Tema chiaro / scuro ---------- */
+function applyTheme(t,save){
+  document.documentElement.dataset.theme=t;
+  if(save){try{localStorage.setItem("mt:theme",t)}catch(e){}}
+  const m=document.querySelector('meta[name="theme-color"]'); if(m) m.content=t==="light"?"#eeece8":"#1d1f23";
+  $("#themeBtn").setAttribute("aria-label",t==="light"?"Passa al tema scuro":"Passa al tema chiaro");
+  setTheme(series==="all"?BRAND:S().color);
+}
+$("#themeBtn").onclick=()=>applyTheme(document.documentElement.dataset.theme==="light"?"dark":"light",true);
+try{matchMedia("(prefers-color-scheme: light)").addEventListener("change",e=>{let st=null;try{st=localStorage.getItem("mt:theme")}catch(x){}if(!st)applyTheme(e.matches?"light":"dark",false)})}catch(e){}
 
 /* ---------- Pagina Weekend: tutte le serie insieme ---------- */
 let homeData={}, homeAll=false;
@@ -778,7 +815,7 @@ function renderHome(){
     list.forEach(x=>{
       const d=dayName(x.s.start); if(d!==last){h+=`<div class="dayh">${esc(d)}</div>`;last=d}
       const live=now>=x.st&&now<x.en, c=SER[x.k];
-      const tv=x.s.tv8?` · <span style="color:#b9abff;font-weight:600">${esc(x.ch)} ${x.s.tv8.live?"diretta":"differita ore "+esc(hm(x.s.tv8.time))}</span>`:"";
+      const tv=x.s.tv8?` · <span style="color:var(--tvc);font-weight:600">${esc(x.ch)} ${x.s.tv8.live?"diretta":"differita ore "+esc(hm(x.s.tv8.time))}</span>`:"";
       h+=`<div class="sess hsess${x.s.key?" key":""}" data-k="${x.k}"><div class="t">${esc(hm(x.s.start))}</div>
         <div class="n"><b><span class="stag" style="background:${c.color}">${esc(c.logo)}</span>${esc(x.s.name)}${live?'<span class="badge live">In corso</span>':""}</b><small>${esc(x.gp||"")}${tv}</small></div></div>`;
     });
@@ -876,7 +913,7 @@ if("ResizeObserver" in window){new ResizeObserver(()=>document.documentElement.s
 
 (function(){
   try{showView(localStorage.getItem("f1v")||"news")}catch(e){}
-  applySeriesUI();
+  applySeriesUI(); applyTheme(document.documentElement.dataset.theme==="light"?"light":"dark",false);
   renderStandings(); renderSched();  renderResults(); renderCal();
   document.querySelectorAll("#segStand button").forEach(b=>b.onclick=()=>segTo(b.dataset.s));
   load(true);
