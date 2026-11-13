@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-12-russell-accademia-kart",
+      "title": "Russell lancia la GR63 Academy per scoprire giovani talenti del kart",
+      "summary": "Il pilota Mercedes ha fondato un'accademia di karting che partirà nel 2027: selezioni aperte a Silverstone da dicembre e un campionato interamente finanziato per i 25 migliori. In palio una stagione 2028 pagata.",
+      "tag": "Mercedes",
+      "source": "formula1.com",
+      "url": "https://www.formula1.com/en/latest/article/karting-is-where-it-all-started-for-me-russell-launches-new-academy-to-develop-young-racers.5kVDwrQLjkeQ8bYLZ5sqQ2",
+      "published": "2026-11-12T13:09:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-12-mercato-2027-ultimi-sedili",
       "title": "Mercato 2027 quasi chiuso: Bottas in bilico in Cadillac, Herta in attesa",
       "summary": "Con Lawson e Lindblad confermati in Racing Bulls resta da definire un ultimo posto: Bottas non ha certezze in Cadillac e il collaudatore Herta è il candidato principale. Bearman dovrebbe restare in Haas, mentre Ocon potrebbe ripartire da un ruolo di riserva.",
@@ -993,7 +1003,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-12T23:50:00Z",
+    "updated": "2026-11-13T07:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
