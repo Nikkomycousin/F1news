@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-13-mercedes-budget-cap-giovani",
+      "title": "Wolff svela la proposta Mercedes alla FIA: più margine per pagare i giovani",
+      "summary": "Mercedes ha chiesto alla FIA una deroga al budget cap per alzare gli stipendi dei dipendenti nei primi anni di carriera. Wolff ammette che l'idea non è stata accolta con entusiasmo, mentre anche Williams spinge per rivedere il tetto di spesa.",
+      "tag": "Mercedes",
+      "source": "PlanetF1",
+      "url": "https://www.planetf1.com/news/mercedes-fia-formula-1-cost-cap",
+      "published": "2026-11-13T08:14:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-12-russell-accademia-kart",
       "title": "Russell lancia la GR63 Academy per scoprire giovani talenti del kart",
       "summary": "Il pilota Mercedes ha fondato un'accademia di karting che partirà nel 2027: selezioni aperte a Silverstone da dicembre e un campionato interamente finanziato per i 25 migliori. In palio una stagione 2028 pagata.",
@@ -1003,7 +1013,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-13T07:55:00Z",
+    "updated": "2026-11-13T10:58:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
