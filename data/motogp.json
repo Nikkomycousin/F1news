@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-13-bagnaia-portimao-piano-b",
+      "title": "Bagnaia vuole correre a Portimão, Ducati pronta con Pirro o Lecuona",
+      "summary": "Dopo l'operazione per la frattura di due metatarsi del piede destro, Bagnaia punta almeno a provarci in Portogallo. Se non ce la facesse, Ducati valuta il collaudatore Pirro o Lecuona, reduce dalle sostituzioni in Gresini.",
+      "tag": "Ducati",
+      "source": "GPOne",
+      "url": "https://www.gpone.com/en/2026/11/13/motogp/bagnaia-undergoes-surgery-wants-to-race-at-portimao-ducati-prepares-plan-b-with-pirro-and-lecuona.html",
+      "published": "2026-11-13T10:30:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-12-ducati-presentazione-campiglio-2027",
       "title": "Ducati svelerà la squadra 2027 il 18 gennaio a Madonna di Campiglio",
       "summary": "Durante Campioni in Pista Márquez e Acosta si mostreranno per la prima volta insieme in rosso; il primo incontro in pista sarà già al test di Valencia, ma Acosta resta legato a KTM fino a fine anno.",
@@ -122,7 +132,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-13T15:05:00Z",
+    "updated": "2026-11-13T18:55:00Z",
     "nextGp": {
       "name": "GP del Portogallo",
       "circuit": "Autódromo Internacional do Algarve, Portimão",
