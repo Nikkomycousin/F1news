@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-13-verstappen-gomme-freddo-vegas",
+      "title": "Verstappen: a Las Vegas la chiave sarà mandare in temperatura le gomme",
+      "summary": "Con l'asfalto previsto intorno ai 10-12 gradi, Verstappen indica il riscaldamento degli pneumatici come fattore decisivo per la Red Bull, insieme alla gestione dell'energia sul lungo rettilineo. L'olandese ammette di non sapere se la squadra sarà la favorita, visti i problemi passati sulle piste fredde e a bassa aderenza.",
+      "tag": "Red Bull",
+      "source": "RacingNews365",
+      "url": "https://racingnews365.com/max-verstappen-reveals-key-red-bull-factor-in-facing-major-las-vegas-issue",
+      "published": "2026-11-13T06:20:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-13-williams-martins-riserva-vegas",
       "title": "Williams sceglie Victor Martins come riserva per il GP di Las Vegas",
       "summary": "Con Browning impegnato in Super Formula, sarà il francese dell'Academy Williams a tenersi pronto per sostituire Albon o Sainz. Non accadeva da Singapore.",
@@ -1033,7 +1043,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-13T18:55:00Z",
+    "updated": "2026-11-13T20:55:00Z",
     "nextGp": {
       "name": "GP di Las Vegas",
       "circuit": "Las Vegas Strip Circuit",
