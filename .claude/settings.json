@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git:*)",
+      "Bash(python3:*)",
+      "Bash(node:*)",
+      "Bash(ls:*)",
+      "Bash(grep:*)",
+      "Bash(sed:*)",
+      "Bash(cat:*)",
+      "Bash(pkill -f http.server:*)",
+      "WebSearch",
+      "WebFetch",
+      "mcp__claude-code-remote__list_triggers",
+      "mcp__claude-code-remote__get_trigger",
+      "mcp__claude-code-remote__update_trigger",
+      "mcp__claude-code-remote__fire_trigger",
+      "mcp__claude-code-remote__get_session",
+      "mcp__claude-code-remote__list_events"
+    ]
+  }
+}
