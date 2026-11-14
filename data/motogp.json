@@ -1,6 +1,26 @@
 {
   "news": [
     {
+      "id": "2026-11-13-buenos-aires-lavori",
+      "title": "Buenos Aires, l'autodromo prende forma: lavori da chiudere entro marzo",
+      "summary": "Procede la ristrutturazione dell'autodromo argentino in vista del ritorno della MotoGP. La fine dei cantieri è prevista per il mese di marzo.",
+      "tag": "Calendario",
+      "source": "GPOne",
+      "url": "https://www.gpone.com/it/2026/11/13/motogp/lautodromo-di-buenos-aires-prende-forma-fine-lavori-prevista-per-marzo.html",
+      "published": "2026-11-13T15:00:00Z",
+      "top": false
+    },
+    {
+      "id": "2026-11-13-adelaide-alberi-polizia",
+      "title": "Adelaide, abbattuti i primi alberi secolari per il circuito: interviene la polizia",
+      "summary": "Sono partiti i lavori per il tracciato cittadino che ospiterà la MotoGP ad Adelaide, con il taglio dei primi alberi storici. La protesta sul posto ha richiesto l'intervento delle forze dell'ordine.",
+      "tag": "Calendario",
+      "source": "GPOne",
+      "url": "https://www.gpone.com/en/2026/11/13/motogp/motogp-in-adelaide-first-centuries-old-trees-felled-for-circuit-police-step-in.html",
+      "published": "2026-11-13T13:00:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-13-bagnaia-portimao-piano-b",
       "title": "Bagnaia vuole correre a Portimão, Ducati pronta con Pirro o Lecuona",
       "summary": "Dopo l'operazione per la frattura di due metatarsi del piede destro, Bagnaia punta almeno a provarci in Portogallo. Se non ce la facesse, Ducati valuta il collaudatore Pirro o Lecuona, reduce dalle sostituzioni in Gresini.",
@@ -132,7 +152,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-13T23:50:00Z",
+    "updated": "2026-11-14T07:55:00Z",
     "nextGp": {
       "name": "GP del Portogallo",
       "circuit": "Autódromo Internacional do Algarve, Portimão",
