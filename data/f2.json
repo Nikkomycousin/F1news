@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-14-camara-slater-invicta",
+      "title": "Câmara verso la Haas anche in Qatar e Abu Dhabi, Slater pronto a sostituirlo",
+      "summary": "Secondo le indiscrezioni il leader della F2 dovrebbe privilegiare gli impegni in Formula 1 negli ultimi due weekend, che coincidono con quelli della F2. Al suo posto in Invicta potrebbe salire Freddie Slater, lasciando aperta la corsa al titolo.",
+      "tag": "Mondiale",
+      "source": "formula1.it",
+      "url": "https://www.formula1.it/news/33728/1/haas-camara-dice-addio-al-titolo-di-formula-2-slater-pronto-a-sostituirlo",
+      "published": "2026-11-14T08:00:00Z",
+      "top": true
+    },
+    {
       "id": "2026-11-12-tsolov-riserva-red-bull",
       "title": "Tsolov resta fuori dalla F1 2027: sarà riserva Red Bull",
       "summary": "Con Lawson e Lindblad confermati dalla Racing Bulls, il secondo della classifica F2 farà il collaudatore per le due squadre Red Bull, con alcune uscite nelle prove libere.",
@@ -135,7 +145,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-14T07:55:00Z",
+    "updated": "2026-11-14T13:55:00Z",
     "nextGp": {
       "name": "Round 13 · Qatar",
       "circuit": "Lusail",

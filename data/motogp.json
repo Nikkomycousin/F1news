@@ -1,6 +1,16 @@
 {
   "news": [
     {
+      "id": "2026-11-14-test-valencia-aperti-pubblico",
+      "title": "Test di Valencia aperti al pubblico: attesi i debutti di Bagnaia, Bulega e Acosta",
+      "summary": "Dopo il finale di Portimão il Ricardo Tormo ospiterà i primi test della stagione 2027 e i tifosi potranno assistere dalle tribune. Grande curiosità per le prime uscite dei piloti con le nuove squadre.",
+      "tag": "Paddock",
+      "source": "gpone.com",
+      "url": "https://www.gpone.com/it/2026/11/14/motogp/i-test-di-valencia-aperti-al-pubblico-ecco-come-vedere-i-debutti-di-bagnaia-bulega-e-acosta.html",
+      "published": "2026-11-14T10:00:00Z",
+      "top": false
+    },
+    {
       "id": "2026-11-13-buenos-aires-lavori",
       "title": "Buenos Aires, l'autodromo prende forma: lavori da chiudere entro marzo",
       "summary": "Procede la ristrutturazione dell'autodromo argentino in vista del ritorno della MotoGP. La fine dei cantieri è prevista per il mese di marzo.",
@@ -152,7 +162,7 @@
     }
   ],
   "info": {
-    "updated": "2026-11-14T10:55:00Z",
+    "updated": "2026-11-14T13:55:00Z",
     "nextGp": {
       "name": "GP del Portogallo",
       "circuit": "Autódromo Internacional do Algarve, Portimão",
